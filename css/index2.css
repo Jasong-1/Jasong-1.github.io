@@ -1,0 +1,540 @@
+html body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.tittle{
+	font-size: 40px;
+	color: #4e4e4e;
+	font-family: Segoe UI;
+	font-weight: 300;
+	text-align: center;
+}
+.text{
+	font-size: 14px;
+	color: #4E4E4E;
+	font-family: Segoe UI;
+	font-weight: 400;
+	text-align: center;
+	text-decoration:none;
+}
+#top{
+    vertical-align: middle;
+    float: left;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+}
+#top .logo{
+    display: inline-block;
+    background: url(../img/LOGO.png) no-repeat 0 0;
+    background: size 100% auto;
+    width:283px;
+    height: 60px;
+    margin: 20px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 4%;
+}
+/*导航*/
+#top .nav{
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    text-align: center; 
+}
+.nav{
+    font-size:18px;
+    position: absolute;
+    top: 0;
+    right:20%;
+    z-index: 1;
+    }
+.nav ul{
+    list-style:none;
+    display: block;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    }
+.nav li {
+    float:left;
+    position:relative;
+    font-weight: 400;
+    font-family: Segoe UI;
+    }
+.nav ul ul {
+    visibility:hidden;
+    position:absolute;
+    left:5px;
+    top:40px;
+    }
+.nav table {
+    position:absolute; 
+    top:0;
+    left:0;
+}
+.nav ul li:hover ul,.nav ul a:hover ul{
+    visibility:visible;
+}
+.nav li a:hover{
+    color: #0550c4;
+}
+.nav li ul li a:hover{
+    color: #ffffff;
+}
+.nav a{
+    display:block;
+    padding:20px 20px 20px 20px;
+    margin:0;
+    color:#052944;
+    text-decoration:none;
+    }
+.nav ul ul{
+    background: #0550c4;
+    padding: 0;
+    border-radius: 6px;
+}
+.nav ul ul li {
+    clear:both;
+    text-align:left;
+    font-size:18px;
+    font-weight: 300;
+    }
+.slu_li ul li a{
+    display:block;
+    width:224px;
+    height:18px;
+    margin:0;
+    padding: 15px 0 25px 20px;
+    border:0;
+    color: #ffffff;
+}
+.ser_li ul li a{
+    display:block;
+    width:350px;
+    height:18px;
+    margin:0;
+    padding: 15px 0 25px 20px;
+    border:0;
+    color: #ffffff;
+}
+.pro_li ul li a{
+    display:block;
+    width:320px;
+    height:18px;
+    margin:0;
+    padding: 15px 0 25px 20px;
+    border:0;
+    color: #ffffff;
+}
+.nav ul ul li a:hover{
+    border:0;
+    border-radius: 6px;
+    background:#1E68D6;
+    }
+
+.top_btn{
+    margin: 20px 0 20px 40px;
+    position: absolute;
+    top: 0;
+    right: 4%;
+	display: inline-block;
+    line-height: 50px;
+    padding: 4px 40px !important;
+	background: #1E68D6;
+    border: 0;
+    border-radius: 6px;
+	box-sizing: border-box;
+	text-decoration:none;
+    font-size: 18px;
+    font-family: Segoe UI;
+	outline: none;
+    color: #ffffff;
+}
+.top_btn:hover{
+    background:#1E41D6;
+}
+#top a{
+    text-decoration:none;
+}
+.button{
+	height: 100px;
+	line-height: 50px;
+	padding: 10px 40px;
+	background: #1E68D6;
+    border: 0;
+    border-radius: 6px;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-size: 18px;
+	outline: none;
+	color: #ffffff;
+	display: inline;
+}
+.button:hover{
+    background:#1E41D6;
+}
+#banner{
+    display:block;
+	background: #E6ECF5 url(../img/banner_background.png) no-repeat center;
+    height: 655px;
+    padding: 280px 900px 0 0;
+    
+    animation: banner 1s infinite; /*动画效果：10s 无限循环*/
+    }
+    @keyframes banner {
+                25%{
+                   background: url("../img/banner2.png"); /*图2*/
+                }
+                50%{
+                    background: url("../img/banner3.png"); /*图3*/
+                }
+                75%{
+                    background: url("");
+                }
+            }
+    }  
+
+
+#banner p{
+    margin: 20px 0;
+}
+#banner div{
+    display: inline-block;
+    text-align: center;
+}
+.bnr_btn{
+    line-height: 50px;
+    padding: 4px 40px !important;
+    margin: 40px 0 0 0;
+	background: #1E68D6;
+    border: 0;
+    border-radius: 6px;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-size: 18px;
+	outline: none;
+    color: #ffffff;  
+}
+.bnr_btn:hover{
+    background:#1E41D6;
+}
+#mission{
+	height: 260px;
+	background: #1E68D6 url(../img/Mission_background.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* padding: 130px 0; */
+	padding: 40px 0 40px 0;
+	text-decoration:none;
+	
+}
+
+#solution{
+	padding: 60px 0 100px 0;
+	text-align: center;
+}
+#solution table{
+	text-align: left;
+	display: inline-block;
+	border-collapse: collapse;
+	border-spacing: 2px;
+    border-color: #ededed;
+    white-space: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 14px;
+	font-style: none;
+	font-family: Segoe UI;
+    color: #4e4e4e;
+    text-align: start;
+	font-variant: normal;
+}
+#solution table td{
+	padding: 0 80px;
+	height: 174px;
+	width: 404px;
+	border-top: 0; 
+	border-right: 2px solid #ededed;
+	border-bottom: 2px solid #ededed;
+	border-left: 0; 	
+}
+#solution table td:hover{
+	background: #ededed;
+}
+#solution table tr:last-child td{
+	border-bottom: 0; 
+}
+#solution table tr td:last-child{
+	border-right: 0; 
+}
+#solution table td a{
+	text-decoration:none;
+	color: #4e4e4e;
+	display: inline-block;
+}
+#solution table td img{
+	display: inline-block;
+	vertical-align: middle;
+}
+#solution table tr p{
+	display: inline-block;
+	margin: 0 0 0 24px;
+	font-size:14px;
+	line-height:normal;
+	padding: 0;
+	width: 266px;
+	vertical-align: middle;
+}
+#services{
+	padding: 40px 0 80px 0;
+	background: #edf0f5;
+}
+#services .circle_btn{
+	width: 150px;
+	height: 150px;
+	border: none;
+	border-radius: 75px;
+	background: #ffffff;
+	box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.2);
+}
+#services .circle_btn:hover{
+	background: #d5e6f3;
+}
+.ser_btn{
+	display: inline-block;
+    width: 218px;
+    text-align: center;
+	padding: 0;
+	background:none;
+    margin: 0 80px 0 80px;
+    white-space: normal;
+	opacity: 1.0;
+	border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+#bgd{
+	padding:40px 0;
+}
+.bgd_exp{
+	display: inline-block;
+    width: 218px;
+    background: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0 80px 0 80px;
+    white-space: normal;
+	opacity: 1.0;
+	border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+#case{
+	background: #edf0f5;
+	padding: 40px 0;
+}
+.case{
+	
+	display: inline-block;
+	width: 430px;
+	height: 460px;
+    background: #fff;
+    text-align: center;
+    padding: 0 0 42px 0;
+    margin: 20px 20px 0 20px;
+    white-space: normal;
+	opacity: 1.0;
+	border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+.case p{
+	margin:20px 20px 0 20px;
+}
+#bottom{
+	background: #1f5fbf;
+	padding:0;
+}
+#bottom a{
+	text-decoration:none;
+	color: #ffffff;
+}
+#bottom ul{
+	padding: 0;
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 10px;
+	margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#bottom ul li{
+	float:left;
+	list-style: none;
+	vertical-align: bottom;
+}
+#bottom ul li img{
+	margin:0 15px 0 0;
+	width: 30px;
+}
+.bot{
+	text-align: left;
+	margin: 40px 20px 40px 20px; 
+	font-size: 10px;
+	color: #ffffff;
+	display: inline-block;
+	vertical-align: top;
+	text-decoration:none;
+}
+.bot_tittle{
+	font-size: 18px;
+	color: #ffffff;
+}
+.bot_2{
+	background: #454545;
+	height: 80px;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 80px;
+}
+.bot_2 p{
+	margin: 0;
+}
+/*banner*/
+.version.student_support_services{
+	color:#0000EE;background-color:#A3F377;
+	}
+#page{
+	z-index:1;
+	min-height:438px;
+	background-image:none;
+	border-width:0px;
+	border-color:#000000;
+	background-color:transparent;
+	padding-bottom:62px;
+	width:100%;
+	max-width:1920px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+#slideshowu11492{
+	z-index:2;
+	position:relative;
+	width:100%;
+	}
+#u11501{
+	position:absolute;
+	width:1920px;
+	height:935px;
+	background-color:transparent;
+	}
+#u11501popup{
+	z-index:3;
+	width:1920px;
+	height:935px;
+	margin-right:-10000px;
+	}
+#u11632{
+	z-index:4;
+	width:1920px;
+	height:935px;
+	border-width:0px;
+	border-color:transparent;
+	background-color:transparent;
+	margin-right:-10000px;
+	position:relative;
+	}
+#u11612{
+	z-index:6;
+	width:1920px;
+	height:935px;
+	border-width:0px;
+	border-color:transparent;
+	background-color:transparent;
+	margin-right:-10000px;
+	position:relative;
+	}
+#u11502{
+	z-index:8;
+	width:1920px;
+	height:935px;
+	border-width:0px;
+	border-color:transparent;
+	background-color:transparent;
+	margin-right:-10000px;
+	position:relative;
+	}
+#u11517-4{
+	position:absolute;
+	min-height:56px;
+	border-width:0px;
+	border-color:transparent;
+	background-color:#4E4E4E;
+	opacity:0.69;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=69)";
+	filter:alpha(opacity=69);
+	border-radius:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:100%;
+	}
+#u11517-4popup{
+	z-index:10;
+	margin-top:432px;
+	height:76px;
+	margin-right:-10000px;
+	width:3.96%;
+	margin-left:2.61%;
+	}
+#u11500-4{
+	position:absolute;
+	min-height:56px;
+	border-width:0px;
+	border-color:transparent;
+	background-color:#4E4E4E;
+	opacity:0.69;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=69)";
+	filter:alpha(opacity=69);
+	border-radius:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:100%;
+	margin-left:0%;
+	left:871px;
+	}
+#u11500-4popup{
+	z-index:14;
+	margin-top:432px;
+	height:76px;
+	margin-right:-10000px;
+	width:3.96%;
+	margin-left:48.03%;
+	}
+#u11517-3,#u11500-3{
+	color:#FFFFFF;
+	font-size:40px;
+	text-align:center;
+	line-height:56px;
+	font-family:Segoe UI;
+	margin-left:13.16%;
+	margin-right:13.157894736842104%;
+	}
+.SSFirstButton,.SSPreviousButton,.SSNextButton,.SSLastButton,.SSSlideLink,.SSCloseButton{
+	cursor:pointer;
+	}
+.SSSlideLoading{
+	background:url("../images/loading.gif?crc=3815509949") no-repeat center center;
+	}
+.css_verticalspacer .verticalspacer{
+	height:calc(100vh - 995px);
+	}
+#muse_css_mq,.html{
+	background-color:#FFFFFF;
+	}
+body{
+	position:relative;min-width:320px;
+	}

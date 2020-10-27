@@ -1,0 +1,73 @@
+#banner {
+  background: #161616 url(../img/banner-business.png) no-repeat center top;
+  height: 600px;
+  text-align: center;
+}
+.bnr-tle {
+  height: 80px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  position: relative;
+  top: 260px;
+  text-align: center;
+  padding: 0 50px;
+}
+.bnr-tle p {
+  line-height: 80px;
+  color: #ffffff;
+}
+#busi-solu-ls {
+  padding: 60px 0;
+}
+.solu-ls {
+  padding: 30px;
+  margin: 20px;
+  width: 400px;
+  height: 220px;
+  display: inline-block;
+  text-align: left;
+  background: #ffffff;
+  vertical-align: top;
+}
+.solu-ls a {
+  text-decoration: none;
+}
+.intro-video-btn {
+  width: 200px;
+  height: 40px;
+  /* border: #42a1ff solid 1px; */
+  text-align: center;
+  line-height: 40px;
+  /* color: #42a1ff; */
+  margin: 20px 0;
+  border: #c5c5c5 solid 1px;
+  color: #c5c5c5;
+}
+#auto-lev-img {
+  background: #ffffff url(../img/img-1-background.png) no-repeat top center;
+  /* background-size: 100%; */
+  padding: 40px 0;
+}
+#auto-lev-img img {
+  margin: 40px 0;
+  width: 1000px;
+  max-width: 70%;
+}
+#use-case-ls {
+  padding: 80px 0 120px 0;
+  background: #f5f5f5;
+}
+.case-icon {
+  background: #f9f9f9;
+  width: 350px;
+  height: 150px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.05);
+}
+.case-icon img {
+  vertical-align: middle;
+  text-align: center;
+}
