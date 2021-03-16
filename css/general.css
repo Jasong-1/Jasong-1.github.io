@@ -158,7 +158,12 @@ button:hover {
   display: block;
   text-align: left;
 }
-
+.slu_li i {
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  top: -3px;
+}
 .slu_li ul li a {
   display: block;
   color: #4e4e4e;
@@ -185,6 +190,22 @@ button:hover {
   padding: 15px 0 25px 20px;
   border: 0;
   color: #4e4e4e;
+}
+.comp_li i {
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+  top: -3px;
+}
+
+.comp_li ul li a {
+  display: block;
+  color: #4e4e4e;
+  white-space: nowrap;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .nav ul ul li a:hover {
   border: 0;
@@ -278,12 +299,7 @@ button:hover {
 .bot_2 p {
   margin: 0;
 }
-.slu_li i {
-  font-size: 12px;
-  font-weight: normal;
-  position: relative;
-  top: -3px;
-}
+
 #requestDemoDialog .button {
   background: #4e4e4e;
   display: inline-block;

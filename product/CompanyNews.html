@@ -12,11 +12,14 @@
     />
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="css/Solutions.css" />
-    <script></script>
-    <title>Office Utilities</title>
+    <link rel="stylesheet" href="css/programs.css" />
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/jquery.scrolly.min.js"></script>
+    <script src="../scripts/skel.min.js"></script>
+    <script src="../scripts/util.js"></script>
+    <script src="../scripts/main.js"></script>
+    <title>Company News</title>
   </head>
-
   <body>
     <div id="top">
       <div class="logo-wrap">
@@ -30,7 +33,7 @@
       <div class="nav">
         <ul class="main-nav" style="vertical-align: top;">
           <li><a href="../index.html">Home</a></li>
-          <li class="slu_li active" name="solution_nav">
+          <li class="slu_li" name="solution_nav">
             <a href="solutions.html" class="scrolly"
               >Solutions <i class="fa fa-chevron-down"></i
             ></a>
@@ -38,9 +41,7 @@
               <li>
                 <a href="solutions.html">Automated Business Operations</a>
               </li>
-              <li class="active">
-                <a href="Office Utilities.html">Office Utilities</a>
-              </li>
+              <li><a href="Office Utilities.html">Office Utilities</a></li>
               <li>
                 <a href="Internet Collaboration.html"
                   >Internet Collaboration Tools</a
@@ -55,11 +56,11 @@
             <a href="services.html" class="scrolly">Services</a>
           </li>
           <li class="pro_li"><a href="programs.html">Programs</a></li>
-          <li class="comp_li" name="company_nav">
+          <li class="comp_li active" name="company_nav">
             <a href="">Company <i class="fa fa-chevron-down"></i></a>
              <ul>
                <li><a href="partners.html">Partners</a></li>
-               <li><a href="CompanyNews.html">Company News</a></li>
+               <li class="active"><a href="CompanyNews.html">Company News</a></li>
              </ul>
            </li>
           <li><a href="ContactUs.html">Contact Us</a></li>
@@ -74,46 +75,41 @@
         </ul>
       </div>
     </div>
-    <div
-      id="banner"
-      style="
-        background: #161616 url(img/banner-office.jpg) no-repeat center top;
-      "
-    >
-      <div class="bnr-tle" style="top: 140px;">
-        <p class="tittle-sec" style="margin: 0;">Office Utilities</p>
+    <div id="banner" style="background: #161616 url(img/services-banner.jpg) no-repeat center top; height: 400px;">
+      <div class="bnr-tle-comp-news">
+        <p class="tittle-sec" style="margin: 0;">Company News</p>
       </div>
-      <hr
-        style="width: 300px; margin: 0 auto; position: relative; top: 170px;"
+      <!-- <hr
+        style="width: 300px; margin: 0 auto; position: relative; top: 200px;"
       />
-      <p
-        class="tittle-sec"
-        style="
-          color: #fff;
-          font-size: 24px;
-          max-width: 1000px;
-          margin: 0 auto;
-          position: relative;
-          top: 220px;
-          line-height: 1.5em;
-        "
-      >
-        SchoolStream is a certified Microsoft and Google Partner. We offer
-        services to provide, configure, and setup your Microsoft 365 and Google
-        Apps as part of our District Without Limits package. These applications
-        can also be directly integrated into our platform to simplify access to
-        all your users.
-      </p>
+      <ul class="second-banner-description">
+        <li><a href="#first">Training Services</a></li>
+        <li>
+          <a href="#second">New Process Automation Development Services</a>
+        </li>
+        <li><a href="#third">Information Integration Services</a></li>
+        <li>
+          <a href="#fourth"
+            >Consulting Services on Change Management & Process Improvement</a
+          >
+        </li>
+      </ul> -->
     </div>
-    <div id="list" style="padding: 100px 0;">
-      <div class="solu-icon-ls" style="height: 150px;">
-        <img src="../img/index-solu-offi-1.png" alt="" />
-        <p class="text">MS Office utilities / Office 365</p>
-      </div>
-      <div class="solu-icon-ls" style="height: 150px;">
-        <img src="../img/index-solu-offi-2.png" alt="" />
-        <p class="text">Google Apps</p>
-      </div>
+    <div id="newslist">
+        <ul>
+            <li>
+              <a href="Company News/K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter.html">
+                <h3>K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter</h3>
+                <img src="" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="Company News/K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter.html">
+                <h3>K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter</h3>
+                <img src="" alt="">
+              </a>
+          </li>
+        </ul>
     </div>
     <div id="bottom">
       <div class="bot">
@@ -179,9 +175,11 @@
           <p>100 West Big Beaver Rd., Suite 200, #19 Troy, MI 48084</p>
           <ul style="vertical-align: text-bottom;">
             <li><a href="https://twitter.com/school_stream" target="black"><img src="../img/bot-twitter.png" alt="twitter icon"></a></li>
-					  <li><a href="https://www.facebook.com/SchoolStream-140269256273" target="black"><img src="../img/bot_facebook.png" alt="facebook icon"></a></li>
-					  <li><a href="https://www.linkedin.com/showcase/10001456/" target="black"><img src="../img/bot_linkedin.png" alt="linkedin icon"></a></li>
-					  <li><a href="mailto:sales@rtresponse.com"><img src="../img/bot_mail.png" alt="Email icon"></a></li>
+					<li><a href="https://www.facebook.com/SchoolStream-140269256273" target="black"><img src="../img/bot_facebook.png" alt="facebook icon"></a>
+					</li>
+					<li><a href="https://www.linkedin.com/showcase/10001456/" target="black"><img src="../img/bot_linkedin.png" alt="linkedin icon"></a>
+					</li>
+					<li><a href="mailto:sales@rtresponse.com"><img src="../img/bot_mail.png" alt="Email icon"></a></li>
           </ul>
         </span>
       </div>
