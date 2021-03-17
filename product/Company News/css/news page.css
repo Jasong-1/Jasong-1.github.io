@@ -1,0 +1,118 @@
+#news-tittle{
+    background: #000000 url(../img/news-img-1.jpg) no-repeat center center;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+@media (min-width:467px){
+    #news-tittle{
+        height: 400px;
+    }
+}
+/* @media (min-width:467px){
+    #news-tittle{
+        height: 400px;
+    }
+} */
+#news-tittle div{
+    width: 65%;
+}
+#news-tittle div img{
+    max-width: 300px;
+}
+.back-botton {
+    position: fixed;
+    top: 200px;
+    padding:10px 20px;
+    background: rgb(199, 199, 199);
+}
+.back-botton a{
+    color: #fff;
+}
+.back-botton a:hover{
+    color: #ebebeb;
+}
+.section{
+    /* background-color: #fff; */
+    width: 80%;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+#news-content h4{
+    margin: 30px 0;
+}
+#news-content p{
+    text-align: left;
+    margin: 20px;
+}
+.news-content { 
+    margin: 0 auto;
+}
+.news-content-text{
+    font-size: 18px; 
+    font-weight: 500;
+}
+.personal-intro {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+}
+.person-card{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1500px){
+    .person-card{
+        width: 500px;
+    }
+}
+@media (max-width:1499px) and (min-width:539px){
+    .person-card{
+        width: 340px;
+    }
+}
+@media (max-width: 538px){
+    .person-card{
+        width: 85%;
+    }
+}
+
+.person-card img{
+    width: 120px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.person-card p{
+    width: 320px;
+}
+.news-att {
+    margin: 40px 0 20px 0;
+    padding: 30px;
+    color: #fff;
+    background: #696969 url(img/banner-asset2.jpg) no-repeat top center;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5px;
+}
+.news-att img{
+    width: 200px;
+    margin:40px 20px;
+}
+.k12tl-intro{
+    width: 75%;
+    text-align: left;
+}
+.k12tl-intro p a:link{
+    color: rgb(176, 213, 255);
+}
