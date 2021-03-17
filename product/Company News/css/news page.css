@@ -22,17 +22,12 @@
 #news-tittle div img{
     max-width: 300px;
 }
-.back-botton {
-    position: fixed;
-    top: 200px;
-    padding:10px 20px;
-    background: rgb(199, 199, 199);
+.back-button {
+    margin: 70px auto 30px;
+    width: 300px;
 }
-.back-botton a{
+.back-button a{
     color: #fff;
-}
-.back-botton a:hover{
-    color: #ebebeb;
 }
 .section{
     /* background-color: #fff; */
