@@ -97,8 +97,10 @@
 .news-att {
     margin: 40px 0 20px 0;
     padding: 30px;
-    color: #fff;
-    background: #696969 url(img/banner-asset2.jpg) no-repeat top center;
+    /* color: #fff; */
+    /* background: #8b8b8b; */
+    color: #6b6b6b;
+    background: #e5e5e5;
     display: flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -114,5 +116,5 @@
     text-align: left;
 }
 .k12tl-intro p a:link{
-    color: rgb(176, 213, 255);
+    /* color: rgb(176, 213, 255); */
 }
