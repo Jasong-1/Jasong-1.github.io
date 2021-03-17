@@ -21,20 +21,32 @@
             background: #000000 url(img/banner-asset2.jpg) no-repeat top center;
             color: #fff;
             height: 400px;
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
         }
-        #news-tittle a{
-            text-decoration: none;
-            text-align: left;
-            margin: 20px 0;
-            color: #fff;
+		#news-tittle div{
+            max-width: 65%;
         }
+        .back-botton {
+			position: fixed;
+			top: 200px;
+			padding:10px 20px;
+			background: rgb(199, 199, 199);
+        }
+		.back-botton a{
+			color: #fff;
+		}
+		.back-botton a:hover{
+			color: #ebebeb;
+		}
         #news-content{
             background-color: #fff;
             padding: 60px;
         }
         #news-content div{
             width: 60%;
-
             border-bottom: solid 1px #fff ;
         }
         #news-content h4{
@@ -94,11 +106,14 @@
 			</ul>
 		</div>
 	</div>
-	<div id="news-tittle">
+	<div class="back-botton">
 		<a href="../CompanyNews.html"><i class="fa fa-chevron-left" style="margin-right: 20px;"></i><span style="font-weight: 700;">BACK</span></a>
-        <div>
-            <h1>K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter</h2>
-			<p>K12 Thought Leaders is excited to announce Linda Richards and Dr. Blane McCann as the Co-Chairs for the Personalized Learning Chapter.  </p>
+	</div>
+	<div id="news-tittle">
+		<div>
+            <h1 style="padding-bottom:10px;">K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter</h2>
+				<!-- <hr style="width:100px;"> -->
+			<h3 style="font-weight: 300;">K12 Thought Leaders is excited to announce Linda Richards and Dr. Blane McCann as the Co-Chairs for the Personalized Learning Chapter.  </h3>
         </div>
         <!-- <div class="bnr-tle" style="top: 140px;">
 			<p class="tittle-sec" style="margin: 0;">Device Management</p>
