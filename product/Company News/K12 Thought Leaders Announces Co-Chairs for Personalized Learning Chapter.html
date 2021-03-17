@@ -18,7 +18,7 @@
             background-color: #fff;
         }
         #news-tittle{
-            background: #000000 url(img/banner-asset2.jpg) no-repeat top center;
+            background: #000000 url(img/news-img-1.jpg) no-repeat top center;
             color: #fff;
             height: 400px;
 			display: flex;
@@ -46,8 +46,8 @@
             padding: 60px;
         }
         #news-content div{
-            width: 60%;
-            border-bottom: solid 1px #fff ;
+            /* width: 60%; */
+            border-bottom: solid #fff 1px  ;
         }
         #news-content h4{
             margin: 30px 0;
@@ -68,6 +68,27 @@
             color: #fff;
             background: #000000 url(img/banner-asset2.jpg) no-repeat top center;
         }
+		.personal-intro {
+			display: flex;
+			justify-content:center;
+			align-items:center;
+		}
+		.person-card{
+			display: flex;
+			justify-content:space-between;
+			align-items:center;
+			margin: 20px;
+			padding: 30px;
+			/* border: solid #959595 1px; */
+			border-radius: 10px;
+			box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+
+		}
+		.person-card img{
+			width: 120px;
+			border-radius: 10px;
+			margin-right: 30px;
+		}
     </style>
 </head>
 <body>
@@ -87,7 +108,7 @@
 						<li><a href="../solutions.html">Automated Business Operations</a></li>
 						<li><a href="../Office Utilities.html">Office Utilities</a></li>
 						<li><a href="../Internet Collaboration.html">Internet Collaboration Tools</a></li>
-						<li class="active"><a href="Device Management.html">Device Management</a></li>
+						<li><a href="Device Management.html">Device Management</a></li>
 					</ul>
 				</li>
 				<li class="ser_li"><a href="../services.html" class="scrolly">Services</a></li>
@@ -106,9 +127,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="back-botton">
+	<!-- <div class="back-botton">
 		<a href="../CompanyNews.html"><i class="fa fa-chevron-left" style="margin-right: 20px;"></i><span style="font-weight: 700;">BACK</span></a>
-	</div>
+	</div> -->
 	<div id="news-tittle">
 		<div>
             <h1 style="padding-bottom:10px;">K12 Thought Leaders Announces Co-Chairs for Personalized Learning Chapter</h2>
@@ -128,15 +149,25 @@
 	</div>
     <div id="news-content">
         <div class="news-text">
-            <p><span style="font-size: 26px;">K12 Thought Leaders</span> is excited to announce <b>Linda Richards</b> (<a href="">click for bio</a>) and Dr. <b>Blane McCann</b> (<a href="">click for bio</a>) as the Co-Chairs for the Personalized Learning Chapter.</p>
-			<p>Mrs. Richards brings over 25 years of service as a school Board Member and has also served as the President of the Nebraska Association of School Boards.  Linda is the 2015 Ann Mactier School Board Member of the Year recognized for her leadership in policy and contributions to curriculum and instruction.</p>
-			<p>Dr. McCann has more than 40 years in K-12 public education as a teacher, principal, executive director, and Superintendent.  He was the 2018 Nebraska Career Education and Outstanding Superintendent and wrote numerous books on leadership and Personalized Learning in Public Education. </p>
-            <p>Joe Huang, CEO of K12 Thought Leaders, says “educators have been pushing (advocating for) Personalized Learning for many years. Linda Richards and Dr. Blane McCann are distinguished leaders pioneering the concept and implementation of Personalized Learning in the K-12 industry.”  “Their innovative concept of creating a Digital Ecosystem for Personalized Learning” explains Mr. Huang, “is redefining how the education industry should cooperate to benefit learners, educators, and the whole community all at the same time.  K12 Thought Leaders are committed to following their leadership in Personalize Learning to help fulfill the concept through our affiliate SchoolStream’s  delivery platform.”</p>
-            <p>“We are excited to have both Mrs. Richards and Dr. McCa nn lead our Personalized Learning Chapter”, explains Alex Huang, COO of K12 Thought Leaders.  “Particularly in the last year during the pandemic, we have seen school districts and educators struggle to reach/deliver effective learning experiences, and to help build self-advocacy (efficacy) in kids.  We all believe that now is the time for change; with SchoolStream’s platform and technology, we can empower the district, educator, learner, and all members of the Personalized Learning ecosystem to reach this.”</p>
+            <p style="font-size: 18px; font-weight: 500;"><b>K12 Thought Leaders</b> is excited to announce <b>Linda Richards</b> (<a href="../../Attachment/Resume-Linda-J.-Richards.pdf" target="blank">click for bio</a>) and Dr. <b>Blane McCann</b> (<a href="../../Attachment/Blane's Vita.pdf" target="blank">click for bio</a>) as the Co-Chairs for the Personalized Learning Chapter.</p>
+			<div class="personal-intro">
+				<div class="person-card">
+					<img src="img/LJR_formal_pic2.jpg" alt="">
+					<p><b>Mrs. Richards</b> brings over 25 years of service as a school Board Member and has also served as the President of the Nebraska Association of School Boards.  Linda is the 2015 Ann Mactier School Board Member of the Year recognized for her leadership in policy and contributions to curriculum and instruction.</p>
+					
+				</div>
+				<div class="person-card">
+					<img src="img/Blane McCann.JPG" alt="">
+					<p><b>Dr. McCann</b> has more than 40 years in K-12 public education as a teacher, principal, executive director, and Superintendent.  He was the 2018 Nebraska Career Education and Outstanding Superintendent and wrote numerous books on leadership and Personalized Learning in Public Education. </p>
+					
+				</div>
+			</div>
+			<p><b>Joe Huang, CEO of K12 Thought Leaders,</b> says “educators have been pushing (advocating for) Personalized Learning for many years. Linda Richards and Dr. Blane McCann are distinguished leaders pioneering the concept and implementation of Personalized Learning in the K-12 industry.”  “Their innovative concept of creating a Digital Ecosystem for Personalized Learning” explains Mr. Huang, “is redefining how the education industry should cooperate to benefit learners, educators, and the whole community all at the same time.  K12 Thought Leaders are committed to following their leadership in Personalize Learning to help fulfill the concept through our affiliate SchoolStream’s  delivery platform.”</p>
+            <p>“We are excited to have both Mrs. Richards and Dr. McCa nn lead our Personalized Learning Chapter”, explains <b>Alex Huang, COO of K12 Thought Leaders.</b>  “Particularly in the last year during the pandemic, we have seen school districts and educators struggle to reach/deliver effective learning experiences, and to help build self-advocacy (efficacy) in kids.  We all believe that now is the time for change; with SchoolStream’s platform and technology, we can empower the district, educator, learner, and all members of the Personalized Learning ecosystem to reach this.”</p>
         </div> 
         <div class="news-att">
             <h4>About K12 Thought Leaders</h4>
-            <p>K12 Thought Leaders are a group of leaders that have voluntarily assembled to use the latest know-how and technology to transform innovative thoughts into practical, affordable, and scalable solutions for the K-12 ecosystem.  If you have any questions or comments, please feel free to email k12thoughleaders@gmail.com.</p>
+            <p style="margin: 30px 0;">K12 Thought Leaders are a group of leaders that have voluntarily assembled to use the latest know-how and technology to transform innovative thoughts into practical, affordable, and scalable solutions for the K-12 ecosystem.  If you have any questions or comments, please feel free to email <a href="mail to:k12thoughleaders@gmail.com">k12thoughleaders@gmail.com</a>.</p>
         </div>       
     </div>
 	<div id="bottom">
