@@ -51,11 +51,14 @@
 }
 .bio-link {
     color: #4e4e4e;
+    /* text-decoration:underline; */
 }
 .bio-link:hover {
-    color: #3e85eb;
-    text-decoration:underline;
+    color: #3e85eb;  
 }
+/* bio tips style */
+
+
 .personal-intro {
     display: flex;
     flex-flow:row wrap;
