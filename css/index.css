@@ -46,11 +46,12 @@
   }
   .nav ul > li {
     display: block;
+    border-bottom: solid #e5e5e5 1px;
   }
   .nav ul > li > a {
     display: block;
-    height: 60px;
-    line-height: 60px;
+    height: 52px;
+    line-height: 52px;
   }
   .nav ul > li > a.button {
     display: inline-block;
@@ -60,6 +61,9 @@
     position: static;
     box-shadow: 0 0 0;
     padding-left: 40px;
+  }
+  .nav ul li ul li{
+    border: 0px;
   }
 
   .nav .main-nav {
@@ -102,6 +106,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .nav ul > li > a {
+    height: 47px;
+    line-height: 47px;
+  }
   .nav .main-nav {
     padding-bottom: 10px;
   }
@@ -125,6 +133,12 @@
   }
   .bnr-tle p {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px){
+  .nav ul > li > a {
+    height: 43px;
+    line-height: 43px;
   }
 }
 

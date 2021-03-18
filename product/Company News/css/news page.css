@@ -49,6 +49,13 @@
     font-size: 18px; 
     font-weight: 500;
 }
+.bio-link {
+    color: #4e4e4e;
+}
+.bio-link:hover {
+    color: #3e85eb;
+    text-decoration:underline;
+}
 .personal-intro {
     display: flex;
     flex-flow:row wrap;

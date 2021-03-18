@@ -20,46 +20,66 @@
     <script src="../scripts/main.js"></script>
     <style>
       .bnr-tle-comp-news{
-    height: 80px;
-    display: inline-block;
-    border:1px solid #ffffff;
-    position: relative;
-    top: 160px;
-    padding: 0 100px;
-}
-.bnr-tle-comp-news p{
-    line-height: 80px;
-    color: #ffffff;
-}
-#newslist{
-    padding: 60px 0;
-    background: #f5f5f5;
-}
-#newslist h3{
-  text-align: left;
-}
-#newslist ul li a{
-    background-color: #ffffff;
-    padding: 30px;
-    border-bottom:solid #f5f5f5 1px;
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-#newslist ul li a:link{
-    color: #4e4e4e;
-}
-#newslist ul li h3{
-    margin: 0 30px;
-}
-#newslist ul li img{
-    background-color: #b8b8b8;
-    width: 156px;
-    height: 88px;
-    margin-left:30px;
-}
+          height: 80px;
+          display: inline-block;
+          border:1px solid #ffffff;
+          position: relative;
+          top: 160px;
+          padding: 0 100px;
+      }
+      .bnr-tle-comp-news p{
+          line-height: 80px;
+          color: #ffffff;
+      }
+      #newslist{
+          padding: 80px 0;
+          background: #f5f5f5;
+      }
+      /* #newslist h3{
+        text-align: left;
+      } */
+      #newslist ul li a{
+          background-color: #ffffff;
+          padding: 30px;
+          border-bottom:solid #f5f5f5 2px;
+          width: 60%;
+          margin: 0 auto;
+          
+      }
+      @media screen and (min-width: 724px){
+        #newslist ul li a{
+          display: flex;
+          justify-content:space-between;
+          align-items: center;
+          flex-flow: row nowrap;
+        }
+        #newslist h3{
+        text-align: left;
+        }
+      }
+      @media screen and (max-width: 723px){
+        #newslist ul li a{
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          flex-flow: row wrap-reverse;          
+        }
+        #newslist h3{
+        text-align: center;
+        }
+      }
+      #newslist ul li a:link{
+          color: #4e4e4e;
+      }
+      #newslist ul li h3{
+          margin: 6px 30px;
+      }
+      #newslist ul li img{
+          background-color: #b8b8b8;
+          width: 156px;
+          height: 88px;
+          margin:6px 30px;
+      }
     </style>
     <title>Company News</title>
   </head>
@@ -77,9 +97,7 @@
         <ul class="main-nav" style="vertical-align: top;">
           <li><a href="../index.html">Home</a></li>
           <li class="slu_li" name="solution_nav">
-            <a href="solutions.html" class="scrolly"
-              >Solutions <i class="fa fa-chevron-down"></i
-            ></a>
+            <a href="solutions.html" class="scrolly">Solutions <i class="fa fa-chevron-down"></i></a>
             <ul>
               <li>
                 <a href="solutions.html">Automated Business Operations</a>
@@ -91,23 +109,24 @@
                 >
               </li>
               <li>
-                <a href="solutions/Device Management.html">Device Management</a>
+                <a href="Device Management.html">Device Management</a>
               </li>
             </ul>
           </li>
-          <li class="ser_li">
+          <li class="slu_li">
             <a href="services.html" class="scrolly">Services</a>
           </li>
-          <li class="pro_li"><a href="programs.html">Programs</a></li>
-          <li class="comp_li active" name="company_nav">
+          <li class="slu_li"><a href="programs.html">Programs</a></li>
+          <li class="slu_li" name="company_nav">
             <a href="">Company <i class="fa fa-chevron-down"></i></a>
              <ul>
                <li><a href="partners.html">Partners</a></li>
-               <li class="active"><a href="CompanyNews.html">Company News</a></li>
+               
              </ul>
            </li>
-          <li><a href="ContactUs.html">Contact Us</a></li>
-          <li>
+           <li class="slu_li active"><a href="CompanyNews.html">News</a></li>
+          <li class="slu_li" style="border: 0;"><a href="ContactUs.html">Contact Us</a></li>
+          <li style="border: 0;">
             <a
               class="button"
               href="https://calendly.com/schoolstream-am/request-for-schoolstream-demo"
@@ -119,7 +138,7 @@
       </div>
     </div>
     <div id="banner" style="background: #161616 url(img/company-news-banner.jpg) no-repeat center top; height: 400px;">
-      <div class="bnr-tle-comp-news">
+      <div class="bnr-tle" style="top: 170px;">
         <p class="tittle-sec" style="margin: 0;">Company News</p>
       </div>
       <!-- <hr
@@ -181,7 +200,7 @@
           <a href="Internet Collaboration.html">
             <p>Internet Conferencing/Collaboration</p>
           </a>
-          <a href="solutions/Device Management.html">
+          <a href="Device Management.html">
             <p>Device Management</p>
           </a>
         </span>
