@@ -1,0 +1,140 @@
+#banner{
+    background:#161616 url(../img/banner-schoolstream.jpg) no-repeat center top;
+    height: 500px;
+    text-align: center;
+    vertical-align: center; 
+}
+.bnr-tle{
+    height: 80px;
+    display: inline-block;
+    border:1px solid #ffffff;
+    position: relative;
+    top: 260px;
+    padding: 0 100px;
+    vertical-align: middle;
+}
+.bnr-tle p{
+    line-height: 80px;
+    color: #ffffff;
+}
+.t2{
+    color: #fff; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    position: relative; 
+    top: 140px; 
+    font-size: 24px; 
+}
+.content{
+    padding: 60px 0;
+    background: #ffffff;
+}
+.text-con{
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 40px;
+}
+.content-img{
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 40px;
+}
+.learn-more-btn{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background: #4e4e4e;
+    color: #ffffff;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.learn-more-btn:hover{
+    background: #373737;
+}
+.list-list{
+    display: inline-block;
+    padding: 60px 0;
+    max-width: 1320px;
+}
+.ls-tle{
+    padding: 30px 40px;
+    margin:0;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 220px;
+    height: 40px;
+    color: #4e4e4e;
+}
+.ls{
+    min-width: 410px;
+    padding: 0;
+    margin: 10px 10px;
+    display: inline-block;
+    vertical-align: top; 
+    text-align: left;
+}
+.ls-1{
+    height: 60px;
+    /* width: 350px; */
+    padding: 20px;
+    background: #ffffff;
+    color: #4e4e4e;
+    font-size: 20px;
+    border-bottom: #ebebeb solid 2px;
+
+}
+.ls a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.ls-1-icon{
+    display: inline-block;
+    vertical-align: middle;
+    height: 54px;
+    margin: 0 10px 0 0;
+}
+.ls-1-text{
+    display: inline-block;
+    vertical-align: middle;
+    /* width: 266px; */
+    /* font-weight: 400; */
+}
+/* .ls-2{
+    width: 390px;
+    height: 565px;
+    padding: 20px 0;
+    background: #ffffff;
+    list-style: none;
+}
+.ls-2 ul li{
+    list-style: none;
+    height: 30px;
+    padding: 10px 20px;
+}
+.ls-2 ul li a{
+    text-decoration: none;
+    color: #4e4e4e;
+}
+.ls-2 li:hover{
+    background: #ebf0fa;
+}
+.ls-2-icon{
+    margin: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: 26px;
+}
+.ls-2-text{
+    width: 307px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+} */
+@media screen and (max-width: 414px) {
+    .ls{min-width: 355px;margin: 10px;display:block;}
+    .ls-2{height:100%}
+    .ls-1-text{max-width: 232px;}
+    .t2{font-size: 19px;}
+}
