@@ -186,7 +186,7 @@
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.03);
 }
 .list:hover {
-  background: #eef7ff;
+  background: #fbfdff;
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.1);
 }
 .list h3 {

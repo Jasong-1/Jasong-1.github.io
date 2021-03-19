@@ -78,7 +78,7 @@ a:link {
     height: 60px; */
     position: absolute;
     top: 8px;
-    left: 2%;
+    left: 1%;
 }
 .logo img{
     width: 140px;
@@ -103,7 +103,7 @@ a:link {
     color: #fff;
     position: relative;
     font-size: 14px;
-    margin: 0 40px 0 15px;
+    margin: 15px;
   }
   .nav a.button:hover {
     background: #373737;
@@ -333,4 +333,3 @@ a:link {
     /* font-weight: 300; */
     line-height: 1.6em;
   }
-  
