@@ -1,7 +1,12 @@
-.slider-content {position: relative;}
+.slider-content {
+  position: relative;
+  text-align: center;
+}
 .slider-bg-1 {
   max-width: 100%;
 }
+
+/* 左右排版 */
 .index-banner-text {
   text-align: left;
   margin: 0 20px;
@@ -31,6 +36,7 @@
 .bnr_btn:hover{
   background: rgba(255,255,255,0.4);
 }
+
 
 list modal-trigger
 .index-banner-text .title {
