@@ -42,8 +42,9 @@
     margin: 0 auto;
 }
 .news-content-text{
-    font-size: 18px; 
-    font-weight: 500;
+    font-size: 20px; 
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
 }
 .bio-link {
     color: #4e4e4e;
