@@ -1,7 +1,7 @@
 #news-tittle{
     color: #fff;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content:space-between;
     align-items:center;
 }
@@ -21,10 +21,7 @@
 #news-tittle div img{
     max-width: 300px;
 }
-.back-button {
-    margin: 70px auto 30px;
-    width: 300px;
-}
+
 .back-button a{
     color: #fff;
 }
@@ -62,12 +59,12 @@
     display: flex;
     flex-flow:row wrap;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
 }
 .person-card{
     display: flex;
-    flex-flow:row wrap;
-    justify-content:center;
+    flex-flow:column wrap;
+    justify-content:flex-start;
     align-items:center;
     margin: 20px;
     padding: 30px;
@@ -77,19 +74,46 @@
 @media (min-width: 1500px){
     .person-card{
         width: 340px;
+        height: 492px;
+    }
+    .person-card p{
+        width: 320px;
     }
     .section{
         width: 1000px;
         padding: 60px 0;
+    }
+    .news-att img{
+        margin:0 20px 0 0;
+    }
+    .k12tl-intro {
+        margin: 0 0 0 20px;
+    }
+    .back-button {
+        margin: 70px auto 30px;
+        width: 300px;
     }
 }
 @media (max-width:1499px) and (min-width:1120px){
     .person-card{
         width: 340px;
     }
+    .person-card p{
+        width: 320px;
+    }
     .section{
         width: 1000px;
         padding: 60px 0;
+    }
+    .news-att img{
+        margin:0 20px 0 0;
+    }
+    .k12tl-intro {
+        margin: 0 0 0 20px;
+    }
+    .back-button {
+        margin: 70px auto 30px;
+        width: 300px;
     }
 }
 @media (max-width:1120px) and (min-width:539px){
@@ -100,6 +124,16 @@
         width: 80%;
         padding: 60px 0;
     }
+    .news-att img{
+        margin: 0 10px 40px;
+    }
+    .k12tl-intro {
+        margin: 0 10px;
+    }
+    .back-button {
+        margin: 70px auto 30px;
+        width: 300px;
+    }
 }
 @media (max-width: 538px){
     .person-card{
@@ -108,15 +142,16 @@
     .section{
         width: 90%;
     }
+    .back-button {
+        margin: 70px auto 70px;
+        width: 140px;
+    }
 }
 
 .person-card img{
     width: 120px;
     border-radius: 10px;
     margin: 15px;
-}
-.person-card p{
-    width: 320px;
 }
 .news-att {
     margin: 40px auto 20px;
@@ -132,7 +167,6 @@
 }
 .news-att img{
     width: 200px;
-    margin:40px 20px;
 }
 .k12tl-intro{
     width: 74%;
