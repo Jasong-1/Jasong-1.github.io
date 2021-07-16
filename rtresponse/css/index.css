@@ -45,6 +45,7 @@ list modal-trigger
   text-align: left;
   margin: 10px 0;
   font-weight: 400;
+  /* z-index: 10000; */
 }
 #Product{
 	background: #f5f5f5;
