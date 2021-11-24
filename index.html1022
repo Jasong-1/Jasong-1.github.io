@@ -61,8 +61,8 @@
 				<!-- <li><a href="product/partners.html">Partners</a></li> -->
 				<li class="slu_li"><a href="product/CompanyNews.html">News</a></li>
 				<li class="slu_li" style="border: 0px;"><a href="product/ContactUs.html">Contact Us</a></li>
-				<li style="border: 0px;"><a class="button" href="https://clients-partners.astihosted.com/"
-						target="black">Sign Up for Free-Trial</a></li>
+				<li style="border: 0px;"><a class="button" href="https://calendly.com/schoolstream-am/request-for-schoolstream-demo"
+						target="black">REQUEST A DEMO</a></li>
 			</ul>
 		</div>
 	</div>
@@ -74,7 +74,7 @@
 				<p class="text">
 					With only a registration fee, try any of the listed<br>SchoolStream applications with no subscription cost<br>and qualify for additional annual discounts!
 				</p>
-				<a href="https://Clients-Partners.astihosted.com"  class="more" target="_blank">
+				<a href="https://salesportal.astihosted.com/Login3.aspx"  class="more" target="_blank">
 					<button class="button" style="width: 200px;">Start Now!</button>
 				</a>
 			</div>
@@ -142,10 +142,10 @@
 			<!-- <div class="trapezoid"><span class="tag-gift"><i class="fa fa-gift"></i> ONE-YEAR FREE TRIAL</span></div> -->
 		</div>
 		<div class="slider-content">
-			<img class="slider-bg-1" src="./img/banner-Student Registration.jpg" alt="Student Registration With Open Enrollment" />
+			<img class="slider-bg-1" src="./img/banner-Student Registration.jpg" alt="" />
 			<div class="index-banner-text">
 				<p class="title">
-					Student Registration<br>With Open Enrollment </p>
+					Student Registration </p>
 					<span class="tag-gift"><i class="fa fa-gift"></i> ONE-YEAR FREE TRIAL</span>
 				<p class="text">
 					Eliminate paperwork and shorten processing time <br>for student registration and enrollment.</p>
@@ -163,7 +163,7 @@
 					<span class="tag-gift"><i class="fa fa-gift"></i> ONE-YEAR FREE TRIAL</span>
 				<p class="text">• Manage and track your device refresh/recycle periods <br>
 					• Real-time tracking and geo-location capability of all devices</p>
-				<a href="product/Device Management.html" class="more">
+				<a href="product/solutions/Device Management.html" class="more">
 					<button class="bnr_btn button">Click here to learn more</button>
 				</a>
 			</div>
@@ -187,7 +187,7 @@
 			<img class="slider-bg-1" src="./img/banner-Smart Forms Manager 2.0-3.jpg" alt="" />
 			<div class="index-banner-text">
 				<p class="title">
-					Intelligent Forms</p>
+					Smart Forms Manager 2.0</p>
 					<!-- <span class="tag-gift"><i class="fa fa-gift"></i> ONE-YEAR FREE TRIAL</span> -->
 				<p class="text">
 					Updated collaboration view and authority control for different roles.<br/>Easy integration and better compatibility towards advanced technology.</p>
@@ -271,7 +271,7 @@
 										<div style="margin: 30px 0;">
 											<hr class="line"><span style="margin: 0 20px;">OR</span><hr class="line">
 										</div>
-										<a href="https://clients-partners.astihosted.com" target="black"><button style="padding: 10px 40px; background: #4e4e4e; color: #fff; border: 0; border-radius: 4px;">REQUEST A DEMO</button></a>
+										<a href="https://calendly.com/schoolstream-am/request-for-schoolstream-demo" target="black"><button style="padding: 10px 40px; background: #4e4e4e; color: #fff; border: 0; border-radius: 4px;">REQUEST A DEMO</button></a>
 									</div>
 								</li>
 							</ul>
