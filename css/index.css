@@ -379,13 +379,16 @@ h3 {
 }
 #videosfixed a button {
   padding: 16px;
-  margin-right: 4px;
+  margin: 0;
   vertical-align: middle;
   text-decoration: none;
   color: #fff;
   border: 0;
   border-right: solid 1px #fff;
   background-color: rgb(66,161,255);
+}
+#videosfixed a button:hover {
+  background-color: rgb(111, 183, 255);
 }
 
 #videosfixed a svg {
