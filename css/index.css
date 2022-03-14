@@ -361,7 +361,13 @@ h3 {
 .freetrialbanneraicon div a p {
   font-size: 14px;
 }
-
+.banner_link {
+  color: #333;
+  text-decoration: underline;
+}
+.banner_link:hover {
+  color: rgb(66,161,255);
+}
 
 /* Video Fixed Section */
 #videosfixed {
