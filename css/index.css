@@ -335,7 +335,7 @@ h3 {
 
 
 /* Free trial banner icon */
-.freetrialbanneraicon {
+/* .freetrialbanneraicon {
   margin-top: 16px;
 }
 .freetrialbanneraicon a {
@@ -367,11 +367,11 @@ h3 {
 }
 .banner_link:hover {
   color: rgb(66,161,255);
-}
+} */
 
 
 /* Video Fixed Section */
-#videosfixed {
+/* #videosfixed {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -401,7 +401,7 @@ h3 {
 #videosfixed a span {
   vertical-align: middle;
   font-size: 24px;
-}
+} */
 
 
 /* Partner page */
