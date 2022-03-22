@@ -6,7 +6,7 @@
 html body {
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: #4e4e4e;
   font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
@@ -16,7 +16,6 @@ html body {
 a:link {
   text-decoration: none;
 }
-
 a:hover,
 button:hover {
   cursor: pointer;
@@ -35,8 +34,16 @@ button:hover {
 .second-banner-description a:visited {
   color: #fff;
 }
+
+
+
+#top{
+  z-index: 200;
+}
+
+
 .tittle-sec {
-  font-size: 40px;
+  font-size: 2.5em;
   color: #4e4e4e;
   font-weight: 300;
   text-align: center;
@@ -62,6 +69,10 @@ button:hover {
   font-weight: 400;
   text-align: left;
 }
+
+
+
+/* nav bar */
 #top {
   background: #ffffff;
   display: flex;
@@ -111,7 +122,7 @@ button:hover {
   line-height: 40px;
   color: #fff;
   position: relative;
-  font-size: 14px;
+  /* font-size: 14px; */
   margin: 15px;
 }
 .nav a.button:hover {
@@ -198,23 +209,24 @@ button:hover {
   text-decoration: none;
 }
 .button {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 1.25em;
   background: #4e4e4e;
   border: 0;
-  border-radius: 6px;
+  border-radius: 0.4em;
   box-sizing: border-box;
   text-decoration: none;
-  font-size: 16px;
+  /* font-size: 16px; */
   outline: none;
   color: #ffffff;
-  margin: 10px 0;
+  margin: 0.5em 0;
 }
 .button:hover {
   background: #373737;
   cursor: pointer;
 }
+
 #bottom {
   background: #ffffff;
   padding: 40px 0;

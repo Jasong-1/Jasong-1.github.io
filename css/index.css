@@ -61,6 +61,8 @@
   margin: 10px 0;
 }
 @media screen and (max-width: 1200px) {
+
+  /* 导航 */
   #top {
     display: block;
   }
@@ -97,9 +99,9 @@
     border: 0px;
   }
 
-  .nav .main-nav {
+  /* .nav .main-nav {
     padding-bottom: 10px;
-  }
+  } */
   .index-banner-text {
     top: 20%;
   }
@@ -386,7 +388,7 @@ h3 {
   text-decoration: none;
   color: #fff;
   border: 0;
-  border-right: solid 1px #fff;
+  /* border-right: solid 1px #fff; */
   background-color: rgb(66,161,255);
 }
 #videosfixed a button:hover {
