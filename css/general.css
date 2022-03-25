@@ -505,36 +505,39 @@ button:hover {
 	
 	/* 所有子页面背景图 */
 	.solutions-bnr {
-        background: #161616 url(../img/solutions-bnr.jpg) no-repeat 100% 100%;
-		background-size: auto 100%;
+        background: #161616 url(../img/solutions-bnr.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 	.services-bnr {
-	    background: #161616 url(../img/services-bnr.jpg) no-repeat 100% 100%;
-		background-size: auto 100%;
+	    background: #161616 url(../img/services-bnr.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 	.programs-bnr {
-	    background: #161616 url(../img/programs-bnr.png) no-repeat 100% 100%;
-		background-size: auto 100%;
+	    background: #161616 url(../img/programs-bnr.png) no-repeat center;
+		background-size: auto 110%;
 	}
 	.partners-bnr {
-	    background: #161616 url(../img/partners-bnr.jpg) no-repeat 100% 100%;
-		background-size: auto 100%;
+	    background: #161616 url(../img/partners-bnr.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 	.news-bnr {
-	    background: #161616 url(../img/company-news-banner.jpg) no-repeat 100% 100%;
+	    background: #161616 url(../img/company-news-banner.jpg) no-repeat center;
 		background-size: auto 100%;
 	}
 	.contactus-bnr {
-	    background: #161616 url(../img/contactus-bnr.jpg) no-repeat 100% 100%;
-		background-size: auto 100%;
+	    background: #161616 url(../img/contactus-bnr.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 	.lntelligentformsdetails-bnr {
-	    background: #161616 url(../img/lntelligentformsdetails-bnr.png) no-repeat 100% 100%;
-		background-size: auto 100%;
+	    background: #161616 url(../img/banner-project.jpg) no-repeat center;
+		background-size: auto 140%;
 	}
 	.singlesignon-bnr {
-	    background: #161616 url(../img/lntelligentformsdetails-bnr.png) no-repeat 100% 100%;
-		background-size: auto 100%;
+	    background: #161616 url(../img/banner-it.jpg) no-repeat center;
+		background-size: auto 110%;
+	}
+	.app-videopage-bnr {
+		background: url(../img/appstorebnr.jpg) no-repeat center top;
 	}
 	
 	.news-1-bnr {

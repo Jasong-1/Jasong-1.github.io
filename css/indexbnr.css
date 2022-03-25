@@ -114,18 +114,18 @@
 
 /*内容样式*/
 	.slide1 {
-		background: #000 url(../img/index_bnr_freetrial_1.jpg) no-repeat 40%;
-		background-size: auto 100%;
+		background: #000 url(../img/index_bnr_freetrial_1.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 
 	.slide2 {
-		background: #f3f3f3 url(../img/index_bnr_dwl_1.jpg) no-repeat center 100%;
-		background-size: auto 100%;
+		background: #f3f3f3 url(../img/index_bnr_dwl_1.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 
 	.slide3 {
-		background: #fff url(../img/index_bnr_intelligentforms_2.jpg) no-repeat center 100%;
-		background-size: auto 100%;
+		background: #fff url(../img/index_bnr_intelligentforms_2.jpg) no-repeat center;
+		background-size: auto 110%;
 	}
 
 	.swiper-slide {
@@ -274,7 +274,7 @@
 	}
 }
 
-@media screen and (max-width: 1344px) {
+/* @media screen and (max-width: 1344px) {
 	.bnr-content {
 		width: 46%;
 		font-size: 1.5rem;
@@ -288,7 +288,7 @@
 	#videosfixed a span {
 		font-size: 1.5rem;
 	}
-}
+} */
 @media screen and (max-width: 1024px) {
 	.slide2 {
 		background: #ffffff url(../img/index_bnr_dwl_1.jpg) no-repeat 98% 100%;
