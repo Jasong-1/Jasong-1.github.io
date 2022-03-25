@@ -3,7 +3,7 @@ window.onload = function() {
         a.bullets.eq(0).addClass("firsrCurrent")
     }
     var b, a = new Swiper(".index-banner .swiper-container", {
-        autoplay: 1.5e4,
+        autoplay: 1.5e6,
         speed: 1e3,
         loop: !0,
         runCallbacksOnInit: !1,
