@@ -41,6 +41,9 @@ button:hover {
 	background: #373737;
 	cursor: pointer;
 }
+.button:visited {
+	color: #fff;
+}
 
 
 
@@ -75,7 +78,6 @@ button:hover {
 	font-weight: 400;
 	text-align: left;
 }
-
 
 
 /* 导航栏 */
@@ -561,3 +563,76 @@ button:hover {
 	.news-2-bnr {
 		
 	}
+
+
+/* 子页面样式 */
+.subpage-section {
+	padding: 6rem 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.subpage-section-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.subpage-section h1 {
+	margin: 0 auto 3.75rem;
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+
+.subpage-section-content .subpage-item {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+}
+.subpage-section-content h3 {
+	margin-top: 0.8rem;
+	font-weight: 400;
+}
+
+
+
+
+/* contact us page */
+.contact-item {
+	padding: 0 3rem;
+	border-right: #e5e5e5 1px solid;
+}
+.contact-item a  {
+    display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+    text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	width: 17rem;
+	height: 2rem;
+    padding: 0.25rem;
+    border: #333 solid 1px;
+    border-radius: 0.5rem;
+}
+.contact-item a:visited  {
+    color: #333;
+}
+.contact-item img {
+	width: 1.7rem;
+	margin-right: 0.7rem;
+}
+
+@media screen and (max-width: 755px) {
+	.contact-item {
+		padding: 2rem 3rem;
+		border-right: none;
+	}
+}
