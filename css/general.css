@@ -15,10 +15,15 @@ html body {
 	padding-top: 5rem;
 }
 
+a {
+	color: #333;
+}
 a:link {
 	text-decoration: none;
 }
-
+a:visited {
+	color: #333;
+}
 a:hover,
 button:hover {
 	cursor: pointer;
@@ -439,9 +444,6 @@ button:hover {
 		margin-top: 0.8rem;
 		font-weight: 400;
 }
-	.index-section-content a:visited {
-			color: #333;
-	}
 
 	.index-solution-item {
 		width: 15rem;
