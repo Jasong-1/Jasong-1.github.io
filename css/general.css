@@ -643,13 +643,13 @@ solutions page
  */
 
 .solutions-applications {
-	padding: 5rem 0;
+	padding: 3rem 0;
 	margin: 0 auto;
 	max-width: 1328px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: stretch;
 }
 
 .solutins-applications a {
@@ -665,6 +665,7 @@ solutions page
 	padding: 1.25rem;
 	margin: 0.875rem 0.75rem;
 	background-color: #fff;
+	flex-grow: <2>;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -702,8 +703,7 @@ solutions page
 }
 
 .application-area-list-app {
-	height: 1.875rem;
-	padding: 0.5rem;
+	padding: 0.7rem;
 }
 
 .application-area-list-app img {
@@ -714,8 +714,8 @@ solutions page
 }
 
 .application-area-list-form {
-	height: 1.25rem;
-	padding: 0.25rem;
+	/* height: 1.25rem; */
+	padding: 0.3rem;
 	padding-left: 2.8rem;
 }
 
