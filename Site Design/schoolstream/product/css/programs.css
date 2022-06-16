@@ -1,0 +1,18 @@
+.content{
+    padding: 60px 0;
+    background: #ffffff;
+}
+.text-con{
+    width: 400px;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 40px;
+}
+.content-img{
+    width: 500px;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 40px;
+}

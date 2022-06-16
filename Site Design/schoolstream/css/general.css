@@ -1,0 +1,844 @@
+/* 
+全局样式
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+html body {
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+	color: #333333;
+	font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "Helvetica Neue",
+		"Helvetica", "Arial", sans-serif;
+	background: #f5f5f5;
+	padding-top: 5rem;
+}
+
+a {
+	color: #333;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+}
+
+a:hover,
+button:hover {
+	cursor: pointer;
+}
+
+.button {
+	background: #4e4e4e;
+	border-radius: 0.4rem;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0.25rem 1rem;
+}
+
+.button:hover {
+	background: #373737;
+	cursor: pointer;
+}
+
+.button:visited {
+	color: #fff;
+}
+
+
+
+
+
+.tittle-sec {
+	font-size: 2.5em;
+	color: #4e4e4e;
+	font-weight: 300;
+	text-align: center;
+	margin: 40px 20px 80px;
+}
+
+.subtitle {
+	font-size: 26px;
+	color: #777777;
+	font-weight: 300;
+	text-align: center;
+	/* margin: 40px 20px 80px;   */
+}
+
+.tittle-row {
+	margin: 20px 20px 10px;
+	/* font-weight: 600; */
+	font-size: 16px;
+	color: #222;
+}
+
+.text {
+	font-size: 18px;
+	color: #4e4e4e;
+	font-weight: 400;
+	text-align: left;
+}
+
+
+/* 导航栏 */
+#top {
+	box-sizing: border-box;
+	background: #ffffff;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.06);
+	padding: 1.25rem;
+}
+
+/* logo 和 菜单按钮 */
+
+.logo-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo img {
+	width: 13.75rem;
+}
+
+.hamburger-menu {
+	display: none;
+	height: 100%;
+	line-height: 100%;
+	font-size: 1.375rem;
+}
+
+.hamburger-menu i:hover {
+	cursor: pointer;
+}
+
+/*导航*/
+
+/* 导航和免费试用按钮布局 */
+.nav-wrap {
+	font-size: 1.125rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 导航布局 */
+.main-nav {
+	z-index: 999;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/* 导航item样式*/
+.nav-wrap a {
+	padding: 0 1rem;
+	color: #333333;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.nav-wrap a:hover {
+	color: #3e85eb;
+}
+
+/* 导航栏下拉按钮icon样式 */
+.nav-wrap i {
+	font-size: 0.5rem;
+	font-weight: normal;
+	position: relative;
+	top: -3px;
+}
+
+/* 导航栏试用按钮样式*/
+.nav-wrap .button {
+	color: #fff;
+	margin-left: 1rem;
+	padding: 0.25rem 1rem;
+	white-space: nowrap;
+}
+
+.nav-wrap .button:hover {
+	background: #373737;
+	color: #fff;
+}
+
+
+/* 当前页面标识 */
+.nav-wrap>ul>li.active>a {
+	color: #3e85eb;
+}
+
+.nav-wrap>ul>li>ul>li.active>a {
+	color: #3e85eb;
+}
+
+
+/* 子菜单位置 */
+.nav-wrap>ul>li {
+	position: relative;
+	font-weight: 400;
+}
+
+/* 子菜单列表样式*/
+.nav-wrap ul li ul {
+	visibility: hidden;
+	position: absolute;
+	left: 0.4rem;
+	top: 1.4rem;
+	z-index: 999;
+	background: #ffffff;
+	padding: 0;
+	border-radius: 6px;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+	text-align: left;
+}
+
+/* 子菜单item样式 */
+.nav-wrap ul ul li a {
+	display: block;
+	padding: 0.8rem;
+}
+
+.nav-wrap ul ul li a:hover {
+	border-radius: 0.25rem;
+	background: #f5f5f5;
+}
+
+/* 鼠标悬停时,子菜单可见 */
+.nav-wrap ul li:hover ul,
+.nav-wrap ul a:hover ul {
+	visibility: visible;
+}
+
+
+/* 移动端样式 */
+@media screen and (max-width: 1200px) {
+	#top {
+		display: block;
+		border-bottom: solid #e5e5e5 1px;
+	}
+
+	.logo-wrap {
+		width: 100%;
+		/* padding-bottom: 1rem; */
+	}
+
+	/* 菜单按钮可见 */
+	.hamburger-menu {
+		display: block;
+	}
+
+	/* 取消导航和按钮样式 */
+	.nav-wrap {
+		display: none;
+	}
+
+	/* 导航样式重置 */
+	.nav-wrap a {
+		display: block;
+		padding: 0.8rem;
+	}
+
+	.main-nav {
+		display: block;
+		margin-top: 1rem;
+		border-top: solid #e5e5e5 1px;
+	}
+
+	.nav-wrap>ul>li {
+		display: block;
+		border-bottom: solid #e5e5e5 1px;
+		text-align: left;
+	}
+
+	/* 子菜单可见*/
+	.nav-wrap ul li ul {
+		visibility: visible;
+		position: static;
+		box-shadow: 0 0 0;
+		padding-left: 2.5rem;
+	}
+
+	.nav-wrap .button {
+		margin: 0.4rem 0;
+		text-align: center;
+	}
+}
+
+
+
+/* 页脚 */
+.footer {
+	background: #ffffff;
+	padding: 2.5rem;
+	border-bottom: #f5f5f5 solid 2px;
+	border-top: #f5f5f5 solid 2px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #4e4e4e;
+}
+
+.footer ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.footer ul li {
+	height: 100%;
+}
+
+.footer ul li svg {
+	margin-right: 0.6rem;
+}
+
+.footer-clomn {
+	text-align: left;
+	margin: 1.25rem;
+	font-size: 0.8rem;
+	color: #4e4e4e;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-decoration: none;
+	width: 14rem;
+}
+
+.footer-tle {
+	font-size: 20px;
+	color: #4e4e4e;
+	margin: 10px 0;
+	font-weight: 3=400;
+}
+
+.footer-clomn span a p {
+	margin: 12px 0;
+}
+
+.footer-clomn span p {
+	margin: 12px 0;
+}
+
+/* 页脚2 */
+.footer2 {
+	background: #ffffff;
+	padding: 30px 20px;
+	color: #4e4e4e;
+	font-size: 12px;
+}
+
+.footer2 p {
+	margin: 0;
+}
+
+
+/* 弹窗 */
+#requestDemoDialog .button {
+	background: #4e4e4e;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	font-size: 14px;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+}
+
+#requestDemoDialog .button:hover {
+	text-decoration: none;
+	background: #373737;
+}
+
+#requestDemoDialog p {
+	margin: 1rem 0;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 16px;
+}
+
+#requestDemoDialog a {
+	color: #3e85eb;
+}
+
+#requestDemoDialog a:hover {
+	text-decoration: underline;
+}
+
+.blocker {
+	z-index: 9999;
+}
+
+
+/* .more {
+  display: block;
+} */
+.tag-gift {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 14px;
+	/* font-weight: bold; */
+	margin-bottom: 10px;
+	position: relative;
+	top: 3px;
+	background: #ed7d21;
+	/* left: 54px; */
+}
+
+.tag-gift i {
+	position: relative;
+	top: 1px;
+	font-size: 16px;
+	margin-right: 4px;
+}
+
+.trapezoid {
+	border-bottom: 30px solid #eeb122;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 230px;
+	position: absolute;
+	right: -53px;
+	top: 0;
+	transform: rotate(45deg);
+}
+
+
+.index-section {
+	padding: 3.75rem 0 6rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+.index-section-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.index-section h1 {
+	margin: 2.5rem auto 3.75rem;
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+.index-section-content .index-item {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1.2rem;
+	margin: 1.2rem;
+	text-decoration: none;
+}
+.index-section-content h3 {
+	margin-top: 0.8rem;
+	font-weight: 400;
+}
+.index-solution-item {
+	width: 15rem;
+	height: 10rem;
+	background: #ffffff;
+	border-radius: 3%;
+}
+.index-solution-item:hover {
+	box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.2);
+}
+.index-service-item {
+	width: 14rem;
+}
+.index-service-item>div {
+	/* background-color: #fff; */
+	width: 9rem;
+	height: 9rem;
+	border-radius: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.index-service-item>div:hover {
+	border: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 
+子页面复用样式
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ */
+
+/* banner */
+.second-bnr {
+	min-height: 55vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	padding: 2rem;
+}
+
+.second-bnr>h1 {
+	color: #FFFFFF;
+	font-size: 4rem;
+}
+
+.second-bnr>hr {
+	width: 20rem;
+	border: none;
+	border-bottom: 2px solid #fff;
+	margin: 2rem 0;
+}
+
+.second-bnr>ul>li {
+	list-style: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 1rem;
+	max-width: 100rem;
+}
+
+.second-bnr>ul>li a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.second-bnr>ul>li a:active {
+	color: #fff;
+	font-weight: bold;
+}
+
+.second-bnr>ul>li a:hover {
+	text-decoration: underline;
+}
+
+.second-bnr>ul>li a:visited {
+	color: #fff;
+}
+
+
+/* 所有子页面banner背景图 */
+.solutions-bnr {
+	background: #161616 url(../img/solutions-bnr.jpg) no-repeat center;
+	background-size: auto 110%;
+}
+
+.services-bnr {
+	background: #161616 url(../img/services-bnr.jpg) no-repeat center;
+	background-size: auto 110%;
+}
+
+.programs-bnr {
+	background: #161616 url(../img/programs-bnr.png) no-repeat center;
+	background-size: auto 110%;
+}
+
+.partners-bnr {
+	background: #161616 url(../img/partners-bnr.jpg) no-repeat center;
+	background-size: auto 110%;
+}
+
+.news-bnr {
+	background: #161616 url(../img/company-news-banner.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+.contactus-bnr {
+	background: #161616 url(../img/contactus-bnr.jpg) no-repeat center;
+	background-size: auto 110%;
+}
+
+.lntelligentformsdetails-bnr {
+	background: #161616 url(../img/banner-project.jpg) no-repeat center;
+	background-size: auto 140%;
+}
+
+.singlesignon-bnr {
+	background: #161616 url(../img/banner-it.jpg) no-repeat center;
+	background-size: auto 110%;
+}
+
+.app-videopage-bnr {
+	background: url(../img/appstorebnr.jpg) no-repeat center top;
+}
+
+.news-1-bnr {}
+
+.news-2-bnr {}
+
+/* 子页面样式 */
+.subpage-section {
+	padding: 6rem 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+.subpage-section-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.subpage-section h1 {
+	margin: 0 auto 3.75rem;
+	font-size: 2.5rem;
+	font-weight: normal;
+}
+.subpage-section-content .subpage-item {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+}
+.subpage-section-content h3 {
+	margin-top: 0.8rem;
+	font-weight: 400;
+}
+
+
+/* 
+solutions page
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ */
+
+.solutions-applications {
+	padding: 3rem 0;
+	margin: 0 auto;
+	max-width: 1328px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.solutins-applications a {
+	text-decoration: none;
+}
+
+.solutions-applications p {
+	text-align: left;
+}
+
+.application-area {
+	width: 21.875rem;
+	padding: 1.25rem;
+	margin: 0.875rem 0.75rem;
+	background-color: #fff;
+	flex-grow: <2>;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.application-area-title {
+	width: 100%;
+	padding-bottom: 1.25rem;
+	font-size: 1.25rem;
+	border-bottom: #ebebeb solid 2px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.application-area-title img {
+	height: 3.625rem;
+	margin-right: 0.625rem;
+}
+
+.application-area-list {
+	padding-top: 1.25rem;
+	list-style: none;
+}
+
+.application-area-list-app,
+.application-area-list-form {
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.application-area-list-app {
+	padding: 0.7rem;
+}
+
+.application-area-list-app img {
+	margin-right: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	height: 26px;
+}
+
+.application-area-list-form {
+	/* height: 1.25rem; */
+	padding: 0.3rem;
+	padding-left: 2.8rem;
+}
+
+
+
+/* why we are different section */
+.whywearedifferent-item {
+	display: inline-block;
+	width: 15.6rem;
+	height: 17.5rem;
+	padding: 1.8rem;
+}
+
+.whywearedifferent-item img {
+	width: 150px;
+}
+
+.whywearedifferent-item h4 {
+	padding: 1.25rem 0 0.65rem;
+}
+
+/* how does it work img */
+.howdoesitwork {
+	background: rgb(113, 110, 107) url(../img/img4.png) no-repeat center;
+	background-size: auto;
+	color: #ffffff;
+	font-size: 1.25rem;
+}
+
+.howdoesitwork>h1,
+.howdoesitwork>p {
+	margin-bottom: 2rem;
+	width: 80%;
+}
+
+.howdoesitwork-img {
+	width: 90%;
+	align-items: center;
+}
+
+.howdoesitwork-img>img {
+	width: 56rem;
+}
+
+.legend {
+	margin: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.legend>p {
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.legend>p>button {
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 0;
+	border-radius: 100%;
+}
+
+.legend>p>img {
+	height: 1.25rem;
+}
+
+.legend>p>button,
+.legend>p>img {
+	vertical-align: middle;
+	margin-right: 0.8rem;
+}
+
+@media screen and (max-width: 990px) {
+	.legend {
+		align-items: center;
+	}
+
+	.howdoesitwork-img>img {
+		width: 100%;
+	}
+}
+
+
+
+
+/* 
+contact us page
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+ */
+.contact-item {
+	padding: 0 3rem;
+	border-right: #e5e5e5 1px solid;
+}
+
+.contact-item a {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	width: 17rem;
+	height: 2rem;
+	padding: 0.25rem;
+	border: #333 solid 1px;
+	border-radius: 0.5rem;
+}
+
+.contact-item a:visited {
+	color: #333;
+}
+
+.contact-item img {
+	width: 1.7rem;
+	margin-right: 0.7rem;
+}
+
+@media screen and (max-width: 755px) {
+	.contact-item {
+		padding: 2rem 3rem;
+		border-right: none;
+	}
+}

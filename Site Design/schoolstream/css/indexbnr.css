@@ -1,0 +1,460 @@
+@charset "utf-8";
+
+/* CSS Document */
+.index-banner {
+	width: 100%;
+	height: 100vh;
+	/* overflow: hidden; */
+}
+
+.index-banner .swiper-container {
+	margin-top: -4.25rem;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 5%;
+	height: 100%;
+	top: 0;
+	background: none;
+}
+
+.swiper-button-prev {
+	left: 0;
+}
+
+.swiper-button-next {
+	right: 0;
+}
+
+.swiper-button-prev span,
+.swiper-button-next span {
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	left: 1.25rem;
+	top: 50%;
+	margin-top: -2rem;
+	border-radius: 100%;
+	background: rgba(255, 255, 255, 0.5) url(../img/arrows_blank.png) no-repeat center 1.0625rem;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.swiper-button-next span {
+	background: rgba(255, 255, 255, 0.5) url(../img/arrows_blank.png) no-repeat center -4.4375rem;
+	left: auto;
+	right: 1.25rem;
+}
+
+.swiper-button-prev:hover span,
+.swiper-button-next:hover span {
+	opacity: 1;
+}
+
+/*分页器*/
+.index-banner .swiper-pagination {
+	top: auto;
+	bottom: 3rem;
+	background: none;
+}
+
+.index-banner .swiper-pagination-bullet {
+	display: inline-block;
+	width: 3.125rem;
+	height: 1.8rem;
+	margin: 0 0.1875rem;
+	cursor: pointer;
+	background: none;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.index-banner .swiper-pagination-bullet span {
+	width: 3.125rem;
+	height: 0.25rem;
+	display: block;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.index-banner .swiper-pagination-bullet-active span {
+	background: gray;
+}
+
+.index-banner .autoplay .swiper-pagination-bullet-active span {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.index-banner .swiper-pagination-bullet i {
+	background: gray;
+	height: 0.25rem;
+	transform: scaleX(0);
+	transform-origin: 0;
+	display: block;
+}
+
+.index-banner .autoplay .firsrCurrent i {
+	transition: transform 15.5s linear;
+	transform: scaleX(1);
+}
+
+.index-banner .autoplay .current i {
+	transition: transform 15.5s linear;
+	transform: scaleX(1);
+}
+
+.index-banner .autoplay .replace span {
+	background: gray;
+}
+
+
+/*内容样式*/
+	.slide1 {
+		background: #000 url(../img/index_bnr_freetrial_1.jpg) no-repeat center;
+		background-size: auto 110%;
+	}
+
+	.slide2 {
+		background: #f3f3f3 url(../img/index_bnr_dwl_1.jpg) no-repeat center;
+		background-size: auto 110%;
+	}
+
+	.slide3 {
+		background: #fff url(../img/index_bnr_intelligentforms_2.jpg) no-repeat center;
+		background-size: auto 110%;
+	}
+
+	.swiper-slide {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.bnr-content {
+		text-align: left;
+		margin-left: 7rem;
+		width: 40%;
+		font-size: 1.4rem;
+		/* padding-left: 2rem; */
+	}
+
+	.bnr-content p {
+		margin: 1rem 0 1.5rem;
+	}
+	
+	.bnr-content .bnr-link {
+		text-decoration: underline;
+		color: #333;
+	}
+	
+	.bnr-content .bnr-link:hover {
+		color: rgb(2, 168, 239);
+	}
+
+
+	
+/* Free trial banner icon */
+.freetrialbanneraicon {
+	/* margin-top: 1rem; */
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+.freetrialbanneraicon a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: #333;
+}
+
+.freetrialbanneraicon a div {
+	width: 10rem;
+	height: 6.3rem;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 0.4rem;
+	text-align: center;
+	padding: 0.3rem;
+	margin: 0.3rem;
+}
+
+.freetrialbanneraicon a div:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 0rem 0 rgb(0, 0, 0, 0.3);
+}
+
+.freetrialbanneraicon a div svg {
+	width: 80%;
+}
+
+.freetrialbanneraicon a div p {
+	font-size: 0.85rem;
+	margin: 0;
+}
+
+.banner_link {
+	color: #333;
+}
+
+.banner_link:hover {
+	color: rgb(66, 161, 255);
+}
+
+
+/* Video Fixed Section */
+#videosfixed {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin: 0 auto;
+	background-color: rgb(66, 161, 255);
+	vertical-align: middle;
+	z-index: 999;
+}
+
+#videosfixed a button {
+	padding: 0.7rem;
+	margin: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+	border: 0;
+	/* border-right: solid 1px #fff; */
+	background-color: rgb(66, 161, 255);
+}
+
+#videosfixed a button:hover {
+	background-color: rgb(111, 183, 255);
+}
+
+#videosfixed a svg {
+	vertical-align: middle;
+	width: 2rem;
+	/* height: 2rem; */
+}
+
+#videosfixed a span {
+	vertical-align: middle;
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1344px) {
+
+	.bnr-content {
+		width: 44%;
+		font-size: 1.2rem;
+	}
+	/* banner1 icon 列表 */
+	.freetrialbanneraicon a div {
+		width: 8.6rem;
+		height: 5.8rem;
+	}
+	.freetrialbanneraicon a div svg {
+		width: 60%;
+	}
+	.freetrialbanneraicon a div p {
+		font-size: 0.8rem;
+		margin: 0;
+	}
+	
+	/* Video Fixed Section */
+	#videosfixed a button {
+		padding: 0.5rem;
+	}
+	#videosfixed a svg {
+		width: 1.2rem;
+	}
+	#videosfixed a span {
+		font-size: 1rem;
+	}
+}
+
+/* @media screen and (max-width: 1344px) {
+	.bnr-content {
+		width: 46%;
+		font-size: 1.5rem;
+	}
+	#videosfixed a button {
+		padding: 0.8rem;
+	}
+	#videosfixed a svg {
+		width: 1.6rem;
+	}
+	#videosfixed a span {
+		font-size: 1.5rem;
+	}
+} */
+@media screen and (max-width: 1024px) {
+	.slide2 {
+		background: #ffffff url(../img/index_bnr_dwl_1.jpg) no-repeat 98% 100%;
+		background-size: auto 60%;
+	}
+	
+	.slide3 {
+		background: rgb(239,239,239) url(../img/index_bnr_intelligentforms_2.jpg) no-repeat 80% 300%;
+		background-size: auto 90%;
+	}
+	.swiper-slide {
+		display: block;
+	}
+	.bnr-content{
+		margin: 0;
+		width: 100%;
+	}
+	.bnr-content1 {
+		width: 58%;
+		height: 100%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: left;
+		margin-left: 5.5rem;
+	}
+
+	.bnr-content2 {
+		width: 80%;
+		height: 40%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 2rem auto 0;
+		padding: 0 1rem;
+	}
+	.bnr-content3 {
+		width: 80%;
+		height: 40%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 2rem auto 0;
+		padding: 0 1rem;
+	}
+}
+@media screen and (max-width: 1182px) {
+	/*分页器*/
+	.index-banner .swiper-pagination {
+		top: auto;
+		bottom: 6.6rem;
+		background: none;
+	}
+}
+@media screen and (max-width: 700px){
+	.slide1 {
+		background: #000 url(../img/index_bnr_freetrial_1.jpg) no-repeat 40%;
+		background-size: auto 100%;
+	}
+	.slide2 {
+		background: #ffffff url(../img/index_bnr_dwl_1.jpg) no-repeat 93% 80%;
+		background-size: auto 40%;
+	}
+	
+	.slide3 {
+		background: rgb(239,239,239) url(../img/index_bnr_intelligentforms_2.jpg) no-repeat 75% 200%;
+		background-size: auto 80%;
+	}
+	.swiper-slide {
+		display: block;
+	}
+	.bnr-content{
+		margin: 0;
+		width: 100%;
+		font-size: 1.2rem;
+	}
+	.bnr-content1 {
+		width: 90%;
+		height: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	.bnr-content2 {
+		width: 90%;
+		height: 60%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+	.bnr-content3 {
+		width: 90%;
+		height: 60%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+	/*分页器*/
+	.index-banner .swiper-pagination {
+		top: auto;
+		bottom: 9rem;
+		background: none;
+	}
+	/* banner icon 列表*/
+	.freetrialbanneraicon {
+		justify-content: center;
+		align-items: center;
+	}
+	.freetrialbanneraicon a div {	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 8rem;
+		height: 3.5rem;
+		/* background: linear-gradient(261.91deg, rgba(108, 199, 76, 0.8) 0%, rgba(0, 167, 239, 0.8) 100%); */
+		background: rgb(0, 167, 239);
+		/* text-align: center; */
+	}
+	.freetrialbanneraicon a div:hover {
+		background: rgb(0, 179, 255);
+	}
+	.freetrialbanneraicon a svg {
+		display: none;
+	}
+	.freetrialbanneraicon a div p {
+		font-size: 1rem;
+		/* font-weight: 600; */
+		color: #fff;
+	}
+	
+	#videosfixed a button {
+		padding: 0.8rem;
+		width: 100%;
+		border-bottom: #FFFFFF 1px solid;
+	}
+	#videosfixed a svg {
+		width: 1.2rem;
+	}
+	#videosfixed a span {
+		font-size: 1rem;
+	}
+}
+
+
+
+
+
