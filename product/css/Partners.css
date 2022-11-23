@@ -1,0 +1,26 @@
+#partner-ls{
+    background: #ffffff;
+    padding: 80px 0;
+}
+.partner-ls{
+    display: inline-block;
+    width: 220px;
+    height: 161px;
+    /* height: 280px;
+    padding: 30px; */
+    margin: 40px;
+    vertical-align: top;
+    text-align: center;
+}
+.partner-icon{
+    /* background: #42a1ff; */
+    width: 200px;
+    height: 200px;
+    /* border: #42a1ff solid 1px; */
+    margin: 0;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.diff:hover{
+    background: #ebf0fa;
+}
