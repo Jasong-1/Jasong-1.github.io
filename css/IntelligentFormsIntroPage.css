@@ -217,7 +217,7 @@ button {
 }
 
 .company-video-container {
-    background-color: var(--color-bg-lightgray-10);
+    background-color: var(--color-btn-active-bg);
 }
 
 .company-video-content {
@@ -355,7 +355,46 @@ button {
 }
 
 .tab-pane-1 {
-    background: url(../img/tab-content-img-1.png);
+    background: url(../img/tab-content-img-01.png) no-repeat 0% 100%;
+    background-size: auto 100%
+}
+
+.tab-pane-2{
+    background: url(../img/tab-content-img-02.png) no-repeat 0% 100%;
+    background-size: auto 100%
+}
+
+.tab-pane-3 {
+    background: url(../img/tab-content-img-03.png) no-repeat center;
+    background-size: auto 100% ;
+}
+.tab-pane-4 {
+    background: url(../img/tab-content-img-04.png) no-repeat center;
+    background-size: 100% auto;
+}
+.tab-pane-5 {
+    background: url(../img/tab-content-img-05.png) no-repeat center;
+    background-size: auto 100%;
+}
+.tab-pane-6 {
+    background: url(../img/tab-content-img-06.png) no-repeat center;
+    background-size: 100% auto;
+}
+.tab-pane-7 {
+    background: url(../img/tab-content-img-07.png) no-repeat center;
+    background-size: 100% auto;
+}
+.tab-pane-8 {
+    background: url(../img/tab-content-img-08.png) no-repeat center;
+    background-size: 100% auto;
+}
+.tab-pane-9 {
+    background: url(../img/tab-content-img-09.png) no-repeat center;
+    background-size: auto 100% ;
+}
+.tab-pane-10 {
+    background: url(../img/tab-content-img-10.png) no-repeat center;
+    background-size: 100% auto;
 }
 
 .more-feature {
