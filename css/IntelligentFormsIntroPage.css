@@ -273,6 +273,7 @@ button {
 
 .mb-3 {
     margin-right: 1rem !important;
+    margin-bottom: 0 !important;
     /* border-radius: 0.5rem; */
 }
 
@@ -338,13 +339,14 @@ button {
     background: var(--color-bg-defult);
     box-shadow: 2px 3px 10px 2px #00000005;
     padding: 1rem;
-    border-radius: var(--item-radius-medium);
+    border-radius: 0.8rem;
 }
 
 .tab-pane {
     background-color: var(--color-bg-defult);
     height: 100%;
     font-size: 200px;
+    border: 1px solid #00000010;
     border-radius: var(--item-radius-medium);
     color: var(--color-theme);
     display: flex;
