@@ -33,13 +33,13 @@
 
 /* 变量嵌套 */
 :root {
-    --color-text-defult: var(--color-grayB0);
-    --color-text-light-defult: var(--color-white100);
+    --color-text-default: var(--color-grayB0);
+    --color-text-light-default: var(--color-white100);
     --color-text-secondary:var(--color-gray70);
     --color-text-theme: var(--color-theme50);
 
     --color-bg-theme: var(--color-theme50);
-    --color-bg-defult: var(--color-white100);
+    --color-bg-default: var(--color-white100);
     --color-bg-lightgray-10: var(--color-gray05);
 
 
@@ -66,8 +66,8 @@ html {
     margin: 0;
     text-align: center;
     font-size: 1.1rem;
-    background: var(--color-bg-defult);
-    color: var(--color-text-defult);
+    background: var(--color-bg-default);
+    color: var(--color-text-default);
 }
 
 
@@ -84,7 +84,7 @@ button {
 /* btn style */
 
 .btn-primary {
-    color: var(--color-text-light-defult);
+    color: var(--color-text-light-default);
     background-color: var(--color-btn-theme-solid-bg);
     border: 0;
 }
@@ -126,7 +126,7 @@ button {
 }
 
 .btn-outline-light svg path {
-    fill: var(--color-text-light-defult);
+    fill: var(--color-text-light-default);
 }
 
 .btn-outline-light:hover {
@@ -139,7 +139,7 @@ button {
     fill: var(--color-white80);
 }
 
-/* .btn-size-defult  {
+/* .btn-size-default  {
     margin: 1rem;
     padding: 0.3rem 1rem;
     font-size: 1.1rem;
@@ -161,7 +161,7 @@ button {
 
 .intro-header-container {
     background-color: var(--color-bg-theme);
-    color: var(--color-text-light-defult);
+    color: var(--color-text-light-default);
     
 }
 
@@ -288,7 +288,7 @@ button {
 .tab-light {
     border: 0;
     background-color: var(--color-btn-light-solid-bg);
-    color: var(--color-text-defult);
+    color: var(--color-text-default);
     text-align: left;
     /* height: 4rem; */
     display: flex;
@@ -336,14 +336,14 @@ button {
 .tab-content {
     width: 65%;
     /* height: 100%; */
-    background: var(--color-bg-defult);
+    background: var(--color-bg-default);
     box-shadow: 2px 3px 10px 2px #00000005;
     padding: 1rem;
     border-radius: 0.8rem;
 }
 
 .tab-pane {
-    background-color: var(--color-bg-defult);
+    background-color: var(--color-bg-default);
     height: 100%;
     font-size: 200px;
     border: 1px solid #00000010;
@@ -426,7 +426,7 @@ button {
 
 .feature-list-item {
     border-radius: var(--item-radius-medium);
-    background-color: var(--color-bg-defult);
+    background-color: var(--color-bg-default);
     padding: 1rem;
     margin: 2rem 0;
     box-shadow: 2px 3px 10px 2px #dfecfc;
@@ -478,7 +478,7 @@ font-weight: 600;
     padding: 1rem;
     text-align: left;
     width: 50%;
-    background-color: var(--color-bg-defult);
+    background-color: var(--color-bg-default);
     border-radius: var(--item-radius-medium);
     box-shadow: 2px 3px 10px 2px #dfecfc;
 }
@@ -527,7 +527,7 @@ td {
     /* width: 30%; */
     padding: 0.5rem 1rem;
     /* text-align: left; */
-    color: var(--color-text-light-defult);
+    color: var(--color-text-light-default);
     border-radius: 2px;
     margin: 4px;
 
@@ -540,25 +540,29 @@ td {
 
 .footer-container {
     background-color: var(--color-bg-theme);
-    color: var(--color-text-light-defult);
+    color: var(--color-text-light-default);
 }
 .footer-content {
     max-width: var(--breakpoint-l);
     margin: 0 auto;
 }
-/* .footer-content button {
-    width: 36%;
-} */
+
+.footer-content button span {
+    line-height: 100%;
+}
 
 .footer-content h1 {
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
 
-.footer-content div {
+/* .footer-content div {
     margin-top: 1.5rem;
-}
+} */
 
+.footer-content hr {
+    border-color: var(--color-text-light-default);
+}
 
 @media only screen and (max-width:996px) and (min-width: 540px) {
     .intro-section {
