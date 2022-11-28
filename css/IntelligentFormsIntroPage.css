@@ -1,11 +1,17 @@
 /* 全局变量 */
 /* 色板 */
 :root {
+    --color-theme10: #00A7EF10;
     --color-theme15: #00A7EF15;
-    --color-theme30: #00A7EF40;
-    --color-theme50: #00A7EF;
-    --color-theme80: #0091cf;
-    --color-theme100: #0072a2;
+    --color-theme20: #00A7EF20;
+    --color-theme30: #00A7EF30;
+    --color-theme40: #00A7EF40;
+    --color-theme50: #00A7EF50;
+    --color-theme65: #00A7EF65;
+    --color-theme80: #00A7EF80;
+    --color-theme100: #00A7EF;
+    --color-theme150: #0091cf;
+    --color-theme200: #0072a2;
 
     --color-gray05: #00000009;
     --color-gray10: #00000010;
@@ -36,27 +42,29 @@
     --color-text-default: var(--color-grayB0);
     --color-text-light-default: var(--color-white100);
     --color-text-secondary:var(--color-gray70);
-    --color-text-theme: var(--color-theme50);
+    --color-text-theme: var(--color-theme100);
 
-    --color-bg-theme: var(--color-theme50);
+    --color-bg-theme: var(--color-theme100);
     --color-bg-default: var(--color-white100);
+    --color-bg-theme-light-m: var(--color-theme10);
+    --color-bg-theme-light-l: var(--color-theme15);
     --color-bg-lightgray-10: var(--color-gray05);
 
 
     --color-btn-theme-solid-text: var(--color-white100);
-    --color-btn-theme-solid-bg: var(--color-theme50);
-    --color-btn-theme-solid-bg-hover: var(--color-theme80);
+    --color-btn-theme-solid-bg: var(--color-theme100);
+    --color-btn-theme-solid-bg-hover: var(--color-theme150);
 
-    --color-btn-light-solid-text: var(--color-theme50);
+    --color-btn-light-solid-text: var(--color-theme100);
     --color-btn-light-solid-bg: var(--color-white100);
     --color-btn-light-solid-bg-hover: var(--color-white80);
 
 
-    --color-btn-theme-outline: var(--color-theme50);
-    --color-btn-theme-outline-hover: var(--color-theme80);
-    --color-btn-theme-outline-bg-hover:var(--color-theme15);
+    --color-btn-theme-outline: var(--color-theme100);
+    --color-btn-theme-outline-hover: var(--color-theme150);
+    --color-btn-theme-outline-bg-hover:var(--color-theme20);
 
-    --color-tab-light-solid-svg:var(--color-theme30);
+    --color-tab-light-solid-inactive-svg:var(--color-theme65);
     
     --color-btn-active-bg: var(--color-theme15);
 }
@@ -66,7 +74,7 @@ html {
     margin: 0;
     text-align: center;
     font-size: 1.1rem;
-    background: var(--color-bg-default);
+    background: #fff;
     color: var(--color-text-default);
 }
 
@@ -179,7 +187,9 @@ button {
     font-weight: 400;
     margin: 0.2rem 0 1.8rem 0;
 }
-
+.essential-container {
+    background-color: var(--color-bg-default);
+}
 .essential-content {
     max-width: var(--breakpoint-l);
     margin: 0 auto;
@@ -217,7 +227,7 @@ button {
 }
 
 .company-video-container {
-    background-color: var(--color-btn-active-bg);
+    background-color: var(--color-bg-default);
 }
 
 .company-video-content {
@@ -231,7 +241,9 @@ button {
 .company-video-content h5 {
     margin-bottom: 1rem;
 }
-
+.experience-flow-container {
+    background: var(--color-bg-theme-light-m);
+}
 .experience-flow-content {
     max-width: var(--breakpoint-l);
     margin: 0 auto;
@@ -257,8 +269,6 @@ button {
     text-align: left;
 }
 .experience-flow-tab-container p {
-    margin-bottom: 0.4rem;
-    margin-left: 0.75rem;
     color: var(--color-text-secondary);
 }
 .experience-flow-tab {
@@ -267,7 +277,7 @@ button {
     justify-content: center;
     padding: 1.5rem;
     background-color: var(--color-bg-lightgray-10);
-    border-radius: var(--item-radius-medium);
+    border-radius: 1rem;
     
 }
 
@@ -306,12 +316,12 @@ button {
 }
 
 .tab-light p {
-    margin-left: 0.5rem;
+    margin-left: 0.75rem;
     width: 90%;
 }
 
 .tab-light svg circle {
-    fill: var(--color-tab-light-solid-svg);
+    fill: var(--color-tab-light-solid-inactive-svg);
 }
 
 .tab-light:hover {
@@ -416,7 +426,7 @@ button {
     line-height: 1.9rem;
 }
 .feature-list-container {    
-    background-color: var(--color-btn-active-bg);
+    background-color: var(--color-bg-theme-default);
 }
 
 .feature-list-content {
@@ -429,7 +439,7 @@ button {
     background-color: var(--color-bg-default);
     padding: 1rem;
     margin: 2rem 0;
-    box-shadow: 2px 3px 10px 2px #dfecfc;
+    box-shadow: 1px 2px 20px 2px #dfecfc;
 }
 
 .feature-list-item-title {
@@ -454,7 +464,7 @@ font-weight: 600;
 }
 
 .integration-container {
-    background-color: #F6FAFF;
+    background-color: var(--color-bg-theme-light-m);
 }
 
 .integration-content {
@@ -496,7 +506,7 @@ font-weight: 600;
 }
 
 .best-cp-container {
-    background-color: var(--color-btn-active-bg);
+    background-color: var(--color-bg-default);
 }
 .best-cp-content {
     max-width: var(--breakpoint-l);
@@ -504,6 +514,9 @@ font-weight: 600;
 }
 .best-cp-container span {
     margin: 0 1rem;
+}
+.cost-save-container {
+    background: var(--color-bg-theme-light-m);
 }
 .cost-save-content {
     max-width: var(--breakpoint-l);
