@@ -322,6 +322,7 @@ button {
 
 .tab-light svg circle {
     fill: var(--color-tab-light-solid-inactive-svg);
+    stroke: #fff;
 }
 
 .tab-light:hover {
