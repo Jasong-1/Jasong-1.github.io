@@ -477,9 +477,13 @@ font-weight: 600;
     margin-bottom: 1rem;
 }
 
+.integration-header h1 {
+    margin-bottom: 2rem;
+}
+
 .integration-cards {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: stretch;
 }
@@ -488,14 +492,13 @@ font-weight: 600;
     margin: 1rem;
     padding: 1rem;
     text-align: left;
-    width: 50%;
+    /* width: 50%; */
     background-color: var(--color-bg-default);
     border-radius: var(--item-radius-medium);
     box-shadow: 2px 3px 10px 2px #dfecfc;
 }
 
 .integration-cards-item header {
-    height: 7rem;
     margin-bottom: 1rem;
 }
 .integration-cards-item h5 {
