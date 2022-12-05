@@ -256,7 +256,7 @@ button {
 }
 
 .experience-flow-title h5 {
-    margin: 0.5rem 0 1rem 0;
+    margin: 2rem 0 0rem;
 }
 
 .experience-flow-title button {
@@ -426,6 +426,59 @@ button {
     /* height: 100%; */
     line-height: 1.9rem;
 }
+.more-feature h5 {
+    margin: 1rem auto 2rem;
+}
+
+/* .start-login-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 1rem auto;
+    
+} */
+.start-login-item {
+    /* width: 45%; */
+    background-color: var(--color-bg-default);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+.start-login-item h5 {
+    margin-bottom: 1rem;
+}
+.start-login-item-picture {
+    height: 20rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.start-login-item-picture1 {
+    background: url(../img/Experience11.png);
+}
+.start-login-item-picture2 {
+    background: url(../img/Experience12.png);
+}
+.start-login-item-picture-content {
+    visibility:hidden;
+    /* background-color: #ffffff50; */
+    backdrop-filter: blur(10px);
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-login-item:hover .start-login-item-picture-content {
+    visibility:visible;
+}
+
+
 .feature-list-container {    
     background-color: var(--color-bg-theme-default);
 }
