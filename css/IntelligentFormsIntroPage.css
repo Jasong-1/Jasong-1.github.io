@@ -445,6 +445,7 @@ button {
     margin: 1rem;
     border-radius: 0.5rem;
     text-align: left;
+    box-shadow: 1px 2px 20px 2px #dfecfc;
 }
 .start-login-item h5 {
     margin-bottom: 1rem;
