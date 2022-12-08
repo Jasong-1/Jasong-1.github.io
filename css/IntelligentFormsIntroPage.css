@@ -386,7 +386,7 @@ button {
 }
 .tab-pane-4 {
     background: url(../img/tab-content-img-04.png) no-repeat center;
-    background-size: 100% auto;
+    background-size: auto 100%;
 }
 .tab-pane-5 {
     background: url(../img/tab-content-img-05.png) no-repeat center;
