@@ -78,6 +78,9 @@ html {
     color: var(--color-text-default);
 }
 
+h1, h2, h3, h4 {
+    text-transform:capitalize;
+}
 
 h1 {
     margin-bottom: 3rem;
@@ -260,7 +263,7 @@ button {
 }
 
 .experience-flow-title button {
-    margin-top: 1rem;
+    margin: 1rem 0.5rem;
 }
 .experience-flow-tab-container {
     /* padding: 1.5rem;
@@ -459,10 +462,10 @@ button {
     padding: 1rem;
 }
 .start-login-item-picture1 {
-    background: url(../img/Experience11.png);
+    background: url(../img/Experience11.png) no-repeat center;
 }
 .start-login-item-picture2 {
-    background: url(../img/Experience12.png);
+    background: url(../img/Experience12.png) no-repeat center;
 }
 .start-login-item-picture-content {
     visibility:hidden;
