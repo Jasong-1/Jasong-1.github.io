@@ -608,7 +608,7 @@ td {
 
 }
 
-.cost-save-container tr {
+.cost-save-container th, td {
     border: 2px solid #fff;
 }
 
