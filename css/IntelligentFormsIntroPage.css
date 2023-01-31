@@ -104,6 +104,10 @@ button {
     background-color: var(--color-btn-theme-solid-bg-hover);
 }
 
+.btn-primary:focus {
+    background-color: var(--color-btn-theme-solid-bg-hover);
+}
+
 .btn-light {
     border: 0;
     background-color: var(--color-btn-light-solid-bg);
@@ -297,7 +301,9 @@ button {
 .nav-tabs {
     width: 35%;
 }
-
+.btn:focus {
+    box-shadow: none;
+}
 .tab-light {
     border: 0;
     background-color: var(--color-btn-light-solid-bg);
