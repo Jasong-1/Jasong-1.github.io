@@ -177,22 +177,31 @@ button {
 .intro-header-container {
     background-color: var(--color-bg-theme);
     color: var(--color-text-light-default);
-    
+    padding: 2rem;
 }
 
 .intro-header-content {
     max-width: var(--breakpoint-l);
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.intro-header-content>div {
+    text-align: left;
+    /* margin-right: 2rem; */
 }
 
 .intro-header-content h1 {
+    font-size: 2rem;
     font-weight: 600;
     margin: 0;
 }
 
 .intro-header-content h4 {
     font-weight: 400;
-    margin: 0.2rem 0 1.8rem 0;
+    margin-top: 0.4rem;
 }
 .essential-container {
     background-color: var(--color-bg-default);
@@ -267,7 +276,7 @@ button {
 }
 
 .experience-flow-title button {
-    margin: 1rem 0.5rem;
+    margin: 2rem auto 0;
 }
 .experience-flow-tab-container {
     /* padding: 1.5rem;
