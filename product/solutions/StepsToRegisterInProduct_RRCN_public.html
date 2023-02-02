@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>RightResponse Collaborative Network</title>
+    <title>StepsToRegisterInProduct_RRCN_public</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 打开页面时清除缓存重新加载 -->
+    <!-- cache -->
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -21,108 +21,12 @@
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
 
-    <!-- 页面样式 -->
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' type='text/css' href='../../css/styleInitialization.css?v=" + Math.random() + "'>");
+        document.write("<link rel='stylesheet' type='text/css' href='../../css/IntelligentFormsIntroPage.css?v=" + Math.random() + "'>");
+    </script>
+
     <style>
-        /* style Initialization */
-        body,
-        div,
-        dl,
-        dt,
-        dd,
-        ul,
-        ol,
-        li,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        pre,
-        code,
-        form,
-        fieldset,
-        legend,
-        input,
-        button,
-        textarea,
-        p,
-        blockquote,
-        th,
-        td {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-weight: normal;
-        }
-
-        address,
-        caption,
-        cite,
-        code,
-        dfn,
-        em,
-        strong,
-        th,
-        var {
-            font-style: normal;
-            font-weight: normal;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            border: none;
-        }
-
-        ol,
-        ul,
-        li {
-            list-style: none;
-        }
-
-        input,
-        textarea,
-        select,
-        button {
-            font: 14px Verdana, Helvetica, Arial, sans-serif;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        html {
-            overflow-y: scroll;
-        }
-
-        .clearfix:after {
-            content: ".";
-            display: block;
-            height: 0;
-            clear: both;
-            visibility: hidden;
-        }
-
-        /* page style */
-
         /* color */
         :root {
             --color-theme10: #00A7EF10;
@@ -150,137 +54,6 @@
             --color-green: #6CC74C;
         }
 
-        :root {
-            --color-text-default: var(--color-grayB0);
-            --color-text-light-default: var(--color-white100);
-            --color-text-secondary: var(--color-gray70);
-            --color-text-theme: var(--color-theme100);
-
-            --color-bg-theme: var(--color-theme100);
-            --color-bg-default: var(--color-white100);
-            --color-bg-theme-light-m: var(--color-theme10);
-            --color-bg-theme-light-l: var(--color-theme15);
-            --color-bg-lightgray-10: var(--color-gray05);
-
-
-            --color-btn-theme-solid-text: var(--color-white100);
-            --color-btn-theme-solid-bg: var(--color-theme100);
-            --color-btn-theme-solid-bg-hover: var(--color-theme150);
-
-            --color-btn-light-solid-text: var(--color-theme100);
-            --color-btn-light-solid-bg: var(--color-white100);
-            --color-btn-light-solid-bg-hover: var(--color-white80);
-
-
-            --color-btn-theme-outline: var(--color-theme100);
-            --color-btn-theme-outline-hover: var(--color-theme150);
-            --color-btn-theme-outline-bg-hover: var(--color-theme20);
-            --color-tab-light-solid-inactive-svg: var(--color-theme65);
-            --color-btn-active-bg: var(--color-theme15);
-        }
-
-        :root {
-            --item-radius-medium: 0.4rem;
-            /* --section-padding:5rem; */
-        }
-
-        :root {
-            --breakpoint-l: 1200px;
-            --breakpoint-m: 996px;
-            --breakpoint-s: 540px;
-        }
-
-        body,
-        html {
-            margin: 0;
-            text-align: center;
-            font-size: 1.1rem;
-            background: #fff;
-            color: var(--color-text-default);
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            text-transform: capitalize;
-        }
-
-        h1 {
-            margin-bottom: 3rem;
-        }
-
-        button {
-            margin: 0.5rem;
-        }
-
-
-
-        /* btn style */
-        /* .btn-primary {
-            color: var(--color-text-light-default);
-            background-color: var(--color-btn-theme-solid-bg);
-            border: 0;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--color-btn-theme-solid-bg-hover);
-        }
-
-
-        .btn-light {
-            border: 0;
-            background-color: var(--color-btn-light-solid-bg);
-            color: var(--color-btn-light-solid-text);
-        }
-
-        .btn-light:hover {
-            background: var(--color-btn-light-solid-bg-hover);
-            color: var(--color-btn-light-solid-text);
-        }
-
-
-        .btn-outline-primary {
-            color: var(--color-btn-theme-outline);
-            border-color: var(--color-btn-theme-outline);
-        }
-
-        .btn-outline-primary svg path {
-            fill: var(--color-btn-theme-outline);
-        }
-
-        .btn-outline-primary:hover {
-            background-color: var(--color-btn-theme-outline-bg-hover);
-            color: var(--color-btn-theme-outline-hover);
-            border-color: var(--color-btn-theme-outline-hover);
-        }
-
-        .btn-outline-primary:hover svg path {
-            fill: var(--color-btn-theme-outline-hover);
-        }
-
-
-        .btn-outline-light svg path {
-            fill: var(--color-text-light-default);
-        }
-
-        .btn-outline-light:hover {
-            background-color: var(--color-white10);
-            border-color: var(--color-white80);
-            color: var(--color-white80);
-        }
-
-        .btn-outline-light:hover svg path {
-            fill: var(--color-white80);
-        } */
-
-
-        /* .intro-section {
-            padding: 5rem 1rem;
-        } */
-
-
-
 
         .experience-flow-container {
             background: var(--color-bg-theme-light);
@@ -299,24 +72,11 @@
             margin: 0;
         }
 
-        /* .experience-flow-title h5 {
-            margin: 2rem 0 0rem;
-        } */
-
         .experience-flow-title button {
             margin: 1rem 0.5rem;
         }
 
-        .experience-flow-tab-container {
-            /* padding: 1.5rem;
-    background-color: var(--color-bg-lightgray-10);
-    border-radius: 0.5rem; */
-            /* text-align: left; */
-        }
-
-        /* .experience-flow-tab-container p {
-            color: var(--color-text-secondary);
-        } */
+        
 
         .experience-flow-tab {
             display: flex;
@@ -331,20 +91,22 @@
         .mb-3 {
             margin-right: 0.2rem !important;
             margin-bottom: 0 !important;
-            /* border-radius: 0.5rem; */
         }
 
         .nav-tabs {
             border: 0 !important;
             width: 35%;
         }
+
         .btn {
             line-height: 1.2;
             padding: 0.2rem 0.2rem;
         }
+
         .btn:focus {
             box-shadow: none;
         }
+
         .tab-light {
             border: 0;
             background-color: var(--color-btn-light-solid-bg);
@@ -361,7 +123,6 @@
 
         .tab-light svg {
             width: 1.8rem;
-            /* min-width: 6%; */
             height: 2rem;
         }
 
@@ -397,7 +158,6 @@
 
         .tab-content {
             width: 65%;
-            /* height: 100%; */
             background: var(--color-bg-default);
             box-shadow: 2px 3px 10px 2px #00000005;
             padding: 1rem;
@@ -467,13 +227,6 @@
             background: url(../../../img/tab-content-img-10.png) no-repeat center;
             background-size: 100% auto;
         }
-
-
-        @media only screen and (max-width:996px) and (min-width: 540px) {
-            .intro-section {
-                padding: 5rem auto;
-            }
-        }
     </style>
 </head>
 
@@ -485,8 +238,8 @@
                 <p style="margin: 0.2rem 0 1rem;">
                     <b>Welcome to Intelligent forms</b>
                 </p>
-                
-                
+
+
             </div>
             <div class="experience-flow-tab-container">
                 <p style="margin: 0 0 0.5rem; font-size: 16px;">
@@ -620,17 +373,28 @@
                             aria-labelledby="nav-home-tab">
                             <!-- 2 -->
                         </div>
-                        <div class="tab-pane fade tab-pane-3" id="enterInfo" role="tabpanel"
+                        <div class="tab-pane fade tab-pane-3 position-relative" id="enterInfo" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <!-- 3 -->
+                            <div class="position-absolute bottom-0 start-50 translate-middle"
+                                style="width: 95%; margin: 0.5em 0; padding: 0.5em; background: #FFD966; border-radius: 4px; text-align: center; font-size: 12px;">
+                                <b>System will create an account for you for your future access</b>
+                            </div>
                         </div>
-                        <div class="tab-pane fade tab-pane-6" id="receiveAccountInfo" role="tabpanel"
+                        <div class="tab-pane fade tab-pane-6 position-relative" id="receiveAccountInfo" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <!-- 4 -->
+                            <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute bottom-0 end-0 translate-middle">
+                                <path d="M36.0312 9.03125V5L20 15.0312L3.96875 5V9.03125L20 18.9688L36.0312 9.03125ZM36.0312 0.96875C37.0938 0.96875 38 1.375 38.75 2.1875C39.5625 3 39.9688 3.9375 39.9688 5V29C39.9688 30.0625 39.5625 31 38.75 31.8125C38 32.625 37.0938 33.0312 36.0312 33.0312H3.96875C2.90625 33.0312 1.96875 32.625 1.15625 31.8125C0.40625 31 0.03125 30.0625 0.03125 29V5C0.03125 3.9375 0.40625 3 1.15625 2.1875C1.96875 1.375 2.90625 0.96875 3.96875 0.96875H36.0312Z" fill="#1AC3DE"/>
+                            </svg>
+                                
                         </div>
-                        <div class="tab-pane fade tab-pane-7" id="receiveSubmissionInfo" role="tabpanel"
+                        <div class="tab-pane fade tab-pane-7 position-relative" id="receiveSubmissionInfo" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <!-- 5 -->
+                            <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute bottom-0 end-0 translate-middle">
+                                <path d="M36.0312 9.03125V5L20 15.0312L3.96875 5V9.03125L20 18.9688L36.0312 9.03125ZM36.0312 0.96875C37.0938 0.96875 38 1.375 38.75 2.1875C39.5625 3 39.9688 3.9375 39.9688 5V29C39.9688 30.0625 39.5625 31 38.75 31.8125C38 32.625 37.0938 33.0312 36.0312 33.0312H3.96875C2.90625 33.0312 1.96875 32.625 1.15625 31.8125C0.40625 31 0.03125 30.0625 0.03125 29V5C0.03125 3.9375 0.40625 3 1.15625 2.1875C1.96875 1.375 2.90625 0.96875 3.96875 0.96875H36.0312Z" fill="#1AC3DE"/>
+                            </svg>
                         </div>
                         <div class="tab-pane fade tab-pane-4" id="fillInPublic" role="tabpanel"
                             aria-labelledby="nav-home-tab">
@@ -640,24 +404,30 @@
                             aria-labelledby="nav-home-tab">
                             <!-- 7 -->
                         </div>
-                        <div class="tab-pane fade tab-pane-8" id="receiveApprovalInfo" role="tabpanel"
+                        <div class="tab-pane fade tab-pane-8 position-relative" id="receiveApprovalInfo" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <!-- 8 -->
+                            <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute bottom-0 end-0 translate-middle">
+                                <path d="M36.0312 9.03125V5L20 15.0312L3.96875 5V9.03125L20 18.9688L36.0312 9.03125ZM36.0312 0.96875C37.0938 0.96875 38 1.375 38.75 2.1875C39.5625 3 39.9688 3.9375 39.9688 5V29C39.9688 30.0625 39.5625 31 38.75 31.8125C38 32.625 37.0938 33.0312 36.0312 33.0312H3.96875C2.90625 33.0312 1.96875 32.625 1.15625 31.8125C0.40625 31 0.03125 30.0625 0.03125 29V5C0.03125 3.9375 0.40625 3 1.15625 2.1875C1.96875 1.375 2.90625 0.96875 3.96875 0.96875H36.0312Z" fill="#1AC3DE"/>
+                            </svg>
                         </div>
                         <div class="tab-pane fade tab-pane-9" id="ApproveForm" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <!-- 9 -->
                         </div>
-                        <div class="tab-pane fade tab-pane-10" id="completed" role="tabpanel"
+                        <div class="tab-pane fade tab-pane-10 position-relative" id="completed" role="tabpanel"
                             aria-labelledby="nav-home-tab">
                             <!-- 10 -->
+                            <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="position-absolute bottom-0 end-0 translate-middle">
+                                <path d="M36.0312 9.03125V5L20 15.0312L3.96875 5V9.03125L20 18.9688L36.0312 9.03125ZM36.0312 0.96875C37.0938 0.96875 38 1.375 38.75 2.1875C39.5625 3 39.9688 3.9375 39.9688 5V29C39.9688 30.0625 39.5625 31 38.75 31.8125C38 32.625 37.0938 33.0312 36.0312 33.0312H3.96875C2.90625 33.0312 1.96875 32.625 1.15625 31.8125C0.40625 31 0.03125 30.0625 0.03125 29V5C0.03125 3.9375 0.40625 3 1.15625 2.1875C1.96875 1.375 2.90625 0.96875 3.96875 0.96875H36.0312Z" fill="#1AC3DE"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
