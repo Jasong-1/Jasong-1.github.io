@@ -27,223 +27,225 @@
         document.write("<link rel='stylesheet' type='text/css' href='../../css/IntelligentFormsIntroPage.css?v=" + Math.random() + "'>");
     </script>
 
-    <style>
-        /* color */
-        :root {
-            --color-theme10: #00A7EF10;
-            --color-theme15: #1AC3DE15;
-            --color-theme20: #00A7EF20;
-            --color-theme30: #00A7EF30;
-            --color-theme40: #00A7EF40;
-            --color-theme50: #00A7EF50;
-            --color-theme65: #1AC3DE65;
-            --color-theme80: #00A7EF80;
-            --color-theme100: #1AC3DE;
-            --color-theme150: #0ca5bd;
-            --color-theme200: #0072a2;
+<style>
+    /* color */
+    :root {
+        --color-theme10: #00A7EF10;
+        --color-theme15: #1AC3DE15;
+        --color-theme20: #00A7EF20;
+        --color-theme30: #00A7EF30;
+        --color-theme40: #00A7EF40;
+        --color-theme50: #00A7EF50;
+        --color-theme65: #1AC3DE65;
+        --color-theme80: #00A7EF80;
+        --color-theme100: #1AC3DE;
+        --color-theme150: #0ca5bd;
+        --color-theme200: #0072a2;
 
-            --color-gray05: #00000007;
-            --color-gray10: #00000010;
-            --color-gray50: #00000050;
-            --color-gray70: #00000070;
-            --color-grayB0: #000000b0;
+        --color-gray05: #00000007;
+        --color-gray10: #00000010;
+        --color-gray50: #00000050;
+        --color-gray70: #00000070;
+        --color-grayB0: #000000b0;
 
-            --color-white10: #ffffff20;
-            --color-white80: #ffffffe0;
-            --color-white100: #fff;
+        --color-white10: #ffffff20;
+        --color-white80: #ffffffe0;
+        --color-white100: #fff;
 
-            --color-green: #6CC74C;
-        }
+        --color-green: #6CC74C;
+    }
 
 
-        .experience-flow-container {
-            background: var(--color-bg-theme-light);
-        }
+    .experience-flow-container {
+        background: var(--color-bg-theme-light);
+    }
 
-        .experience-flow-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    .experience-flow-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-        .experience-flow-title {
-            margin-bottom: 1rem;
-        }
+    .experience-flow-title {
+        margin-bottom: 0.7rem;
+    }
 
-        .experience-flow-title h1 {
-            margin: 0;
-        }
+    .experience-flow-title h1 {
+        margin: 0;
+    }
 
-        .experience-flow-title button {
-            margin: 1rem 0.5rem;
-        }
+    .experience-flow-title button {
+        margin: 1rem 0.5rem;
+    }
+    .experience-flow-title img {
+        width: 50px;
+    }
 
-        
 
-        .experience-flow-tab {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            padding: 0.8rem;
-            background-color: var(--color-bg-lightgray-10);
-            border-radius: 1rem;
 
-        }
+    .experience-flow-tab {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 0.5rem;
+        background-color: var(--color-bg-lightgray-10);
+        border-radius: 1rem;
+        width: 760px;
 
-        .mb-3 {
-            margin-right: 0.2rem !important;
-            margin-bottom: 0 !important;
-        }
+    }
 
-        .nav-tabs {
-            border: 0 !important;
-            width: 35%;
-        }
+    .mb-3 {
+        margin-right: 0.2rem !important;
+        margin-bottom: 0 !important;
+    }
 
-        .btn {
-            line-height: 1.2;
-            padding: 0.2rem 0.2rem;
-        }
+    .nav-tabs {
+        border: 0 !important;
+        width: 35%;
+    }
 
-        .btn:focus {
-            box-shadow: none;
-        }
+    .btn {
+        line-height: 1.2;
+        padding: 0.2rem 0.2rem;
+    }
 
-        .tab-light {
-            border: 0;
-            background-color: var(--color-btn-light-solid-bg);
-            color: var(--color-text-default);
-            text-align: left;
-            /* height: 4rem; */
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 0.2rem;
-            box-shadow: 1px 2px 2px 0px #00000005;
-        }
+    .btn:focus {
+        box-shadow: none;
+    }
 
-        .tab-light svg {
-            width: 1.8rem;
-            height: 2rem;
-        }
+    .tab-light {
+        border: 0;
+        background-color: var(--color-btn-light-solid-bg);
+        color: var(--color-text-default);
+        text-align: left;
+        /* height: 4rem; */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.2rem;
+        box-shadow: 1px 2px 2px 0px #00000005;
+    }
 
-        .tab-light p {
-            margin-left: 0.75rem;
-            width: 90%;
-            font-size: 14px;
-        }
+    .tab-light svg {
+        width: 1.5rem;
+        height: 2rem;
+    }
 
-        .tab-light svg circle {
-            fill: var(--color-tab-light-solid-inactive-svg);
-            stroke: #fff;
-        }
+    .tab-light p {
+        margin-left: 0.5rem;
+        width: 90%;
+        font-size: 14px;
+    }
 
-        .tab-light:hover {
-            background: var(--color-btn-active-bg);
-            color: var(--color-btn-light-solid-text);
-        }
+    .tab-light svg circle {
+        fill: var(--color-tab-light-solid-inactive-svg);
+        stroke: #fff;
+    }
 
-        .tab-light:hover svg circle {
+    .tab-light:hover {
+        background: var(--color-btn-active-bg);
+        color: var(--color-btn-light-solid-text);
+    }
 
-            fill: var(--color-btn-light-solid-text);
-        }
+    .tab-light:hover svg circle {
 
-        .active {
-            background: var(--color-btn-active-bg);
-            color: var(--color-btn-light-solid-text);
-        }
+        fill: var(--color-btn-light-solid-text);
+    }
 
-        .active svg circle {
-            fill: var(--color-btn-light-solid-text);
-        }
+    .active {
+        background: var(--color-btn-active-bg);
+        color: var(--color-btn-light-solid-text);
+    }
 
-        .tab-content {
-            width: 65%;
-            background: var(--color-bg-default);
-            box-shadow: 2px 3px 10px 2px #00000005;
-            padding: 1rem;
-            border-radius: 0.8rem;
-        }
+    .active svg circle {
+        fill: var(--color-btn-light-solid-text);
+    }
 
-        .tab-pane {
-            background-color: var(--color-bg-default);
-            height: 100%;
-            font-size: 200px;
-            border: 1px solid #00000010;
-            border-radius: var(--item-radius-medium);
-            color: var(--color-theme);
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
+    .tab-content {
+        width: 65%;
+        background: var(--color-bg-default);
+        box-shadow: 2px 3px 10px 2px #00000005;
+        padding: 1rem;
+        border-radius: 0.8rem;
+    }
 
-        }
+    .tab-pane {
+        background-color: var(--color-bg-default);
+        height: 100%;
+        font-size: 200px;
+        border: 1px solid #00000010;
+        border-radius: var(--item-radius-medium);
+        color: var(--color-theme);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
 
-        .tab-pane-1 {
-            background: url(../../../img/tab-content-img-01.png) no-repeat 0% 100%;
-            background-size: auto 100%
-        }
+    }
 
-        .tab-pane-2 {
-            background: url(../../../img/tab-content-img-02.png) no-repeat 0% 100%;
-            background-size: auto 100%
-        }
+    .tab-pane-1 {
+        background: url(../../../img/tab-content-img-01.png) no-repeat 0% 100%;
+        background-size: auto 100%
+    }
 
-        .tab-pane-3 {
-            background: url(../../../img/tab-content-img-03.png) no-repeat center;
-            background-size: auto 100%;
-        }
+    .tab-pane-2 {
+        background: url(../../../img/tab-content-img-02.png) no-repeat 0% 100%;
+        background-size: auto 100%
+    }
 
-        .tab-pane-4 {
-            background: url(../../../img/tab-content-img-04.png) no-repeat center;
-            background-size: auto 100%;
-        }
+    .tab-pane-3 {
+        background: url(../../../img/tab-content-img-03.png) no-repeat center;
+        background-size: auto 100%;
+    }
 
-        .tab-pane-5 {
-            background: url(../../../img/tab-content-img-05.png) no-repeat center;
-            background-size: auto 100%;
-        }
+    .tab-pane-4 {
+        background: url(../../../img/tab-content-img-04.png) no-repeat center;
+        background-size: auto 100%;
+    }
 
-        .tab-pane-6 {
-            background: url(../../../img/tab-content-img-06.png) no-repeat center;
-            background-size: 100% auto;
-        }
+    .tab-pane-5 {
+        background: url(../../../img/tab-content-img-05.png) no-repeat center;
+        background-size: auto 100%;
+    }
 
-        .tab-pane-7 {
-            background: url(../../../img/tab-content-img-07.png) no-repeat center;
-            background-size: 100% auto;
-        }
+    .tab-pane-6 {
+        background: url(../../../img/tab-content-img-06.png) no-repeat center;
+        background-size: 100% auto;
+    }
 
-        .tab-pane-8 {
-            background: url(../../../img/tab-content-img-08.png) no-repeat center;
-            background-size: 100% auto;
-        }
+    .tab-pane-7 {
+        background: url(../../../img/tab-content-img-07.png) no-repeat center;
+        background-size: 100% auto;
+    }
 
-        .tab-pane-9 {
-            background: url(../../../img/tab-content-img-09.png) no-repeat center;
-            background-size: auto 100%;
-        }
+    .tab-pane-8 {
+        background: url(../../../img/tab-content-img-08.png) no-repeat center;
+        background-size: 100% auto;
+    }
 
-        .tab-pane-10 {
-            background: url(../../../img/tab-content-img-10.png) no-repeat center;
-            background-size: 100% auto;
-        }
-    </style>
+    .tab-pane-9 {
+        background: url(../../../img/tab-content-img-09.png) no-repeat center;
+        background-size: auto 100%;
+    }
+
+    .tab-pane-10 {
+        background: url(../../../img/tab-content-img-10.png) no-repeat center;
+        background-size: 100% auto;
+    }
+</style>
 </head>
 
 <body>
-    <div class="intro-section experience-flow-container">
-        <div class="experience-flow-content">
+    <!-- <div class="intro-section experience-flow-container"> -->
+        <div class="experience-flow-content" style="width: 100%; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center;">
             <div class="experience-flow-title">
                 <img src="../../../img/forms.png" alt="">
-                <p style="margin: 0.2rem 0 1rem;">
+                <p style="margin: 0.2rem 0 0;">
                     <b>Welcome to Intelligent forms</b>
                 </p>
-                
-                
             </div>
             <div class="experience-flow-tab-container">
-                <p style="margin: 0 0 0.5rem; font-size: 16px;">
+                <p style="margin: 0 0 0.5rem; font-size: 15px;">
                     Follow these steps to experience the Intelligent Forms.
                 </p>
                 <!-- <p><strong>*</strong>Click on steps 1 through 10 for guidance:</p> -->
@@ -426,7 +428,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
