@@ -21,12 +21,17 @@
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
 
-    <!-- 页面样式 -->
+    <!-- page style -->
     <script type="text/javascript">
         document.write("<link rel='stylesheet' type='text/css' href='../../css/styleInitialization.css?v=" + Math.random() + "'>");
         document.write("<link rel='stylesheet' type='text/css' href='../../css/IntelligentFormsIntroPage.css?v=" + Math.random() + "'>");
     </script>
 
+    <style>
+        html, body {
+            background-color: #eff9fe;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +49,7 @@
         </div>
     </div> -->
 
-    <div class="intro-section experience-flow-container" style="padding: 2rem 1rem; height: 100vh;">
+    <div class="intro-section experience-flow-container" style="padding: 2rem 1rem; background: none;">
         <div class="experience-flow-content">
             <div class="experience-flow-title">
                 <svg width="258" height="48" viewBox="0 0 258 48" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -231,11 +236,11 @@
                     You will experience the following simple workflow.
                 </h5> -->
 
-                <h4 style="margin-top: 1.5rem; font-weight: 600;">Follow these steps to experience the Intelligent Forms</h4>
+                <h4 style="margin-top: 1rem; font-weight: 600;">Follow these steps to experience the Intelligent Forms</h4>
             </div>
             <div class="experience-flow-tab-container">
                 <p><strong>*</strong>Click on steps 1 through 8 for guidance:</p>
-                <div class="experience-flow-tab">
+                <div class="experience-flow-tab" style="padding: 1rem;">
                     <nav class="nav nav-tabs mb-3 flex-column" id="nav-tab" role="tablist">
                         <button class="btn tab-light active" id="nav-start-tab" data-bs-toggle="tab"
                             data-bs-target="#tab-start" type="button" role="tab" aria-controls="nav-home"
