@@ -1,0 +1,44 @@
+.nav a{
+    display:block;
+    padding:10px 20px 10px 20px;
+    margin:0;
+    color:#052944;
+    text-decoration:none;
+    }
+#banner{
+    background:#161616 url(../img/programs-banner.png) no-repeat center top;
+    height: 460px;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px 120px 10px 120px;
+    
+}
+.content{
+    padding: 60px 0;
+    background: #ffffff;
+}
+.text-con{
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 40px;
+    /* height: 327px; */
+}
+.text-con a{
+    text-decoration: none;
+}
+.content-img{
+    /* width: 480px; */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 40px;
+}
+.learn-more-btn{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background: #246cd6;
+    color: #ffffff;
+    margin: 20px 0;
+    border-radius: 4px;
+}
