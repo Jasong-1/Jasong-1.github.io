@@ -602,12 +602,6 @@ margin-left:18px;
 .slick-next {
   right: 15px;
 }
-.slick-next,
-.slick-prev {
-  /* width: 30px;
-  height: 30px; */
-  /* background: rgba(0, 0, 0, 0.2); */
-}
 .slick-next:before,
 .slick-prev:before {
     top:4px;
