@@ -157,20 +157,6 @@ button {
     fill: var(--color-white80);
 }
 
-/* .btn-size-default  {
-    margin: 1rem;
-    padding: 0.3rem 1rem;
-    font-size: 1.1rem;
-    border-radius: 0.3rem;
-} */
-
-/* .btn-solid-onlight {
-    border: 0;
-    background-color: var(--color-btn-theme-solid-bg);
-    color: #FFFFFF;
-
-} */
-
 .btn-contactUs {
     position: fixed;
     bottom: 2rem;
@@ -700,10 +686,6 @@ td {
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
-
-/* .footer-content div {
-    margin-top: 1.5rem;
-} */
 
 .footer-content hr {
     border-color: var(--color-text-light-default);
