@@ -22,6 +22,12 @@
     </script>
 
     <style>
+        :root {
+            /* --color-green: #06BB12; */
+            --color-green: #0091cf;
+            --color-red: #F26666f5;
+        }
+
         body,
         html {
             margin: 0;
@@ -29,6 +35,10 @@
             font-size: 1.1rem;
             background: #fff;
             color: var(--color-text-default);
+        }
+
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
         }
 
         dl,
@@ -154,7 +164,7 @@
 
         .table {
             --bs-table-bg: transparent;
-            --bs-table-accent-bg: white;
+            /* --bs-table-accent-bg: white; */
             --bs-table-striped-color: #212529;
             --bs-table-striped-bg: #00a7ef05;
             --bs-table-active-color: #212529;
@@ -168,18 +178,19 @@
         }
 
         .table-tittle {
-            background: #00a7ef90;
+            background: #00a7ef90 !important;
             border: none;
 
         }
 
         .table-tittle>th {
-            color: #0292cf;
-            font-weight: 500;
+            color: #fff;
+            font-weight: 500; color: var(red);
         }
 
         td {
             vertical-align: middle;
+            font-weight: 400;
         }
     </style>
 
@@ -211,18 +222,25 @@
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-        <symbol id="check" viewBox="0 0 16 16">
+        <symbol id="check" viewBox="0 0 24 24">
             <title>Check</title>
             <path
-                d="M5.65625 10.3438L11.6562 4.34375L10.7188 3.375L5.65625 8.4375L3.28125 6.0625L2.34375 7L5.65625 10.3438ZM2.28125 2.3125C3.59375 1 5.16667 0.34375 7 0.34375C8.83333 0.34375 10.3958 1 11.6875 2.3125C13 3.60417 13.6562 5.16667 13.6562 7C13.6562 8.83333 13 10.4062 11.6875 11.7188C10.3958 13.0104 8.83333 13.6562 7 13.6562C5.16667 13.6562 3.59375 13.0104 2.28125 11.7188C0.989583 10.4062 0.34375 8.83333 0.34375 7C0.34375 5.16667 0.989583 3.60417 2.28125 2.3125Z"
-                fill="#2BD55C" />
+                d="M12.0004 1.54688C6.23662 1.54688 1.54688 6.23662 1.54688 12.0004C1.54688 17.7649 6.23587 22.4539 12.0004 22.4539C17.7649 22.4539 22.4539 17.7649 22.4539 12.0004C22.4539 6.23662 17.7649 1.54688 12.0004 1.54688ZM17.0449 10.2761L11.0396 16.3466C11.0381 16.3481 11.0351 16.3489 11.0336 16.3511C11.0314 16.3526 11.0314 16.3556 11.0291 16.3571C10.9811 16.4036 10.9219 16.4321 10.8664 16.4636C10.8386 16.4794 10.8161 16.5034 10.7869 16.5146C10.6969 16.5506 10.6016 16.5694 10.5064 16.5694C10.4104 16.5694 10.3136 16.5506 10.2229 16.5131C10.1929 16.5004 10.1689 16.4749 10.1404 16.4591C10.0849 16.4276 10.0271 16.3999 9.97913 16.3526C9.97763 16.3511 9.97687 16.3481 9.97537 16.3466C9.97387 16.3444 9.97087 16.3444 9.96937 16.3421L7.01587 13.3069C6.72712 13.0099 6.73387 12.5351 7.03087 12.2464C7.32787 11.9584 7.80187 11.9636 8.09137 12.2614L10.5116 14.7484L15.9791 9.22087C16.2701 8.92612 16.7456 8.92312 17.0396 9.21487C17.3329 9.50662 17.3359 9.98137 17.0449 10.2761Z"
+                fill="#0091cf" />
+        </symbol>
+        <symbol id="close" viewBox="0 0 24 24">
+            <title>close</title>
+            <path
+                d="M12 1.5C6.21075 1.5 1.5 6.21 1.5 12C1.5 17.79 6.21 22.5 12 22.5C17.7892 22.5 22.5 17.79 22.5 12C22.5 6.21 17.79 1.5 12 1.5ZM16.2833 15.234C16.5758 15.528 16.575 16.002 16.2817 16.2945C16.1355 16.44 15.9443 16.5135 15.7523 16.5135C15.5595 16.5135 15.3675 16.44 15.2213 16.293L11.9962 13.0582L8.76075 16.2593C8.6145 16.4033 8.424 16.476 8.2335 16.476C8.04 16.476 7.84725 16.4017 7.70025 16.2532C7.40925 15.9585 7.4115 15.4845 7.70625 15.1927L10.938 11.9962L7.71825 8.766C7.42575 8.47275 7.4265 7.998 7.71975 7.7055C8.013 7.41225 8.487 7.41375 8.78025 7.707L12.0045 10.941L15.24 7.74C15.534 7.44825 16.0095 7.45125 16.3005 7.746C16.5922 8.04075 16.5892 8.5155 16.2945 8.8065L13.0627 12.003L16.2833 15.234Z"
+                fill="#F26666a9" />
         </symbol>
     </svg>
-    <div class="formsdata" style="max-width: 1400px;">
+
+    <div class="formsdata" style="max-width: 1300px;">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
             style="background-color: #fff;">
             <!-- <h3 style="margin: 4rem;">Form Manager & Intelligent Forms</h3> -->
-            <table class="table table-striped text-center">
+            <table class="table table-hover text-center">
                 <thead>
                     <tr class="table-tittle align-middle text-white fw-bold">
                         <th style="width: 50%; border-top-left-radius: 0.8rem;">
@@ -245,73 +263,282 @@
                             <b>Subscription Options</b>
                         </td>
                         <td>
-                            Pay-as-you-go
+                            <b style="color: var(--color-green);">
+                                Pay-as-you-go
+                            </b>
+                            <br>
+                            Only pay for what you've used
                         </td>
                         <td>
-                            Monthly or annual subscription/Account
+                            <b style="font-weight: 500; color: var(--color-red);">
+                                Monthly or annual subscription per user
+                            </b>
+                            <br>
+                            fix cost even your usage is low
+
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
                             <b>Subscription Pricing</b>
                         </td>
-                        <td>$49.99 unlimited users/month for a domain account</td>
                         <td>
-                            $12 per user/month
+                            <b style="color: var(--color-green);">
+                                FREE Unlimited Users
+                            </b>
+                            <br>
+                            ($0.059 /Form Instance (Personal Account); $0.089/Form Instance (Business Account)
+                        </td>
+                        <td>
+                            <b style="font-weight: 500; color: var(--color-red);">
+                                $12 per user/month
+                            </b>
+                            
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            <b>Cover Range</b>
+                            <b>Return on Investment (ROI)
+                            </b>
                         </td>
                         <td>
-                            Covers all district business including Enrollment, Employment, Health Care, IT, etc.
+                            <b style="color: var(--color-green);">
+                                > 200%
+                            </b>
+                            <br>
+                            Labor hours + Material Savings
+                        </td>
                         <td>
-                            Covers limited situation
+                            <b style="color: var(--color-red);">
+                                ?
+                            </b>
+                            <br>
+                            Not available
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            <b>Categorized Solutions</b>
+                            <b>Value for the Money</b>
                         </td>
-                        <td>Well-organized package solutions for different situation</td>
                         <td>
-                            Forms are seperated and not categorized
+                            <b style="color: var(--color-green);">
+                                Highest
+                            </b>
+                            <br>
+                            Based on customer feedback
+                        </td>
+                        <td>
+                            <b style="color: var(--color-red);">
+                                ?
+                            </b>
+                            <br>
+                            Not available
                         </td>
                     </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            <b>Filing</b>
-                        </td>
-                        <td>Integrated and automated file management system</td>
-                        <td>
-                            Need to create folders by yourself
-                        </td>
-                    </tr>
-
                     <tr>
                         <td scope="row" class="text-start">
                             <b>Account Types</b>
                         </td>
                         <td>
-                            Personal/Business
+                            <b style="color: var(--color-green);">
+                                Personal/Business
+                            </b>
                         </td>
                         <td>
-                            Personal/Business
+                            <b style="font-weight: 500; color: var(--color-red);">
+                                Personal
+                            </b>
+                            
                         </td>
                     </tr>
+
+
                     <tr class="table-subtitle fw-bold">
-                        <th>Information container (Forms, Webpages, other documents)</th>
+                        <th>
+                            Workflow Automation
+
+                        </th>
                         <th></th>
                         <th></th>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
+                            Connecting multiple workflows
+
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Conditional Routing
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Time-triggered temperary replacement of recipients
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Hot-swap of recipients
+                        </td>
+
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                            <br>
+                            Can switch recipients any time, system will try to rerout forms
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Process multiple forms in one workflow
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Muti-Actions at different routing levels (Approve, Deny, Send emails, etc.)
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Revision/Resubmit
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Send status notification to additional collaborators
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Process multiple webpages
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Can link to other applications
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table-subtitle fw-bold">
+                        <th>
+                            Information container (Forms, Webpages, other documents)
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td scope="row" class="text-start">
                             User design effort
                         </td>
-                        <td>None</td>
                         <td>
-                            High
+                            <b style="color: var(--color-green);">
+                                No Effort
+                            </b>
+                            <br>
+                            Free customization if shared in CN ecosystem
+                        </td>
+                        <td>
+                            <b style="font-weight: 500; color: var(--color-red);">
+                                Significant Effort
+                            </b>
                         </td>
                     </tr>
                     <tr>
@@ -319,21 +546,45 @@
                             Forms
                         </td>
                         <td>
-                            300+ form templates (adding more every day)
+                            <b style="color: var(--color-green);">
+                                300+ form templates
+                            </b>
                             <br>
-                            Free customization if shared in CN ecosystem
+                            adding more every day
                         </td>
                         <td>
-                            Limited form templates
+                            <b style="font-weight: 500; color: var(--color-red);">
+                                Limited form templates
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Common fields of all information collectors within a package
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                            <br>
+                            system synchronizes common fields across all forms
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
                             Form Design Tools
                         </td>
-                        <td><svg class="bi" width="24" height="24">
+
+                        <td>
+                            <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
-                            </svg></td>
+                            </svg>
+                        </td>
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
@@ -344,13 +595,16 @@
                         <td scope="row" class="text-start">
                             Websites
                         </td>
-
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
                         </td>
-                        <td></td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
@@ -386,6 +640,7 @@
                         <td scope="row" class="text-start">
                             Upload attachment document
                         </td>
+
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
@@ -393,7 +648,7 @@
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
+                                <use xlink:href="#close" />
                             </svg>
                         </td>
                     </tr>
@@ -401,13 +656,16 @@
                         <td scope="row" class="text-start">
                             Other Form links
                         </td>
-                        
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
                         </td>
-                        <td></td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
@@ -420,22 +678,7 @@
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Convert to PDF
-                        </td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
+                                <use xlink:href="#close" />
                             </svg>
                         </td>
                     </tr>
@@ -443,81 +686,20 @@
                         <td scope="row" class="text-start">
                             Covert to standard government PDF forms
                         </td>
-                        <td><svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg></td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Package: a collection of  related forms share common data
-                        </td>
-                        
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Customized Form field position
-                        </td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr class="table-subtitle fw-bold">
-                        <th>
-                            Workflow Automation
-                        </th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Conditional Routing
-                        </td>
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Tracking
-                        </td>
-                        <td>
-                            Track work process status at each step
-                        </td>
-                        <td>
-                            Only record response at final stage
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Revision/Resubmit
-                        </td>
-                        <td><svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg></td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Muti-Actions at different routing levels (Approve, Deny, Send emails, etc.)
+                            Package: a collection of related forms share common data
                         </td>
 
                         <td>
@@ -525,37 +707,15 @@
                                 <use xlink:href="#check" />
                             </svg>
                         </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Time-triggered temperary replacement of recipients
-                        </td>
                         <td>
                             <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
+                                <use xlink:href="#close" />
                             </svg>
-                        </td>
-                        <td>
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Hot-swap of recipients
-                        </td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                            <br>
-                            Can switch recipients any time, system will try to rerout forms
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Send status notification to additional collaborators
+                            Customized fields positions in a Form
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
@@ -564,56 +724,7 @@
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Can connect multiple workflows
-                        </td>
-                        
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Process multiple forms in one workflow
-                        </td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Process multiple webpages
-                        </td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg>
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="text-start">
-                            Access to other applications
-                        </td>
-                        <td><svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg></td>
-                        <td>
-                            <svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
+                                <use xlink:href="#close" />
                             </svg>
                         </td>
                     </tr>
@@ -626,16 +737,17 @@
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Administrator defined roles
+                            Admin-defined roles and role authorities
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
-                            <br>
-                            Included in Business Account
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
@@ -646,10 +758,11 @@
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
-                            <br>
-                            Included in Business Account
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
@@ -660,10 +773,11 @@
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
-                            <br>
-                            Included in Business Account
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
@@ -675,24 +789,63 @@
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
-                            <br>
-                            Included in Business Account
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Common fields of all information collectors within a package
+                            Customize services for data visualization and reporting
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#check" />
                             </svg>
-                            <br>
-                            Included in Business Account: system synchronizes common fields across all forms
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table-subtitle fw-bold">
+                        <th>
+                            Automatic Filling
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Integrated automatic filing all forms and Information Containers
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            File Archaving
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr class="table-subtitle fw-bold">
@@ -704,7 +857,7 @@
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Role-based access to form fields and information container
+                            Easy to reconfigure workflow and reciepients when change happens
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
@@ -712,11 +865,14 @@
                             </svg>
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Role-based access to all CN features
+                            Filing system helps organizing and finding all processed  workflows and forms
                         </td>
                         <td>
                             <svg class="bi" width="24" height="24">
@@ -724,19 +880,148 @@
                             </svg>
                         </td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
                     <tr>
                         <td scope="row" class="text-start">
-                            Common fields of all information collectors within a package
+                            Configurable catergorization helps organizing the workflows
                         </td>
-                        <td><svg class="bi" width="24" height="24">
-                                <use xlink:href="#check" />
-                            </svg></td>
                         <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Single Sign On (SSO) with Microsoft Azure Active Directory
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            24/7 Support
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Form and information container conversion and customization services
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Workflow design and consulting services
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            Application development services
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            System integration services
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="text-start">
+                            File Archiving feature to store historical data for auditing
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table-subtitle fw-bold">
+                        <th style="text-align: left;">
+                            <b>File Archaving</b>
+                        </th>
+                        <th>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg>
+                            <br>
+                            <span style="font-weight: 300;">Available for Business Account</span>
+                        </th>
+                        <th>
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </th>
+                    </tr>
                 </tbody>
             </table>
         </div>
