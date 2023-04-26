@@ -155,7 +155,7 @@
         .dropdown-item:active {
             color: #00a7ef;
             text-decoration: none;
-            background-color: #00A7EF30;
+            background-color: #00A7EF15;
         }
 
 
@@ -402,13 +402,13 @@
                         Free Registration
                     </button>
                 </div>
-                <img src="../../img/form1.png" alt=""
-                    style="position: relative; top: 100px; margin-left: 4rem; width: 480px; opacity: 0;">
+                <img src="../../img/Travel_form1.png" alt=""
+                    style="position: relative; top: 100px; margin-left: 4rem; width: 480px;">
             </div>
             <div
                 style="height: 600px; background: url(../../img/travelPlanning02.png); display: flex; flex-flow: row nowrap; align-items: center; justify-content: center;">
-                <img src="../../img/form2.png" alt=""
-                    style="position: relative; top: 100px; margin-right: 4rem; width: 480px; opacity: 0;">
+                <img src="../../img/Travel_form2.png" alt=""
+                    style="position: relative; top: 100px; margin-right: 4rem; width: 480px;">
                 <div
                     style="padding: 16px; background: rgba(0, 0, 0, 0.2); border-radius: 1rem; text-align: left; width: 450px;">
                     <p style="font-size: 32px; font-weight: 500; color: #fff; margin: 0;">
@@ -433,13 +433,13 @@
                         Free Registration
                     </button>
                 </div>
-                <img src="../../img/form3.png" alt=""
-                    style="position: relative; top: 100px; margin-left: 4rem; width: 480px; opacity: 0;">
+                <img src="../../img/Travel_form3.png" alt=""
+                    style="position: relative; top: 100px; margin-left: 4rem; width: 480px;">
             </div>
             <div
                 style="height: 600px; background: url(../../img/travelPlanning04.png); display: flex; flex-flow: row nowrap; align-items: center; justify-content: center;">
-                <img src="../../img/form4.png" alt=""
-                    style="position: relative; top: 100px; margin-right: 4rem; width: 480px; opacity: 0;">
+                <img src="../../img/Travel_form4.png" alt=""
+                    style="position: relative; top: 20px; margin-right: 4rem; width: 480px;">
                 <div
                     style="padding: 16px; background: rgba(0, 0, 0, 0.2); border-radius: 1rem; text-align: left; width: 450px;">
                     <p style="font-size: 32px; font-weight: 500; color: #fff; margin: 0;">
@@ -599,7 +599,59 @@
         myDropdown.addEventListener('show.bs.dropdown', function () {
             console.log('Dropdown shown');
         });
+
+
+        // $(document).ready(
+        // 	function () {
+        // 		var type = getQueryVariable("type");
+        // 		if (parseInt(type) == 1) {
+        // 			$('#solution-type a[id="TravelPlanning-item"]').tab('show');
+        // 		}
+        //         if (parseInt(type) == 2) {
+        // 			$('#solution-type a[id="k12-tab"]').tab('show');
+        // 		}
+        //         if (parseInt(type) == 3) {
+        // 			$('#solution-type a[id="SmallBusiness-tab"]').tab('show');
+        // 		}
+        //         if (parseInt(type) == 4) {
+        // 			$('#solution-type a[id="HigherEducation-tab"]').tab('show');
+        // 		}
+        //         else {
+        // 			$('#solution-type a[id="EventPlanning-item"]').tab('show');
+        // 		}
+        // 	}
+        // );
+
+        // function getQueryVariable(variable) {
+        // 	var query = window.location.search.substring(1);
+        // 	var vars = query.split("&");
+        // 	for (var i = 0; i < vars.length; i++) {
+        // 		var pair = vars[i].split("=");
+        // 		if (pair[0] == variable) {
+        // 			return pair[1];
+        // 		}
+        // 	}
+        // 	return (false);
+        // }
+
+        // 获取 被访问时的 url
+        // var ur = location.href;
+        // 获取该url  = 后面的数字 （id）
+        // var type = ur.split('?')[1].split("=")[1];
+
+        // 使用传过来的 数字 （id） 来控制该选项卡的切换
+        // 其实就是从页面 A 通过 URL ？ 后面的参数 给页面B 传一个 index
+
+        // $('#solution-type a').eq(type - 1).addClass('active').siblings().removeClass('active');
+        // $('#con li').eq(type - 1).show().siblings().hide();
+
+        const urlParams = new URLSearchParams(window.location.search);
+            alert(urlParams);
+
+
+        
     </script>
+    
 </body>
 
 </html>
