@@ -44,14 +44,14 @@
 	top: 50%;
 	margin-top: -2rem;
 	border-radius: 100%;
-	background: rgba(255, 255, 255, 0.5) url(../img/arrows_blank.png) no-repeat center 1.0625rem;
+	background: rgba(255, 255, 255, 0.5) url(../img/arrows_blank1.png) no-repeat center;
 	opacity: 0.8;
 	-webkit-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 }
 
 .swiper-button-next span {
-	background: rgba(255, 255, 255, 0.5) url(../img/arrows_blank.png) no-repeat center -4.4375rem;
+	background: rgba(255, 255, 255, 0.5) url(../img/arrows_blank2.png) no-repeat center;
 	left: auto;
 	right: 1.25rem;
 }
