@@ -355,24 +355,39 @@ list modal-trigger
 #benefit{
   background: #f5f5f5;
   padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .tmpls{
   max-width: 1200px;
-  margin: 5px auto;
+  margin: 0 auto;
   text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
 }
 .tmpls ul li{
   list-style: none;
   height: 30px;
   padding: 10px 20px;
   background:#fff;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.03)
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.03);
+  
 }
 .tmpl{
   margin: 10px;
+  padding: 10px;
   vertical-align: left;
   background:#fff;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.03)
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.03);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 200px;
+  border-radius: 4px;
+  
 }
 /* .tmpl:hover{
   background: #f5f5f5;
@@ -381,8 +396,9 @@ list modal-trigger
   display: inline-block; 
   vertical-align: middle;
   height: 50px;
+  width: 50px;
   padding: 10px;
-  margin: 0 5px 0 40px;
+  margin: 5px;
 }
 .tmpl-text{
   display: inline-block; 
