@@ -119,7 +119,7 @@
 
 /*内容样式*/
 	.slide1 {
-		background: #000 url(../img/banner1.jpg) no-repeat center;
+		background: #000 url(../img/banner1-2.jpg) no-repeat center;
 		background-size: auto  110%;
 	}
 
@@ -129,7 +129,7 @@
 	}
 
 	.slide3 {
-		background: #000 url(../img/banner3.jpg) no-repeat center;
+		background: #000 url(../img/banner3-2.jpg) no-repeat center;
 		background-size: auto 110%;
 	}
 
@@ -260,18 +260,7 @@
 		width: 60%;
 		font-size: 1.2rem;
 	}
-	/* banner1 icon 列表 */
-	.freetrialbanneraicon a div {
-		width: 8.6rem;
-		height: 5.8rem;
-	}
-	.freetrialbanneraicon a div svg {
-		width: 60%;
-	}
-	.freetrialbanneraicon a div p {
-		font-size: 0.8rem;
-		margin: 0;
-	}
+
 	
 	/* Video Fixed Section */
 	#videosfixed a button {
@@ -294,7 +283,7 @@
 	}
 	
 	.slide3 {
-		background: rgb(239,239,239) url(../img/banner3.jpg) no-repeat 80% 300%;
+		background: rgb(239,239,239) url(../img/banner3-2.jpg) no-repeat 80% 300%;
 		background-size: auto 90%;
 	}
 	.swiper-slide {
@@ -348,7 +337,7 @@
 }
 @media screen and (max-width: 700px){
 	.slide1 {
-		background: #000 url(../img/banner1.jpg) no-repeat 40%;
+		background: #000 url(../img/banner1-2.jpg) no-repeat 40%;
 		background-size:  auto 100%;
 	}
 	.slide2 {
@@ -357,7 +346,7 @@
 	}
 	
 	.slide3 {
-		background: #000 url(../img/banner3.jpg) no-repeat 75% 200%;
+		background: #000 url(../img/banner3-2.jpg) no-repeat 75% 200%;
 		background-size: auto 80%;
 	}
 	.swiper-slide {
