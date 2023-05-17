@@ -408,7 +408,11 @@ hr {
     justify-content: center;
 }
 
-#addUserDialog {
+Dialog {
+    border: #D5D5D5 1px solid;
+    border-radius: 0.5rem;
+}
+Dialog {
     border: #D5D5D5 1px solid;
     border-radius: 0.5rem;
 }
