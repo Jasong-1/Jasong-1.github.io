@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Attendee Invitation</title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../style/style.css">
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</head>
+
+	<body class="infoPage">
+		
+		<header class="mui-bar mui-bar-nav  floatBtnGroup">
+			<!-- <h1 class="mui-title">标题</h1> -->
+			<button type="button" class="mui-btn floatBtn">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M17.3125 12V9.3125H14.6875V12H17.3125ZM17.3125 22.6875V14.6875H14.6875V22.6875H17.3125ZM6.5625 6.625C9.1875 4 12.3333 2.6875 16 2.6875C19.6667 2.6875 22.7917 4 25.375 6.625C28 9.20833 29.3125 12.3333 29.3125 16C29.3125 19.6667 28 22.8125 25.375 25.4375C22.7917 28.0208 19.6667 29.3125 16 29.3125C12.3333 29.3125 9.1875 28.0208 6.5625 25.4375C3.97917 22.8125 2.6875 19.6667 2.6875 16C2.6875 12.3333 3.97917 9.20833 6.5625 6.625Z"
+						fill="white" />
+				</svg>
+			</button>
+		</header>
+		<div class="mui-content">
+
+			<div class="mui-segmented-control">
+				<a class="mui-control-item mui-active" href="#item1">选项卡1</a>
+				<a class="mui-control-item" href="#item2">选项卡2</a>
+			</div>
+			<div class="mui-input-row mui-checkbox mui-left">
+				<label>checkbox左侧显示示例</label>
+				<input name="checkbox1" value="Item 1" type="checkbox">item1
+			</div>
+			<div id="sheet" class="mui-popover mui-popover-bottom mui-popover-action ">
+				<!-- 可选择菜单 -->
+				<ul class="mui-table-view">
+				  <li class="mui-table-view-cell">
+					<a href="#">菜单1</a>
+				  </li>
+				  <li class="mui-table-view-cell">
+					<a href="#">菜单2</a>
+				  </li>
+				</ul>
+				<!-- 取消菜单 -->
+				<ul class="mui-table-view">
+				  <li class="mui-table-view-cell">
+					<a href="#sheet1"><b>取消</b></a>
+				  </li>
+				</ul>
+			</div>
+			<a href="#sheet" id="openSheet" class="mui-btn mui-btn-primary mui-btn-block">打开操作表</a>
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>input</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入">
+				</div>
+			</form>
+			<form class="mui-input-group">
+			    <div class="mui-input-row">
+			        <label>用户名</label>
+			    <input type="text" class="mui-input-clear" placeholder="请输入用户名">
+			    </div>
+			    <div class="mui-input-row">
+			        <label>密码</label>
+			        <input type="password" class="mui-input-password" placeholder="请输入密码">
+			    </div>
+			    <div class="mui-button-row">
+			        <button type="button" class="mui-btn mui-btn-primary" >确认</button>
+			        <button type="button" class="mui-btn mui-btn-danger" >取消</button>
+			    </div>
+			</form>
+			<form class="mui-input-group">
+			    <div class="mui-input-row">
+			        <label>快速删除</label>
+			        <input type="text" class="mui-input-clear" placeholder="请输入内容">
+			    </div>
+			</form>
+		</div>
+
+
+		
+	</body>
+
+</html>
