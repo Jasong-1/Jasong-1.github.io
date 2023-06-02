@@ -1,70 +1,514 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- 打开页面时清除缓存重新加载 -->
-		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-		<META HTTP-EQUIV="Expires" CONTENT="0">
-		<script type="text/javascript">
-			document.write("<link rel='stylesheet' type='text/css' href='xxx.css?v=" + Math.random() + "'>");
-		</script>
-		<style>
-		* {
-			margin: 0;
-			font-size: 1rem;
-		}
-		body{
-			background: url(img/index_background2.jpg) no-repeat center;
-			background-size: 100% 100%;
-			height: 100vh;
-			color: #fff;
-			text-align: center;
-			padding: 3rem;
-		}
-		.personal-photo {
-			width: 10rem;
-		}
-		.personal-info {
-			margin: 0 auto 2rem;
-			width: 20rem;
-		}
-		.personal-info td{
-			font-size: 1.2rem;
-		}
-		h1 {
-			font-size: 2rem;
-		}
-		a {
-			color: #fff;
-		}
-		</style>
-		<title>耿祝捷-UE/UX Designer</title>
-	</head>
-	<body>
-		<img src="img/personal_photo.jpg" alt="近照" class="personal-photo">
-		<table class="personal-info">
-			<tbody>
-				<tr>
-					<td>
-						耿祝捷
-					</td>
-					<td>
-						Jason Geng
-					</td>
-				</tr>
-				<tr>
-					<td style="background-color: #fff;">
-						<a href="" style="color: #333;">Resume</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<a href="https://www.ssk12.com/" target="_blank"><img src="Site%20Design/schoolstream/img/LOGO.png"></a>
-		<a href="">SchoolStream Platform</a>
-		<a href="">Intelligent Forms</a>
-		<a href=""></a>
-		
-	</body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- 打开页面时清除缓存重新加载 -->
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="0">
+
+	<script type="text/javascript">
+		document.write("<link rel='stylesheet' type='text/css' href='css/general.css?v=" + Math.random() + "'>");
+		document.write("<link rel='stylesheet' type='text/css' href='css/index.css?v=" + Math.random() + "'>");
+		document.write("<link rel='stylesheet' type='text/css' href='css/swiper.min.css?v=" + Math.random() + "'>");
+		document.write("<link rel='stylesheet' type='text/css' href='css/indexbnr.css?v=" + Math.random() + "'>");
+		document.write(
+			"<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?v=" +
+			Math.random() + "'>");
+		document.write(
+			"<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css?v=" +
+			Math.random() + "'>");
+	</script>
+
+	<title>SchoolStream</title>
+</head>
+
+<body>
+	<div id="top">
+		<div class="logo-wrap">
+			<a href="index.html">
+				<div class="logo" style="vertical-align: middle;"><img src="img/LOGO.png" alt="" /></div>
+			</a>
+			<div class="hamburger-menu"><i class="fa fa-bars"></i></div>
+		</div>
+		<div class="nav-wrap">
+			<ul class="main-nav" style="vertical-align: top;">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="slu_li" name="solution_nav">
+					<a url="product/solutions.html" class="scrolly modal-trigger">
+						Solutions <i class="fa fa-chevron-down"></i>
+					</a>
+					<ul>
+						<li><a href="product/solutions.html">Automated Business Operations</a></li>
+						<li><a href="product/singlesignon.html">Single sign on</a></li>
+					</ul>
+				</li>
+				<li class="slu_li"><a href="product/services.html" class="scrolly">Services</a></li>
+				<li class="slu_li"><a href="product/programs.html">Programs</a></li>
+				<li class="slu_li"><a href="product/partners.html">Partners</a></li>
+				<li class="slu_li"><a href="product/CompanyNews.html">News</a></li>
+				<li class="slu_li" style="border: 0px;"><a href="product/ContactUs.html">Contact Us</a></li>
+			</ul>
+			<a class="button" href="https://cnsite1.astihosted.com/SubmitPublicForms.aspx?id=pgY5rb4jXkQRLR4zLgZVfQ%3d%3d" target="black">Sign
+				Up for Free-Trial</a>
+		</div>
+	</div>
+	<div class="index-banner">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide1">
+						<div class=" bnr-content bnr-content1">
+					<h1>RISK-FREE TRIAL</h1>
+					<p>
+						Click <a href="https://cnsite1.astihosted.com/SubmitPublicForms.aspx?id=pgY5rb4jXkQRLR4zLgZVfQ%3d%3d" target="blank"
+							class="bnr-link"><b>HERE</b></a> to start automating
+						your processes with <b>SchoolStream Intelligent Forms</b> or any one of the
+						listed applications<!-- with a 30-day <b>FREE TRIAL</b> -->.
+					</p>
+					<div class="freetrialbanneraicon">
+						<a href="https://media-usno1.streaming.media.azure.net/1e9eb822-d87b-4e36-93b5-f9d415b9a4b4/Intelligent Forms Highlight Features introduction.mp4"
+							target="blank">
+							<div>
+								<svg width="152" height="54" viewBox="0 0 152 54" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M79.3001 41.1712C79.4911 40.821 79.5866 40.4814 79.5866 40.1419C79.5866 35.8762 69.5591 34.1254 66.0362 33.8389L64.4764 33.7115V11.5343H54.7778V52.2704C57.0168 51.7292 59.4786 51.0501 61.9616 50.2437C69.782 47.7394 77.7615 44.2272 79.3001 41.1712Z"
+										fill="url(#paint0_linear_340_30)" />
+									<path
+										d="M97.2223 11.5343H82.9397V40.1419C82.9397 46.5298 69.7077 51.4746 61.2506 54H97.2223V11.5343Z"
+										fill="url(#paint1_linear_340_30)" />
+									<path
+										d="M67.8295 30.6661C70.5672 31.0057 76.0425 31.9713 79.576 34.4543V11.5343H67.8295V30.6661Z"
+										fill="url(#paint2_linear_340_30)" />
+									<path
+										d="M79.576 11.5343V34.4437C76.0425 31.9713 70.5672 30.9951 67.8295 30.6555V0C71.7238 1.48556 79.576 5.27373 79.576 11.5343Z"
+										fill="url(#paint3_linear_340_30)" />
+									<defs>
+										<linearGradient id="paint0_linear_340_30" x1="55" y1="31" x2="97" y2="32"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_340_30" x1="55" y1="31" x2="97" y2="32"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint2_linear_340_30" x1="55" y1="31" x2="97" y2="32"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint3_linear_340_30" x1="55" y1="31" x2="97" y2="32"
+											gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<p>Intelligent Forms</p>
+							</div>
+						</a>
+						<a href="https://media-usno1.streaming.media.azure.net/db07d4c8-7062-4d82-b047-ca68d35ae673/OnOff-boarding Highlight Features introduction (1).mp4"
+							target="blank">
+							<div>
+								<svg width="152" height="54" viewBox="0 0 152 54" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M67.5528 18.5988C72.6887 18.5988 76.8521 14.4353 76.8521 9.29938C76.8521 4.16347 72.6887 0 67.5528 0C62.4169 0 58.2534 4.16347 58.2534 9.29938C58.2534 14.4353 62.4169 18.5988 67.5528 18.5988Z"
+										fill="url(#paint0_linear_340_23)" />
+									<path
+										d="M100.528 13.4826C100.616 14.1798 100.449 14.8574 100.282 15.535C100.164 16.0161 100.027 16.3991 99.9287 16.6643C97.9157 21.8197 95.8928 26.9751 93.8797 32.1403H93.8601C93.0843 34.1534 91.1204 35.6067 88.8225 35.6067C87.3201 35.6067 85.9453 34.9684 84.9633 33.9472H84.9437L82.42 31.4431C82.4003 31.7181 82.4003 32.0323 82.4003 32.4054C82.4003 37.06 82.7342 49.924 82.7342 49.924C82.0665 49.2563 80.7997 47.9797 79.1107 46.3103C77.6083 44.8177 76.8325 44.0714 75.9193 44.0321C74.5739 43.9732 73.4938 45.132 73.0322 45.7015H73.0126C71.5102 47.6458 70.2336 48.8537 69.448 49.5214C69.0847 49.8258 68.6231 50.199 67.9161 50.4445C67.4938 50.5918 66.3646 50.9747 65.2156 50.4543C63.831 49.8258 63.291 48.3038 63.2615 47.4101C63.2517 47.2236 63.2517 47.0959 63.2615 47.0174C63.3302 45.8684 63.3106 44.8963 63.3204 44.6901C63.3695 43.7768 63.3892 43.7866 63.3597 43.5608C63.3008 43.1582 63.0847 42.2547 62.6723 42.1762C62.1224 42.0682 61.327 43.4429 60.9244 44.4446C60.1683 46.3398 59.962 49.0402 59.8147 49.7375C59.7951 49.816 59.7362 50.1597 59.5889 50.5918C59.363 51.2399 59.1274 51.9273 58.5087 52.595C58.3123 52.8111 57.2419 53.9698 55.6708 53.9993C53.3533 54.0484 51.4482 51.6327 51.4482 49.7767C51.4482 49.6785 51.4679 49.5902 51.4679 49.492C51.4875 49.3741 51.4875 49.2366 51.4973 49.0992L51.5464 48.8242L54.6102 31.2271H54.6299C55.4547 25.0406 60.7378 20.2681 67.1403 20.2681H76.4397C76.9798 19.5611 77.7458 19.021 78.6295 18.7657C78.7867 18.7166 79.2285 18.5988 79.7686 18.6086C81.5362 18.6184 82.803 19.9146 83.1368 20.2681L85.69 23.0766C85.7293 23.1159 85.7784 23.1748 85.8569 23.2239C86.3675 23.5971 87.0746 23.4007 87.2415 23.3516C88.2137 23.0766 88.6261 22.075 88.685 21.9277L92.2398 13.5612C92.4558 13.0211 92.8879 12.157 93.7324 11.4106C94.194 11.008 95.009 10.2814 96.2758 10.1733C96.4722 10.1537 97.5032 10.085 98.5638 10.7036C98.6522 10.7429 100.312 11.7445 100.528 13.4826Z"
+										fill="url(#paint1_linear_340_23)" />
+									<defs>
+										<linearGradient id="paint0_linear_340_23" x1="51.7053" y1="31" x2="100.286"
+											y2="32.3382" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_340_23" x1="51.7053" y1="31" x2="100.286"
+											y2="32.3382" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<p>On/Off Boarding</p>
+							</div>
+						</a>
+						<a href="https://media-usno1.streaming.media.azure.net/4c7b50b4-fd0e-447b-85c3-b2e4c9c2b33b/Expense Report Highlight Features introduction.mp4"
+							target="blank">
+							<div>
+								<svg width="152" height="54" viewBox="0 0 152 54" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M75.1792 7.7652V1.6416L49 27.8208L69.0556 47.8764L75.1792 54V47.8764H103V7.7652H75.1792ZM86.8972 41.0508V45.522H84.1864V41.1912C81.6916 41.148 79.1104 40.3704 77.5984 39.2904L78.6352 36.3744C80.1904 37.4112 82.4476 38.2536 84.8344 38.2536C87.9232 38.2536 89.9752 36.4824 89.9752 34.0308C89.9752 31.644 88.312 30.186 85.1044 28.89C80.7088 27.162 77.9656 25.1424 77.9656 21.3732C77.9656 17.7984 80.5144 15.0768 84.4888 14.418V10.0872H87.1996V14.2776C89.7592 14.3532 91.5304 15.066 92.7724 15.7896L91.7248 18.6408C90.8176 18.1332 89.0248 17.1396 86.2816 17.1396C82.966 17.1396 81.7024 19.1268 81.7024 20.8872C81.7024 23.0904 83.29 24.2352 87.0592 25.812C91.498 27.6372 93.7552 29.8404 93.7552 33.6744C93.7336 37.1304 91.3576 40.3164 86.8972 41.0508Z"
+										fill="url(#paint0_linear_340_34)" />
+									<defs>
+										<linearGradient id="paint0_linear_340_34" x1="49.2827" y1="31.6992" x2="102.695"
+											y2="33.3679" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<p>Expense Report</p>
+							</div>
+						</a>
+						<a href="https://media-usno1.streaming.media.azure.net/602f0f96-4b2a-455a-8d46-69476a761b77/Student Registration With Open Enrollment Highlight Features introduction.mp4"
+							target="blank">
+							<div>
+								<svg width="152" height="54" viewBox="0 0 152 54" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M100.69 9.25171H51.3104C50.0402 9.25171 49 10.2919 49 11.5721V42.4379C49 43.7181 50.0402 44.7483 51.3104 44.7483H100.69C101.97 44.7483 103 43.7081 103 42.4379V11.5721C103 10.2919 101.96 9.25171 100.69 9.25171ZM71.5842 32.8861C71.5842 33.0361 71.4641 33.1561 71.3141 33.1561H54.8811C54.731 33.1561 54.611 33.0361 54.611 32.8861V30.3356C54.611 30.1856 54.731 30.0656 54.8811 30.0656H71.3141C71.4641 30.0656 71.5842 30.1856 71.5842 30.3356V32.8861ZM71.5842 23.6644C71.5842 23.8144 71.4641 23.9344 71.3141 23.9344H54.8811C54.731 23.9344 54.611 23.8144 54.611 23.6644V21.1139C54.611 20.9639 54.731 20.8439 54.8811 20.8439H71.3141C71.4641 20.8439 71.5842 20.9639 71.5842 21.1139V23.6644ZM97.369 37.817H76.7151C76.7151 37.747 76.7051 37.677 76.7051 37.597C76.7051 32.9361 79.7957 28.9954 84.0465 27.7051C82.1661 26.6449 80.8859 24.6646 80.8859 22.3541C80.8859 18.9535 83.6464 16.193 87.047 16.193C90.4477 16.193 93.2082 18.9535 93.2082 22.3541C93.2082 24.6646 91.9279 26.6449 90.0476 27.7051C94.2884 28.9954 97.3889 32.9361 97.3889 37.597C97.3789 37.667 97.369 37.737 97.369 37.817Z"
+										fill="url(#paint0_linear_340_14)" />
+									<defs>
+										<linearGradient id="paint0_linear_340_14" x1="49.2827" y1="29.6294" x2="102.634"
+											y2="32.0879" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<p>Student Registration With Open Enrollment</p>
+							</div>
+						</a>
+						<a href="https://media-usno1.streaming.media.azure.net/37c895e2-ee49-49c9-8fe8-7789231ac57a/HVSM Highlight Features introduction.mp4"
+							target="blank">
+							<div>
+								<svg width="152" height="54" viewBox="0 0 152 54" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M93.4528 11.0322V50.031H103V13.311L93.4528 11.0322ZM99.814 47.5902V31.8438H98.248V27.8154H99.8248V26.217H101.402V47.5902H99.814Z"
+										fill="url(#paint0_linear_340_40)" />
+									<path
+										d="M91.8868 10.6758V50.031H49V24.057L55.372 21.9294V34.1442L61.7224 33.345V34.6194C61.7224 35.235 62.2192 35.7426 62.8348 35.7426H71.7556C72.3604 35.7426 72.868 35.2458 72.868 34.6302V31.9518L83.9488 30.5694V12.4578L90.3748 10.3194L91.8868 10.6758Z"
+										fill="url(#paint1_linear_340_40)" />
+									<path
+										d="M82.3612 12.9762V29.1762L72.868 30.3534V29.4786C72.8788 28.7658 72.22 28.2366 71.5072 28.3986L62.5972 30.4506C62.0896 30.5586 61.7224 31.023 61.7224 31.5306V31.7574L56.9596 32.3406V21.4218L63.31 19.305L63.6556 19.197L79.1644 14.0562L82.3396 12.987H82.3612V12.9762Z"
+										fill="url(#paint2_linear_340_40)" />
+									<path
+										d="M82.3396 3.96899V11.2914L79.1644 12.3498V7.74899L75.1792 8.96939L70.0276 10.557L63.31 12.6198V17.631L61.7224 18.1494V10.6866L62.0248 10.557L65.7076 8.96939L77.3608 3.96899H82.3396Z"
+										fill="url(#paint3_linear_340_40)" />
+									<defs>
+										<linearGradient id="paint0_linear_340_40" x1="49.2827" y1="30.412" x2="102.68"
+											y2="32.3082" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint1_linear_340_40" x1="49.2827" y1="30.412" x2="102.68"
+											y2="32.3082" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint2_linear_340_40" x1="49.2827" y1="30.412" x2="102.68"
+											y2="32.3082" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+										<linearGradient id="paint3_linear_340_40" x1="49.2827" y1="30.412" x2="102.68"
+											y2="32.3082" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<p>Hiring Volunteer and Substitute Management</p>
+							</div>
+						</a>
+						<a href="https://media-usno1.streaming.media.azure.net/d3ab392f-f748-4958-9364-69ef25c656bb/Electronic File Management Highlight Features introduction.mp4"
+							target="blank">
+							<div>
+								<svg width="152" height="54" viewBox="0 0 152 54" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M95.548 12.0366H73.2028V11.1726C73.2028 7.05778 69.8656 3.72058 65.7508 3.72058H56.452C52.3372 3.72058 49 7.05778 49 11.1726V19.4886V42.8274C49 46.9422 52.3372 50.2794 56.452 50.2794H65.7616H95.548C99.6628 50.2794 103 46.9422 103 42.8274V19.4886C103 15.3738 99.6628 12.0366 95.548 12.0366Z"
+										fill="url(#paint0_linear_340_44)" />
+									<defs>
+										<linearGradient id="paint0_linear_340_44" x1="49.2827" y1="30.4488" x2="102.682"
+											y2="32.3248" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#7ACA52" />
+											<stop offset="1" stop-color="#19ADE5" />
+										</linearGradient>
+									</defs>
+								</svg>
+								<p>Electronic File Management</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide slide2">
+				<div class="bnr-content bnr-content2">
+					<h1>District Without Limits</h1>
+					<p>
+						Why pay more? Click
+						<a href="https://cnsite1.astihosted.com/SubmitPublicForms.aspx?id=pgY5rb4jXkQRLR4zLgZVfQ%3d%3d" target="blank"
+							class="bnr-link">
+							<b>HERE</b>
+						</a>
+						to start integrating all applications to <b>SAVE COST</b> and <b>INCREASE
+							EFFICIENCY</b>.
+					</p>
+					<a href="product/solutions.html" class="button">Click here to learn more</a>
+				</div>
+			</div>
+			<div class="swiper-slide slide3">
+				<div class="bnr-content bnr-content3">
+					<h1>Intelligent Forms</h1>
+					<p>
+						Updated collaboration view and authority control for different roles. Easy integration
+						and better compatibility towards advanced technology.
+					</p>
+					<div id="">
+						<a href="https://cnsite1.astihosted.com/SubmitPublicForms.aspx?id=pgY5rb4jXkQRLR4zLgZVfQ%3d%3d" class="button"
+							target="blank" style="margin-right: 1rem;">
+							Free Trial
+						</a>
+						<a href="product/solutions/Smart Form Manager 2.0.html?type=1" class="button" target="blank">
+							Learn More
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-prev"><span></span></div>
+		<div class="swiper-button-next"><span></span></div>
+		<ul class="swiper-pagination">
+			<!-- <ul class="swiper-pagination autoplay"> -->
+		</ul>
+	</div>
+	</div>
+	<div class="index-section">
+		<h1>OUR SOLUTIONS</h1>
+		<div class="index-section-content">
+			<a class="index-item index-solution-item modal-trigger" url="./product/solutions.html"
+				style="text-decoration: none;">
+				<!-- <a href="product/solutions.html" class="list"> -->
+				<img src="img/index-solu-web.png" alt="" class="subitem">
+				<h3>Automated Business Operations</h3>
+			</a>
+			<a class="index-item index-solution-item" href="product/singlesignon.html" style="text-decoration: none;">
+				<img src="img/index-solu-offi.png" alt="" class="subitem">
+				<h3>Single sign on</h3>
+			</a>
+		</div>
+	</div>
+	<div class="index-section" style="background-color: #fafafa;">
+		<h1>OUR SERVICES</h1>
+		<div class="index-section-content">
+			<a class="index-item index-service-item" href="product/services.html#first">
+				<div>
+					<img src="img/service_btn4-1.png">
+				</div>
+				<h3>
+					Training Services
+				</h3>
+			</a>
+			<a class="index-item index-service-item" href="product/services.html#second">
+				<div>
+					<img src="img/service_btn1-1.png">
+				</div>
+				<h3>
+					New Process Automation Development Services
+				</h3>
+			</a>
+			<a class="index-item index-service-item" href="product/services.html#third">
+				<div>
+					<img src="img/service_btn2-1.png">
+				</div>
+				<h3>
+					Information Integration Services
+				</h3>
+			</a>
+			<a class="index-item index-service-item" href="product/services.html#fourth">
+				<div>
+					<img src="img/service_btn3-1.png">
+				</div>
+				<h3>
+					Consulting Services on Change Management and Process Improvement
+				</h3>
+			</a>
+		</div>
+
+	</div>
+	<div class="index-section">
+		<h1>BACKGROUND & EXPERIENCE</h1>
+		<div class="index-section-content">
+			<div class="index-item">
+				<img src="img/Experience_95-1.png">
+				<h3>client retention rate</h3>
+			</div>
+			<div class="index-item">
+				<img src="img/Experience_30-1.png">
+				<h3>states</h3>
+			</div>
+		</div>
+
+	</div>
+	<div class="footer">
+		<div class="footer-clomn">
+			<a href="product/solutions.html">
+				<p class="footer-tle">Solutions</p>
+			</a>
+			<span>
+				<a href="product/solutions.html">
+					<p>Automated Business Operations</p>
+				</a>
+				<a href="product/singlesignon.html">
+					<p>Single Sign On</p>
+				</a>
+			</span>
+		</div>
+		<div class="footer-clomn">
+			<a href="product/services.html">
+				<p class="footer-tle">Services</p>
+			</a>
+			<span>
+				<a href="product/services.html#first">
+					<p>Training Services</p>
+				</a>
+				<a href="product/services.html#second">
+					<p>New Process Automation Development Services</p>
+				</a>
+				<a href="product/services.html#third">
+					<p>Information Integration Services</p>
+				</a>
+				<a href="product/services.html#fourth">
+					<p>Consulting Services on Change Management & Process Improvement</p>
+				</a>
+			</span>
+		</div>
+		<div class="footer-clomn">
+			<a href="product/programs.html">
+				<p class="footer-tle">Programs</p>
+			</a>
+			<span>
+				<a href="product/programs.html#first">
+					<p>Partner Program</p>
+				</a>
+				<a href="product/programs.html#second">
+					<p>K12 Thought Leaders</p>
+				</a>
+				<a href="product/programs.html#third">
+					<p>Innovation Sharing Payback Program (ISPP)</p>
+				</a>
+			</span>
+		</div>
+		<div class="footer-clomn">
+			<a href="product/ContactUs.html">
+				<p class="footer-tle">Contact Us</p>
+			</a>
+			<span>
+				<p>P: 248-340-3632</p>
+				<p>E: sales@rtresponse.com</p>
+				<ul>
+					<li><a href="https://twitter.com/school_stream" target="black">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.17674 24.5691C18.9885 24.5691 24.3542 16.4375 24.3542 9.38597C24.3542 9.15503 24.3495 8.92515 24.3391 8.69623C25.3832 7.94049 26.2842 7.00477 27 5.93293C26.0442 6.35802 25.0157 6.64413 23.9367 6.77312C25.038 6.1125 25.8835 5.06738 26.2824 3.8216C25.2353 4.443 24.0897 4.88106 22.8951 5.11689C21.9217 4.07964 20.5359 3.43091 19.0014 3.43091C16.0555 3.43091 13.6667 5.82069 13.6667 8.76646C13.6667 9.18526 13.7136 9.59249 13.8051 9.98322C9.37163 9.76006 5.44035 7.63662 2.80933 4.40781C2.33545 5.22218 2.0862 6.14773 2.08703 7.08993C2.08703 8.94132 3.02874 10.5757 4.46085 11.5319C3.61374 11.506 2.78522 11.2771 2.04497 10.8644C2.04417 10.8868 2.04417 10.9087 2.04417 10.9326C2.04417 13.5169 3.88288 15.6746 6.32371 16.1636C5.86529 16.2885 5.39225 16.3516 4.91712 16.3513C4.574 16.3513 4.23959 16.3176 3.91459 16.2551C4.59371 18.3754 6.56294 19.9183 8.89771 19.9615C7.07195 21.393 4.77206 22.2457 2.27241 22.2457C1.84719 22.246 1.42232 22.2213 1 22.1717C3.36082 23.6855 6.16406 24.5687 9.177 24.5687"
+									fill="#4E4E4E" />
+							</svg>
+						</a>
+					</li>
+					<li><a href="https://www.linkedin.com/showcase/10001456/" target="black">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2 5.19693C2 4.42471 2.27028 3.78765 2.81081 3.28573C3.35134 2.78379 4.05406 2.53284 4.91892 2.53284C5.76835 2.53284 6.45559 2.77993 6.98069 3.27415C7.52123 3.7838 7.79151 4.44788 7.79151 5.26643C7.79151 6.00774 7.52897 6.62549 7.00386 7.11971C6.46333 7.62936 5.7529 7.88419 4.87259 7.88419H4.84942C3.99999 7.88419 3.31275 7.62936 2.78764 7.11971C2.26254 6.61006 2 5.96912 2 5.19693ZM2.30116 25.4672V9.9923H7.44402V25.4672H2.30116ZM10.2934 25.4672H15.4363V16.8263C15.4363 16.2857 15.4981 15.8687 15.6216 15.5753C15.8378 15.0502 16.166 14.6062 16.6062 14.2433C17.0463 13.8803 17.5984 13.6989 18.2625 13.6989C19.9923 13.6989 20.8571 14.8649 20.8571 17.1969V25.4672H26V16.5946C26 14.3089 25.4595 12.5753 24.3784 11.3938C23.2973 10.2124 21.8687 9.62164 20.0927 9.62164C18.1004 9.62164 16.5483 10.4788 15.4363 12.1931V12.2394H15.4131L15.4363 12.1931V9.9923H10.2934C10.3243 10.4865 10.3398 12.0232 10.3398 14.6023C10.3398 17.1815 10.3243 20.8031 10.2934 25.4672Z"
+									fill="#4E4E4E" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/schoolstream_rr/" target="_blank">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M5.36743 25.4115C5.88314 25.6127 6.65848 25.8502 8.08577 25.9151C9.62862 25.9864 10.0923 26 13.9996 26C17.9085 26 18.3721 25.9857 19.9149 25.9151C21.3422 25.8502 22.1176 25.6127 22.6333 25.4115C23.3166 25.1455 23.8045 24.8288 24.3166 24.3166C24.8288 23.8045 25.1455 23.3173 25.4115 22.634C25.6113 22.1183 25.8502 21.3429 25.9151 19.9157C25.9857 18.3714 26 17.9077 26 14.0004C26 10.0915 25.9857 9.62933 25.9151 8.08506C25.8502 6.65777 25.6127 5.88243 25.4115 5.36672C25.1455 4.68339 24.8295 4.1955 24.3166 3.68336C23.8038 3.17122 23.3166 2.85309 22.6333 2.58846C22.1161 2.38874 21.3422 2.14979 19.9149 2.08488C18.3707 2.01569 17.9085 2 13.9996 2C10.0923 2 9.62861 2.01427 8.08506 2.08488C6.65777 2.14979 5.88243 2.38732 5.36672 2.58846C4.68268 2.85309 4.1955 3.17122 3.68336 3.68336C3.17193 4.19693 2.85452 4.6841 2.58846 5.36743C2.38874 5.88457 2.14979 6.65848 2.08488 8.08577C2.01569 9.63004 2 10.0923 2 14.0011C2 17.9099 2.01427 18.3728 2.08559 19.9157C2.1505 21.3429 2.38803 22.1183 2.58918 22.634C2.85381 23.3173 3.17122 23.8045 3.68407 24.3166C4.19693 24.8288 4.6841 25.1455 5.36743 25.4115ZM14.0252 11.0789C12.3838 11.0789 11.0536 12.4099 11.0536 14.0512C11.0536 15.6925 12.3838 17.0235 14.0252 17.0235C15.6665 17.0235 16.9974 15.6925 16.9974 14.0512C16.9974 12.4099 15.6665 11.0789 14.0252 11.0789ZM14.0252 18.6295C11.4966 18.6295 9.44686 16.5798 9.44686 14.0512H9.44694C9.44694 11.5225 11.4966 9.47289 14.0252 9.47289C16.5538 9.47289 18.6035 11.5226 18.6035 14.0512C18.6035 16.5798 16.5538 18.6295 14.0252 18.6295ZM17.8949 9.88586C17.7775 9.70986 17.7148 9.50297 17.7149 9.29136C17.7151 9.00771 17.8279 8.73576 18.0285 8.53523C18.2292 8.3347 18.5012 8.22199 18.7848 8.22186H18.7852C18.9968 8.22194 19.2037 8.28478 19.3796 8.40241C19.5555 8.52005 19.6926 8.6872 19.7735 8.88274C19.8544 9.07828 19.8755 9.29341 19.8341 9.50094C19.7927 9.70847 19.6907 9.89908 19.5411 10.0486C19.3914 10.1982 19.2007 10.3 18.9931 10.3412C18.7856 10.3824 18.5704 10.3612 18.375 10.2801C18.1795 10.1991 18.0124 10.0619 17.8949 9.88586ZM8.76731 21.0021C9.0813 21.1244 9.55379 21.2692 10.4231 21.3088V21.3089C11.3626 21.3521 11.6441 21.3608 14.0252 21.3608C16.4062 21.3608 16.6885 21.3521 17.6283 21.3089C18.4976 21.2694 18.9703 21.1246 19.2841 21.0022C19.7004 20.8401 19.9978 20.6468 20.3097 20.3353C20.6215 20.0237 20.8145 19.7267 20.9766 19.3104C21.0982 18.9964 21.2437 18.5239 21.2833 17.6547C21.3265 16.714 21.3352 16.4325 21.3352 14.0515C21.3352 11.6705 21.3265 11.3889 21.2833 10.4483C21.2438 9.57903 21.099 9.10641 20.9766 8.79256C20.8145 8.37628 20.6219 8.07884 20.3097 7.76699C19.9974 7.45514 19.7004 7.26142 19.2841 7.10007C18.9693 6.97881 18.4976 6.83294 17.6283 6.79336C16.6877 6.75056 16.4051 6.74136 14.0252 6.74136C11.6452 6.74136 11.3629 6.74999 10.4231 6.79321C9.55379 6.83273 9.08116 6.97753 8.76731 7.09993C8.35033 7.26127 8.0536 7.45457 7.74175 7.76685C7.4299 8.07913 7.23688 8.37614 7.07482 8.79242C6.95357 9.10719 6.8077 9.57889 6.76811 10.4482C6.7256 11.3888 6.71625 11.6703 6.71625 14.0513C6.71625 16.4324 6.72489 16.7147 6.76811 17.6545C6.80763 18.5238 6.95242 18.9964 7.07482 19.3103C7.23617 19.7266 7.42947 20.0233 7.74175 20.3351C8.05403 20.647 8.35104 20.84 8.76731 21.0021ZM8.18506 5.60323C8.75148 5.38283 9.40007 5.23232 10.3492 5.1891H10.3496C11.3008 5.14516 11.6053 5.1351 14.0262 5.1351C16.4472 5.1351 16.751 5.14566 17.7018 5.1891C18.6503 5.23161 19.2985 5.38283 19.866 5.60323C20.4515 5.83084 20.9493 6.13542 21.4447 6.63165C21.9402 7.12789 22.2449 7.62484 22.4731 8.21109C22.6935 8.77751 22.8441 9.42603 22.8873 10.3753C22.9305 11.3259 22.9406 11.6299 22.9406 14.0512C22.9406 16.4725 22.9305 16.7757 22.8873 17.7271C22.8448 18.6763 22.6935 19.3245 22.4731 19.8913C22.2449 20.4776 21.941 20.9753 21.4447 21.4708C20.9485 21.9662 20.4515 22.2709 19.8653 22.4992C19.2985 22.7196 18.6503 22.8701 17.7011 22.9133C16.7504 22.9572 16.4465 22.9673 14.0252 22.9673C11.6038 22.9673 11.3004 22.9565 10.3492 22.9133C9.40007 22.8701 8.75255 22.7196 8.18506 22.4992C7.59809 22.2709 7.10179 21.966 6.60562 21.4708C6.10946 20.9755 5.80482 20.4776 5.57721 19.8913C5.3568 19.3245 5.2063 18.6764 5.16307 17.7271C5.11913 16.7765 5.10907 16.4725 5.10907 14.0512C5.10907 11.6299 5.11913 11.3259 5.16307 10.3753C5.2063 9.4261 5.3568 8.77787 5.57721 8.21109C5.80482 7.62412 6.10939 7.1271 6.60562 6.63165C7.10186 6.1362 7.59881 5.83084 8.18506 5.60323Z"
+									fill="#4E4E4E" />
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:sales@rtresponse.com">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23.6 4.40002H4.4C3.08 4.40002 2.012 5.48002 2.012 6.80002L2 21.2C2 22.52 3.08 23.6 4.4 23.6H23.6C24.92 23.6 26 22.52 26 21.2V6.80002C26 5.48002 24.92 4.40002 23.6 4.40002ZM23.12 9.50002L14.636 14.804C14.252 15.044 13.748 15.044 13.364 14.804L4.88 9.50002C4.58 9.30802 4.4 8.98402 4.4 8.63602C4.4 7.83202 5.276 7.35202 5.96 7.77202L14 12.8L22.04 7.77202C22.724 7.35202 23.6 7.83202 23.6 8.63602C23.6 8.98402 23.42 9.30802 23.12 9.50002Z"
+									fill="#4E4E4E" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</span>
+		</div>
+
+	</div>
+	<div class="footer2">
+		<p>
+			Powered by Right Rresponse LLC 2003 - <span id="currentyear"></span> All Rights Reserved © SchoolStream
+			<img src="img/cnlogo-sm.png" width="15" height="15" alt="cn">: A Member of The <img src="img/cnlogo-sm.png"
+				width="15" height="15" alt="cn">Collaborative Network For the Educational
+			Ecosystem
+		</p>
+	</div>
+	<div id="videosfixed">
+		<a href="https://media-usno1.streaming.media.azure.net/6054d4e6-c55b-49ff-b9c1-e0e2b683c7ac/companyProductIntroV905052022.mp4"
+			target="blank">
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+					<path
+						d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 13.5v-7c0-.41.47-.65.8-.4l4.67 3.5c.27.2.27.6 0 .8l-4.67 3.5c-.33.25-.8.01-.8-.4z" />
+				</svg>
+				<span>SchoolStream Introduction</span>
+			</button>
+		</a>
+		<a href="https://media-usno1.streaming.media.azure.net/de6d99fb-eeef-4e4c-bb0d-38f032a3e89e/platformArchitectureIntro.mp4"
+			target="blank">
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+					<path
+						d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 13.5v-7c0-.41.47-.65.8-.4l4.67 3.5c.27.2.27.6 0 .8l-4.67 3.5c-.33.25-.8.01-.8-.4z" />
+				</svg>
+				<span>SchoolStream Architecture</span>
+			</button>
+		</a>
+		<a href="https://media-usno1.streaming.media.azure.net/4c5c243f-6405-4aa3-a1fc-c7c7a35b0936/SchoolStreamMaturityModelIntro.mp4"
+			target="blank" style="margin: 0;">
+			<button style="border: 0;">
+				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+					<path
+						d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 13.5v-7c0-.41.47-.65.8-.4l4.67 3.5c.27.2.27.6 0 .8l-4.67 3.5c-.33.25-.8.01-.8-.4z" />
+				</svg>
+				<span>SchoolStream Automation Maturity Model</span>
+			</button>
+		</a>
+	</div>
+
+	<div id="requestDemoDialog" class="modal">
+		<!-- <p>Tell us more about your company so we can set you up with the demo that's right for you.</p> -->
+		<!-- <p>Try SchoolStream Intelligent Forms and one extra application with a 60-day Free Trial.</p> -->
+		<p>Try SchoolStream Intelligent Forms and one extra application.</p>
+		<p><a class="button dialog-request-demo" target="_blank"
+				href="https://cnsite1.astihosted.com/SubmitPublicForms.aspx?id=pgY5rb4jXkQRLR4zLgZVfQ%3d%3d">Sign Up for Free-Trial</a> or
+			<a class="skip-link" href="#">View Solutions</a>
+		</p>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/indexbnr.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+
 </html>
