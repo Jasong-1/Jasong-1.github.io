@@ -1,134 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../style/style.css">
-	<link rel="stylesheet" href="../../../../style/style2.css">
-    
-    
-    <title>Parent-Teacher Conference</title>
-    
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../../style/style.css">
+		<link rel="stylesheet" href="../../../../style/style2.css">
 
-<body class="ConferencesResponsePage">
-    <div class="floatBtnGroup" style="z-index: 10000;">
-        <a class="floatBtn" href="Information.html">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M17.3125 12V9.3125H14.6875V12H17.3125ZM17.3125 22.6875V14.6875H14.6875V22.6875H17.3125ZM6.5625 6.625C9.1875 4 12.3333 2.6875 16 2.6875C19.6667 2.6875 22.7917 4 25.375 6.625C28 9.20833 29.3125 12.3333 29.3125 16C29.3125 19.6667 28 22.8125 25.375 25.4375C22.7917 28.0208 19.6667 29.3125 16 29.3125C12.3333 29.3125 9.1875 28.0208 6.5625 25.4375C3.97917 22.8125 2.6875 19.6667 2.6875 16C2.6875 12.3333 3.97917 9.20833 6.5625 6.625Z"
-                    fill="white" />
-            </svg>
-        </a>
-        <a class="floatBtn active" href="response.html">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M13.3125 12C17.6458 12.625 20.9792 14.2917 23.3125 17C25.6875 19.6667 27.25 22.8958 28 26.6875C24.7917 22.1458 19.8958 19.875 13.3125 19.875V25.3125L4 16L13.3125 6.6875V12Z"
-                    fill="white" />
-            </svg>
-        </a>
-        
-        <a class="floatBtn" href="data.html">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M21.3125 12H26.6875V26.6875H21.3125V12ZM5.3125 26.6875V16H10.6875V26.6875H5.3125ZM13.3125 26.6875V5.3125H18.6875V26.6875H13.3125Z"
-                    fill="white" />
-            </svg>
-        </a>
-        <a class="floatBtn" href="history.html">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 10.6875H18V16.3125L22.6875 19.125L21.6875 20.75L16 17.3125V10.6875ZM8.8125 7.5C11.1875 5.16667 14.0208 4 17.3125 4C20.6042 4 23.4167 5.16667 25.75 7.5C28.125 9.83333 29.3125 12.6667 29.3125 16C29.3125 19.3333 28.125 22.1667 25.75 24.5C23.4167 26.8333 20.6042 28 17.3125 28C14.0208 28 11.2083 26.8333 8.875 24.5L10.75 22.5625C12.5833 24.3958 14.7708 25.3125 17.3125 25.3125C19.8958 25.3125 22.1042 24.4167 23.9375 22.625C25.7708 20.7917 26.6875 18.5833 26.6875 16C26.6875 13.4167 25.7708 11.2292 23.9375 9.4375C22.1042 7.60417 19.8958 6.6875 17.3125 6.6875C14.7292 6.6875 12.5208 7.60417 10.6875 9.4375C8.89583 11.2292 8 13.4167 8 16H12L6.625 21.375L6.5 21.1875L1.3125 16H5.3125C5.3125 12.6667 6.47917 9.83333 8.8125 7.5Z" fill="white"/>
-                </svg>
-                
-        </a>
-        <a class="floatBtn" href="setting1.html">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M12.6868 19.3125C13.6035 20.2292 14.7077 20.6875 15.9993 20.6875C17.291 20.6875 18.3952 20.2292 19.3118 19.3125C20.2285 18.3958 20.6868 17.2917 20.6868 16C20.6868 14.7083 20.2285 13.6042 19.3118 12.6875C18.3952 11.7708 17.291 11.3125 15.9993 11.3125C14.7077 11.3125 13.6035 11.7708 12.6868 12.6875C11.7702 13.6042 11.3118 14.7083 11.3118 16C11.3118 17.2917 11.7702 18.3958 12.6868 19.3125ZM25.9368 17.3125L28.7493 19.5C29.041 19.7083 29.0827 20 28.8743 20.375L26.1868 25C26.0202 25.2917 25.7493 25.375 25.3743 25.25L22.0618 23.9375C21.1868 24.5625 20.4368 25 19.8118 25.25L19.3118 28.75C19.2285 29.125 19.0202 29.3125 18.6868 29.3125H13.3118C12.9785 29.3125 12.7702 29.125 12.6868 28.75L12.1868 25.25C11.3952 24.9167 10.6452 24.4792 9.93685 23.9375L6.62435 25.25C6.24935 25.375 5.97852 25.2917 5.81185 25L3.12435 20.375C2.91602 20 2.95768 19.7083 3.24935 19.5L6.06185 17.3125C6.02018 17.0208 5.99935 16.5833 5.99935 16C5.99935 15.4167 6.02018 14.9792 6.06185 14.6875L3.24935 12.5C2.95768 12.2917 2.91602 12 3.12435 11.625L5.81185 7C5.97852 6.70833 6.24935 6.625 6.62435 6.75L9.93685 8.0625C10.8118 7.4375 11.5618 7 12.1868 6.75L12.6868 3.25C12.7702 2.875 12.9785 2.6875 13.3118 2.6875H18.6868C19.0202 2.6875 19.2285 2.875 19.3118 3.25L19.8118 6.75C20.6035 7.08333 21.3535 7.52083 22.0618 8.0625L25.3743 6.75C25.7493 6.625 26.0202 6.70833 26.1868 7L28.8743 11.625C29.0827 12 29.041 12.2917 28.7493 12.5L25.9368 14.6875C25.9785 14.9792 25.9993 15.4167 25.9993 16C25.9993 16.5833 25.9785 17.0208 25.9368 17.3125Z"
-                    fill="white" />
-            </svg>
-        </a>
-    </div>
-    <form action="#" method="post" name="Recipients Responses" id="RecipientResponse">
-        <p class="formTitle">Fill you Responses</p>
-		<a href="" style=" color: #fff;">Starting conversion with sender</a>
-        <hr>
-        
-        <div>
-            <div>
-                <!-- <label for="" style="margin-right: 1rem;"><b style="font-size: 1.2rem;">Set Time</b></label> -->
-                <!-- <div style="display: flex;">
-                    <div class="form-check" style="margin-right: 1.5rem;">
-                        <input class="form-check-input" type="radio" name="ChooseMethod" id="CalendlyRadio" value="Calendly" checked>
-                        <label class="form-check-label" for="CalendlyRadio">Collaborative Network Forms</label>
-                    </div>
-					<div class="form-check">
-					    <input class="form-check-input" type="radio" name="ChooseMethod" id="MicrosoftCanlendarRadio" value="MicrosoftCanlendar">
-					    <label class="form-check-label" for="MicrosoftCanlendarRadio">Link</label>
+		<style>
+			:root {
+				--bs-table-hover-bg: #ffffff20;
+			}
+
+			@media (min-width: 576px) {
+				.modal-dialog {
+					max-width: 810px !important;
+				}
+			}
+
+			th,
+			td {
+				background: none !important;
+				color: #fff;
+			}
+
+			table>tbody>tr>th>p {
+				vertical-align: middle;
+				line-height: 32px;
+				color: #fff;
+			}
+
+			table>tbody>tr>td>img {
+				width: 2rem;
+				height: 2rem;
+			}
+		</style>
+
+		<title>Parent-Teacher Conference</title>
+
+	</head>
+
+	<body class="ConferencesResponsePage">
+		<div class="floatBtnGroup floatBtnGroupOnImg" style="z-index: 10000;">
+			<a class="floatBtn" href="Information.html">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M17.3125 12V9.3125H14.6875V12H17.3125ZM17.3125 22.6875V14.6875H14.6875V22.6875H17.3125ZM6.5625 6.625C9.1875 4 12.3333 2.6875 16 2.6875C19.6667 2.6875 22.7917 4 25.375 6.625C28 9.20833 29.3125 12.3333 29.3125 16C29.3125 19.6667 28 22.8125 25.375 25.4375C22.7917 28.0208 19.6667 29.3125 16 29.3125C12.3333 29.3125 9.1875 28.0208 6.5625 25.4375C3.97917 22.8125 2.6875 19.6667 2.6875 16C2.6875 12.3333 3.97917 9.20833 6.5625 6.625Z"
+						fill="white" />
+				</svg>
+			</a>
+			<a class="floatBtn active" href="response.html">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M13.3125 12C17.6458 12.625 20.9792 14.2917 23.3125 17C25.6875 19.6667 27.25 22.8958 28 26.6875C24.7917 22.1458 19.8958 19.875 13.3125 19.875V25.3125L4 16L13.3125 6.6875V12Z"
+						fill="white" />
+				</svg>
+			</a>
+
+			<a class="floatBtn" href="data.html">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M21.3125 12H26.6875V26.6875H21.3125V12ZM5.3125 26.6875V16H10.6875V26.6875H5.3125ZM13.3125 26.6875V5.3125H18.6875V26.6875H13.3125Z"
+						fill="white" />
+				</svg>
+			</a>
+			<a class="floatBtn" href="history.html">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M16 10.6875H18V16.3125L22.6875 19.125L21.6875 20.75L16 17.3125V10.6875ZM8.8125 7.5C11.1875 5.16667 14.0208 4 17.3125 4C20.6042 4 23.4167 5.16667 25.75 7.5C28.125 9.83333 29.3125 12.6667 29.3125 16C29.3125 19.3333 28.125 22.1667 25.75 24.5C23.4167 26.8333 20.6042 28 17.3125 28C14.0208 28 11.2083 26.8333 8.875 24.5L10.75 22.5625C12.5833 24.3958 14.7708 25.3125 17.3125 25.3125C19.8958 25.3125 22.1042 24.4167 23.9375 22.625C25.7708 20.7917 26.6875 18.5833 26.6875 16C26.6875 13.4167 25.7708 11.2292 23.9375 9.4375C22.1042 7.60417 19.8958 6.6875 17.3125 6.6875C14.7292 6.6875 12.5208 7.60417 10.6875 9.4375C8.89583 11.2292 8 13.4167 8 16H12L6.625 21.375L6.5 21.1875L1.3125 16H5.3125C5.3125 12.6667 6.47917 9.83333 8.8125 7.5Z"
+						fill="white" />
+				</svg>
+
+			</a>
+			<a class="floatBtn" href="setting1.html">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M12.6868 19.3125C13.6035 20.2292 14.7077 20.6875 15.9993 20.6875C17.291 20.6875 18.3952 20.2292 19.3118 19.3125C20.2285 18.3958 20.6868 17.2917 20.6868 16C20.6868 14.7083 20.2285 13.6042 19.3118 12.6875C18.3952 11.7708 17.291 11.3125 15.9993 11.3125C14.7077 11.3125 13.6035 11.7708 12.6868 12.6875C11.7702 13.6042 11.3118 14.7083 11.3118 16C11.3118 17.2917 11.7702 18.3958 12.6868 19.3125ZM25.9368 17.3125L28.7493 19.5C29.041 19.7083 29.0827 20 28.8743 20.375L26.1868 25C26.0202 25.2917 25.7493 25.375 25.3743 25.25L22.0618 23.9375C21.1868 24.5625 20.4368 25 19.8118 25.25L19.3118 28.75C19.2285 29.125 19.0202 29.3125 18.6868 29.3125H13.3118C12.9785 29.3125 12.7702 29.125 12.6868 28.75L12.1868 25.25C11.3952 24.9167 10.6452 24.4792 9.93685 23.9375L6.62435 25.25C6.24935 25.375 5.97852 25.2917 5.81185 25L3.12435 20.375C2.91602 20 2.95768 19.7083 3.24935 19.5L6.06185 17.3125C6.02018 17.0208 5.99935 16.5833 5.99935 16C5.99935 15.4167 6.02018 14.9792 6.06185 14.6875L3.24935 12.5C2.95768 12.2917 2.91602 12 3.12435 11.625L5.81185 7C5.97852 6.70833 6.24935 6.625 6.62435 6.75L9.93685 8.0625C10.8118 7.4375 11.5618 7 12.1868 6.75L12.6868 3.25C12.7702 2.875 12.9785 2.6875 13.3118 2.6875H18.6868C19.0202 2.6875 19.2285 2.875 19.3118 3.25L19.8118 6.75C20.6035 7.08333 21.3535 7.52083 22.0618 8.0625L25.3743 6.75C25.7493 6.625 26.0202 6.70833 26.1868 7L28.8743 11.625C29.0827 12 29.041 12.2917 28.7493 12.5L25.9368 14.6875C25.9785 14.9792 25.9993 15.4167 25.9993 16C25.9993 16.5833 25.9785 17.0208 25.9368 17.3125Z"
+						fill="white" />
+				</svg>
+			</a>
+		</div>
+		<div class="ContentAreaContainer">
+			<div id="RecipientResponse">
+				<p class="formTitle">Fill you Responses</p>
+				<button type="button"
+					style="border: #fff 1px solid; border-radius: .5rem; background: #ffffff40; color: #fff; margin-bottom: 1rem;"
+					data-bs-toggle="modal" data-bs-target="#CollaborationModal">
+					Chat with Sender
+				</button>
+				<hr>
+				<div>
+					<div>
+						<div class="ResponseSection">
+							<p>
+								Attending
+							</p>
+							<div class="Rdo-Cbx-Container">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="AttendConfirm"
+										id="AttendConfirmTure">
+									<label for="AttendConfirmTure">Yes</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="AttendConfirm"
+										id="AttendConfirmFalse">
+									<label for="AttendConfirmFalse">No</label>
+								</div>
+							</div>
+						</div>
+						<div class="ResponseSection">
+							<button class="btn btn-light btn-sm"
+								onclick="window.location.href='https://calendly.com/jhuang-rr/general-discussion'">
+								Select Date & Time
+							</button>
+						</div>
+						
+						<div class="ResponseSection">
+								<p>
+									Attachments
+								</p>
+							<table class="table table-hover">
+								<tbody>
+									<tr>
+										<td>
+											<img src="../../../../img/AttachmentTypeimg.png" alt="">
+										</td>
+										<th scope="row">
+											<p>
+												Student Transcript
+											</p>
+										</th>
+										<td style="text-align: right;">
+											<button class="btn btn-light btn-sm" data-bs-toggle="modal"
+												data-bs-target="#FilePreviewModal">
+												View
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="../../../../img/AttachmentTypeform.png" alt="">
+										</td>
+										<th scope="row">
+											<p>
+												Suggest Conference Topic
+											</p>
+										</th>
+										<td style="text-align: right;">
+											<button class="btn btn-light btn-sm" data-bs-toggle="modal"
+												data-bs-target="#FormPreviewnModal">
+												View
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="../../../../img/AttachmentTypelink.png" alt="">
+										</td>
+										<th scope="row">
+											<p>
+												Video recorded by the teacher
+											</p>
+										</th>
+										<td style="text-align: right;">
+											<button class="btn btn-light btn-sm" data-bs-toggle="modal"
+												data-bs-target="#VideoPreviewModal">
+												View
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-                    <div class="form-check" style="margin-right: 1.5rem;">
-                        <input class="form-check-input" type="radio" name="ChooseMethod" id="GoogleCanlendarRadio" value="GoogleCanlendar">
-                        <label class="form-check-label" for="GoogleCanlendarRadio">Others Attanchment</label>
-                    </div>
-                    
-                </div> -->
-				<br>
-                <button type="button" onclick="window.location.href='https://calendly.com/jhuang-rr/general-discussion'" style="border: #fff 1px solid; border-radius: .5rem; background: #ffffff40; color: #fff; margin-top: 1rem;">
-					Set Conference Time
-                </button>
-            </div>
-            
-            <div>
-                <label for="" style="margin-right: 1rem;">
-                    <b style="font-size: 1.2rem;">
-                        Attachments
-                    </b>
-                </label>
-                <br>
-				<table>
-					<tr>
-						<td>
-							Student Transcript
-						</td>
-						<td>
-							<a href="" style="margin-left: 1rem;">view</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Suggest Conference Topic
-						</td>
-						<td>
-							<a href="" style="margin-left: 1rem;">view</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Video recorded by the teacher
-						</td>
-						<td>
-							<a href="" style="margin-left: 1rem;">view</a>
-						</td>
-					</tr>
-				</table>
-            </div>
-			<div>
-			    <label for="" style="margin-right: 1rem;"><b style="font-size: 1.2rem;">Will you attend?</b></label>
-			    <div class="form-check">
-					<input type="radio" name="AttendConfirm" id="Attend">
-					<label for="">Attend</label>
-					<input type="radio">
-					<label for="">Not Attending</label>
+				</div>
+				<hr>
+				<button class="btn btn-light btn-lg" onclick="window.location.href='#'" style="margin: 1rem 0;">
+					Send
+				</button>
+			</div>
+			<!-- dialog -->
+			<div id="CollaborationModal" class="modal" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Collaboration View</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div style="background: #F8F8FD; height: 500px;">
+								<img src="../../../../img/CollaborationView.jpg" alt="" style="width: 800px;">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						</div>
+					</div>
 				</div>
 			</div>
-        </div>
-        <hr>
-        <input type="button" name="Send" value="Send" class="sendBtn" onclick="window.location.href='Information.html'">
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+			<div id="FilePreviewModal" class="modal" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Attachment Preview</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div style="background: #F8F8FD; height: 500px;">
+								<img src="../../../../img/StudentTranscriptExample1.jpeg" alt="" style="width: 800px;">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="FormPreviewnModal" class="modal" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Attachment Preview</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div style=" height: 500px;">
+								<img src="../../../../img/FormExsample1.png" alt="" style="width: 800px;">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="VideoPreviewModal" class="modal" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Attachment Preview</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<video controls width="800px">
+								<source
+									src="https://media-usno1.streaming.media.azure.net/9b9a2d88-4346-45ec-8130-b8464931ae1a/CompanyProductIntro_%20V10_06022023.mp4"
+									type="video/webm">
+							</video>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
 
 </html>

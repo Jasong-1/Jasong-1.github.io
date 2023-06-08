@@ -13,7 +13,7 @@
 	</head>
 
 	<body class="settingPage">
-		<div class="floatBtnGroup">
+		<div class="floatBtnGroup floatBtnGroupOnColor">
 			<a class="floatBtn" href="Information.html">
 				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
@@ -51,129 +51,156 @@
 				</svg>
 			</a>
 		</div>
-		<div style="padding-top: 150px;">
-			<div class="steps">
-				<a class="stepItemComplate" href="setting1.html">
-					<div>
-						1
-					</div>
-					<p>
-						Select Event Type
-					</p>
-				</a>
-				<hr class="wait">
-				<a class="stepItem" href="setting2.html">
-					<div>
-						2
-					</div>
-					<p>
-						Theme Setting
-					</p>
-				</a>
+		<div class="ContentAreaContainer">
+			<div class="ContentArea" style="text-align: center;">
+				<div class="steps">
+					<a class="stepItemComplate" href="setting1.html">
+						<div>
+							1
+						</div>
+						<p>
+							Select Event Type
+						</p>
+					</a>
+					<hr class="wait">
+					<a class="stepItem" href="setting2.html">
+						<div>
+							2
+						</div>
+						<p>
+							Theme Setting
+						</p>
+					</a>
 
-				<hr class="wait">
-				<a class="stepItem" href="setting3.html">
-					<div>
-						3
-					</div>
-					<p>
-						Event Information
-					</p>
-				</a>
-				<hr class="wait">
-				<a class="stepItem" href="setting4.html">
-					<div>
-						4
-					</div>
-					<p>
-						Recipients Responses
-					</p>
-				</a>
-				<hr class="wait">
-				<a class="stepItem" href="setting5.html">
-					<div>
-						5
-					</div>
-					<p>
-						Recipients
-					</p>
-				</a>
-			</div>
-			<div class="settingSection settingSection1">
-				<div class="settingRow">
-					<div class="accordion" id="accordionExample">
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-									Event Planning
-								</button>
-							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<div class="EventProtal WeddingProtal" onclick="javascript:switchweddingSetting()">
-										Wedding
-									</div>
-									<!-- <div class="EventProtal SportGameProtal" onclick="javascript:switchweddingSetting()">
-										Sport Games
-									</div>
-									<div class="EventProtal SportGameProtal" onclick="javascript:switchweddingSetting()">
-										Sport Games
-									</div>
-									<div class="EventProtal SportGameProtal" onclick="javascript:switchweddingSetting()">
-										Sport Games
-									</div>
-									<div class="EventProtal SportGameProtal" onclick="javascript:switchweddingSetting()">
-										Sport Games
-									</div>
-									<div class="EventProtal SportGameProtal" onclick="javascript:switchweddingSetting()">
-										Sport Games
-									</div>
-									<div class="EventProtal SportGameProtal" onclick="javascript:switchweddingSetting()">
-										Sport Games
-									</div> -->
-								</div>
-							</div>
+					<hr class="wait">
+					<a class="stepItem" href="setting3.html">
+						<div>
+							3
 						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-									Calendar Booking
-								</button>
-							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse show"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<div class="EventProtalActive HomeVisitProtal"  onclick="javascript:switchConferenceSetting()">
-										Parent-Teacher Conference
+						<p>
+							Event Information
+						</p>
+					</a>
+					<hr class="wait">
+					<a class="stepItem" href="setting4.html">
+						<div>
+							4
+						</div>
+						<p>
+							Recipients Responses
+						</p>
+					</a>
+					<hr class="wait">
+					<a class="stepItem" href="setting5.html">
+						<div>
+							5
+						</div>
+						<p>
+							Recipients
+						</p>
+					</a>
+				</div>
+				<div class="settingSection settingSection1">
+					<div class="settingRow">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										Event Planning
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="EventProtal WeddingProtal"
+											onclick="javascript:switchweddingSetting()">
+											Wedding
+										</div>
+										<div class="EventProtal SportGameProtal">
+											Sport Games
+										</div>
+										<div class="EventProtal ConferenceProtal">
+											Conference
+										</div>
+										<div class="EventProtal Protal06">
+											Baby Sitting
+										</div>
+										<div class="EventProtal Protal07">
+											Performance Review
+										</div>
+										<div class="EventProtal Protal20">
+											Government Agency
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Scheduling
-								</button>
-							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<div class="EventProtal SportGameProtal" onclick="javascript:switchSportSetting()">
-										Sport Games
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										Calendar Booking
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse show"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="EventProtalActive HomeVisitProtal"
+											onclick="javascript:switchConferenceSetting()">
+											Parent-Teacher Conference
+										</div>
+										<div class="EventProtal Protal12">
+											Clients Meeting
+										</div>
+										<div class="EventProtal Protal13">
+											Interviews
+										</div>
+										<div class="EventProtal Protal14">
+											Medical and Patient
+										</div>
+										<div class="EventProtal Protal15">
+											Store Appointment
+										</div>
+										<div class="EventProtal Protal16">
+											Personal Trainer
+										</div>
+										<div class="EventProtal Protal17">
+											Real Estate
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree" aria-expanded="false"
+										aria-controls="collapseThree">
+										Schedule Coordintion
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="EventProtal EventCoordinationProtal"
+											onclick="javascript:switchEventCoordinationSetting()">
+											Event planning and coordination
+										</div>
+										<div class="EventProtal Protal18">
+											Tutoring Scheduling
+										</div>
+										<div class="EventProtal Protal19">
+											Academic advisors and tutors
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="nextBtnGroup">
-				<button class="btn btn-primary" disabled>Previous</button>
-				<button class="btn btn-primary" onclick="window.location.href='setting2.html'">Next</button>
+				<div class="nextBtnGroup">
+					<button class="btn btn-primary" disabled>Previous</button>
+					<button class="btn btn-primary" onclick="window.location.href='setting2.html'">Next</button>
+				</div>
 			</div>
 		</div>
 

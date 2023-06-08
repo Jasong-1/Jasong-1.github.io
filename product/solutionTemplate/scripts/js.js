@@ -25,3 +25,7 @@ function switchConferenceSetting() {
 function switchSportSetting() {
 	window.location.href = "../../../../SolutionType/FormSolution/general User/StudentReg/setting1.html";
 }
+
+function switchEventCoordinationSetting() {
+	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/StudentReg/setting1.html";
+}

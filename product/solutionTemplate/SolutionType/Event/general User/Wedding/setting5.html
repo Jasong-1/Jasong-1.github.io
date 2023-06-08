@@ -15,7 +15,7 @@
 	</head>
 
 	<body class="settingPage">
-		<div class="floatBtnGroup">
+		<div class="floatBtnGroup floatBtnGroupOnColor">
 			<a class="floatBtn" href="Information.html">
 				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
@@ -53,175 +53,178 @@
 				</svg>
 			</a>
 		</div>
-		<div style="padding-top: 150px;">
-			<div class="steps">
-				<a class="stepItemComplate" href="setting1.html">
-					<div>
-						1
-					</div>
-					<p>
-						Select Event Type
-					</p>
-				</a>
-				<hr class="complate">
-				<a class="stepItemComplate" href="setting2.html">
-					<div>
-						2
-					</div>
-					<p>
-						Theme Setting
-					</p>
-				</a>
-
-				<hr class="complate">
-				<a class="stepItemComplate" href="setting3.html">
-					<div>
-						3
-					</div>
-					<p>
-						Event Information
-					</p>
-				</a>
-				<hr class="complate">
-				<a class="stepItemComplate" href="setting4.html">
-					<div>
-						4
-					</div>
-					<p>
-						Recipients Responses
-					</p>
-				</a>
-				<hr class="complate">
-				<a class="stepItemComplate" href="setting5.html">
-					<div>
-						5
-					</div>
-					<p>
-						Recipients
-					</p>
-				</a>
-			</div>
-			<div class="settingSection settingSection1">
-				<div class="settingRow">
-					<b>Recipients</b>
-					<div style="display: flex;">
-						<div class="form-check" style="margin-right: 1.5rem;">
-							<input class="form-check-input" type="radio" name="userAddMethodSelection"
-								id="typeRecipients" value="typeRecipients" onclick="userAddMethodClick()" checked>
-							<label for="typeRecipients">Type Recipients</label>
+		<div class="ContentAreaContainer">
+			<div class="ContentArea" style="text-align: center;">
+				<div class="steps">
+					<a class="stepItemComplate" href="setting1.html">
+						<div>
+							1
 						</div>
-						<div class="form-check" style="margin-right: 1.5rem;">
-							<input class="form-check-input" type="radio" name="userAddMethodSelection"
-								id="selectEmailList" value="selectEmailList" onclick="userAddMethodClick()">
-							<label for="selectEmailList">Select a Email List</label>
+						<p>
+							Select Event Type
+						</p>
+					</a>
+					<hr class="complate">
+					<a class="stepItemComplate" href="setting2.html">
+						<div>
+							2
+						</div>
+						<p>
+							Theme Setting
+						</p>
+					</a>
+
+					<hr class="complate">
+					<a class="stepItemComplate" href="setting3.html">
+						<div>
+							3
+						</div>
+						<p>
+							Event Information
+						</p>
+					</a>
+					<hr class="complate">
+					<a class="stepItemComplate" href="setting4.html">
+						<div>
+							4
+						</div>
+						<p>
+							Recipients Responses
+						</p>
+					</a>
+					<hr class="complate">
+					<a class="stepItemComplate" href="setting5.html">
+						<div>
+							5
+						</div>
+						<p>
+							Recipients
+						</p>
+					</a>
+				</div>
+				<div class="settingSection settingSection1">
+					<div class="settingRow">
+						<b>Recipients</b>
+						<div style="display: flex;">
+							<div class="form-check" style="margin-right: 1.5rem;">
+								<input class="form-check-input" type="radio" name="userAddMethodSelection"
+									id="typeRecipients" value="typeRecipients" onclick="userAddMethodClick()" checked>
+								<label for="typeRecipients">Type Recipients</label>
+							</div>
+							<div class="form-check" style="margin-right: 1.5rem;">
+								<input class="form-check-input" type="radio" name="userAddMethodSelection"
+									id="selectEmailList" value="selectEmailList" onclick="userAddMethodClick()">
+								<label for="selectEmailList">Select a Email List</label>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div id="typeRecipientsArea" class="settingRow" style="display: block;">
-					<table class="typeRecipientsList" cellspacing="0">
-						<thead>
-							<tr>
-								<td>
-									Recipient Name
-								</td>
-								<td>
-									Email
-								</td>
-								<td>
+					<div id="typeRecipientsArea" class="settingRow" style="display: block;">
+						<table class="typeRecipientsList" cellspacing="0">
+							<thead>
+								<tr>
+									<td>
+										Recipient Name
+									</td>
+									<td>
+										Email
+									</td>
+									<td>
 
-								</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<input class="form-control form-control-sm" type="text">
-								</td>
-								<td>
-									<input class="form-control form-control-sm" type="email">
-								</td>
-								<td>
-									<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.4"
-											d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
-											fill="black" />
-									</svg>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input class="form-control form-control-sm" type="text">
+									</td>
+									<td>
+										<input class="form-control form-control-sm" type="email">
+									</td>
+									<td>
+										<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.4"
+												d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
+												fill="black" />
+										</svg>
 
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input class="form-control form-control-sm" type="text">
-								</td>
-								<td>
-									<input class="form-control form-control-sm" type="email">
-								</td>
-								<td>
-									<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.4"
-											d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
-											fill="black" />
-									</svg>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="form-control form-control-sm" type="text">
+									</td>
+									<td>
+										<input class="form-control form-control-sm" type="email">
+									</td>
+									<td>
+										<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.4"
+												d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
+												fill="black" />
+										</svg>
 
-								</td>
-							</tr>
-							<tr class="tableLastRow">
-								<td>
-									<input class="form-control form-control-sm" type="text">
-								</td>
-								<td>
-									<input class="form-control form-control-sm" type="email">
-								</td>
-								<td>
-									<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.4"
-											d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
-											fill="black" />
-									</svg>
+									</td>
+								</tr>
+								<tr class="tableLastRow">
+									<td>
+										<input class="form-control form-control-sm" type="text">
+									</td>
+									<td>
+										<input class="form-control form-control-sm" type="email">
+									</td>
+									<td>
+										<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.4"
+												d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
+												fill="black" />
+										</svg>
 
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<button class="btn btn-outline-primary btn-sm" style="margin-top: 0.5rem;">
-						Add Row
-					</button>
-				</div>
-				<div id="selectEmailListArea" class="settingRow" style="display: none;">
-					<!-- <label for="">Select a Recipients Email List: -->
-					<select class="form-select" name="" id="" style="width: 300px; display: inline-block;">
-						<option value="">Select a Recipients Email List</option>
-						<option value="">List1</option>
-						<option value="">List2</option>
-						<option value="">List3</option>
-						<option value="">List4</option>
-					</select>
-					<!-- </label> -->
-					<button id="createNewList" class="btn btn-primary btn-sm">
-						Create a new list
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button class="btn btn-outline-primary btn-sm" style="margin-top: 0.5rem;">
+							Add Row
 						</button>
-					<!-- <a id="CreateNewList" href="" style="text-decoration:underline; margin-left: 1rem;">
+					</div>
+					<div id="selectEmailListArea" class="settingRow" style="display: none;">
+						<!-- <label for="">Select a Recipients Email List: -->
+						<select class="form-select" name="" id="" style="width: 300px; display: inline-block;">
+							<option value="">Select a Recipients Email List</option>
+							<option value="">List1</option>
+							<option value="">List2</option>
+							<option value="">List3</option>
+							<option value="">List4</option>
+						</select>
+						<!-- </label> -->
+						<button id="createNewList" class="btn btn-primary btn-sm">
+							Create a new list
+						</button>
+						<!-- <a id="CreateNewList" href="" style="text-decoration:underline; margin-left: 1rem;">
                     Create a New List
                 </a> -->
+					</div>
+					<div class="settingRow">
+						<b>Authory</b>
+						<input class="form-check-input" id="StatisticsAuthorityControl" type="checkbox"
+							name="event type">
+						<label for="StatisticsAuthorityControl">The recipient can see the Statistics page</label>
+					</div>
 				</div>
-				<div class="settingRow">
-					<b>Authory</b>
-					<input class="form-check-input" id="StatisticsAuthorityControl" type="checkbox" name="event type">
-					<label for="StatisticsAuthorityControl">The recipient can see the Statistics page</label>
+				<div class="nextBtnGroup">
+					<button class="btn btn-primary" onclick="window.location.href='setting4.html'">Previous</button>
+					<button id="sendInviteBtn" class="btn btn-primary" onclick="window.location.href='#'">
+						<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.6875 28.5V19.1875L22.6875 16.5L2.6875 13.8125V4.5L30.6875 16.5L2.6875 28.5Z"
+								fill="white" />
+						</svg>
+						<!-- Send -->
+					</button>
 				</div>
-			</div>
-			<div class="nextBtnGroup">
-				<button class="btn btn-primary" onclick="window.location.href='setting4.html'">Previous</button>
-				<button id="sendInviteBtn" class="btn btn-primary" onclick="window.location.href='#'">
-					<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M2.6875 28.5V19.1875L22.6875 16.5L2.6875 13.8125V4.5L30.6875 16.5L2.6875 28.5Z"
-							fill="white" />
-					</svg>
-					<!-- Send -->
-				</button>
 			</div>
 		</div>
 

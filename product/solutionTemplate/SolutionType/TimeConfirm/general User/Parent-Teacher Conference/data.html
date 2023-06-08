@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>Parent-Teacher Conference</title>
     <link rel="stylesheet" href="../../../../style/style.css">
 
     <!--Load the AJAX API-->
@@ -172,13 +172,10 @@
         }
     </script>
 
-
-    <title>Parent-Teacher Conference</title>
-
 </head>
 
 <body class="dataPage">
-    <div class="floatBtnGroup" style="">
+    <div class="floatBtnGroup floatBtnGroupOnColor" style="">
         <a class="floatBtn" href="Information.html">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -216,52 +213,54 @@
             </svg>
         </a>
     </div>
-    <div style="padding: 150px; text-align: left; max-width: 1200px; margin: 0 auto;">
-        <div id="YearFilter" style="margin: 1rem;"></div>
-        <div class="numBar">
-            <div class="numBarItem" style="background-color: #fff;">
-                <p class="numBarItemLabel">
-                    Total
-                </p>
-                <h1>
-                    81
-                </h1>
-            </div>
-            <div class="numBarItem">
-                <p class="numBarItemLabel">
-                    Determined
-                </p>
-                <h1 style="color: #4ECB74;">
-                    64
-                </h1>
-            </div>
-            <div class="numBarItem">
-                <p class="numBarItemLabel">
-                    Undetermined
-                </p>
-                <h1 style="color: #FBD437;">
-                    10
-                </h1>
-            </div>
-            <div class="numBarItem">
-                <p class="numBarItemLabel">
-                    Pending
-                </p>
-                <h1 style="color: #0093FE;">
-                    7
-                </h1>
-            </div>
-        </div>
-        <div id="dashboard1" style="max-width: 1200px; margin: 0 auto;">
-            <!--Divs that will hold each control and chart-->
-            
-            <div class="chartContainer">
-                <div id="DonutChart1" style="margin: 0.5rem; height: 400px;"></div>
-                <div id="ColumnChart1" style="margin: 0.5rem;"></div>
-            </div>
-            <!-- <div id="DateTable1"></div> -->
-            <!-- <div id="LineChart1" style="margin: 1rem;"></div> -->
-        </div>
+    <div class="ContentAreaContainer">
+        <div class="ContentArea">
+			<div id="YearFilter" style="margin: 1rem;"></div>
+			<div class="numBar">
+			    <div class="numBarItem" style="background-color: #fff;">
+			        <p class="numBarItemLabel">
+			            Total
+			        </p>
+			        <h1>
+			            81
+			        </h1>
+			    </div>
+			    <div class="numBarItem">
+			        <p class="numBarItemLabel">
+			            Determined
+			        </p>
+			        <h1 style="color: #4ECB74;">
+			            64
+			        </h1>
+			    </div>
+			    <div class="numBarItem">
+			        <p class="numBarItemLabel">
+			            Undetermined
+			        </p>
+			        <h1 style="color: #FBD437;">
+			            10
+			        </h1>
+			    </div>
+			    <div class="numBarItem">
+			        <p class="numBarItemLabel">
+			            Pending
+			        </p>
+			        <h1 style="color: #0093FE;">
+			            7
+			        </h1>
+			    </div>
+			</div>
+			<div id="dashboard1" style="max-width: 1200px; margin: 0 auto;">
+			    <!--Divs that will hold each control and chart-->
+			    
+			    <div class="chartContainer">
+			        <div id="DonutChart1" style="margin: 0.5rem; height: 400px;"></div>
+			        <div id="ColumnChart1" style="margin: 0.5rem;"></div>
+			    </div>
+			    <!-- <div id="DateTable1"></div> -->
+			    <!-- <div id="LineChart1" style="margin: 1rem;"></div> -->
+			</div>
+		</div>
     </div>
 </body>
 
