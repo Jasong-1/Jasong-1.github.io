@@ -18,9 +18,18 @@
 	--img-GovernmentAgency-main: url(../img/GovernmentAgency_1.jpg);
 	--img-EventCoordinationProtal-main: url(../img/EventPlanningAndCoordination_1.jpg);
 
+	--img-MeetingCoordination-main: url(../img/MeetingCoordination1.jpg);
+	--img-FamilyReunion-main: url(../img/FamilyReunion1.jpg);
+	--img-GroupStudySession-main: url(../img/GroupStudySession1.jpg);
+	--img-TeamBuildingEvent-main: url(../img/TeamBuildingEvent1.jpg);
+	--img-GroupProjectMeeting-main: url(../img/GroupProjectMeeting1.jpg);
+	--img-VacationPlanning-main: url(../img/VacationPlanning1.jpg);
+	--img-TripPlanning-main: url(../img/TripPlanning1.jpg);
+	--img-SocialEvent-main: url(../img/SocialEvent1.jpg);
+
 	--color-imgbg-light: #00000030;
 	--color-imgbg-dark: #00000080;
-	
+
 	--color-theme: #1AC3DE;
 }
 
@@ -46,12 +55,13 @@ body {
 }
 
 .ContentAreaContainer {
-	
+
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: 100%;
 	flex: 1;
 }
+
 .ContentArea {
 	text-align: left;
 	max-width: 1200px;
@@ -78,7 +88,7 @@ body {
 .floatBtnGroupOnColor {
 	background: var(--color-theme);
 	box-shadow: 0px 5px 15px #15a4ba1e;
-	
+
 }
 
 .floatBtn {
@@ -114,19 +124,19 @@ body {
 
 :root {
 	--bs-border-color: #a3a5a7;
-	--bs-primary:  var(--color-theme);
-	--bs-btn-color:  var(--color-theme);
-	--bs-btn-border-color:  var(--color-theme);
+	--bs-primary: var(--color-theme);
+	--bs-btn-color: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
 	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg:  var(--color-theme);
-	--bs-btn-hover-border-color:  var(--color-theme);
+	--bs-btn-hover-bg: var(--color-theme);
+	--bs-btn-hover-border-color: var(--color-theme);
 	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg:  var(--color-theme);
-	--bs-btn-active-border-color:  var(--color-theme);
+	--bs-btn-active-bg: var(--color-theme);
+	--bs-btn-active-border-color: var(--color-theme);
 	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color:  var(--color-theme);
+	--bs-btn-disabled-color: var(--color-theme);
 	--bs-btn-disabled-bg: transparent;
-	--bs-btn-disabled-border-color:  var(--color-theme);
+	--bs-btn-disabled-border-color: var(--color-theme);
 	--bs-gradient: none;
 	--bs-accordion-active-bg: #cfffff !important;
 }
@@ -138,26 +148,26 @@ body {
 }
 
 .btn-outline-primary {
-	--bs-btn-color:  var(--color-theme);
-	--bs-btn-border-color:  var(--color-theme);
+	--bs-btn-color: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
 	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg:  var(--color-theme);
-	--bs-btn-hover-border-color:  var(--color-theme);
+	--bs-btn-hover-bg: var(--color-theme);
+	--bs-btn-hover-border-color: var(--color-theme);
 	--bs-btn-focus-shadow-rgb: 13, 110, 253;
 	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg:  var(--color-theme);
-	--bs-btn-active-border-color:  var(--color-theme);
+	--bs-btn-active-bg: var(--color-theme);
+	--bs-btn-active-border-color: var(--color-theme);
 	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color:  var(--color-theme);
+	--bs-btn-disabled-color: var(--color-theme);
 	--bs-btn-disabled-bg: transparent;
-	--bs-btn-disabled-border-color:  var(--color-theme);
+	--bs-btn-disabled-border-color: var(--color-theme);
 	--bs-gradient: none;
 }
 
 .btn-primary {
 	--bs-btn-color: #fff;
-	--bs-btn-bg:  var(--color-theme);
-	--bs-btn-border-color:  var(--color-theme);
+	--bs-btn-bg: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
 	--bs-btn-hover-color: #fff;
 	--bs-btn-hover-bg: #17b8d0;
 	--bs-btn-hover-border-color: #17b8d0;
@@ -167,13 +177,13 @@ body {
 	--bs-btn-active-border-color: #17b8d0;
 	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 	--bs-btn-disabled-color: #fff;
-	--bs-btn-disabled-bg:  var(--color-theme);
-	--bs-btn-disabled-border-color:  var(--color-theme);
+	--bs-btn-disabled-bg: var(--color-theme);
+	--bs-btn-disabled-border-color: var(--color-theme);
 }
 
 .form-check-input:checked {
-	background-color:  var(--color-theme) !important;
-	border-color:  var(--color-theme) !important;
+	background-color: var(--color-theme) !important;
+	border-color: var(--color-theme) !important;
 }
 
 .custom-tooltip {
@@ -218,6 +228,35 @@ body {
 }
 
 /* response page */
+
+:root {
+	--bs-table-hover-bg: #ffffff20;
+}
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 810px !important;
+	}
+}
+
+.responseTalbe th,
+.responseTalbe td {
+	background: none !important;
+	color: #fff;
+}
+
+.responseTalbe>tbody>tr>th>p {
+	vertical-align: middle;
+	line-height: 32px;
+	color: #fff;
+}
+
+.responseTalbe>tbody>tr>td>img {
+	width: 2rem;
+	height: 2rem;
+}
+
+
 .responsePage {
 	background: url(../img/responsePage.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -259,25 +298,31 @@ hr {
 .ResponseSection {
 	margin-bottom: 1rem;
 }
+
 .ResponseSection p {
 	font-size: 1.2rem;
 	font-weight: 700;
 	margin-bottom: 0.5rem;
 }
+
 .ResponseSection .table {
 	border-color: #fff;
 }
+
 .ResponseSection .table p {
 	margin: 0;
 }
+
 .Rdo-Cbx-Container {
-	display: flex; 
+	display: flex;
 	flex-flow: row wrap;
 }
+
 .form-check {
 	margin-right: 1rem;
-	
+
 }
+
 .sendBtn {
 	background: #fff;
 	border: 0;
@@ -304,6 +349,35 @@ hr {
 	background: #288e9e30;
 }
 
+.google-visualization-controls-categoryfilter {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.google-visualization-controls-categoryfilter>label {
+	line-height: 2rem;
+	padding-right: 1rem;
+}
+
+
+.goog-combobox {
+	height: 2rem !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.3rem;
+}
+
+.goog-combobox>input {
+	height: 100%;
+	border-radius: 0.3rem;
+}
+
+.goog-combobox-button {
+	margin: 0 0.45rem;
+}
+
 #dashboard1 {
 	text-align: left;
 }
@@ -315,8 +389,8 @@ hr {
 	align-items: center;
 	background-color: #fff;
 	border-radius: 0.8rem;
-	max-width: 1140px;
-	margin: 0 auto 0.5rem;
+	/* max-width: 1170px; */
+	margin: 0 auto 1rem;
 	padding: 1.5rem;
 }
 
@@ -341,6 +415,15 @@ hr {
 	width: 70%;
 }
 
+#DonutChart1>div>div>div>svg {
+	border-radius: 0.5rem;
+}
+
+#ColumnChart1>div>div>div>svg {
+	border-radius: 0.5rem;
+}
+
+
 /* history page */
 
 
@@ -358,7 +441,7 @@ hr {
 
 .tableContainer thead td {
 	padding: 1rem;
-	background:  var(--color-theme);
+	background: var(--color-theme);
 	text-align: left;
 	color: #fff;
 }
@@ -372,6 +455,7 @@ hr {
 	display: flex;
 	flex-flow: row wrap;
 }
+
 .accordion-item {
 	border: 1px solid #e9e9e9;
 }
@@ -406,7 +490,7 @@ hr {
 	align-items: center;
 	color: white;
 	font-weight: 700;
-	border:  var(--color-theme) .5rem solid;
+	border: var(--color-theme) .5rem solid;
 }
 
 /* 入口背景 */
@@ -465,11 +549,13 @@ hr {
 	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .EventCoordinationProtal {
 	background: var(--img-EventCoordinationProtal-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
+
 .EventCoordinationProtal:hover {
 	background: var(--img-EventCoordinationProtal-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
@@ -480,6 +566,7 @@ hr {
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
+
 .Protal06:hover {
 	background: var(--img-Babysitting-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
@@ -490,51 +577,56 @@ hr {
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
+
 .Protal07:hover {
 	background: var(--img-PerformanceReview-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
 
 .Protal08 {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
+	background: var(--img-MeetingCoordination-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
+
 .Protal08:hover {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
+	background: var(--img-MeetingCoordination-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
 
 .Protal09 {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
+	background: var(--img-FamilyReunion-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
 
 .Protal09:hover {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
+	background: var(--img-FamilyReunion-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal10 {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
+	background: var(--img-GroupStudySession-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
 
 .Protal10:hover {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
+	background: var(--img-GroupStudySession-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal11 {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
+	background: var(--img-TeamBuildingEvent-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
 
 .Protal11:hover {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
+	background: var(--img-TeamBuildingEvent-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal12 {
 	background: var(--img-ClientsMeeting-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -545,6 +637,7 @@ hr {
 	background: var(--img-ClientsMeeting-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal13 {
 	background: var(--img-Interview-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -555,6 +648,7 @@ hr {
 	background: var(--img-Interview-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal14 {
 	background: var(--img-MedicalAndPatient-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -565,6 +659,7 @@ hr {
 	background: var(--img-MedicalAndPatient-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal15 {
 	background: var(--img-StoreAppointment-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -575,6 +670,7 @@ hr {
 	background: var(--img-StoreAppointment-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal16 {
 	background: var(--img-PersonalTrainer-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -585,6 +681,7 @@ hr {
 	background: var(--img-PersonalTrainer-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal17 {
 	background: var(--img-RealEstate-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -595,6 +692,7 @@ hr {
 	background: var(--img-RealEstate-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal18 {
 	background: var(--img-TutoringScheduling-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -605,6 +703,7 @@ hr {
 	background: var(--img-TutoringScheduling-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal19 {
 	background: var(--img-AcademicAdvisorsAndTutors-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -615,6 +714,7 @@ hr {
 	background: var(--img-AcademicAdvisorsAndTutors-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal20 {
 	background: var(--img-GovernmentAgency-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
@@ -625,17 +725,50 @@ hr {
 	background: var(--img-GovernmentAgency-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
+
 .Protal21 {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
+	background: var(--img-GroupProjectMeeting-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
 }
 
 .Protal21:hover {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
+	background: var(--img-GroupProjectMeeting-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
 
+.Protal22 {
+	background: var(--img-VacationPlanning-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal22:hover {
+	background: var(--img-VacationPlanning-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal23 {
+	background: var(--img-TripPlanning-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal23:hover {
+	background: var(--img-TripPlanning-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal24 {
+	background: var(--img-SocialEvent-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal24:hover {
+	background: var(--img-SocialEvent-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
 
 
 .steps {
@@ -699,7 +832,7 @@ hr {
 }
 
 .stepItemComplate div {
-	background:  var(--color-theme);
+	background: var(--color-theme);
 	width: 2rem;
 	height: 2rem;
 	border-radius: 10rem;
@@ -713,7 +846,7 @@ hr {
 
 .steps>.complate {
 	/* border-color: ; */
-	border-top: 2px solid  var(--color-theme);
+	border-top: 2px solid var(--color-theme);
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
@@ -757,6 +890,23 @@ hr {
 	height: 6rem;
 	margin: 0.3rem;
 	background: url(../img/infoPage.jpg) center no-repeat;
+	border-radius: 0.2rem;
+}
+
+.uploadIcon1 {
+	margin: 0.3rem;
+}
+.uploadIcon1 svg {
+	border-radius: 0.2rem;
+}
+.uploadIcon1 svg rect {
+	fill: #1AC3DE;
+	fill-opacity: 0.2;
+	border-radius: 1rem;
+}
+.uploadIcon1 svg path {
+	fill: #1AC3DE;
+	fill-opacity: 0.7;
 }
 
 .settingImgSelection input {
@@ -817,13 +967,15 @@ hr {
 .btn svg {
 	margin: 0;
 }
+
 .FieldArea {
 	/* padding: 0.8rem; */
-	
+
 	background: #00000005;
 	margin-bottom: 1px;
 	border-bottom: 0.0625rem solid #ffffff70;
 }
+
 .FieldArea header {
 	display: flex;
 	align-items: center;
@@ -833,13 +985,14 @@ hr {
 	padding: 0.8rem;
 	/* border-bottom: 0.0625rem solid #00000020; */
 }
+
 .FieldArea main {
 	padding: 0.8rem;
 }
 
 
 .btnActive {
-	background:  var(--color-theme);
+	background: var(--color-theme);
 	padding: 0.5rem 1rem;
 	border: 0;
 	color: #fff;
@@ -850,14 +1003,14 @@ hr {
 .btnActiveOutline {
 	background: #ffffff00;
 	padding: 0.3rem 1rem;
-	border: 1px solid  var(--color-theme);
-	color:  var(--color-theme);
+	border: 1px solid var(--color-theme);
+	color: var(--color-theme);
 	border-radius: 0.4rem;
 	width: auto;
 }
 
 .btnInactive {
-	background:  var(--color-theme)30;
+	background: var(--color-theme)30;
 	padding: 0.5rem 1rem;
 	border: 0;
 	color: #fff;
@@ -866,7 +1019,7 @@ hr {
 }
 
 .sendBtnSetting {
-	background:  var(--color-theme);
+	background: var(--color-theme);
 	padding: 0.5rem;
 	border: 0;
 	color: #fff;
@@ -921,7 +1074,7 @@ Dialog {
 }
 
 .SportsResponsePage {
-	background: #e4e5b8 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat center 37%;
+	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }
@@ -929,5 +1082,3 @@ Dialog {
 
 
 /* Event planning and coordination page */
-
-

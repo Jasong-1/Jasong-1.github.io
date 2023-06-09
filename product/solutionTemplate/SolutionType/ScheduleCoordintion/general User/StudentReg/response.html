@@ -5,40 +5,19 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../../../../style/style.css">
-		<link rel="stylesheet" href="../../../../style/style2.css">
-
-		<style>
-			:root {
-				--bs-table-hover-bg: #ffffff20;
-			}
-
-			@media (min-width: 576px) {
-				.modal-dialog {
-					max-width: 810px !important;
-				}
-			}
-
-			th,
-			td {
-				background: none !important;
-				color: #fff;
-			}
-
-			table>tbody>tr>th>p {
-				vertical-align: middle;
-				line-height: 32px;
-				color: #fff;
-			}
-
-			table>tbody>tr>td>img {
-				width: 2rem;
-				height: 2rem;
-			}
-		</style>
 
 		<title>Parent-Teacher Conference</title>
+
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<META HTTP-EQUIV="Expires" CONTENT="0">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+		<script type="text/javascript">
+			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
+			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style2.css?v=" + Math.random() +
+				"'>");
+		</script>
 
 	</head>
 
@@ -111,17 +90,51 @@
 							</div>
 						</div>
 						<div class="ResponseSection">
-							<button class="btn btn-light btn-sm"
+							<p>
+								Suggest the best time for you
+							</p>
+							<!-- <button class="btn btn-light btn-sm"
 								onclick="window.location.href='https://calendly.com/jhuang-rr/general-discussion'">
 								Select Date & Time
+							</button> -->
+							<div class="input-group" style="margin-bottom: 0.5rem;">
+								<span class="input-group-text" id="basic-addon1">Date</span>
+								<input class="form-control" type="date">
+								<span class="input-group-text" id="basic-addon1">Time</span>
+								<input class="form-control" type="time">
+								<button class="btn btn-primary" style="background: #F8F8FD; border-color: #a3a5a7;">
+									<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4"
+											d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
+											fill="black" />
+									</svg>
+								</button>
+							</div>
+							<div class="input-group">
+								<span class="input-group-text" id="basic-addon1">Date</span>
+								<input class="form-control" type="date">
+								<span class="input-group-text" id="basic-addon1">Time</span>
+								<input class="form-control" type="time">
+								<button class="btn btn-primary" style="background: #F8F8FD; border-color: #a3a5a7;">
+									<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.4"
+											d="M15.0293 3.1543V4.75H3.9707V3.1543H6.7168L7.5332 2.375H11.4668L12.2832 3.1543H15.0293ZM4.75 15.0293V5.5293H14.25V15.0293C14.25 15.4499 14.0892 15.821 13.7676 16.1426C13.446 16.4642 13.0749 16.625 12.6543 16.625H6.3457C5.92513 16.625 5.55404 16.4642 5.23242 16.1426C4.91081 15.821 4.75 15.4499 4.75 15.0293Z"
+											fill="black" />
+									</svg>
+								</button>
+							</div>
+							<button class="btn btn-outline-light btn-sm" style="margin-top: 0.7rem;">
+								Add
 							</button>
 						</div>
-						
+
 						<div class="ResponseSection">
-								<p>
-									Attachments
-								</p>
-							<table class="table table-hover">
+							<p>
+								Attachment
+							</p>
+							<table class="table table-hover responseTalbe">
 								<tbody>
 									<tr>
 										<td>
@@ -129,13 +142,16 @@
 										</td>
 										<th scope="row">
 											<p>
-												Student Transcript
+												Relevant data
 											</p>
 										</th>
 										<td style="text-align: right;">
 											<button class="btn btn-light btn-sm" data-bs-toggle="modal"
 												data-bs-target="#FilePreviewModal">
-												View
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.89062 9.89062C10.4844 9.29688 11.1875 9 12 9C12.8125 9 13.5156 9.29688 14.1094 9.89062C14.7031 10.4844 15 11.1875 15 12C15 12.8125 14.7031 13.5156 14.1094 14.1094C13.5156 14.7031 12.8125 15 12 15C11.1875 15 10.4844 14.7031 9.89062 14.1094C9.29688 13.5156 9 12.8125 9 12C9 11.1875 9.29688 10.4844 9.89062 9.89062ZM8.4375 15.5625C9.4375 16.5312 10.625 17.0156 12 17.0156C13.375 17.0156 14.5469 16.5312 15.5156 15.5625C16.5156 14.5625 17.0156 13.375 17.0156 12C17.0156 10.625 16.5156 9.45312 15.5156 8.48438C14.5469 7.48438 13.375 6.98438 12 6.98438C10.625 6.98438 9.4375 7.48438 8.4375 8.48438C7.46875 9.45312 6.98438 10.625 6.98438 12C6.98438 13.375 7.46875 14.5625 8.4375 15.5625ZM5.29688 6.5625C7.29688 5.1875 9.53125 4.5 12 4.5C14.4688 4.5 16.7031 5.1875 18.7031 6.5625C20.7031 7.9375 22.1406 9.75 23.0156 12C22.1406 14.25 20.7031 16.0625 18.7031 17.4375C16.7031 18.8125 14.4688 19.5 12 19.5C9.53125 19.5 7.29688 18.8125 5.29688 17.4375C3.29688 16.0625 1.85938 14.25 0.984375 12C1.85938 9.75 3.29688 7.9375 5.29688 6.5625Z" fill="black" fill-opacity="0.6"/>
+												</svg>
+
 											</button>
 										</td>
 									</tr>
@@ -145,34 +161,67 @@
 										</td>
 										<th scope="row">
 											<p>
-												Suggest Conference Topic
+												Propose Discussion Topics
 											</p>
 										</th>
 										<td style="text-align: right;">
-											<button class="btn btn-light btn-sm" data-bs-toggle="modal"
-												data-bs-target="#FormPreviewnModal">
-												View
+											<button class="btn btn-light btn-sm"
+												onclick="window.location.href='https://newtestsite.astihosted.com/CPort/ProcessV3/RenderPublicFormPreview.aspx?FormID=10354&ProcessId=170'">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.98438 6L15.9844 12L9.98438 18L8.57812 16.5938L13.1719 12L8.57812 7.40625L9.98438 6Z" fill="black" fill-opacity="0.6"/>
+												</svg>
+
 											</button>
 										</td>
 									</tr>
+									<tr>
+										<td>
+											<img src="../../../../img/AttachmentTypeform.png" alt="">
+										</td>
+										<th scope="row">
+											<p>
+												Meetting Paperation Docments
+											</p>
+										</th>
+										<td style="text-align: right;">
+											<button class="btn btn-light btn-sm"
+												onclick="window.location.href='https://newtestsite.astihosted.com/CPort/ProcessV3/CreateForm.aspx?ActionId=10&ProcessId=170&packageName =Time Card&pId=146321524&category=81,121'">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.98438 6L15.9844 12L9.98438 18L8.57812 16.5938L13.1719 12L8.57812 7.40625L9.98438 6Z" fill="black" fill-opacity="0.6"/>
+												</svg>
+
+											</button>
+										</td>
+									</tr>
+
 									<tr>
 										<td>
 											<img src="../../../../img/AttachmentTypelink.png" alt="">
 										</td>
 										<th scope="row">
 											<p>
-												Video recorded by the teacher
+												Intro about Topic
 											</p>
 										</th>
 										<td style="text-align: right;">
 											<button class="btn btn-light btn-sm" data-bs-toggle="modal"
 												data-bs-target="#VideoPreviewModal">
-												View
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.89062 9.89062C10.4844 9.29688 11.1875 9 12 9C12.8125 9 13.5156 9.29688 14.1094 9.89062C14.7031 10.4844 15 11.1875 15 12C15 12.8125 14.7031 13.5156 14.1094 14.1094C13.5156 14.7031 12.8125 15 12 15C11.1875 15 10.4844 14.7031 9.89062 14.1094C9.29688 13.5156 9 12.8125 9 12C9 11.1875 9.29688 10.4844 9.89062 9.89062ZM8.4375 15.5625C9.4375 16.5312 10.625 17.0156 12 17.0156C13.375 17.0156 14.5469 16.5312 15.5156 15.5625C16.5156 14.5625 17.0156 13.375 17.0156 12C17.0156 10.625 16.5156 9.45312 15.5156 8.48438C14.5469 7.48438 13.375 6.98438 12 6.98438C10.625 6.98438 9.4375 7.48438 8.4375 8.48438C7.46875 9.45312 6.98438 10.625 6.98438 12C6.98438 13.375 7.46875 14.5625 8.4375 15.5625ZM5.29688 6.5625C7.29688 5.1875 9.53125 4.5 12 4.5C14.4688 4.5 16.7031 5.1875 18.7031 6.5625C20.7031 7.9375 22.1406 9.75 23.0156 12C22.1406 14.25 20.7031 16.0625 18.7031 17.4375C16.7031 18.8125 14.4688 19.5 12 19.5C9.53125 19.5 7.29688 18.8125 5.29688 17.4375C3.29688 16.0625 1.85938 14.25 0.984375 12C1.85938 9.75 3.29688 7.9375 5.29688 6.5625Z" fill="black" fill-opacity="0.6"/>
+												</svg>
+
+
 											</button>
 										</td>
 									</tr>
 								</tbody>
 							</table>
+						</div>
+						<div class="ResponseSection">
+							<p>
+								Special request:
+							</p>
+							<textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
 						</div>
 					</div>
 				</div>
@@ -229,7 +278,7 @@
 						</div>
 						<div class="modal-body">
 							<div style=" height: 500px;">
-								<img src="../../../../img/FormExsample1.png" alt="" style="width: 800px;">
+								<img src="../../../../img/FormExsample2.png" alt="" style="width: 800px;">
 							</div>
 						</div>
 						<div class="modal-footer">

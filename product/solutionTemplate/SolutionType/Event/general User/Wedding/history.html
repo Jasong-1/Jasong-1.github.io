@@ -5,10 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../../../../style/style.css">
-
 		<title>Wedding Invitation</title>
+		
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<META HTTP-EQUIV="Expires" CONTENT="0">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+		<script type="text/javascript">
+			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
+		</script>
 	</head>
 
 	<body class="historyPage">
@@ -128,7 +134,9 @@
 							<td>XXX@xxxxx.com</td>
 							<td>04/11/2023 04:49:18</td>
 							<td style="text-align: right">
-								<button id="viewResponseDetail1" style="padding: 0; background-color: #ffffff00; border: 0">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
 									<svg class="bi" width="24" height="24">
 										<use xlink:href="#preview" />
 									</svg>
@@ -357,80 +365,112 @@
 				</table>
 			</div>
 		</div>
-		<dialog id="recipientResponseDialog" style="padding: 0;">
-			<form action="#" method="dialog" name="Recipients Responses" id="RecipientResponse"
-				style="position: static; background-color: #fff;">
-				<h4 style="margin-bottom: 1rem; color: #00000090;">
-					Recipients Response Details
-				</h4>
-		
-				<div style="background-color: #997f2280; padding: 1rem; border-radius: 0.5rem;">
-					<div>
-						<label for="" style="margin-right: 1rem"><b style="font-size: 1.2rem">Choose
-								Method</b></label>
-						<div style="display: flex">
-							<div class="form-check" style="margin-right: 1.5rem">
-								<input class="form-check-input" type="radio" name="ChooseMethod" id="CalendlyRadio"
-									value="Calendly" checked />
-								<label class="form-check-label" for="CalendlyRadio">Calendly</label>
-							</div>
-							<div class="form-check" style="margin-right: 1.5rem">
-								<input class="form-check-input" type="radio" name="ChooseMethod"
-									id="GoogleCanlendarRadio" value="GoogleCanlendar" />
-								<label class="form-check-label" for="GoogleCanlendarRadio">Google
-									Canlendar</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="ChooseMethod"
-									id="MicrosoftCanlendarRadio" value="MicrosoftCanlendar" />
-								<label class="form-check-label" for="MicrosoftCanlendarRadio">Microsoft
-									Canlendar</label>
+		<div id="recipientResponseDialog" class="modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Attachment Preview</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div id="RecipientResponse" style="position: static; border-radius: 0;">
+							
+							<div>
+								<div class="ResponseSection">
+									<p>
+										Attending:
+									</p>
+									<div style="display: flex; margin-top: 0.5rem;">
+										<div class="form-check" style="margin-right: 1.5rem;">
+											<input class="form-check-input" id="Attend" type="radio" name="WillYouAttend"
+												value="Attend">
+											<label for="Attend">
+												Yes
+											</label>
+										</div>
+										<div class="form-check" style="margin-right: 1.5rem;">
+											<input class="form-check-input" id="NotAttending" type="radio" name="WillYouAttend"
+												value="Not attending">
+											<label for="NotAttending">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="ResponseSection">
+									<p>
+										Attendance Number
+									</p>
+									<input class="form-control" type="number" >
+								</div>
+								<div class="ResponseSection">
+									<label for="" style="margin-right: 1rem;"><b style="font-size: 1.2rem;">Food
+											Preference:</b></label>
+									<div style="display: flex; margin-top: 0.5rem;">
+										<div class="form-check" style="margin-right: 1.5rem;">
+											<input class="form-check-input" id="foodPreference1" type="checkbox"
+												name="foodPreference">
+											<label for="foodPreference1">Fish</label>
+										</div>
+										<div class="form-check" style="margin-right: 1.5rem;">
+											<input class="form-check-input" id="foodPreference2" type="checkbox"
+												name="foodPreference">
+											<label for="foodPreference2">Steak</label>
+										</div>
+										<div class="form-check" style="margin-right: 1.5rem;">
+											<input class="form-check-input" id="foodPreference3" type="checkbox"
+												name="foodPreference">
+											<label for="foodPreference3">Vegetable</label>
+										</div>
+										<div class="form-check" style="margin-right: 1.5rem;">
+											<input class="form-check-input" id="foodPreference7" type="checkbox"
+												name="foodPreference">
+											<label for="foodPreference7">Mutton</label>
+										</div>
+									</div>
+								</div>
+						
+								<div class="ResponseSection">
+									<p>
+										Hotel:
+									</p>
+									<select class="form-select" name="Hotel" id="HotelSelection" style=" margin-top: 0.5rem;">
+										<option value="">- Select -</option>
+										<option value="">Option1</option>
+										<option value="">Option1</option>
+										<option value="">Option1</option>
+									</select>
+								</div>
+								<div class="ResponseSection">
+									<p>
+										Transportation:
+									</p>
+									<select class="form-select" name="Car" id="CarSelection" style=" margin-top: 0.5rem;">
+										<option value="">- Select -</option>
+										<option value="">Option1</option>
+										<option value="">Option1</option>
+										<option value="">Option1</option>
+									</select>
+								</div>
+								<div class="ResponseSection">
+									<p>
+										Special Requests:
+									</p>
+									<textarea class="form-control" name="OthersFood" id="" cols="100" rows="4"
+										style="width: 100%; margin: 0.5rem 0 0;"></textarea>
+								</div>
 							</div>
 						</div>
-						<button type="button"
-							onclick="window.location.href='https://outlook.office.com/bookwithme/user/842329f5695e41f08cf88cd5a082a201%40rtresponse.com/meetingtype/SVRwCe7HMUGxuT6WGxi68g2?anonymous'"
-							style=" border: #fff 1px solid; border-radius: 0.5rem; background: #ffffff40; color: #fff; margin-top: 1rem; ">
-							Add Schedule
-						</button>
 					</div>
-					<div>
-						<label for="" style="margin-right: 1rem"><b style="font-size: 1.2rem">Fill out suggest a
-								meeting topic</b></label>
-						<textarea class="form-control" name="Others Food" id="" cols="100" rows="4"></textarea>
-					</div>
-					<div>
-						<label for="" style="margin-right: 1rem">
-							<b style="font-size: 1.2rem">
-								Fill out a survey to help us improve
-							</b>
-						</label>
-						<br />
-						<button type="button"
-							style=" border: #fff 1px solid; border-radius: 0.5rem; background: #ffffff40; color: #fff; margin-top: 1rem; ">
-							Survey of satisfaction with teaching services
-						</button>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 					</div>
 				</div>
-				<button value="cancel" class="btn btn-primary" style="margin-top: 1rem;">OK</button>
-			</form>
-		</dialog>
+			</div>
+		</div>
+		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-		<script>
-			const sendInvite = document.getElementById('viewResponseDetail1');
-			const recipientResponseDialog = document.getElementById('recipientResponseDialog');
-			const okBtn = recipientResponseDialog.querySelector('#okBtn');
-
-			if (typeof recipientResponseDialog.showModal !== 'function') {
-				recipientResponseDialog.hidden = true;
-			}
-			sendInvite.addEventListener('click', () => {
-				if (typeof recipientResponseDialog.showModal === "function") {
-					recipientResponseDialog.showModal();
-				} else {
-					outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
-				}
-			});
-		</script>
 	</body>
 
 </html>
