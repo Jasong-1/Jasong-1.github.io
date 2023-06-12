@@ -401,11 +401,11 @@
 											Select Date & Time
 										</button>
 									</div>
-									
+							
 									<div class="ResponseSection">
-											<p>
-												Attachments
-											</p>
+										<p>
+											Attachments
+										</p>
 										<table class="table table-hover responseTalbe">
 											<tbody>
 												<tr>
@@ -430,12 +430,26 @@
 													</td>
 													<th scope="row">
 														<p>
-															Suggest Conference Topic
+															Propose Discussion Topics
 														</p>
 													</th>
 													<td style="text-align: right;">
-														<button class="btn btn-light btn-sm" data-bs-toggle="modal"
-															data-bs-target="#FormPreviewnModal">
+														<button class="btn btn-light btn-sm" onclick="window.location.href='https://newtestsite.astihosted.com/CPort/ProcessV3/RenderPublicFormPreview.aspx?FormID=10354&ProcessId=170'">
+															View
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src="../../../../img/AttachmentTypeform.png" alt="">
+													</td>
+													<th scope="row">
+														<p>
+															Meetting Paperation Docments
+														</p>
+													</th>
+													<td style="text-align: right;">
+														<button class="btn btn-light btn-sm" onclick="window.location.href='https://newtestsite.astihosted.com/CPort/ProcessV3/CreateForm.aspx?ActionId=10&ProcessId=170&packageName =Time Card&pId=146321524&category=81,121'">
 															View
 														</button>
 													</td>
@@ -470,6 +484,91 @@
 				</div>
 			</div>
 		</div>
+		
+		
+		<!-- dialog -->
+		<div id="CollaborationModal" class="modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Collaboration View</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div style="background: #F8F8FD; height: 500px;">
+							<img src="../../../../img/CollaborationView.jpg" alt="" style="width: 800px;">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FilePreviewModal" class="modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Attachment Preview</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div style="background: #F8F8FD; height: 500px;">
+							<img src="../../../../img/StudentTranscriptExample1.jpeg" alt="" style="width: 800px;">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="FormPreviewnModal" class="modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Attachment Preview</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div style=" height: 500px;">
+							<img src="../../../../img/FormExsample2.png" alt="" style="width: 800px;">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="VideoPreviewModal" class="modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Attachment Preview</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<video controls width="800px">
+							<source
+								src="https://media-usno1.streaming.media.azure.net/9b9a2d88-4346-45ec-8130-b8464931ae1a/CompanyProductIntro_%20V10_06022023.mp4"
+								type="video/webm">
+						</video>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

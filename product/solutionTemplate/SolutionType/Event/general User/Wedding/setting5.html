@@ -11,7 +11,8 @@
 		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
 		<META HTTP-EQUIV="Expires" CONTENT="0">
-		
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 		<script type="text/javascript">
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
@@ -146,7 +147,7 @@
 									<td>
 										<input class="form-control form-control-sm" type="email">
 									</td>
-									<td>
+									<td style="text-align: right;">
 										<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
 											<path opacity="0.4"
@@ -163,7 +164,7 @@
 									<td>
 										<input class="form-control form-control-sm" type="email">
 									</td>
-									<td>
+									<td style="text-align: right;">
 										<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
 											<path opacity="0.4"
@@ -180,7 +181,7 @@
 									<td>
 										<input class="form-control form-control-sm" type="email">
 									</td>
-									<td>
+									<td style="text-align: right;">
 										<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
 											<path opacity="0.4"
@@ -206,7 +207,8 @@
 							<option value="">List4</option>
 						</select>
 						<!-- </label> -->
-						<button id="createNewList" class="btn btn-primary btn-sm">
+						<button id="createNewList" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+							data-bs-target="#addEmailListDialog" style="margin-left: 0.6rem;">
 							Create a new list
 						</button>
 						<!-- <a id="CreateNewList" href="" style="text-decoration:underline; margin-left: 1rem;">
@@ -222,7 +224,7 @@
 				</div>
 				<div class="nextBtnGroup">
 					<button class="btn btn-primary" onclick="window.location.href='setting4.html'">Previous</button>
-					<button id="sendInviteBtn" class="btn btn-primary" onclick="window.location.href='#'">
+					<button class="btn btn-primary" data-bs-target="#InvitateSuccessDialog" data-bs-toggle="modal">
 						<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M2.6875 28.5V19.1875L22.6875 16.5L2.6875 13.8125V4.5L30.6875 16.5L2.6875 28.5Z"
 								fill="white" />
@@ -236,24 +238,89 @@
 
 
 		<!-- Create new list dialog -->
-		<dialog id="addUserDialog" style="padding: 2rem;">
-			<form method="dialog">
-				<div style="margin-bottom: 2rem; display: flex; align-items: center;">
-					<label for="EmailListNameInput" style="margin-right: 1rem;">Email List Name:</label>
-					<input id="EmailListNameInput" class="form-control" type="text" style="width: 60%;">
+		<div class="modal fade" id="addEmailListDialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog  modal-dialog-centered modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Creata New Email List</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" style="padding: 2rem;">
+						<div style="display: flex; align-items: center;">
+							<label for="EmailListNameInput" style="margin-right: 1rem;">Email List Name:</label>
+							<input id="EmailListNameInput" class="form-control" type="text" style="width: 80%;">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button value="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+						<button id="confirmBtn" class="btn btn-primary" data-bs-target="#ImportMethodSelection" data-bs-toggle="modal">Create</button>
+					</div>
 				</div>
-				<div>
-					<button value="cancel" class="btn btn-secondary">Cancel</button>
-					<button id="confirmBtn" class="btn btn-primary">Create</button>
+			</div>
+		</div>
+		
+		<!-- 邮件列表上传 -->
+		<div class="modal fade" id="ImportMethodSelection" data-bs-backdrop="static" data-bs-keyboard="false"
+			tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog  modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Import Email List</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body" style="padding: 2rem; text-align: left;">
+						<input class="form-control" id="importList" type="file" style="margin-bottom: 1rem;" multiple>
+						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+							style="text-decoration: underline;" href="../../../../Attachments/Email_List_Template.xlsx"
+							download="Email_List_Template.xlsx">
+							<i class="bi bi-download"></i>
+							Download Template
+						</a>
+					</div>
+					<div class="modal-footer">
+						<button value="cancel" class="btn btn-secondary" data-bs-target="#addEmailListDialog" data-bs-toggle="modal">Cancel</button>
+						<button id="confirmBtn" class="btn btn-primary" data-bs-target="#UploadSuccessDialog" data-bs-toggle="modal">Confirm</button>
+					</div>
 				</div>
-			</form>
-		</dialog>
-
-		<dialog id="successDialog" style="padding: 2rem;">
-			<h4 style="margin: 0 0 2rem;">Invitation sent successfully!</h4>
-			<button id="okBtn" class="btn btn-primary" onclick="window.location.href='history.html'">OK</button>
-
-		</dialog>
+			</div>
+		</div>
+		
+		<!-- 模板上传成功 -->
+		<div class="modal fade" id="UploadSuccessDialog" data-bs-backdrop="static" data-bs-keyboard="false"
+			tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body" style="padding: 2rem;">
+						<i class="bi bi-check-lg" style="font-size: 3rem; color: #00aa00;"></i>
+						<h3>
+							Email List Import successfully!
+						</h3>
+					</div>
+					<div class="modal-footer">
+						<button id="confirmBtn" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 邀请发送成功 -->
+		<div class="modal fade" id="InvitateSuccessDialog" tabindex="-1">
+			<div class="modal-dialog  modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body" style="padding: 2rem;">
+						<i class="bi bi-check-lg" style="font-size: 3rem; color: #00aa00;"></i>
+						<h3>
+							Invitation sent successfully!
+						</h3>
+					</div>
+					<div class="modal-footer">
+						<!-- <button value="cancel" class="btn btn-secondary" data-bs-target="#addEmailListDialog" data-bs-toggle="modal">Cancel</button> -->
+						<button id="confirmBtn" class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='history.html'">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 		<script>
@@ -285,52 +352,6 @@
 				}
 
 			}
-
-
-
-
-
-			// create a new email list dialog
-
-			const CreateNewList = document.getElementById('createNewList');
-			const addUserDialog = document.getElementById('addUserDialog');
-			const confirmBtn = addUserDialog.querySelector('#confirmBtn');
-
-			// If a browser doesn't support the dialog, then hide the
-			// dialog contents by default.
-			if (typeof addUserDialog.showModal !== 'function') {
-				addUserDialog.hidden = true;
-				/* a fallback script to allow this dialog/form to function
-				   for legacy browsers that do not support <dialog>
-				   could be provided here.
-				*/
-			}
-			// "Update details" button opens the <dialog> modally
-			CreateNewList.addEventListener('click', () => {
-				if (typeof addUserDialog.showModal === "function") {
-					addUserDialog.showModal();
-				} else {
-					outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
-				}
-			});
-
-
-			// send button dialog
-
-			const sendInvite = document.getElementById('sendInviteBtn');
-			const successDialog = document.getElementById('successDialog');
-			const okBtn = successDialog.querySelector('#okBtn');
-
-			if (typeof successDialog.showModal !== 'function') {
-				successDialog.hidden = true;
-			}
-			sendInvite.addEventListener('click', () => {
-				if (typeof successDialog.showModal === "function") {
-					successDialog.showModal();
-				} else {
-					outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
-				}
-			});
 		</script>
 	</body>
 
