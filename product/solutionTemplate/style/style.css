@@ -1,7 +1,7 @@
-/* 通用 */
+/* 通用  ---------------------------------------------------------------------------------------------------------------------*/
 :root {
 	--img-wedding-main: url(../img/infoPage.jpg);
-	--img-SportGame-main: url(../img/pexels-pixabay-262524.jpg);
+	--img-SportGame-main: url(../img/SportGames1.jpg);
 	--img-Conference-main: url(../img/pexels-luis-quintero-2774556.jpg);
 	--img-HomeVisit-main: url(../img/pexels-rdne-stock-project-6647041.jpg);
 	--img-StudentRegistration-main: url(../img/pexels-rdne-stock-project-8500309.jpg);
@@ -29,8 +29,30 @@
 
 	--color-imgbg-light: #00000030;
 	--color-imgbg-dark: #00000080;
+	--bs-table-hover-bg: #ffffff20;
+
 
 	--color-theme: #1AC3DE;
+}
+
+:root {
+	--bs-border-color: #a3a5a7;
+	--bs-primary: var(--color-theme);
+	--bs-btn-color: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--color-theme);
+	--bs-btn-hover-border-color: var(--color-theme);
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--color-theme);
+	--bs-btn-active-border-color: var(--color-theme);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--color-theme);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--color-theme);
+	--bs-gradient: none;
+	--bs-accordion-active-bg: #cfffff !important;
+
 }
 
 html body {
@@ -54,20 +76,9 @@ body {
 	align-items: center;
 }
 
-.ContentAreaContainer {
+/* 组件  ---------------------------------------------------------------------------------------------------------------------*/
 
-	overflow-x: hidden;
-	overflow-y: auto;
-	width: 100%;
-	flex: 1;
-}
-
-.ContentArea {
-	text-align: left;
-	max-width: 1200px;
-	margin: 3rem auto 0;
-}
-
+/* title bar ----------------------------------------------*/
 
 .floatBtnGroup {
 	padding: 1.1rem;
@@ -77,18 +88,17 @@ body {
 	flex-flow: row nowrap;
 	justify-content: flex-end;
 	align-items: center;
-
 }
 
 .floatBtnGroupOnImg {
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-	/* z-index: 10000; */
+	/* background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); */
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0) 100%);
+	background-blend-mode: darken;
 }
 
 .floatBtnGroupOnColor {
 	background: var(--color-theme);
 	box-shadow: 0px 5px 15px #15a4ba1e;
-
 }
 
 .floatBtn {
@@ -98,11 +108,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .floatBtn svg {
-	/* height: 2rem; */
 	margin: 0.8rem;
 }
 
@@ -115,36 +123,37 @@ body {
 	background-color: #ffffff40;
 }
 
-
-
-
-
-
-/* bootstrap style Reset */
-
-:root {
-	--bs-border-color: #a3a5a7;
-	--bs-primary: var(--color-theme);
-	--bs-btn-color: var(--color-theme);
-	--bs-btn-border-color: var(--color-theme);
-	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg: var(--color-theme);
-	--bs-btn-hover-border-color: var(--color-theme);
-	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg: var(--color-theme);
-	--bs-btn-active-border-color: var(--color-theme);
-	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color: var(--color-theme);
-	--bs-btn-disabled-bg: transparent;
-	--bs-btn-disabled-border-color: var(--color-theme);
-	--bs-gradient: none;
-	--bs-accordion-active-bg: #cfffff !important;
+/* 分页 */
+.pagination {
+	--bs-pagination-border-color: #00000010;
+	--bs-pagination-color: var(--color-theme);
 }
 
-.accordion-button:not(.collapsed) {
-	color: #00000099;
-	background-color: #c0ecec !important;
-	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+.active>.page-link,
+.page-link.active {
+	z-index: 3;
+	color: var(--bs-pagination-active-color);
+	background-color: var(--color-theme);
+	border-color: var(--color-theme);
+}
+
+/* 按钮 */
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #17b8d0;
+	--bs-btn-hover-border-color: #17b8d0;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #17b8d0;
+	--bs-btn-active-border-color: #17b8d0;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: var(--color-theme);
+	--bs-btn-disabled-border-color: var(--color-theme);
 }
 
 .btn-outline-primary {
@@ -164,21 +173,14 @@ body {
 	--bs-gradient: none;
 }
 
-.btn-primary {
-	--bs-btn-color: #fff;
-	--bs-btn-bg: var(--color-theme);
-	--bs-btn-border-color: var(--color-theme);
-	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg: #17b8d0;
-	--bs-btn-hover-border-color: #17b8d0;
-	--bs-btn-focus-shadow-rgb: 49, 132, 253;
-	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg: #17b8d0;
-	--bs-btn-active-border-color: #17b8d0;
-	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color: #fff;
-	--bs-btn-disabled-bg: var(--color-theme);
-	--bs-btn-disabled-border-color: var(--color-theme);
+/* 单选、复选按钮组 */
+.Rdo-Cbx-Container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.form-check {
+	margin-right: 1rem;
 }
 
 .form-check-input:checked {
@@ -186,51 +188,21 @@ body {
 	border-color: var(--color-theme) !important;
 }
 
-.custom-tooltip {
-	--bs-tooltip-bg: var(--bs-primary);
+/* 设置页面发送按钮 */
+.sendBtnSetting {
+	background: var(--color-theme);
+	padding: 0.5rem;
+	border: 0;
+	color: #fff;
+	border-radius: 0.4rem;
+	margin: 0;
+	display: flex;
+	justify-content: center;
 }
 
-
+/* 自定义弹窗 */
 .modal-body {
 	padding: 0;
-}
-
-/* wedding page--------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* info page */
-.infoPage {
-	background: url(../img/infoPage.jpg) center no-repeat;
-	background-size: 100% auto;
-	height: 100vh;
-}
-
-.InformationArea {
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
-	color: #fff;
-
-}
-
-.bottom {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	padding: 7rem 10rem;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.bottom p {
-	margin: 0.5rem;
-}
-
-/* response page */
-
-:root {
-	--bs-table-hover-bg: #ffffff20;
 }
 
 @media (min-width: 576px) {
@@ -239,6 +211,40 @@ body {
 	}
 }
 
+Dialog {
+	border: #D5D5D5 1px solid;
+	border-radius: 0.5rem;
+}
+
+Dialog {
+	border: #D5D5D5 1px solid;
+	border-radius: 0.5rem;
+}
+
+/* 设置页 step1 手风琴菜单 */
+.accordion-item {
+	border: 1px solid #e9e9e9;
+}
+
+.accordion-body {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.accordion-body a img {
+	width: 8rem;
+	height: 8rem;
+	background: #000000;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #00000099;
+	background-color: #c0ecec !important;
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+
+/* 反馈页附件列表 */
 .responseTalbe th,
 .responseTalbe td {
 	background: none !important;
@@ -257,11 +263,84 @@ body {
 }
 
 
-.responsePage {
-	background: url(../img/responsePage.jpg) no-repeat center 37%;
-	background-size: 100% auto;
-	/* background-position: 20% 50%; */
+/* 可视化页面下拉菜单 */
+
+.google-visualization-controls-categoryfilter {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
+
+.google-visualization-controls-categoryfilter>label {
+	line-height: 2rem;
+	padding-right: 1rem;
+}
+
+.goog-combobox {
+	height: 2rem !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.3rem;
+}
+
+.goog-combobox>input {
+	height: 100%;
+	border-radius: 0.3rem;
+}
+
+.goog-combobox-button {
+	margin: 0 0.45rem;
+}
+
+
+/* 布局  ---------------------------------------------------------------------------------------------------------------------*/
+
+/* Information Page */
+
+.ContentAreaContainer {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	flex: 1;
+}
+
+.ContentArea {
+	text-align: left;
+	max-width: 1200px;
+	margin: 3rem auto 0;
+}
+
+
+
+/* info page---------------------------------------- */
+
+/* 首页文字区 */
+.InformationArea {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+	color: #fff;
+}
+
+/* 文字区位置 */
+.bottom {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 7rem 10rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bottom p {
+	margin: 0.5rem;
+}
+
+
+/* Responses page---------------------------------------- */
 
 #RecipientResponse {
 	position: relative;
@@ -313,73 +392,17 @@ hr {
 	margin: 0;
 }
 
-.Rdo-Cbx-Container {
+
+
+
+
+
+/* Data page---------------------------------------- */
+
+.chartContainer {
 	display: flex;
-	flex-flow: row wrap;
-}
-
-.form-check {
-	margin-right: 1rem;
-
-}
-
-.sendBtn {
-	background: #fff;
-	border: 0;
-	padding: 0.7rem 1.4rem;
-	font-size: 1.2rem;
-	border-radius: 0.2rem;
-	margin-top: 1.5rem;
-	text-decoration: none;
-}
-
-.sendBtn:hover {
-	background: #f5f5f5;
-}
-
-.sendBtn:visited {
-	color: black;
-}
-
-
-/* data page */
-.dataPage,
-.settingPage,
-.historyPage {
-	background: #288e9e30;
-}
-
-.google-visualization-controls-categoryfilter {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.google-visualization-controls-categoryfilter>label {
-	line-height: 2rem;
-	padding-right: 1rem;
-}
-
-
-.goog-combobox {
-	height: 2rem !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 0.3rem;
-}
-
-.goog-combobox>input {
-	height: 100%;
-	border-radius: 0.3rem;
-}
-
-.goog-combobox-button {
-	margin: 0 0.45rem;
-}
-
-#dashboard1 {
-	text-align: left;
+	flex-flow: row nowrap;
+	width: 100%;
 }
 
 .numBar {
@@ -389,7 +412,6 @@ hr {
 	align-items: center;
 	background-color: #fff;
 	border-radius: 0.8rem;
-	/* max-width: 1170px; */
 	margin: 0 auto 1rem;
 	padding: 1.5rem;
 }
@@ -400,11 +422,15 @@ hr {
 	width: 25%;
 	text-align: center;
 }
+.numBarItem P {
+	margin: 0 0 0.7rem;
+}
+.numBarItem h1 {
+	margin: 0;
+}
 
-.chartContainer {
-	display: flex;
-	flex-flow: row nowrap;
-	width: 100%;
+#dashboard1 {
+	text-align: left;
 }
 
 #DountChart1 {
@@ -415,16 +441,20 @@ hr {
 	width: 70%;
 }
 
-#DonutChart1>div>div>div>svg {
+#ColumnChart2 {
+	width: 100%;
+	height: 400px;
+	margin-top: 1rem;
+}
+
+#DonutChart1>div>div>div>svg,
+#ColumnChart1>div>div>div>svg,
+#ColumnChart2>div>div>div>svg {
 	border-radius: 0.5rem;
 }
 
-#ColumnChart1>div>div>div>svg {
-	border-radius: 0.5rem;
-}
 
-
-/* history page */
+/* History page---------------------------------------- */
 
 
 .tableContainer table {
@@ -447,18 +477,9 @@ hr {
 }
 
 
+/* setting page---------------------------------------- */
 
-/* settingPage */
-
-/* event type list */
-.accordion-body {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.accordion-item {
-	border: 1px solid #e9e9e9;
-}
+/* Event 类型列表 */
 
 .EventProtal {
 	width: 8.5rem;
@@ -493,7 +514,321 @@ hr {
 	border: var(--color-theme) .5rem solid;
 }
 
-/* 入口背景 */
+
+/* 步骤条 */
+
+.steps {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.stepItem,
+.stepItemComplate {
+	width: 10rem;
+}
+
+.stepItem p {
+	margin: 0.7rem 0;
+	max-width: 10rem;
+	color: #00000070;
+}
+
+.stepItem div {
+	background: #00000030;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 10rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #fff;
+	/* box-sizing: border-box; */
+	margin: 0 auto;
+}
+
+.steps hr {
+	margin-top: 16px;
+	width: auto;
+	min-width: 4rem;
+	height: 1px;
+	border-top: 2px solid #00000030;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.stepItemComplate p {
+	margin: 0.7rem 0;
+	max-width: 10rem;
+	color: #000000;
+}
+
+.stepItemComplate div {
+	background: var(--color-theme);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 10rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.steps>.complate {
+	border-top: 2px solid var(--color-theme);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.settingSection {
+	text-align: left;
+	max-width: 1000px;
+	margin: 1rem auto 0;
+	padding: 0.3rem;
+	background: #fff;
+	border-radius: 1rem;
+	height: 35.8rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+/* 下一步、上一步按钮组 */
+
+.nextBtnGroup {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 1rem auto;
+}
+
+
+/* setting 内容区 */
+
+.settingRow {
+	margin: 1rem;
+}
+
+.settingRow b {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.settingRow svg {
+	margin-right: 1rem;
+}
+
+.settingImgSelection {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.settingImgSelection img {
+	width: 6rem;
+	height: 6rem;
+	margin: 0.3rem;
+	/* background: url(../img/infoPage.jpg) center no-repeat; */
+	border-radius: 0.2rem;
+}
+
+
+/* 设置项卡片 */
+
+.settingCustomizedItem {
+	padding: 0.5rem;
+	background-color: #00000005;
+	border-radius: 0.5rem;
+	margin: 0.5rem;
+}
+
+.settingCustomizedItem>svg {
+	float: right;
+}
+
+
+.FieldArea {
+	/* padding: 0.8rem; */
+	background: #00000005;
+	margin-bottom: 1px;
+	border-bottom: 0.0625rem solid #ffffff70;
+}
+
+.FieldArea header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1px;
+	background: #00000005;
+	padding: 0.8rem;
+	/* border-bottom: 0.0625rem solid #00000020; */
+}
+
+.FieldArea main {
+	padding: 0.8rem;
+}
+
+/* 主题图上传按钮 */
+
+.uploadIcon1 {
+	margin: 0.3rem;
+}
+
+.uploadIcon1 svg {
+	border-radius: 0.2rem;
+}
+
+.uploadIcon1 svg rect {
+	fill: #1AC3DE;
+	fill-opacity: 0.2;
+	border-radius: 1rem;
+}
+
+.uploadIcon1 svg path {
+	fill: #1AC3DE;
+	fill-opacity: 0.7;
+}
+
+
+/* 收件人输入表格 */
+
+.typeRecipientsList {
+	width: 40rem;
+	background: #f9f9f9;
+	border-radius: 0.5rem;
+}
+
+.typeRecipientsList svg {
+	margin: 0;
+}
+
+.tableLastRow td {
+	border-bottom: 0;
+}
+
+.typeRecipientsList td {
+	padding: 0.5rem;
+	border-bottom: #00000015 1px solid;
+}
+
+.typeRecipientsList thead td {
+	color: #00000090;
+	font-weight: 500;
+	background: #00000005;
+}
+
+.typeRecipientsList input {
+	width: 100%;
+}
+
+.btn svg {
+	margin: 0;
+}
+
+
+/* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* wedding */
+
+.WeddingInfoPage {
+	background: url(../img/infoPage.jpg) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.WeddingResponsePage {
+	background: url(../img/responsePage.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Sport Games */
+.SportGamesInfoPage {
+	background: var(--img-SportGame-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+.SportGamesResponsePage {
+	background: url(../img/SportGames2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Birthday */
+
+.brithdayinfoPage {
+	background: url(../img/birthday1.jpg) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+
+/* Parent-Teacher Conferences */
+
+.conferencesinfoPage {
+	background: url(../img/conferences1.jpg) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.ConferencesResponsePage {
+	background: #787b70 url(../img/conferences2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Clients Meeting */
+.ClientsMeetinginfoPage {
+	background: var(--img-ClientsMeeting-main) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.ClientsMeetingResponsePage {
+	background: #787b70 url(../img/ClientsMeeting_2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Event coordination */
+
+.MeetingCoordinationInfoPage {
+	background: url(../img/EventPlanningAndCoordination_1.jpg) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.MeetingCoordinationResponsePage {
+	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Family Reunion */
+.FamilyReunionInfoPage {
+	background: var(--img-FamilyReunion-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.FamilyReunionResponsePage {
+	background: #181818 url(../img/FamilyReunion2.jpg) no-repeat top center;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+
+/* 非图片页面背景颜色 */
+.dataPage,
+.settingPage,
+.historyPage {
+	background: #288e9e30;
+}
+
+
+/* Setting step1 类别背景 */
 
 .WeddingProtal {
 	background: var(--img-wedding-main) var(--color-imgbg-light) center no-repeat;
@@ -769,316 +1104,3 @@ hr {
 	background: var(--img-SocialEvent-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
-
-
-.steps {
-	max-width: 1000px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-
-}
-
-/* .stepItem {
-    text-align: center;
-} */
-.accordion-body a img {
-	width: 8rem;
-	height: 8rem;
-	background: #000000;
-}
-
-.stepItem,
-.stepItemComplate {
-	width: 10rem;
-}
-
-.stepItem p {
-	margin: 0.7rem 0;
-	max-width: 10rem;
-	color: #00000070;
-}
-
-.stepItem div {
-	background: #00000030;
-	width: 2rem;
-	height: 2rem;
-	border-radius: 10rem;
-	font-size: 1.3rem;
-	line-height: 2rem;
-	color: #fff;
-	/* box-sizing: border-box; */
-	margin: 0 auto;
-
-}
-
-.steps hr {
-	margin-top: 16px;
-	width: auto;
-	min-width: 4rem;
-	height: 1px;
-	border-top: 2px solid #00000030;
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-}
-
-
-
-.stepItemComplate p {
-	margin: 0.7rem 0;
-	max-width: 10rem;
-	color: #000000;
-}
-
-.stepItemComplate div {
-	background: var(--color-theme);
-	width: 2rem;
-	height: 2rem;
-	border-radius: 10rem;
-	font-size: 1.3rem;
-	line-height: 2rem;
-	color: #fff;
-	/* box-sizing: border-box; */
-	margin: 0 auto;
-
-}
-
-.steps>.complate {
-	/* border-color: ; */
-	border-top: 2px solid var(--color-theme);
-	border-left: none;
-	border-right: none;
-	border-bottom: none;
-
-}
-
-.settingSection {
-	text-align: left;
-	max-width: 1000px;
-	margin: 1rem auto 0;
-	padding: 0.3rem;
-	background: #fff;
-	border-radius: 1rem;
-	height: 35.8rem;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
-.settingRow {
-	margin: 1rem;
-}
-
-.settingRow b {
-	display: block;
-	margin-bottom: 1rem;
-}
-
-.settingRow svg {
-	margin-right: 1rem;
-}
-
-.settingImgSelection {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.settingImgSelection img {
-	width: 6rem;
-	height: 6rem;
-	margin: 0.3rem;
-	background: url(../img/infoPage.jpg) center no-repeat;
-	border-radius: 0.2rem;
-}
-
-.uploadIcon1 {
-	margin: 0.3rem;
-}
-.uploadIcon1 svg {
-	border-radius: 0.2rem;
-}
-.uploadIcon1 svg rect {
-	fill: #1AC3DE;
-	fill-opacity: 0.2;
-	border-radius: 1rem;
-}
-.uploadIcon1 svg path {
-	fill: #1AC3DE;
-	fill-opacity: 0.7;
-}
-
-.settingImgSelection input {
-	margin-left: 0.3rem;
-}
-
-.settingCustomizedItem {
-	padding: 0.5rem;
-	background-color: #00000005;
-	border-radius: 0.5rem;
-	margin: 0.5rem;
-}
-
-.settingCustomizedItem>svg {
-	float: right;
-}
-
-.nextBtnGroup {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	max-width: 1000px;
-	margin: 1rem auto;
-}
-
-
-.typeRecipientsList {
-	width: 40rem;
-	background: #f9f9f9;
-	border-radius: 0.5rem;
-
-}
-
-.typeRecipientsList svg {
-	margin: 0;
-
-}
-
-.tableLastRow td {
-	border-bottom: 0;
-}
-
-.typeRecipientsList td {
-	padding: 0.5rem;
-	border-bottom: #00000015 1px solid;
-}
-
-.typeRecipientsList thead td {
-	color: #00000090;
-	font-weight: 500;
-	background: #00000005;
-}
-
-.typeRecipientsList input {
-	width: 100%;
-}
-
-.btn svg {
-	margin: 0;
-}
-
-.FieldArea {
-	/* padding: 0.8rem; */
-
-	background: #00000005;
-	margin-bottom: 1px;
-	border-bottom: 0.0625rem solid #ffffff70;
-}
-
-.FieldArea header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 1px;
-	background: #00000005;
-	padding: 0.8rem;
-	/* border-bottom: 0.0625rem solid #00000020; */
-}
-
-.FieldArea main {
-	padding: 0.8rem;
-}
-
-
-.btnActive {
-	background: var(--color-theme);
-	padding: 0.5rem 1rem;
-	border: 0;
-	color: #fff;
-	border-radius: 0.4rem;
-	width: 6rem;
-}
-
-.btnActiveOutline {
-	background: #ffffff00;
-	padding: 0.3rem 1rem;
-	border: 1px solid var(--color-theme);
-	color: var(--color-theme);
-	border-radius: 0.4rem;
-	width: auto;
-}
-
-.btnInactive {
-	background: var(--color-theme)30;
-	padding: 0.5rem 1rem;
-	border: 0;
-	color: #fff;
-	border-radius: 0.4rem;
-	width: 6rem;
-}
-
-.sendBtnSetting {
-	background: var(--color-theme);
-	padding: 0.5rem;
-	border: 0;
-	color: #fff;
-	border-radius: 0.4rem;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-}
-
-Dialog {
-	border: #D5D5D5 1px solid;
-	border-radius: 0.5rem;
-}
-
-Dialog {
-	border: #D5D5D5 1px solid;
-	border-radius: 0.5rem;
-}
-
-
-
-/* Birthday page--------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* info page */
-
-.brithdayinfoPage {
-	background: url(../img/birthday1.jpg) center no-repeat;
-	background-size: 100% auto;
-	height: 100vh;
-}
-
-
-/* Parent-Teacher Conferences page--------------------------------------------------------------------------------------------------------------------------- */
-.conferencesinfoPage {
-	background: url(../img/conferences1.jpg) top center no-repeat;
-	background-size: 100% auto;
-	height: 100vh;
-}
-
-.ConferencesResponsePage {
-	background: #787b70 url(../img/conferences2.jpg) top center no-repeat;
-	background-size: 100% auto;
-	/* background-position: 20% 50%; */
-}
-
-
-/* Parent-Teacher Conferences page--------------------------------------------------------------------------------------------------------------------------- */
-.SportsInfoPage {
-	background: url(../img/EventPlanningAndCoordination_1.jpg) center no-repeat;
-	background-size: 100% auto;
-	height: 100vh;
-}
-
-.SportsResponsePage {
-	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
-	background-size: 100% auto;
-	/* background-position: 20% 50%; */
-}
-
-
-
-/* Event planning and coordination page */

@@ -27,5 +27,15 @@ function switchSportSetting() {
 }
 
 function switchEventCoordinationSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/StudentReg/setting1.html";
+	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/MeetingCoordination/setting1.html";
+}
+
+function switchSGamesSetting() {
+	window.location.href = "../../../../SolutionType/Event/general User/SportGames/setting1.html";
+}
+function switchClientsMeetingSetting() {
+	window.location.href = "../../../../SolutionType/TimeConfirm/general User/ClientsMeeting/setting1.html";
+}
+function switchFamilyReunionSetting() {
+	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/FamilyReunion/setting1.html";
 }

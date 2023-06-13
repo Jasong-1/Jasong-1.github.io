@@ -32,21 +32,13 @@
             // Everything is loaded. Assemble your dashboard...
 
             var data = google.visualization.arrayToDataTable([
-                ['Event', 'Status', 'Num of Person'],
-                ['1st Parent-Teacher Conference', 'Determined', 64],
-                ['1st Parent-Teacher Conference', 'Undetermined', 10],
-                ['1st Parent-Teacher Conference', 'Pending', 7],
-                // ['Sophia and Jonathan Wedding', 'Parental Involvement', 3, 12],
-                // ['Sophia and Jonathan Wedding', 'Homeless', 2, 12],
-                // ['Sophia and Jonathan Wedding', 'Partial Adm. Salary', 6, 12],
-                // ['Sophia and Jonathan Wedding', 'Indirect Cost', 1, 12],
-                ['2nd Parent-Teacher Conference', 'Determined', 108],
-                ['2nd Parent-Teacher Conference', 'Undetermined', 12],
-                ['2nd Parent-Teacher Conference', 'Pending', 4],
-                // ['Sophias birthday party', 'Parental Involvement', 10, 12],
-                // ['Sophias birthday party', 'Homeless', 8, 12],
-                // ['Sophias birthday party', 'Partial Adm. Salary', 8, 12],
-                // ['Sophias birthday party', 'Indirect Cost', 6, 12]
+                ['Event', 'Status', 'Num of Person', 'Data Selected', 'Num of Pinned'],
+                ['1st Event Coordintion', 'Determined', 47, '06/14/2023 09:00 AM', 24],
+                ['1st Event Coordintion', 'Undetermined', 8, '06/14/2023 10:00 AM', 12],
+                ['1st Event Coordintion', 'Pending', 16, '06/14/2023 02:00 PM', 18],
+                ['2nd Event Coordintion', 'Determined', 108, '06/14/2023 09:00 AM', 20],
+				['2nd Event Coordintion', 'Undetermined', 14, '06/14/2023 10:00 AM', 14],
+				['2nd Event Coordintion', 'Pending', 0, '06/14/2023 02:00 PM', 12],
             ]);
 
             var dashboard = new google.visualization.Dashboard(
@@ -58,7 +50,7 @@
                 'controlType': 'CategoryFilter',
                 'containerId': 'YearFilter',
                 'state': {
-                    'selectedValues': ['1st Parent-Teacher Conference'],
+                    'selectedValues': ['1st Event Coordintion'],
                 },
 
 
@@ -134,6 +126,36 @@
                 'view': { 'columns': [1, 2] },
 
             });
+			
+			
+			var ColumnChart2 = new google.visualization.ChartWrapper({
+			    chartType: 'ColumnChart',
+			    'containerId': 'ColumnChart2',
+			    'options': {
+			        legend: {},
+			        vAxis: { title: 'Num of Person' },
+			        hAxis: { title: 'Status' },
+			        series: {
+			            // 0: { color: '#00A7EF', type: 'bar' },
+			            0: { color: '#1cc7d0', type: 'bar' },
+			            // 1: { color: '#2dde98', type: 'bar' } ,
+			            1: { color: '#63D62A', type: 'bar' },
+			            2: { color: '#FCC437', type: 'line' },
+			            // 5: { color: '#fd7564', type: 'line' },
+			            // 6: { color: '#ff4f81', type: 'line' },
+			            // 7: { color: '#b84592', type: 'line' },
+			            // 8: { color: '#8e43e7', type: 'line' }
+			        },
+			        animation: {
+			            duration: 1000,
+			            easing: 'inAndOut',
+			            startup: 'ture',
+			        },
+			    },
+			    'view': { 'columns': [3, 4] },
+			
+			});
+
 
             // Create a line chart, passing some options
             // var LineChart1 = new google.visualization.ChartWrapper({
@@ -141,18 +163,18 @@
             //     'containerId': 'LineChart1',
 
             //     'options': {
-            //         vAxis: { title: 'Amount ($)' },
-            //         hAxis: { title: 'Project' },
+            //         vAxis: { title: 'Num of Person' },
+            //         hAxis: { title: 'Data Selected' },
             //         series: {
             //             0: { color: '#00A7EF', type: 'bar' },
             //             1: { color: '#1cc7d0', type: 'bar' },
-            //             1: { color: '#2dde98', type: 'bar' } ,
-            //             1: { color: '#63D62A', type: 'bar' },
+            //             // 1: { color: '#2dde98', type: 'bar' },
+            //             // 1: { color: '#63D62A', type: 'bar' },
             //             2: { color: '#FCC437', type: 'line' },
-            //             5: { color: '#fd7564', type: 'line' },
-            //             6: { color: '#ff4f81', type: 'line' },
-            //             7: { color: '#b84592', type: 'line' },
-            //             8: { color: '#8e43e7', type: 'line' }
+            //             // 5: { color: '#fd7564', type: 'line' },
+            //             // 6: { color: '#ff4f81', type: 'line' },
+            //             // 7: { color: '#b84592', type: 'line' },
+            //             // 8: { color: '#8e43e7', type: 'line' }
             //         },
             //         animation: {
             //             duration: 1000,
@@ -161,7 +183,7 @@
             //         }
             //     },
             //     'view': {
-            //         'columns': [2, 3, 4]
+            //         'columns': [2, 3]
             //     },
             // });
 
@@ -169,12 +191,12 @@
             //     'chartType': 'Table',
             //     'containerId': 'DataTable1',
             //     'view': {
-            //         'columns': [2, 3, 4]
+            //         'columns': [2, 3]
             //     }
             // });
 
-            // dashboard.bind(dashboardYearFilter, [DonutChart1, ColumnChart1, LineChart1]);
-            dashboard.bind(dashboardYearFilter, [DonutChart1, ColumnChart1]);
+            dashboard.bind(dashboardYearFilter, [DonutChart1, ColumnChart1, ColumnChart2]);
+            // dashboard.bind(dashboardYearFilter, [DonutChart1, ColumnChart1]);
 
             dashboard.draw(data);
         }
@@ -259,14 +281,13 @@
 			    </div>
 			</div>
 			<div id="dashboard1">
-				<!--Divs that will hold each control and chart-->
-			
 				<div class="chartContainer">
 					<div id="DonutChart1" style="margin-right: 1rem; height: 400px;"></div>
 					<div id="ColumnChart1"></div>
 				</div>
-				<!-- <div id="DateTable1"></div> -->
-				<!-- <div id="LineChart1" style="margin: 1rem;"></div> -->
+				<div class="chartContainer">
+					<div id="ColumnChart2"></div>
+				</div>
 			</div>
 		</div>
     </div>
