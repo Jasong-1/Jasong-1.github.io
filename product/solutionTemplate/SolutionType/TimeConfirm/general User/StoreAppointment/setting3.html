@@ -16,7 +16,9 @@
 		<script type="text/javascript">
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
 		</script>
+		
 		<script src="../../../../scripts/map.js"></script>
+		
 	</head>
 
 	<body class="settingPage">
@@ -122,7 +124,6 @@
 
 					<div class="settingRow">
 						<b>Location</b>
-						<!-- <input class="form-control form-control-lg" type="text" aria-label=".form-control-lg example"> -->
 						<div class="location-container">
 							<div class="locationInputGroup">
 								<input class="form-control" type="text" placeholder="Enter or search address" id="location-input" />
@@ -180,31 +181,9 @@
 
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPXTdctApV88thqxRn0qQ9__phziECuHQ"></script> -->
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH5DC2pvTEVVRytSxpcLixjDRw4Yp6mFE&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC"
-			async defer></script>
-
-		<!-- <script>
-		    function geocodeAddress() {
-		      var geocoder = new google.maps.Geocoder();
-		      var address = document.getElementById('address').value;
 		
-		 
-		
-		      geocoder.geocode({ 'address': address }, function(results, status) {
-		        if (status === google.maps.GeocoderStatus.OK) {
-		          var latitude = results[0].geometry.location.lat();
-		          var longitude = results[0].geometry.location.lng();
-		          document.getElementById('latitude').textContent = latitude;
-		          document.getElementById('longitude').textContent = longitude;
-		        } else {
-		          alert('Geocode was not successful for the following reason: ' + status);
-		        }
-		      });
-		    }
-		</script> -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH5DC2pvTEVVRytSxpcLixjDRw4Yp6mFE&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+
 	</body>
 
 </html>

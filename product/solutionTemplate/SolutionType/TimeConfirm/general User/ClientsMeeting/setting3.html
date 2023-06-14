@@ -16,7 +16,9 @@
 		<script type="text/javascript">
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
 		</script>
-
+		
+		<script src="../../../../scripts/map.js"></script>
+		
 	</head>
 
 	<body class="settingPage">
@@ -119,7 +121,23 @@
 
 					<div class="settingRow">
 						<b>Location</b>
-						<input class="form-control form-control-lg" type="text" aria-label=".form-control-lg example">
+						<div class="location-container">
+							<div class="locationInputGroup">
+								<input class="form-control" type="text" placeholder="Enter or search address" id="location-input" />
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="Apt, Suite, etc (optional)" style="width: 30%;"/>
+									<input class="form-control" type="text" placeholder="City" id="locality-input" />
+									<input type="text" class="form-control" placeholder="State/Province"
+										id="administrative_area_level_1-input" />
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Zip/Postal code"
+										id="postal_code-input" />
+									<input class="form-control" type="text" placeholder="Country" id="country-input" />
+								</div>
+							</div>
+							<div class="locationInputMap" id="gmp-map"></div>
+						</div>
 					</div>
 					<div class="settingRow">
 						<b>Content Position</b>
@@ -155,6 +173,7 @@
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH5DC2pvTEVVRytSxpcLixjDRw4Yp6mFE&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
 	</body>
 
 </html>

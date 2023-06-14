@@ -321,7 +321,15 @@ Dialog {
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
 	color: #fff;
 }
-
+.infoArea-text-info {
+	margin: 0; font-size: 2.5rem;
+}
+.infoArea-text-title {
+	margin: 0.5rem 0; font-size: 5rem;
+}
+.infoArea-text-details {
+	display: flex; flex-flow: row nowrap; align-items: center; font-size: 2rem; margin-top: 1rem;
+}
 /* 文字区位置 */
 .bottom {
 	display: flex;
@@ -739,8 +747,8 @@ hr {
 }
 .locationInputGroup {
 	background: white;
-	width: 65%;
-	padding-right: 20px;
+	width: 60%;
+	padding:  2rem 1.5rem 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -748,8 +756,9 @@ hr {
 .locationInputGroup>div {
 	margin-top: 1.79rem;
 }
+
 .locationInputMap {
-	width: 35%;
+	width: 40%;
 	border-radius: 0.5rem;
 }
 
