@@ -1,3 +1,94 @@
-<a href="/index.html">
-  back
-  </a>
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+
+		<style>
+			html body {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+
+			body {
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #00A7EF;
+			}
+
+			.contentArea {
+				max-width: 1000px;
+			}
+
+			h1 {
+				font-size: 4rem;
+				color: #ffffff70;
+				margin: 0;
+			}
+
+			.link-container {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: stretch;
+			}
+			
+			.contentArea hr {
+				margin: 3rem 0;
+				
+				width:100%;
+				border-top:1px solid #ffffff70;
+				border-left:none;
+				border-right:none;
+				border-bottom:none;
+			}
+
+			.link-item {
+				width: 10rem;
+				padding: 1rem;
+				/* background: #fff; */
+				border-radius: 0.5rem;
+				margin-right: 1rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+				border: 1px solid #fff;
+			}
+			
+			.link-item:hover {
+				background: #fff;
+				color: #00A7EF;
+			}
+			
+			
+			.link-item:last-child {
+				margin-right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contentArea">
+			<div>
+				<h1>
+					Coming Soon...
+				</h1>
+			</div>
+			<hr>
+			<div class="link-container">
+				<div class="link-item" onclick="window.location.href='/index.html'">
+					Index Page
+				</div>
+				<div class="link-item" onclick="window.location.href='/product/solutionTemplate/SolutionType/ScheduleCoordintion/general User/MeetingCoordination/Information.html'">
+					Solution App Page
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
