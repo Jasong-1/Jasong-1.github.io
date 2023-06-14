@@ -26,6 +26,7 @@
 	--img-VacationPlanning-main: url(../img/VacationPlanning1.jpg);
 	--img-TripPlanning-main: url(../img/TripPlanning1.jpg);
 	--img-SocialEvent-main: url(../img/SocialEvent1.jpg);
+	--img-BabyShower-main: url(../img/BabyShower1.jpg);
 
 	--color-imgbg-light: #00000030;
 	--color-imgbg-dark: #00000080;
@@ -730,6 +731,29 @@ hr {
 }
 
 
+/* 地址-谷歌自动补全输入 */
+
+.location-container {
+	display: flex;
+	align-items: stretch;
+}
+.locationInputGroup {
+	background: white;
+	width: 65%;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.locationInputGroup>div {
+	margin-top: 1.79rem;
+}
+.locationInputMap {
+	width: 35%;
+	border-radius: 0.5rem;
+}
+
+
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* wedding */
@@ -767,13 +791,13 @@ hr {
 
 /* Parent-Teacher Conferences */
 
-.conferencesinfoPage {
+.PTeacherConferenceInfoPage {
 	background: url(../img/conferences1.jpg) top center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
-.ConferencesResponsePage {
+.PTeacherConferenceResponsePage {
 	background: #787b70 url(../img/conferences2.jpg) top center no-repeat;
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
@@ -791,6 +815,32 @@ hr {
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }
+/* Interviews */
+.InterviewsinfoPage {
+	background: var(--img-Interview-main) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.InterviewsResponsePage {
+	background: #787b70 url(../img/Interviews_2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+/* Store Appointment */
+.StoreAppointmentinfoPage {
+	background: var(--img-StoreAppointment-main) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.StoreAppointmentResponsePage {
+	background: #787b70 url(../img/StoreAppointment_2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+
 
 /* Event coordination */
 
@@ -1102,5 +1152,16 @@ hr {
 
 .Protal24:hover {
 	background: var(--img-SocialEvent-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal25 {
+	background: var(--img-BabyShower-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal25:hover {
+	background: var(--img-BabyShower-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
 }
