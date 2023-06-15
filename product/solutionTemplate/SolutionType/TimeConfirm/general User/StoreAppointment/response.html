@@ -16,7 +16,7 @@
 		<script type="text/javascript">
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style2.css?v=" + Math.random() +
-			"'>");
+				"'>");
 		</script>
 
 
@@ -104,30 +104,29 @@
 				<div>
 					<div>
 						<div class="ResponseSection">
-							<p>
-								Attending
-							</p>
-							<div class="Rdo-Cbx-Container">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="AttendConfirm"
-										id="AttendConfirmTure">
-									<label for="AttendConfirmTure">Yes</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="AttendConfirm"
-										id="AttendConfirmFalse">
-									<label for="AttendConfirmFalse">No</label>
-								</div>
-							</div>
-						</div>
-						<div class="ResponseSection">
 							<button class="btn btn-light btn-sm"
 								onclick="window.location.href='https://calendly.com/jhuang-rr/general-discussion'">
 								Select Date & Time
 							</button>
 						</div>
-
 						<div class="ResponseSection">
+							<p>
+								Select Service
+							</p>
+							<div class="Rdo-Cbx-Container">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" name="AttendConfirm"
+										id="AttendConfirmTure">
+									<label for="AttendConfirmTure">Spa</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" name="AttendConfirm"
+										id="AttendConfirmFalse">
+									<label for="AttendConfirmFalse">Skin care</label>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="ResponseSection">
 							<p>
 								Attachments
 							</p>
@@ -197,6 +196,13 @@
 									</tr>
 								</tbody>
 							</table>
+						</div> -->
+						<div class="ResponseSection">
+							<p>
+								Special Requests:
+							</p>
+							<textarea class="form-control" name="OthersFood" id="" cols="100" rows="4"
+								style="width: 100%; margin: 0.5rem 0 0;"></textarea>
 						</div>
 					</div>
 				</div>
