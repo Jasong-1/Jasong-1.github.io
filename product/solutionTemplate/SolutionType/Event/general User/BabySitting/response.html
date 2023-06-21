@@ -17,6 +17,8 @@
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
 		</script>
 		
+		<script src="../../../../scripts/map.js"></script>
+		
 	</head>
 
 	<body class="BabySittingResponsePage">
@@ -71,17 +73,17 @@
 				<div>
 					<div class="ResponseSection">
 						<p>
-							Attending:
+							Available:
 						</p>
-						<div style="display: flex; margin-top: 0.5rem;">
-							<div class="form-check" style="margin-right: 1.5rem;">
+						<div class="Rdo-Cbx-Container">
+							<div class="form-check">
 								<input class="form-check-input" id="Attend" type="radio" name="WillYouAttend"
 									value="Attend">
 								<label for="Attend">
 									Yes
 								</label>
 							</div>
-							<div class="form-check" style="margin-right: 1.5rem;">
+							<div class="form-check">
 								<input class="form-check-input" id="NotAttending" type="radio" name="WillYouAttend"
 									value="Not attending">
 								<label for="NotAttending">
@@ -92,24 +94,98 @@
 					</div>
 					<div class="ResponseSection">
 						<p>
-							Hotel:
+							Time:
 						</p>
-						<select class="form-select" name="Hotel" id="HotelSelection" style=" margin-top: 0.5rem;">
-							<option value="">- Select -</option>
-							<option value="">Holiday Inn</option>
-							<option value="">Double Tree</option>
-							<option value="">Best Western</option>
-						</select>
+						<div class="input-group">
+							<span class="input-group-text" id="basic-addon1">Start Time</span>
+							<input class="form-control" type="Date">
+							<input class="form-control" type="time">
+							<span class="input-group-text" id="basic-addon1" style="width: 6rem; justify-content: center;"> - </span>
+							<span class="input-group-text" id="basic-addon1">End Time</span>
+							<input class="form-control" type="Date">
+							<input class="form-control" type="time">
+						</div>
 					</div>
 					<div class="ResponseSection">
 						<p>
-							Transportation:
+							Hourly Pay:
 						</p>
-						<select class="form-select" name="Car" id="CarSelection" style=" margin-top: 0.5rem;">
-							<option value="">- Select -</option>
-							<option value="">Need Flight Reservation</option>
-							<option value="">Need Car Rental Reservation</option>
-						</select>
+						<div class="input-group">
+							<span class="input-group-text" id="basic-addon1">$</span>
+							<input class="form-control" type="text" value="15">
+						</div>
+						<div class="form-check" style="margin-top: 0.5rem;">
+							<input class="form-check-input" id="Aggree1" type="checkbox" name="WillYouAttend"
+								value="Aggree1">
+							<label for="Aggree1">
+								Aggree
+							</label>
+						</div>
+					</div>
+					<div class="ResponseSection">
+						<p>
+							Contact Information:
+						</p>
+						<div class="input-group">
+							<span class="input-group-text" id="basic-addon1">Phone</span>
+							<input class="form-control" type="text">
+						</div>
+						<div class="input-group" style="margin-top: 0.5rem;">
+							<span class="input-group-text" id="basic-addon1">E-Mail</span>
+							<input class="form-control" type="text">
+						</div>
+					</div>
+					<div class="ResponseSection">
+						<p>
+							Require Pickup:
+						</p>
+						<div class="Rdo-Cbx-Container">
+							<div class="form-check">
+								<input class="form-check-input" id="Attend" type="radio" name="WillYouAttend"
+									value="Attend">
+								<label for="Attend">
+									Yes
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" id="NotAttending" type="radio" name="WillYouAttend"
+									value="Not attending">
+								<label for="NotAttending">
+									No
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="ResponseSection">
+						<p>
+							PickUp Location:
+						</p>
+						<div class="location-container">
+							<div class="locationInputGroup">
+								<input class="form-control" type="text" placeholder="Enter or search address" id="location-input" />
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="Apt, Suite, etc (optional)" style="width: 30%;"/>
+									<input class="form-control" type="text" placeholder="City" id="locality-input" />
+									<input type="text" class="form-control" placeholder="State/Province"
+										id="administrative_area_level_1-input" />
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Zip/Postal code"
+										id="postal_code-input" />
+									<input class="form-control" type="text" placeholder="Country" id="country-input" />
+								</div>
+							</div>
+							<div class="locationInputMap" id="gmp-map"></div>
+						</div>
+					</div>
+					<div class="ResponseSection">
+						<p>
+							Suggested Pickup Time:
+						</p>
+						<div class="input-group">
+							<input class="form-control" type="Date">
+							<input class="form-control" type="time">
+						</div>
 					</div>
 					<div class="ResponseSection">
 						<p>
@@ -118,6 +194,28 @@
 						<textarea class="form-control" name="OthersFood" id="" cols="100" rows="4"
 							style="width: 100%; margin: 0.5rem 0 0;"></textarea>
 					</div>
+					<hr>
+					<div class="ResponseSection">
+						<button class="btn btn-light btn-sm" onclick="window.location.href='https://goo.gl/maps/gsALfMF1xCMpKSHE9'" style="width: 100%;">
+							Location
+						</button>
+					</div>
+					<hr>
+					<div class="ResponseSection">
+						<p>
+							References:
+						</p>
+						<div class="input-group">
+							<span class="input-group-text" id="basic-addon1">Name</span>
+							<input class="form-control" type="text">
+							<span class="input-group-text" id="basic-addon1">Phone #</span>
+							<input class="form-control" type="number">
+						</div>
+						<button class="btn btn-outline-light btn-sm" style="margin-top: 1rem;">
+							Add more references
+						</button>
+					</div>
+					
 				</div>
 				<hr>
 				<button class="btn btn-light btn-lg">Submit</button>
@@ -145,6 +243,9 @@
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH5DC2pvTEVVRytSxpcLixjDRw4Yp6mFE&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+		
 	</body>
 
 </html>

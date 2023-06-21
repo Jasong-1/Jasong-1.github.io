@@ -30,9 +30,6 @@ function switchConferenceSetting() {
 function switchBabySittingSetting() {
 	window.location.href = "../../../../SolutionType/Event/general User/BabySitting/setting1.html";
 }
-function switchPerformanceReviewSetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/PerformanceReview/setting1.html";
-}
 function switchGovernmentAgencySetting() {
 	window.location.href = "../../../../SolutionType/Event/general User/GovernmentAgency/setting1.html";
 }
@@ -71,6 +68,12 @@ function switchTutoringSchedulingSetting() {
 }
 function switchAcademicAdvisorsSetting() {
 	window.location.href = "../../../../SolutionType/TimeConfirm/general User/AcademicAdvisors/setting1.html";
+}
+function switchPerformanceReviewSetting() {
+	window.location.href = "../../../../SolutionType/TimeConfirm/general User/PerformanceReview/setting1.html";
+}
+function switchGovernmentAgency2Setting() {
+	window.location.href = "../../../../SolutionType/TimeConfirm/general User/GovernmentAgency/setting1.html";
 }
 
 

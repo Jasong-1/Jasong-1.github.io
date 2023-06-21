@@ -2,7 +2,7 @@
 
 :root {
 	--color-theme: #1AC3DE;
-	
+
 	--color-imgbg-light: #00000030;
 	--color-imgbg-dark: #00000080;
 	--bs-table-hover-bg: #ffffff20;
@@ -36,7 +36,7 @@
 	--img-PerformanceReview-main: url(../img/PerformanceReview_1.jpg);
 	--img-GovernmentAgency-main: url(../img/GovernmentAgency_1.jpg);
 	--img-BabyShower-main: url(../img/BabyShower1.jpg);
-	
+
 	/* Calendar Booking */
 	--img-HomeVisit-main: url(../img/PTeacherConference1.jpg);
 	--img-ClientsMeeting-main: url(../img/ClientsMeeting_1.jpg);
@@ -47,7 +47,7 @@
 	--img-RealEstate-main: url(../img/RealEstate_1.jpg);
 	--img-TutoringScheduling-main: url(../img/TutoringScheduling_1.jpg);
 	--img-AcademicAdvisorsAndTutors-main: url(../img/AcademicAdvisorsAndTutors_1.jpg);
-	
+
 	/* Schedule Coordination */
 	--img-MeetingCoordination-main: url(../img/MeetingCoordination1.jpg);
 	--img-FamilyReunion-main: url(../img/FamilyReunion1.jpg);
@@ -57,7 +57,7 @@
 	--img-VacationPlanning-main: url(../img/VacationPlanning1.jpg);
 	--img-TripPlanning-main: url(../img/TripPlanning1.jpg);
 	--img-SocialEvent-main: url(../img/SocialEvent1.jpg);
-	
+
 	--img-StudentRegistration-main: url(../img/pexels-rdne-stock-project-8500309.jpg);
 }
 
@@ -187,6 +187,10 @@ body {
 
 .form-check {
 	margin-right: 1rem;
+}
+
+.form-check:last-child {
+	margin-right: 0;
 }
 
 .form-check-input:checked {
@@ -327,15 +331,25 @@ Dialog {
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
 	color: #fff;
 }
+
 .infoArea-text-info {
-	margin: 0; font-size: 2.5rem;
+	margin: 0;
+	font-size: 2.5rem;
 }
+
 .infoArea-text-title {
-	margin: 0.5rem 0; font-size: 5rem;
+	margin: 0.5rem 0;
+	font-size: 5rem;
 }
+
 .infoArea-text-details {
-	display: flex; flex-flow: row nowrap; align-items: center; font-size: 2rem; margin-top: 1rem;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-size: 2rem;
+	margin-top: 1rem;
 }
+
 /* 文字区位置 */
 .bottom {
 	display: flex;
@@ -365,6 +379,10 @@ Dialog {
 	border-radius: 1rem;
 	color: #fff;
 	backdrop-filter: blur(20px);
+}
+
+#recipientResponseDialog #RecipientResponse {
+	margin: 0;
 }
 
 #RecipientResponse>div {
@@ -433,9 +451,11 @@ hr {
 	width: 25%;
 	text-align: center;
 }
+
 .numBarItem P {
 	margin: 0 0 0.7rem;
 }
+
 .numBarItem h1 {
 	margin: 0;
 }
@@ -485,6 +505,91 @@ hr {
 	background: var(--color-theme);
 	text-align: left;
 	color: #fff;
+}
+
+.tableContainer table td button {
+	width: 26px;
+	height: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.7rem;
+	background: none;
+	border: 0;
+}
+
+.tableContainer table td button:last-child {
+	margin-right: 0;
+}
+
+.bi {
+	color: #1AC3DE;
+}
+
+.bi-send-fill {
+	font-size: 20px;
+}
+
+.bi-eye-fill {
+	font-size: 23px;
+}
+
+.bi-chat-dots-fill {
+	font-size: 19px;
+}
+
+.tableContainer table tr td:last-child {
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	height: 60px;
+}
+
+.tableContainer table thead tr td:first-child {
+	border-top-left-radius: 0.5rem;
+}
+
+.tableContainer table thead tr td:last-child {
+	border-top-right-radius: 0.5rem;
+}
+
+.tableContainer table tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 0.5rem;
+}
+
+.tableContainer table tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 0.5rem;
+}
+
+.ToolBar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.ToolBar button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ToolBar button .bi-send-fill {
+	margin-right: 0.5rem;
+	color: #fff;
+	font-size: 18px;
+}
+
+.FilterBar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: 60rem;
+}
+
+.FilterBar select {
+	margin-left: 1rem;
+	width: 50%;
 }
 
 
@@ -747,14 +852,16 @@ hr {
 	display: flex;
 	align-items: stretch;
 }
+
 .locationInputGroup {
-	background: white;
+	/* background: white; */
 	width: 60%;
-	padding:  2rem 1.5rem 2rem 0;
+	padding: 2rem 1.5rem 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 }
+
 .locationInputGroup>div {
 	margin-top: 1.79rem;
 }
@@ -773,6 +880,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .WeddingResponsePage {
 	background: url(../img/WeddingResponsePage.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -784,6 +892,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .SportGamesResponsePage {
 	background: url(../img/SportGames2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -795,6 +904,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .ConferenceResponsePage {
 	background: url(../img/Conference2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -806,6 +916,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .BabySittingResponsePage {
 	background: url(../img/Babysitting_2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -817,6 +928,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .PerformanceReviewResponsePage {
 	background: url(../img/PerformanceReview_2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -828,6 +940,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .GovernmentAgencyResponsePage {
 	background: url(../img/GovernmentAgency_2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -839,6 +952,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .BabyShowerResponsePage {
 	background: url(../img/BabyShower2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
@@ -851,6 +965,7 @@ hr {
 	background-size: 100% auto;
 	height: 100vh;
 }
+
 .PTeacherConferenceResponsePage {
 	background: #787b70 url(../img/PTeacherConferences2.jpg) top center no-repeat;
 	background-size: 100% auto;
@@ -869,6 +984,7 @@ hr {
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }
+
 /* Interviews */
 .InterviewsinfoPage {
 	background: var(--img-Interview-main) top center no-repeat;
@@ -881,6 +997,7 @@ hr {
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }
+
 /* Store Appointment */
 .StoreAppointmentinfoPage {
 	background: var(--img-StoreAppointment-main) top center no-repeat;

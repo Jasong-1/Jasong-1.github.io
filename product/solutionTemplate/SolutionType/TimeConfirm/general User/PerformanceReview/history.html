@@ -6,22 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Sport Games</title>
-
+		
 		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
 		<META HTTP-EQUIV="Expires" CONTENT="0">
-
+		
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 		<script type="text/javascript">
 			document.write("<link rel='stylesheet' type='text/css' href='../../../../style/style.css?v=" + Math.random() + "'>");
 		</script>
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-		<style>
-			
-		</style>
-
 	</head>
 
 	<body class="historyPage">
@@ -104,31 +97,21 @@
 		</div>
 		<div class="ContentAreaContainer tableContainer">
 			<div class="ContentArea">
-				<div class="ToolBar">
-					<div class="FilterBar">
-						<label for="Select">Select:</label>
-						<select id="Select" class="form-select" aria-label="Default select example">
-							<option selected>1st Event Coordintion</option>
-							<option>2nd Event Coordintion</option>
-						</select>
-					</div>
-					<button class="btn btn-primary" type="button" data-bs-toggle="modal"
-						data-bs-target="#ResendSelectedModal">
-						<i class="bi bi-send-fill"></i>
-						Resend Selected
-					</button>
+				<div style="display: flex; flex-flow: row nowrap; align-items: center; margin-bottom: 1.5rem;">
+					<label for="Select" style="margin-right: 1rem;">Select:</label>
+					<select id="Select" class="form-select" aria-label="Default select example" style="width: 50%;">
+						<option selected>1st Event Coordintion</option>
+						<option>2nd Event Coordintion</option>
+					</select>
 				</div>
 				<table>
 					<thead>
 						<tr>
-							<td>
-								<!-- Status -->
-							</td>
-							<td></td>
+							<td style="border-top-left-radius: 0.5rem;">Status</td>
 							<td>Name</td>
 							<td>Email</td>
 							<td>Send Time</td>
-							<td>Responses</td>
+							<td style="text-align: right; border-top-right-radius: 0.5rem;">Responses</td>
 						</tr>
 					</thead>
 					<tbody>
@@ -147,21 +130,16 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Gemma Beerbohm</td>
 							<td>GBeerbohm@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -179,22 +157,17 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
 										stroke-opacity="0.1" />
 								</svg>
-							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
 							</td>
 							<td>Jodie Aldington</td>
 							<td>JodieA@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -212,22 +185,17 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
 										stroke-opacity="0.1" />
 								</svg>
-							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
 							</td>
 							<td>Sampson Berkeley</td>
 							<td>SampsonB@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -241,23 +209,10 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="#0093FE" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Jared Lawrence</td>
 							<td>JLawrence@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
-								</button>
-							</td>
+							<td style="text-align: right"></td>
 						</tr>
 						<tr>
 							<td>
@@ -274,21 +229,16 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Octavia Dorothy</td>
 							<td>ODorothy@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -302,23 +252,10 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="#0093FE" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Archibald Hume</td>
 							<td>AHume@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
-								</button>
-							</td>
+							<td style="text-align: right"></td>
 						</tr>
 						<!-- <tr>
 							<td>
@@ -338,13 +275,13 @@
 							<td>Will Clemens</td>
 							<td>WClemens@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal"
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
 									data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr> -->
@@ -363,21 +300,16 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Megan Amelia</td>
 							<td>MAmelia@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -396,21 +328,16 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Lou Poe</td>
 							<td>LPoe@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -426,26 +353,13 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Rock MacDonald</td>
 							<td>RMacDonald@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
-								</button>
-							</td>
+							<td style="text-align: right"></td>
 						</tr>
 						<tr>
-							<td>
+							<td style="border-bottom-left-radius: 0.5rem;">
 								<svg width="29" height="28" viewBox="0 0 29 28" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -459,21 +373,16 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
-							<td>
-								<input class="form-check-input" type="checkbox">
-							</td>
 							<td>Merle Fast</td>
 							<td>MFast@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#ResendModal">
-									<i class="bi bi-send-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#CollaborationModal">
-									<i class="bi bi-chat-dots-fill"></i>
-								</button>
-								<button type="button" data-bs-toggle="modal" data-bs-target="#recipientResponseDialog">
-									<i class="bi bi-eye-fill"></i>
+							<td style="text-align: right; border-bottom-right-radius: 0.5rem;">
+								<button id="viewResponseDetail1"
+									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
+									data-bs-target="#recipientResponseDialog">
+									<svg class="bi" width="24" height="24">
+										<use xlink:href="#preview" />
+									</svg>
 								</button>
 							</td>
 						</tr>
@@ -499,106 +408,18 @@
 					</nav>
 				</div>
 			</div>
-
-		</div>
-		<div id="InvitateSuccessDialog" class="modal" tabindex="-1">
-			<div class="modal-dialog  modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-body" style="padding: 2rem;">
-						<i class="bi bi-check-lg" style="font-size: 3rem; color: #00aa00;"></i>
-						<h3>
-							Sent successfully!
-						</h3>
-					</div>
-					<div class="modal-footer">
-						<!-- <button value="cancel" class="btn btn-secondary" data-bs-target="#addEmailListDialog" data-bs-toggle="modal">Cancel</button> -->
-						<button id="confirmBtn" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="ResendSelectedModal" class="modal" tabindex="-1">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Resend Selected</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div style="padding: 2rem; text-align: left;">
-							<label for="Message" style="font-size: 1.2rem; margin-bottom: 0.5rem;">
-								Message
-							</label>
-							<textarea class="form-control" name="" id="Message" cols="30" rows="4"></textarea>
-							<p style="margin-top: 0.2rem; color: #aa0000;">
-								Message and solution link will be resent to recipients via email
-							</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
-							data-bs-target="#InvitateSuccessDialog">Send</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="ResendModal" class="modal" tabindex="-1">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Resend</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div style="padding: 2rem; text-align: left;">
-							<label for="Message" style="font-size: 1.2rem; margin-bottom: 0.5rem;">
-								Message
-							</label>
-							<textarea class="form-control" name="" id="Message" cols="30" rows="4"></textarea>
-							<p style="margin-top: 0.2rem; color: #aa0000;">
-								Message and solution link will be resent to recipients via email
-							</p>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
-							data-bs-target="#InvitateSuccessDialog">Send</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="CollaborationModal" class="modal" tabindex="-1">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Collaboration View</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div style="background: #F8F8FD; height: 500px;">
-							<img src="../../../../img/CollaborationView.jpg" alt="" style="width: 800px;">
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-					</div>
-				</div>
-			</div>
+		
 		</div>
 		<div id="recipientResponseDialog" class="modal" tabindex="-1">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Response Details</h5>
+						<h5 class="modal-title">Attachment Preview</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
 						<div id="RecipientResponse" style="position: static; border-radius: 0;">
-
+							
 							<div>
 								<div class="ResponseSection">
 									<p>
@@ -606,15 +427,15 @@
 									</p>
 									<div style="display: flex; margin-top: 0.5rem;">
 										<div class="form-check" style="margin-right: 1.5rem;">
-											<input class="form-check-input" id="Attend" type="radio"
-												name="WillYouAttend" value="Attend">
+											<input class="form-check-input" id="Attend" type="radio" name="WillYouAttend"
+												value="Attend">
 											<label for="Attend">
 												Yes
 											</label>
 										</div>
 										<div class="form-check" style="margin-right: 1.5rem;">
-											<input class="form-check-input" id="NotAttending" type="radio"
-												name="WillYouAttend" value="Not attending">
+											<input class="form-check-input" id="NotAttending" type="radio" name="WillYouAttend"
+												value="Not attending">
 											<label for="NotAttending">
 												No
 											</label>
@@ -625,8 +446,7 @@
 									<p>
 										Hotel:
 									</p>
-									<select class="form-select" name="Hotel" id="HotelSelection"
-										style=" margin-top: 0.5rem;">
+									<select class="form-select" name="Hotel" id="HotelSelection" style=" margin-top: 0.5rem;">
 										<option value="">- Select -</option>
 										<option value="">Holiday Inn</option>
 										<option value="">Double Tree</option>
@@ -637,8 +457,7 @@
 									<p>
 										Transportation:
 									</p>
-									<select class="form-select" name="Car" id="CarSelection"
-										style=" margin-top: 0.5rem;">
+									<select class="form-select" name="Car" id="CarSelection" style=" margin-top: 0.5rem;">
 										<option value="">- Select -</option>
 										<option value="">Need Flight Reservation</option>
 										<option value="">Need Car Rental Reservation</option>
@@ -661,7 +480,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 
