@@ -487,6 +487,36 @@ hr {
 
 /* History page---------------------------------------- */
 
+.ToolBar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.ToolBar button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ToolBar button .bi-send-fill {
+	margin-right: 0.5rem;
+	color: #fff;
+	font-size: 18px;
+}
+
+.FilterBar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: 60rem;
+}
+
+.FilterBar select {
+	margin-left: 1rem;
+	width: 50%;
+}
 
 .tableContainer table {
 	width: 100%;
@@ -494,10 +524,19 @@ hr {
 	border-radius: 1rem;
 }
 
+.tableContainer tr {
+	
+}
+
 .tableContainer td {
 	padding: 1rem;
 	background: #fff;
 	text-align: left;
+	border-bottom: 1px solid #00000009;
+}
+
+.tableContainer tr:last-child td {
+	border-bottom: none;
 }
 
 .tableContainer thead td {
@@ -541,8 +580,8 @@ hr {
 .tableContainer table tr td:last-child {
 	display: flex;
 	justify-content: flex-end;
-	text-align: right;
-	height: 60px;
+	align-items: center;
+	height: 100%;
 }
 
 .tableContainer table thead tr td:first-child {
@@ -559,37 +598,6 @@ hr {
 
 .tableContainer table tbody tr:last-child td:last-child {
 	border-bottom-right-radius: 0.5rem;
-}
-
-.ToolBar {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	margin-bottom: 1.5rem;
-}
-
-.ToolBar button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.ToolBar button .bi-send-fill {
-	margin-right: 0.5rem;
-	color: #fff;
-	font-size: 18px;
-}
-
-.FilterBar {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	width: 60rem;
-}
-
-.FilterBar select {
-	margin-left: 1rem;
-	width: 50%;
 }
 
 
