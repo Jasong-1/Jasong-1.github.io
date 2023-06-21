@@ -32,7 +32,7 @@
             // Everything is loaded. Assemble your dashboard...
 
             var data = google.visualization.arrayToDataTable([
-                ['Event', 'Status', 'Num of Person', 'Data Selected', 'Num of Pinned'],
+                ['Event', 'Status', 'Num of People', 'Data Selected', 'Num of People'],
                 ['1st Event Coordintion', 'Determined', 47, '06/14/2023 09:00 AM', 24],
                 ['1st Event Coordintion', 'Undetermined', 8, '06/14/2023 10:00 AM', 12],
                 ['1st Event Coordintion', 'Pending', 16, '06/14/2023 02:00 PM', 18],
@@ -104,7 +104,7 @@
                 'containerId': 'ColumnChart1',
                 'options': {
                     legend: {},
-                    vAxis: { title: 'Num of Person' },
+                    vAxis: { title: 'Num of People' },
                     hAxis: { title: 'Status' },
                     series: {
                         0: { color: '#00A7EF', type: 'bar' },
@@ -133,8 +133,8 @@
 			    'containerId': 'ColumnChart2',
 			    'options': {
 			        legend: {},
-			        vAxis: { title: 'Num of Person' },
-			        hAxis: { title: 'Status' },
+			        vAxis: { title: 'Num of People' },
+			        hAxis: { title: 'Date Selected' },
 			        series: {
 			            // 0: { color: '#00A7EF', type: 'bar' },
 			            0: { color: '#1cc7d0', type: 'bar' },
@@ -163,7 +163,7 @@
             //     'containerId': 'LineChart1',
 
             //     'options': {
-            //         vAxis: { title: 'Num of Person' },
+            //         vAxis: { title: 'Num of People' },
             //         hAxis: { title: 'Data Selected' },
             //         series: {
             //             0: { color: '#00A7EF', type: 'bar' },
