@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../../style/style2.css" />
+
+    <style>
+      .InitiatorPageProtalactive .PageProtalIconActive {
+        display: block;
+      }
+      .InitiatorPageProtalactive .PageProtalIconDefault {
+        display: none;
+      }
+
+      .PageContent {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 1.5rem;
+        grid-template-areas:
+          "banner banner banner banner"
+          "HowToStart HowToStart HowToStart HowToStart"
+          "WhyYouNeed WhyYouNeed WhyYouNeed WhyYouNeed"
+          "AllResponses AllResponses ResultsStatistics ResultsStatistics";
+        place-content: center;
+        justify-items: start;
+        align-items: start;
+      }
+      .ContentItem {
+        background: #fff;
+        height: auto;
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      .ContentItem>div {
+        margin: 1rem;
+      }
+       .ContentItemTitle {
+        border-left: #6079FF 8px solid;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        color: #00000099;
+      }
+      .banner {
+        grid-area: banner;
+        height: 285px;
+        background: url(../../../img/pexels-rdne-stock-project-6647041.jpg) #00000030
+          center no-repeat;
+          background-blend-mode: darken;
+        background-size: 100% auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        color: #fff;
+      }
+      .banner .InfoArea {
+        margin: 2rem;
+      }
+      .banner .InfoArea h1 {
+        margin-bottom: 0.5rem;
+      }
+      .banner .InfoArea p {
+        font-size: 1.5rem;
+      }
+      .HowToStart {
+        grid-area: HowToStart;
+        
+      }
+      
+      .WhyYouNeed {
+        grid-area: WhyYouNeed;
+      }
+      .AllResponses {
+        grid-area: AllResponses;
+      }
+      .ResultsStatistics {
+        grid-area: ResultsStatistics;
+      }
+      .TextStepsContainer {
+        padding: .5rem;
+        background: rgba(96, 121, 255, 0.05);
+      }
+      .TextSteps {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+      }
+      .TextSteps svg {
+        margin: 0 .5rem;
+      }
+    </style>
+
+    <script src="../../../scripts/js.js"></script>
+
+    <title>Home Visit</title>
+  </head>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="Num1" viewBox="0 0 22 22">
+        <title>Num1</title>
+        <rect width="22" height="22" rx="11" fill="#6079FF" />
+        <path
+          d="M12.2955 4.86364V16.5H10.8864V6.34091H10.8182L7.97727 8.22727V6.79545L10.8864 4.86364H12.2955Z"
+          fill="white"
+        />
+      </symbol>
+      <symbol id="Num2" viewBox="0 0 22 22">
+        <title>Num2</title>
+        <rect y="0.5" width="22" height="22" rx="11" fill="#6079FF" />
+        <path
+          d="M7.20455 17V15.9773L11.0455 11.7727C11.4962 11.2803 11.8674 10.8523 12.1591 10.4886C12.4508 10.1212 12.6667 9.77652 12.8068 9.45455C12.9508 9.12879 13.0227 8.78788 13.0227 8.43182C13.0227 8.02273 12.9242 7.66856 12.7273 7.36932C12.5341 7.07008 12.2689 6.83901 11.9318 6.67614C11.5947 6.51326 11.2159 6.43182 10.7955 6.43182C10.3485 6.43182 9.95833 6.52462 9.625 6.71023C9.29545 6.89205 9.03977 7.14773 8.85795 7.47727C8.67992 7.80682 8.59091 8.19318 8.59091 8.63636H7.25C7.25 7.95455 7.4072 7.35606 7.72159 6.84091C8.03598 6.32576 8.46402 5.92424 9.00568 5.63636C9.55114 5.34848 10.1629 5.20455 10.8409 5.20455C11.5227 5.20455 12.1269 5.34848 12.6534 5.63636C13.1799 5.92424 13.5928 6.3125 13.892 6.80114C14.1913 7.28977 14.3409 7.83333 14.3409 8.43182C14.3409 8.85985 14.2633 9.27841 14.108 9.6875C13.9564 10.0928 13.6913 10.5455 13.3125 11.0455C12.9375 11.5417 12.4167 12.1477 11.75 12.8636L9.13636 15.6591V15.75H14.5455V17H7.20455Z"
+          fill="white"
+        />
+      </symbol>
+      <symbol id="AddIcon" viewBox="0 0 32 32">
+        <title>AddIcon</title>
+        <path
+          d="M24.1484 17.1484H17.1484V24.1484H14.8516V17.1484H7.85156V14.8516H14.8516V7.85156H17.1484V14.8516H24.1484V17.1484Z"
+          fill="#6079FF"
+        />
+      </symbol>
+      <symbol id="HistoryIcon" viewBox="0 0 32 32">
+        <title>HistoryIcon</title>
+        <path
+          d="M16 12.0156H17.5V16.2344L21.0156 18.3438L20.2656 19.5625L16 16.9844V12.0156ZM10.6094 9.625C12.3906 7.875 14.5156 7 16.9844 7C19.4531 7 21.5625 7.875 23.3125 9.625C25.0938 11.375 25.9844 13.5 25.9844 16C25.9844 18.5 25.0938 20.625 23.3125 22.375C21.5625 24.125 19.4531 25 16.9844 25C14.5156 25 12.4062 24.125 10.6562 22.375L12.0625 20.9219C13.4375 22.2969 15.0781 22.9844 16.9844 22.9844C18.9219 22.9844 20.5781 22.3125 21.9531 20.9688C23.3281 19.5938 24.0156 17.9375 24.0156 16C24.0156 14.0625 23.3281 12.4219 21.9531 11.0781C20.5781 9.70312 18.9219 9.01562 16.9844 9.01562C15.0469 9.01562 13.3906 9.70312 12.0156 11.0781C10.6719 12.4219 10 14.0625 10 16H13L8.96875 20.0312L8.875 19.8906L4.98438 16H7.98438C7.98438 13.5 8.85938 11.375 10.6094 9.625Z"
+          fill="#6079FF"
+        />
+      </symbol>
+      <symbol id="ReplyIcon" viewBox="0 0 32 32">
+        <title>ReplyIcon</title>
+        <path
+          d="M13.7604 12.4271C17.3715 12.9479 20.1493 14.3368 22.0937 16.5937C24.0729 18.816 25.375 21.5069 26 24.6667C23.3264 20.8819 19.2465 18.9896 13.7604 18.9896V23.5208L6 15.7604L13.7604 8V12.4271Z"
+          fill="#6079FF"
+        />
+      </symbol>
+      <symbol id="StatisticsIcon" viewBox="0 0 32 32">
+        <title>StatisticsIcon</title>
+        <path
+          d="M21.3125 12H26.6875V26.6875H21.3125V12ZM5.3125 26.6875V16H10.6875V26.6875H5.3125ZM13.3125 26.6875V5.3125H18.6875V26.6875H13.3125Z"
+          fill="#6079FF"
+        />
+      </symbol>
+    </svg>
+    <nav>
+      <div class="container">
+        <a class="NavBackBtn" onclick="" href="../../TimeConfirm.html">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.9922 8.64062L12.6328 14L17.9922 19.3594L16.3516 21L9.35156 14L16.3516 7L17.9922 8.64062Z"
+              fill="white"
+            />
+          </svg>
+          BACK
+        </a>
+        <div class="PageTitle">
+          <!-- <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.3252 24.8492L18.0252 20.3867L7.78769 10.0617L3.3252 24.8492ZM11.9877 11.0242C11.7252 11.0242 11.5502 10.9367 11.3752 10.7617C11.0252 10.4117 11.0252 9.88672 11.3752 9.53672C12.2502 8.66172 12.2502 8.66172 11.3752 7.87422C11.0252 7.52422 11.0252 6.99922 11.3752 6.64922C11.7252 6.29922 12.2502 6.29922 12.6002 6.64922C14.1752 8.22422 14.1752 9.27422 12.6002 10.8492C12.5127 10.9367 12.2502 11.0242 11.9877 11.0242ZM18.0252 17.0617C17.7627 17.0617 17.5877 16.9742 17.4127 16.7992C17.0627 16.4492 17.0627 15.9242 17.4127 15.5742L17.6752 15.3117C18.4627 14.5242 18.9877 13.9992 19.6877 13.9992C20.4752 13.9992 21.0002 14.6117 21.8752 15.3992C22.2252 15.7492 22.2252 16.2742 21.8752 16.6242C21.5252 16.9742 21.0002 16.9742 20.6502 16.6242C20.3877 16.3617 19.9502 15.9242 19.6877 15.7492C19.5127 15.8367 19.1627 16.1867 18.9002 16.5367L18.6377 16.7992C18.4627 16.9742 18.2877 17.0617 18.0252 17.0617Z"
+              fill="white"
+            />
+            <path
+              d="M14 13.0379C13.7375 13.0379 13.5625 12.9504 13.3875 12.7754C13.0375 12.4254 13.0375 11.9004 13.3875 11.5504L15.1375 9.80039C16.7125 8.22539 16.7125 6.30039 15.1375 4.72539L14.175 3.76289C13.825 3.41289 13.825 2.88789 14.175 2.53789C14.525 2.18789 15.05 2.18789 15.4 2.53789L16.3625 3.50039C18.55 5.68789 18.55 8.83789 16.3625 11.0254L14.6125 12.7754C14.525 12.9504 14.2625 13.0379 14 13.0379ZM16.1 15.0504C15.8375 15.0504 15.6625 14.9629 15.4875 14.7879C15.1375 14.4379 15.1375 13.9129 15.4875 13.5629L19.1625 9.88789C21.9625 7.08789 23.3625 8.13789 25.375 10.1504C25.725 10.5004 25.725 11.0254 25.375 11.3754C25.025 11.7254 24.5 11.7254 24.15 11.3754C22.3125 9.53789 22.1375 9.36289 20.3875 11.1129L16.7125 14.7879C16.5375 14.9629 16.275 15.0504 16.1 15.0504Z"
+              fill="white"
+            />
+          </svg> -->
+          <h2>Home Visit</h2>
+        </div>
+
+        <div class="NavBtnGroup">
+          <a
+            class="InitiatorPageProtal InitiatorPageProtalactive"
+            href="InformationPage.html"
+          >
+            <svg
+              class="PageProtalIconDefault"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M27.4749 12.5251L27.4643 12.5144C25.3899 10.4065 22.9371 9.37793 20 9.37793C17.0621 9.37793 14.5839 10.4076 12.4664 12.5251C10.3944 14.5971 9.37793 17.0531 9.37793 20C9.37793 22.9426 10.3919 25.4206 12.4665 27.5336C14.5794 29.6081 17.0574 30.6221 20 30.6221C22.9469 30.6221 25.4029 29.6056 27.4749 27.5336C29.5925 25.4161 30.6221 22.9379 30.6221 20C30.6221 17.0629 29.5935 14.6101 27.4856 12.5357L27.4749 12.5251ZM11.1385 28.8615C8.71283 26.3967 7.5 23.4429 7.5 20C7.5 16.5571 8.71283 13.6228 11.1385 11.1972C13.6033 8.73239 16.5571 7.5 20 7.5C23.4429 7.5 26.3772 8.73239 28.8028 11.1972C31.2676 13.6228 32.5 16.5571 32.5 20C32.5 23.4429 31.2676 26.3967 28.8028 28.8615C26.3772 31.2872 23.4429 32.5 20 32.5C16.5571 32.5 13.6033 31.2872 11.1385 28.8615Z"
+                fill="white"
+              />
+              <path
+                d="M21.2324 16.2441V13.7207H18.7676V16.2441H21.2324ZM21.2324 26.2793V18.7676H18.7676V26.2793H21.2324Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              class="PageProtalIconActive"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 0C2.68629 0 0 2.68629 0 6V34C0 37.3137 2.68629 40 6 40H34C37.3137 40 40 37.3137 40 34V6C40 2.68629 37.3137 0 34 0H6ZM27.4643 12.5144L27.4749 12.5251L27.4856 12.5357C29.5935 14.6101 30.6221 17.0629 30.6221 20C30.6221 22.9379 29.5925 25.4161 27.4749 27.5336C25.4029 29.6056 22.9469 30.6221 20 30.6221C17.0574 30.6221 14.5794 29.6081 12.4665 27.5336C10.3919 25.4206 9.37793 22.9426 9.37793 20C9.37793 17.0531 10.3944 14.5971 12.4664 12.5251C14.5839 10.4075 17.0621 9.37793 20 9.37793C22.9371 9.37793 25.3899 10.4065 27.4643 12.5144ZM7.5 20C7.5 23.4429 8.71283 26.3967 11.1385 28.8615C13.6033 31.2872 16.5571 32.5 20 32.5C23.4429 32.5 26.3772 31.2872 28.8028 28.8615C31.2676 26.3967 32.5 23.4429 32.5 20C32.5 16.5571 31.2676 13.6228 28.8028 11.1972C26.3772 8.73239 23.4429 7.5 20 7.5C16.5571 7.5 13.6033 8.73239 11.1385 11.1972C8.71283 13.6228 7.5 16.5571 7.5 20ZM21.2324 13.7207V16.2441H18.7676V13.7207H21.2324ZM21.2324 18.7676V26.2793H18.7676V18.7676H21.2324Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a class="InitiatorPageProtal" href="AddNewInstance.html">
+            <svg
+              class="PageProtalIconDefault"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30.1855 21.4355H21.4355V30.1855H18.5645V21.4355H9.81445V18.5645H18.5645V9.81445H21.4355V18.5645H30.1855V21.4355Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              class="PageProtalIconActive"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 0C2.68629 0 0 2.68629 0 6V34C0 37.3137 2.68629 40 6 40H34C37.3137 40 40 37.3137 40 34V6C40 2.68629 37.3137 0 34 0H6ZM21.4355 21.4355H30.1855V18.5645H21.4355V9.81445H18.5645V18.5645H9.81445V21.4355H18.5645V30.1855H21.4355V21.4355Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a class="InitiatorPageProtal" href="HistoryPage.html">
+            <svg
+              class="PageProtalIconDefault"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 15.0195H21.875V20.293L26.2695 22.9297L25.332 24.4531L20 21.2305V15.0195ZM13.2617 12.0312C15.4883 9.84375 18.1445 8.75 21.2305 8.75C24.3164 8.75 26.9531 9.84375 29.1406 12.0312C31.3672 14.2188 32.4805 16.875 32.4805 20C32.4805 23.125 31.3672 25.7812 29.1406 27.9688C26.9531 30.1562 24.3164 31.25 21.2305 31.25C18.1445 31.25 15.5078 30.1562 13.3203 27.9688L15.0781 26.1523C16.7969 27.8711 18.8477 28.7305 21.2305 28.7305C23.6523 28.7305 25.7227 27.8906 27.4414 26.2109C29.1602 24.4922 30.0195 22.4219 30.0195 20C30.0195 17.5781 29.1602 15.5273 27.4414 13.8477C25.7227 12.1289 23.6523 11.2695 21.2305 11.2695C18.8086 11.2695 16.7383 12.1289 15.0195 13.8477C13.3398 15.5273 12.5 17.5781 12.5 20H16.25L11.2109 25.0391L11.0938 24.8633L6.23047 20H9.98047C9.98047 16.875 11.0742 14.2188 13.2617 12.0312Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              class="PageProtalIconActive"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 0C2.68629 0 0 2.68629 0 6V34C0 37.3137 2.68629 40 6 40H34C37.3137 40 40 37.3137 40 34V6C40 2.68629 37.3137 0 34 0H6ZM21.3895 15.3181H19.4252V21.8248L25.0112 25.2009L25.9933 23.6049L21.3895 20.8426V15.3181ZM20.7143 8.75C17.4814 8.75 14.6987 9.89583 12.3661 12.1875C10.0744 14.4792 8.92857 17.2619 8.92857 20.5357H5L10.0949 25.6306L10.2176 25.8147L15.4967 20.5357H11.5681C11.5681 17.9985 12.4479 15.8501 14.2076 14.0904C16.0082 12.2898 18.1771 11.3895 20.7143 11.3895C23.2515 11.3895 25.4204 12.2898 27.221 14.0904C29.0216 15.8501 29.9219 17.9985 29.9219 20.5357C29.9219 23.0729 29.0216 25.2418 27.221 27.0424C25.4204 28.8021 23.2515 29.6819 20.7143 29.6819C18.218 29.6819 16.0696 28.7816 14.269 26.981L12.4275 28.8839C14.7191 31.1756 17.4814 32.3214 20.7143 32.3214C23.9472 32.3214 26.7094 31.1756 29.0011 28.8839C31.3337 26.5923 32.5 23.8095 32.5 20.5357C32.5 17.2619 31.3337 14.4792 29.0011 12.1875C26.7094 9.89583 23.9472 8.75 20.7143 8.75Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="PageContent">
+      <div class="ContentItem banner">
+        <div class="InfoArea">
+          <h1>Home Visit</h1>
+          <p>Schedule a time for home visits</p>
+        </div>
+      </div>
+      <div class="ContentItem HowToStart">
+        <div>
+          <div class="ContentItemTitle">
+            <h2>How to Start</h2>
+          </div>
+          <div class="TextStepsContainer">
+            <div class="TextSteps">
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#Num1" />
+              </svg>
+              Click on the
+              <svg class="bi" width="32" height="32">
+                <use xlink:href="#AddIcon" />
+              </svg>
+              in the upper right corner to add information;
+            </div>
+            <div class="TextSteps">
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#Num1" />
+              </svg>
+              Complete and send!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ContentItem WhyYouNeed">
+        <div>
+          <div class="ContentItemTitle">
+            <h2>Why do you need it</h2>
+          </div>
+          <div style="display: flex;">
+            <span style="width: 33.33%; height: 10rem; margin: .5rem; background: #00000080; border-radius: .5rem; text-align: center; color: #fff;">
+              <h2 style="line-height: 10rem;">
+                Quickly Invitation
+              </h2>
+            </span>
+            <span style="width: 33.33%; height: 10rem; margin: .5rem; background: #00000080; border-radius: .5rem; text-align: center; color: #fff;">
+              <h2 style="line-height: 10rem;">
+                Responses Tracking
+              </h2>
+            </span>
+            <span style="width: 33.33%; height: 10rem; margin: .5rem; background: #00000080; border-radius: .5rem; text-align: center; color: #fff;">
+              <h2 style="line-height: 10rem;">
+                Assist in Planning
+              </h2>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="ContentItem AllResponses">
+        <div>
+          <div class="ContentItemTitle">
+            <h2>View All Responses</h2>
+          </div>
+          <img src="../../../img/pexels-helena-lopes-697244.jpg" alt="" style="width: 100%; height: 14rem;">
+          <div class="TextStepsContainer">
+            <div class="TextSteps">
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#Num1" />
+              </svg>
+              Click on the
+              <svg class="bi" width="32" height="32">
+                <use xlink:href="#HistoryIcon" />
+              </svg>
+              in the upper right corner;
+            </div>
+            <div class="TextSteps">
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#Num2" />
+              </svg>
+              Click
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#ReplyIcon" />
+              </svg>
+              of each event to view responses.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ContentItem ResultsStatistics">
+        <div>
+          <div class="ContentItemTitle">
+            <h2>Results Statistics</h2>
+          </div>
+          <img src="../../../img/pexels-helena-lopes-697244.jpg" alt="" style="width: 100%; height: 14rem;">
+          <div class="TextStepsContainer">
+            <div class="TextSteps">
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#Num1" />
+              </svg>
+              Click on the
+              <svg class="bi" width="32" height="32">
+                <use xlink:href="#HistoryIcon" />
+              </svg>
+              in the upper right corner;
+            </div>
+            <div class="TextSteps">
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#Num2" />
+              </svg>
+              Click
+              <svg class="bi" width="22" height="22">
+                <use xlink:href="#StatisticsIcon" />
+              </svg>
+              of each event to view responses.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

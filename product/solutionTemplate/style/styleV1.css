@@ -1,0 +1,1346 @@
+/* 通用  ---------------------------------------------------------------------------------------------------------------------*/
+
+:root {
+	--color-theme: #1AC3DE;
+
+	--color-imgbg-light: #00000030;
+	--color-imgbg-dark: #00000080;
+	--bs-table-hover-bg: #ffffff20;
+}
+
+:root {
+	--bs-border-color: #a3a5a7;
+	--bs-primary: var(--color-theme);
+	--bs-btn-color: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--color-theme);
+	--bs-btn-hover-border-color: var(--color-theme);
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--color-theme);
+	--bs-btn-active-border-color: var(--color-theme);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--color-theme);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--color-theme);
+	--bs-gradient: none;
+	--bs-accordion-active-bg: #cfffff !important;
+}
+
+:root {
+	/* Event Planning */
+	--img-wedding-main: url(../img/WeddingInfoPage.jpg);
+	--img-SportGame-main: url(../img/SportGames1.jpg);
+	--img-Conference-main: url(../img/Conference1.jpg);
+	--img-Babysitting-main: url(../img/Babysitting_1.jpg);
+	--img-PerformanceReview-main: url(../img/PerformanceReview_1.jpg);
+	--img-GovernmentAgency-main: url(../img/GovernmentAgency_1.jpg);
+	--img-BabyShower-main: url(../img/BabyShower1.jpg);
+
+	/* Calendar Booking */
+	--img-HomeVisit-main: url(../img/PTeacherConference1.jpg);
+	--img-ClientsMeeting-main: url(../img/ClientsMeeting_1.jpg);
+	--img-Interview-main: url(../img/Interviews_1.jpg);
+	--img-MedicalAndPatient-main: url(../img/MedicalAndPatient_1.jpg);
+	--img-StoreAppointment-main: url(../img/StoreAppointment_1.jpg);
+	--img-PersonalTrainer-main: url(../img/PersonalTrainer_1.jpg);
+	--img-RealEstate-main: url(../img/RealEstate_1.jpg);
+	--img-TutoringScheduling-main: url(../img/TutoringScheduling_1.jpg);
+	--img-AcademicAdvisorsAndTutors-main: url(../img/AcademicAdvisorsAndTutors_1.jpg);
+
+	/* Schedule Coordination */
+	--img-MeetingCoordination-main: url(../img/MeetingCoordination1.jpg);
+	--img-FamilyReunion-main: url(../img/FamilyReunion1.jpg);
+	--img-GroupStudySession-main: url(../img/GroupStudySession1.jpg);
+	--img-TeamBuildingEvent-main: url(../img/TeamBuildingEvent1.jpg);
+	--img-GroupProjectMeeting-main: url(../img/GroupProjectMeeting1.jpg);
+	--img-VacationPlanning-main: url(../img/VacationPlanning1.jpg);
+	--img-TripPlanning-main: url(../img/TripPlanning1.jpg);
+	--img-SocialEvent-main: url(../img/SocialEvent1.jpg);
+
+	--img-StudentRegistration-main: url(../img/pexels-rdne-stock-project-8500309.jpg);
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-flow: column nowrap;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+/* 组件  ---------------------------------------------------------------------------------------------------------------------*/
+
+/* title bar ----------------------------------------------*/
+
+.floatBtnGroup {
+	padding: 1.1rem;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.floatBtnGroupOnImg {
+	/* background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); */
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0) 100%);
+	background-blend-mode: darken;
+}
+
+.floatBtnGroupOnColor {
+	background: var(--color-theme);
+	box-shadow: 0px 5px 15px #15a4ba1e;
+}
+
+.floatBtn {
+	/* padding: 2erm; */
+	border-radius: 10rem;
+	margin-right: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.floatBtn svg {
+	margin: 0.8rem;
+}
+
+.floatBtn:hover {
+	background-color: #ffffff40;
+}
+
+.active {
+	border: 1px #fff solid;
+	background-color: #ffffff40;
+}
+
+/* 分页 */
+.pagination {
+	--bs-pagination-border-color: #00000010;
+	--bs-pagination-color: var(--color-theme);
+}
+
+.active>.page-link,
+.page-link.active {
+	z-index: 3;
+	color: var(--bs-pagination-active-color);
+	background-color: var(--color-theme);
+	border-color: var(--color-theme);
+}
+
+/* 按钮 */
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #17b8d0;
+	--bs-btn-hover-border-color: #17b8d0;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #17b8d0;
+	--bs-btn-active-border-color: #17b8d0;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: var(--color-theme);
+	--bs-btn-disabled-border-color: var(--color-theme);
+}
+
+.btn-outline-primary {
+	--bs-btn-color: var(--color-theme);
+	--bs-btn-border-color: var(--color-theme);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--color-theme);
+	--bs-btn-hover-border-color: var(--color-theme);
+	--bs-btn-focus-shadow-rgb: 13, 110, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--color-theme);
+	--bs-btn-active-border-color: var(--color-theme);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--color-theme);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--color-theme);
+	--bs-gradient: none;
+}
+
+/* 单选、复选按钮组 */
+.Rdo-Cbx-Container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.form-check {
+	margin-right: 1rem;
+}
+
+.form-check:last-child {
+	margin-right: 0;
+}
+
+.form-check-input:checked {
+	background-color: var(--color-theme) !important;
+	border-color: var(--color-theme) !important;
+}
+
+/* 设置页面发送按钮 */
+.sendBtnSetting {
+	background: var(--color-theme);
+	padding: 0.5rem;
+	border: 0;
+	color: #fff;
+	border-radius: 0.4rem;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+/* 自定义弹窗 */
+.modal-body {
+	padding: 0;
+}
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 810px !important;
+	}
+}
+
+Dialog {
+	border: #D5D5D5 1px solid;
+	border-radius: 0.5rem;
+}
+
+Dialog {
+	border: #D5D5D5 1px solid;
+	border-radius: 0.5rem;
+}
+
+/* 设置页 step1 手风琴菜单 */
+.accordion-item {
+	border: 1px solid #e9e9e9;
+}
+
+.accordion-body {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.accordion-body a img {
+	width: 8rem;
+	height: 8rem;
+	background: #000000;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #00000099;
+	background-color: #c0ecec !important;
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+
+/* 反馈页附件列表 */
+.responseTalbe th,
+.responseTalbe td {
+	background: none !important;
+	color: #fff;
+}
+
+.responseTalbe>tbody>tr>th>p {
+	vertical-align: middle;
+	line-height: 32px;
+	color: #fff;
+}
+
+.responseTalbe>tbody>tr>td>img {
+	width: 2rem;
+	height: 2rem;
+}
+
+
+/* 可视化页面下拉菜单 */
+
+.google-visualization-controls-categoryfilter {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.google-visualization-controls-categoryfilter>label {
+	line-height: 2rem;
+	padding-right: 1rem;
+}
+
+.goog-combobox {
+	height: 2rem !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.3rem;
+}
+
+.goog-combobox>input {
+	height: 100%;
+	border-radius: 0.3rem;
+}
+
+.goog-combobox-button {
+	margin: 0 0.45rem;
+}
+
+
+/* 布局  ---------------------------------------------------------------------------------------------------------------------*/
+
+/* Information Page */
+
+.ContentAreaContainer {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	flex: 1;
+	padding-bottom: 2rem;
+}
+
+.ContentArea {
+	text-align: left;
+	max-width: 1200px;
+	margin: 3rem auto;
+}
+
+
+
+/* info page---------------------------------------- */
+
+/* 首页文字区 */
+.InformationArea {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+	color: #fff;
+}
+
+.infoArea-text-info {
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+.infoArea-text-title {
+	margin: 0.5rem 0;
+	font-size: 5rem;
+}
+
+.infoArea-text-details {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+/* 文字区位置 */
+.bottom {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem 8rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bottom p {
+	margin: 0.5rem;
+}
+
+
+/* Responses page---------------------------------------- */
+
+#RecipientResponse {
+	margin: 15rem auto 0;
+	padding: 2rem;
+	background: #997d2180;
+	max-width: 1000px;
+	border-radius: 1rem;
+	color: #fff;
+	backdrop-filter: blur(20px);
+}
+
+#recipientResponseDialog #RecipientResponse {
+	margin: 0;
+}
+
+#RecipientResponse>div {
+	text-align: left;
+}
+
+#RecipientResponse>div>div {
+	margin: 1.5rem 0;
+}
+
+.formTitle {
+	font-size: 2rem;
+	margin: 0 0 0.5rem;
+	font-weight: 600;
+}
+
+hr {
+	margin: 0.5rem 0;
+}
+
+.ResponseSection {
+	margin-bottom: 1rem;
+}
+
+.ResponseSection p {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.ResponseSection .table {
+	border-color: #fff;
+}
+
+.ResponseSection .table p {
+	margin: 0;
+}
+
+
+
+
+
+
+/* Data page---------------------------------------- */
+
+.chartContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+}
+
+.numBar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 0.8rem;
+	margin: 0 auto 1rem;
+	padding: 1.5rem;
+}
+
+.numBarItem {
+	padding: 1.5rem;
+	background-color: #00000009;
+	width: 25%;
+	text-align: center;
+}
+
+.numBarItem P {
+	margin: 0 0 0.7rem;
+}
+
+.numBarItem h1 {
+	margin: 0;
+}
+
+#dashboard1 {
+	text-align: left;
+}
+
+#DountChart1 {
+	width: 30%;
+}
+
+#ColumnChart1 {
+	width: 70%;
+}
+
+#ColumnChart2 {
+	width: 100%;
+	height: 400px;
+	margin-top: 1rem;
+}
+
+#DonutChart1>div>div>div>svg,
+#ColumnChart1>div>div>div>svg,
+#ColumnChart2>div>div>div>svg {
+	border-radius: 0.5rem;
+}
+
+
+/* History page---------------------------------------- */
+
+.ToolBar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.ToolBar button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ToolBar button .bi-send-fill {
+	margin-right: 0.5rem;
+	color: #fff;
+	font-size: 18px;
+}
+
+.FilterBar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: 60rem;
+}
+
+.FilterBar select {
+	margin-left: 1rem;
+	width: 50%;
+}
+
+.tableContainer table {
+	width: 100%;
+	height: 70vh;
+	border-radius: 1rem;
+}
+
+.tableContainer tr {
+	
+}
+
+.tableContainer td {
+	padding: 1rem;
+	background: #fff;
+	text-align: left;
+	border-bottom: 1px solid #00000009;
+}
+
+.tableContainer tr:last-child td {
+	border-bottom: none;
+}
+
+.tableContainer thead td {
+	padding: 1rem;
+	background: var(--color-theme);
+	text-align: left;
+	color: #fff;
+}
+
+.tableContainer table td button {
+	width: 26px;
+	height: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.7rem;
+	background: none;
+	border: 0;
+}
+
+.tableContainer table td button:last-child {
+	margin-right: 0;
+}
+
+.bi {
+	color: #1AC3DE;
+}
+
+.bi-send-fill {
+	font-size: 20px;
+}
+
+.bi-eye-fill {
+	font-size: 23px;
+}
+
+.bi-chat-dots-fill {
+	font-size: 19px;
+}
+
+.tableContainer table tr td:last-child {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+
+.tableContainer table thead tr td:first-child {
+	border-top-left-radius: 0.5rem;
+}
+
+.tableContainer table thead tr td:last-child {
+	border-top-right-radius: 0.5rem;
+}
+
+.tableContainer table tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 0.5rem;
+}
+
+.tableContainer table tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 0.5rem;
+}
+
+
+/* setting page---------------------------------------- */
+
+/* Event 类型列表 */
+
+.EventProtal {
+	width: 8.5rem;
+	height: 8.5rem;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 0.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+}
+
+.EventProtalActive {
+	width: 8.5rem;
+	height: 8.5rem;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 0.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	border: var(--color-theme) .5rem solid;
+}
+
+
+/* 步骤条 */
+
+.steps {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.stepItem,
+.stepItemComplate {
+	width: 10rem;
+}
+
+.stepItem p {
+	margin: 0.7rem 0;
+	max-width: 10rem;
+	color: #00000070;
+}
+
+.stepItem div {
+	background: #00000030;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 10rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #fff;
+	/* box-sizing: border-box; */
+	margin: 0 auto;
+}
+
+.steps hr {
+	margin-top: 16px;
+	width: auto;
+	min-width: 4rem;
+	height: 1px;
+	border-top: 2px solid #00000030;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.stepItemComplate p {
+	margin: 0.7rem 0;
+	max-width: 10rem;
+	color: #000000;
+}
+
+.stepItemComplate div {
+	background: var(--color-theme);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 10rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.steps>.complate {
+	border-top: 2px solid var(--color-theme);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.settingSection {
+	text-align: left;
+	max-width: 1000px;
+	margin: 1rem auto 0;
+	padding: 0.3rem;
+	background: #fff;
+	border-radius: 1rem;
+	height: 35.8rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+/* 下一步、上一步按钮组 */
+
+.nextBtnGroup {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 1rem auto;
+}
+
+
+/* setting 内容区 */
+
+.settingRow {
+	margin: 1rem;
+}
+
+.settingRow b {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.settingRow svg {
+	margin-right: 1rem;
+}
+
+.settingImgSelection {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.settingImgSelection img {
+	width: 6rem;
+	height: 6rem;
+	margin: 0.3rem;
+	/* background: url(../img/infoPage.jpg) center no-repeat; */
+	border-radius: 0.2rem;
+}
+
+
+/* 设置项卡片 */
+
+.settingCustomizedItem {
+	padding: 0.5rem;
+	background-color: #00000005;
+	border-radius: 0.5rem;
+	margin: 0.5rem;
+}
+
+.settingCustomizedItem>svg {
+	float: right;
+}
+
+
+.FieldArea {
+	/* padding: 0.8rem; */
+	background: #00000005;
+	margin-bottom: 1px;
+	border-bottom: 0.0625rem solid #ffffff70;
+}
+
+.FieldArea header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1px;
+	background: #00000005;
+	padding: 0.8rem;
+	/* border-bottom: 0.0625rem solid #00000020; */
+}
+
+.FieldArea main {
+	padding: 0.8rem;
+}
+
+/* 主题图上传按钮 */
+
+.uploadIcon1 {
+	margin: 0.3rem;
+}
+
+.uploadIcon1 svg {
+	border-radius: 0.2rem;
+}
+
+.uploadIcon1 svg rect {
+	fill: #1AC3DE;
+	fill-opacity: 0.2;
+	border-radius: 1rem;
+}
+
+.uploadIcon1 svg path {
+	fill: #1AC3DE;
+	fill-opacity: 0.7;
+}
+
+
+/* 收件人输入表格 */
+
+.typeRecipientsList {
+	width: 40rem;
+	background: #f9f9f9;
+	border-radius: 0.5rem;
+}
+
+.typeRecipientsList svg {
+	margin: 0;
+}
+
+.tableLastRow td {
+	border-bottom: 0;
+}
+
+.typeRecipientsList td {
+	padding: 0.5rem;
+	border-bottom: #00000015 1px solid;
+}
+
+.typeRecipientsList thead td {
+	color: #00000090;
+	font-weight: 500;
+	background: #00000005;
+}
+
+.typeRecipientsList input {
+	width: 100%;
+}
+
+.btn svg {
+	margin: 0;
+}
+
+
+/* 地址-谷歌自动补全输入 */
+
+.location-container {
+	display: flex;
+	align-items: stretch;
+}
+
+.locationInputGroup {
+	/* background: white; */
+	width: 60%;
+	padding: 2rem 1.5rem 2rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.locationInputGroup>div {
+	margin-top: 1.79rem;
+}
+
+.locationInputMap {
+	width: 40%;
+	border-radius: 0.5rem;
+}
+
+
+/* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* wedding */
+.WeddingInfoPage {
+	background: url(../img/WeddingInfoPage.jpg) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.WeddingResponsePage {
+	background: url(../img/WeddingResponsePage.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Sport Games */
+.SportGamesInfoPage {
+	background: var(--img-SportGame-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.SportGamesResponsePage {
+	background: url(../img/SportGames2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Conference */
+.ConferenceInfoPage {
+	background: var(--img-Conference-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.ConferenceResponsePage {
+	background: url(../img/Conference2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Baby Sitting */
+.BabySittingInfoPage {
+	background: var(--img-Babysitting-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.BabySittingResponsePage {
+	background: url(../img/Babysitting_2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Performance Review */
+.PerformanceReviewInfoPage {
+	background: var(--img-PerformanceReview-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.PerformanceReviewResponsePage {
+	background: url(../img/PerformanceReview_2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Government Agency */
+.GovernmentAgencyInfoPage {
+	background: var(--img-GovernmentAgency-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.GovernmentAgencyResponsePage {
+	background: url(../img/GovernmentAgency_2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+/* Baby Shower */
+.BabyShowerInfoPage {
+	background: var(--img-BabyShower-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.BabyShowerResponsePage {
+	background: url(../img/BabyShower2.jpg) no-repeat center 37%;
+	background-size: 100% auto;
+}
+
+
+/* Parent-Teacher Conferences */
+.PTeacherConferenceInfoPage {
+	background: url(../img/PTeacherConferences1.jpg) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.PTeacherConferenceResponsePage {
+	background: #787b70 url(../img/PTeacherConferences2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Clients Meeting */
+.ClientsMeetinginfoPage {
+	background: var(--img-ClientsMeeting-main) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.ClientsMeetingResponsePage {
+	background: #787b70 url(../img/ClientsMeeting_2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Interviews */
+.InterviewsinfoPage {
+	background: var(--img-Interview-main) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.InterviewsResponsePage {
+	background: #787b70 url(../img/Interviews_2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Store Appointment */
+.StoreAppointmentinfoPage {
+	background: var(--img-StoreAppointment-main) top center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.StoreAppointmentResponsePage {
+	background: #787b70 url(../img/StoreAppointment_2.jpg) top center no-repeat;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+
+
+/* Event coordination */
+
+.MeetingCoordinationInfoPage {
+	background: url(../img/EventPlanningAndCoordination_1.jpg) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.MeetingCoordinationResponsePage {
+	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+/* Family Reunion */
+.FamilyReunionInfoPage {
+	background: var(--img-FamilyReunion-main) center no-repeat;
+	background-size: 100% auto;
+	height: 100vh;
+}
+
+.FamilyReunionResponsePage {
+	background: #181818 url(../img/FamilyReunion2.jpg) no-repeat top center;
+	background-size: 100% auto;
+	/* background-position: 20% 50%; */
+}
+
+
+/* 非图片页面背景颜色 */
+.dataPage,
+.settingPage,
+.historyPage {
+	background: #288e9e30;
+}
+
+
+/* Setting step1 类别背景 */
+
+.WeddingProtal {
+	background: var(--img-wedding-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.WeddingProtal:hover {
+	background: var(--img-wedding-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.SportGameProtal {
+	background: var(--img-SportGame-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.SportGameProtal:hover {
+	background: var(--img-SportGame-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.ConferenceProtal {
+	background: var(--img-Conference-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.ConferenceProtal:hover {
+	background: var(--img-Conference-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.StudentRegistrationProtal {
+	background: var(--img-StudentRegistration-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.StudentRegistrationProtal:hover {
+	background: var(--img-StudentRegistration-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.HomeVisitProtal {
+	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.HomeVisitProtal:hover {
+	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.EventCoordinationProtal {
+	background: var(--img-EventCoordinationProtal-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.EventCoordinationProtal:hover {
+	background: var(--img-EventCoordinationProtal-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal06 {
+	background: var(--img-Babysitting-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal06:hover {
+	background: var(--img-Babysitting-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal07 {
+	background: var(--img-PerformanceReview-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal07:hover {
+	background: var(--img-PerformanceReview-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal08 {
+	background: var(--img-MeetingCoordination-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal08:hover {
+	background: var(--img-MeetingCoordination-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal09 {
+	background: var(--img-FamilyReunion-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal09:hover {
+	background: var(--img-FamilyReunion-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal10 {
+	background: var(--img-GroupStudySession-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal10:hover {
+	background: var(--img-GroupStudySession-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal11 {
+	background: var(--img-TeamBuildingEvent-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal11:hover {
+	background: var(--img-TeamBuildingEvent-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal12 {
+	background: var(--img-ClientsMeeting-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal12:hover {
+	background: var(--img-ClientsMeeting-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal13 {
+	background: var(--img-Interview-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal13:hover {
+	background: var(--img-Interview-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal14 {
+	background: var(--img-MedicalAndPatient-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal14:hover {
+	background: var(--img-MedicalAndPatient-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal15 {
+	background: var(--img-StoreAppointment-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal15:hover {
+	background: var(--img-StoreAppointment-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal16 {
+	background: var(--img-PersonalTrainer-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal16:hover {
+	background: var(--img-PersonalTrainer-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal17 {
+	background: var(--img-RealEstate-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal17:hover {
+	background: var(--img-RealEstate-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal18 {
+	background: var(--img-TutoringScheduling-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal18:hover {
+	background: var(--img-TutoringScheduling-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal19 {
+	background: var(--img-AcademicAdvisorsAndTutors-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal19:hover {
+	background: var(--img-AcademicAdvisorsAndTutors-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal20 {
+	background: var(--img-GovernmentAgency-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal20:hover {
+	background: var(--img-GovernmentAgency-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal21 {
+	background: var(--img-GroupProjectMeeting-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal21:hover {
+	background: var(--img-GroupProjectMeeting-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal22 {
+	background: var(--img-VacationPlanning-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal22:hover {
+	background: var(--img-VacationPlanning-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal23 {
+	background: var(--img-TripPlanning-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal23:hover {
+	background: var(--img-TripPlanning-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal24 {
+	background: var(--img-SocialEvent-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal24:hover {
+	background: var(--img-SocialEvent-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
+
+.Protal25 {
+	background: var(--img-BabyShower-main) var(--color-imgbg-light) center no-repeat;
+	background-size: auto 100%;
+	background-blend-mode: darken;
+}
+
+.Protal25:hover {
+	background: var(--img-BabyShower-main) var(--color-imgbg-dark) center no-repeat;
+	background-size: auto 100%;
+}
