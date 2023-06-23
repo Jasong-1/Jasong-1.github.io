@@ -84,63 +84,6 @@ body {
 
 /* 组件  ---------------------------------------------------------------------------------------------------------------------*/
 
-/* 导航栏 ----------------------------------------------*/
-
-.navbar {
-	width: 100%;
-	z-index: 10000;
-	--bs-navbar-padding-x: 1rem;
-	--bs-navbar-padding-y: 1rem;
-}
-
-.navbarOnImg {
-	/* background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); */
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0) 100%);
-	background-blend-mode: darken;
-}
-
-.navbarOnColor {
-	background: var(--color-theme);
-	box-shadow: 0px 5px 15px #15a4ba1e;
-}
-
-.navbar-brand {
-	color: white;
-	font-size: 1.5rem;
-}
-
-.navbar-brand:hover {
-	color: white;
-}
-
-.navbar .nav-item {
-	margin-right: 0.8rem;
-}
-
-.navbar .nav-item:last-child {
-	margin-right: 0;
-}
-
-.navbar .nav-link {
-	border-radius: 10rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.navbar .nav-link svg {
-	margin: 0.4rem;
-}
-
-.navbar .nav-link:hover {
-	background-color: #ffffff40;
-}
-
-.navbar .navlink .active {
-	border: 1px #fff solid;
-	background-color: #ffffff40;
-}
-
 /* title bar ----------------------------------------------*/
 
 .floatBtnGroup {
@@ -255,6 +198,17 @@ body {
 	border-color: var(--color-theme) !important;
 }
 
+/* 设置页面发送按钮 */
+.sendBtnSetting {
+	background: var(--color-theme);
+	padding: 0.5rem;
+	border: 0;
+	color: #fff;
+	border-radius: 0.4rem;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
 
 /* 自定义弹窗 */
 .modal-body {
@@ -365,7 +319,7 @@ Dialog {
 .ContentArea {
 	text-align: left;
 	max-width: 1200px;
-	margin: 2.5rem auto 0;
+	margin: 3rem auto;
 }
 
 
@@ -570,7 +524,9 @@ hr {
 	border-radius: 1rem;
 }
 
-.tableContainer tr {}
+.tableContainer tr {
+	
+}
 
 .tableContainer td {
 	padding: 1rem;
@@ -647,55 +603,6 @@ hr {
 
 /* setting page---------------------------------------- */
 
-.eventTypeTabContent {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: stretch;
-}
-
-
-.eventTypeCard {
-	display: flex;
-	flex-flow: row nowrap;
-	border: 1px solid #00000015;
-	width: 100%;
-	margin: 0.5rem;
-	border-radius: 0.3rem;
-}
-
-.eventTypeCard.active {
-	border: 3px solid #1AC3DE40;
-	background: #1AC3DE20;
-}
-
-/* .eventTypeCard.active .TypeCard-body {
-	
-} */
-
-.eventTypeCard:hover:not(.active) {
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.eventTypeImg {
-	width: 32%;
-	height: 10rem;
-	border-radius: 0.23rem 0 0 0.25rem;
-	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 1) 50%);
-	background: #fff;
-}
-
-.TypeCard-body {
-	flex: 1;
-	padding: 1rem;
-}
-
-.TypeCard-text {
-	margin: 0;
-}
-
-
-
-
 /* Event 类型列表 */
 
 .EventProtal {
@@ -733,12 +640,6 @@ hr {
 
 
 /* 步骤条 */
-.stepContainer {
-	background: #d6e9ec;
-	padding-top: 2.5rem;
-	padding-bottom: 1rem;
-	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-}
 
 .steps {
 	max-width: 1000px;
@@ -808,14 +709,13 @@ hr {
 .settingSection {
 	text-align: left;
 	max-width: 1000px;
-	margin: 2rem auto 0;
+	margin: 1rem auto 0;
 	padding: 0.3rem;
 	background: #fff;
 	border-radius: 1rem;
-	/* height: 35.8rem; */
+	height: 35.8rem;
 	overflow-y: auto;
 	overflow-x: hidden;
-	flex: 1;
 }
 
 
@@ -823,24 +723,12 @@ hr {
 
 .nextBtnGroup {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: flex-start;
 	max-width: 1000px;
-	margin: 0.5rem auto 0;
+	margin: 1rem auto;
 }
 
-.nextBtnGroup button {
-	/* margin-right: 1rem; */
-	
-	margin: 0 20rem;
-	flex: 1;
-}
-
-.nextBtnGroup button:first-child {
-	margin-right: 1rem;
-}
-.nextBtnGroup button:last-child {
-	margin-left: 1rem;
-}
 
 /* setting 内容区 */
 
@@ -855,10 +743,6 @@ hr {
 
 .settingRow svg {
 	margin-right: 1rem;
-}
-
-.settingRow .nav-pills {
-	margin-bottom: 0.5rem;
 }
 
 .settingImgSelection {
@@ -876,34 +760,6 @@ hr {
 	border-radius: 0.2rem;
 }
 
-.nav-pills {
-	margin-top: 2rem;
-	/* align-items: center; */
-	justify-content: center;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-	background: none;
-	color: #15aec2;
-	border-radius: 0;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 2px solid #1AC3DE;
-}
-
-.nav-pills .nav-link {
-	color: #00000090;
-}
-
-.nav-pills .nav-item {
-	margin-right: 1rem;
-}
-
-.nav-pills .nav-item:last-child {
-	margin-right: 0;
-}
 
 /* 设置项卡片 */
 
@@ -1025,114 +881,6 @@ hr {
 
 
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* V2 */
-/* 1 */
-.WeddingCardImg {
-	background: var(--img-wedding-main) center no-repeat;
-	background-size: 100% auto;
-}
-.SportGameCardImg {
-	background: var(--img-SportGame-main) center no-repeat;
-	background-size: 100% auto;
-}
-.ConferenceCardImg {
-	background: var(--img-Conference-main) center no-repeat;
-	background-size: 100% auto;
-}
-.BabySittingCardImg {
-	background: var(--img-Babysitting-main) center no-repeat;
-	background-size: 100% auto;
-}
-.GovernmentAgencyCardImg {
-	background: var(--img-GovernmentAgency-main) center no-repeat;
-	background-size: 100% auto;
-}
-.BabyShowerCardImg {
-	background: var(--img-BabyShower-main) center no-repeat;
-	background-size: 100% auto;
-}
-
-
-
-/* 2 */
-.PTConferenceCardImg {
-	background: var(--img-HomeVisit-main) center no-repeat;
-	background-size: 100% auto;
-}
-.ClientsMeetingCardImg {
-	background: var(--img-ClientsMeeting-main) center no-repeat;
-	background-size: 100% auto;
-}
-.InterviewsCardImg {
-	background: var(--img-Interview-main) center no-repeat;
-	background-size: 100% auto;
-}
-.MedicalCardImg {
-	background: var(--img-MedicalAndPatient-main) center no-repeat;
-	background-size: 100% auto;
-}
-.StoreAppointmentCardImg {
-	background: var(--img-StoreAppointment-main) center no-repeat;
-	background-size: 100% auto;
-}
-.PersonalTrainerCardImg {
-	background: var(--img-PersonalTrainer-main) center no-repeat;
-	background-size: 100% auto;
-}
-.RealEstateCardImg {
-	background: var(--img-RealEstate-main) center no-repeat;
-	background-size: 100% auto;
-}
-.TutoringSchedulingCardImg {
-	background: var(--img-TutoringScheduling-main) center no-repeat;
-	background-size: 100% auto;
-}
-.AcademicAdvisorsCardImg {
-	background: var(--img-AcademicAdvisorsAndTutors-main) center no-repeat;
-	background-size: 100% auto;
-}
-.PerformanceReviewCardImg {
-	background: var(--img-PerformanceReview-main) center no-repeat;
-	background-size: 100% auto;
-}
-
-
-
-/* 3 */
-.MeetingCoordinationCardImg {
-	background: var(--img-MeetingCoordination-main) center no-repeat;
-	background-size: 100% auto;
-}
-.FamilyReunionCardImg {
-	background: var(--img-FamilyReunion-main) center no-repeat;
-	background-size: 100% auto;
-}
-.GroupStudySessionCardImg {
-	background: var(--img-GroupStudySession-main) center no-repeat;
-	background-size: 100% auto;
-}
-.TeamBuildingEventCardImg {
-	background: var(--img-TeamBuildingEvent-main) center no-repeat;
-	background-size: 100% auto;
-}
-.GroupProjectMeetingCardImg {
-	background: var(--img-GroupProjectMeeting-main) center no-repeat;
-	background-size: 100% auto;
-}
-.VacationPlanningCardImg {
-	background: var(--img-VacationPlanning-main) center no-repeat;
-	background-size: 100% auto;
-}
-.TripPlanningCardImg {
-	background: var(--img-TripPlanning-main) center no-repeat;
-	background-size: 100% auto;
-}
-.SocialEventCardImg {
-	background: var(--img-SocialEvent-main) center no-repeat;
-	background-size: 100% auto;
-}
-
 
 /* wedding */
 .WeddingInfoPage {
