@@ -659,44 +659,7 @@ hr {
 }
 
 
-.eventTypeCard {
-	display: flex;
-	flex-flow: row nowrap;
-	border: 1px solid #00000015;
-	width: 100%;
-	margin: 0.5rem;
-	border-radius: 0.3rem;
-}
 
-.eventTypeCard.active {
-	border: 3px solid #1AC3DE40;
-	background: #1AC3DE20;
-}
-
-/* .eventTypeCard.active .TypeCard-body {
-	
-} */
-
-.eventTypeCard:hover:not(.active) {
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.eventTypeImg {
-	width: 32%;
-	height: 10rem;
-	border-radius: 0.23rem 0 0 0.25rem;
-	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 1) 50%);
-	background: #fff;
-}
-
-.TypeCard-body {
-	flex: 1;
-	padding: 1rem;
-}
-
-.TypeCard-text {
-	margin: 0;
-}
 
 
 
@@ -736,6 +699,37 @@ hr {
 	border: var(--color-theme) .5rem solid;
 }
 
+.stepsAndNav {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 0;
+}
+
+.stepsAndNav .btn-outline-primary {
+	padding: 0;
+	border: 0;
+	display: flex;
+	align-items: center;
+}
+
+.stepsAndNav .btn-outline-primary .bi {
+	font-size: 1.5rem;
+}
+
+.stepsAndNav .btn-outline-primary:first-child .bi {
+	margin-right: 0.6rem;
+}
+.stepsAndNav .btn-outline-primary:last-child .bi {
+	margin-left: 0.6rem;
+}
+
+.stepsAndNav .btn-outline-primary:hover {
+	background: none;
+	color: var(--color-theme);
+}
 
 /* 步骤条 */
 .stepContainer {
@@ -746,12 +740,12 @@ hr {
 }
 
 .steps {
-	max-width: 1000px;
-	padding: 2rem 0;
-	margin: 0 auto;
+
+	margin: 0 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex: 1;
 }
 
 .stepItem {
@@ -821,7 +815,7 @@ hr {
 
 /* 下一步、上一步按钮组 */
 
-.nextBtnGroup {
+.EventTypeNavBar {
 	max-width: 1000px;
 	display: flex;
 	justify-content: space-between;
@@ -831,29 +825,24 @@ hr {
 	border-top: 1px solid #00000008;
 	padding-top: 2px;
 }
-
-.nextBtnGroup .btn-outline-primary {
-	padding: 0;
-	border: 0;
-	display: flex;
-	align-items: center;
+.btn-group>.btn {
+	--bs-btn-padding-x: 0.55rem;
+    --bs-btn-padding-y: 0.2rem;
+}
+.btn-group>.btn:last-child {
+	border-left: none;
+}
+.btn-group>.btn.active i {
+	color: #fff;
+}
+.btn-group>.btn:hover {
+	background-color: #1AC3DE30;
+}
+.btn-group>.btn.active:hover {
+	background-color: #1AC3DE;
 }
 
-.nextBtnGroup .btn-outline-primary .bi {
-	font-size: 1.5rem;
-}
 
-.nextBtnGroup .btn-outline-primary:first-child .bi {
-	margin-right: 0.6rem;
-}
-.nextBtnGroup .btn-outline-primary:last-child .bi {
-	margin-left: 0.6rem;
-}
-
-.nextBtnGroup .btn-outline-primary:hover {
-	background: none;
-	color: var(--color-theme);
-}
 /* setting 内容区 */
 
 .settingRow {
@@ -1038,112 +1027,7 @@ hr {
 
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* V2 */
-/* 1 */
-.WeddingCardImg {
-	background: var(--img-wedding-main) center no-repeat;
-	background-size: 100% auto;
-}
-.SportGameCardImg {
-	background: var(--img-SportGame-main) center no-repeat;
-	background-size: 100% auto;
-}
-.ConferenceCardImg {
-	background: var(--img-Conference-main) center no-repeat;
-	background-size: 100% auto;
-}
-.BabySittingCardImg {
-	background: var(--img-Babysitting-main) center no-repeat;
-	background-size: 100% auto;
-}
-.GovernmentAgencyCardImg {
-	background: var(--img-GovernmentAgency-main) center no-repeat;
-	background-size: 100% auto;
-}
-.BabyShowerCardImg {
-	background: var(--img-BabyShower-main) center no-repeat;
-	background-size: 100% auto;
-}
 
-
-
-/* 2 */
-.PTConferenceCardImg {
-	background: var(--img-HomeVisit-main) center no-repeat;
-	background-size: 100% auto;
-}
-.ClientsMeetingCardImg {
-	background: var(--img-ClientsMeeting-main) center no-repeat;
-	background-size: 100% auto;
-}
-.InterviewsCardImg {
-	background: var(--img-Interview-main) center no-repeat;
-	background-size: 100% auto;
-}
-.MedicalCardImg {
-	background: var(--img-MedicalAndPatient-main) center no-repeat;
-	background-size: 100% auto;
-}
-.StoreAppointmentCardImg {
-	background: var(--img-StoreAppointment-main) center no-repeat;
-	background-size: 100% auto;
-}
-.PersonalTrainerCardImg {
-	background: var(--img-PersonalTrainer-main) center no-repeat;
-	background-size: 100% auto;
-}
-.RealEstateCardImg {
-	background: var(--img-RealEstate-main) center no-repeat;
-	background-size: 100% auto;
-}
-.TutoringSchedulingCardImg {
-	background: var(--img-TutoringScheduling-main) center no-repeat;
-	background-size: 100% auto;
-}
-.AcademicAdvisorsCardImg {
-	background: var(--img-AcademicAdvisorsAndTutors-main) center no-repeat;
-	background-size: 100% auto;
-}
-.PerformanceReviewCardImg {
-	background: var(--img-PerformanceReview-main) center no-repeat;
-	background-size: 100% auto;
-}
-
-
-
-/* 3 */
-.MeetingCoordinationCardImg {
-	background: var(--img-MeetingCoordination-main) center no-repeat;
-	background-size: 100% auto;
-}
-.FamilyReunionCardImg {
-	background: var(--img-FamilyReunion-main) center no-repeat;
-	background-size: 100% auto;
-}
-.GroupStudySessionCardImg {
-	background: var(--img-GroupStudySession-main) center no-repeat;
-	background-size: 100% auto;
-}
-.TeamBuildingEventCardImg {
-	background: var(--img-TeamBuildingEvent-main) center no-repeat;
-	background-size: 100% auto;
-}
-.GroupProjectMeetingCardImg {
-	background: var(--img-GroupProjectMeeting-main) center no-repeat;
-	background-size: 100% auto;
-}
-.VacationPlanningCardImg {
-	background: var(--img-VacationPlanning-main) center no-repeat;
-	background-size: 100% auto;
-}
-.TripPlanningCardImg {
-	background: var(--img-TripPlanning-main) center no-repeat;
-	background-size: 100% auto;
-}
-.SocialEventCardImg {
-	background: var(--img-SocialEvent-main) center no-repeat;
-	background-size: 100% auto;
-}
 
 
 /* wedding */
@@ -1323,7 +1207,7 @@ hr {
 
 /* Setting step1 类别背景 */
 
-.WeddingProtal {
+/* .WeddingProtal {
 	background: var(--img-wedding-main) var(--color-imgbg-light) center no-repeat;
 	background-size: auto 100%;
 	background-blend-mode: darken;
@@ -1607,4 +1491,4 @@ hr {
 .Protal25:hover {
 	background: var(--img-BabyShower-main) var(--color-imgbg-dark) center no-repeat;
 	background-size: auto 100%;
-}
+} */
