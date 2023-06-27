@@ -29,7 +29,7 @@
 
 :root {
 	/* Event Planning */
-	--img-wedding-main: url(../img/WeddingInfoPage.jpg);
+	--img-wedding-main: url(../img/Wedding1.jpg);
 	--img-SportGame-main: url(../img/SportGames1.jpg);
 	--img-Conference-main: url(../img/Conference1.jpg);
 	--img-Babysitting-main: url(../img/Babysitting_1.jpg);
@@ -38,7 +38,7 @@
 	--img-BabyShower-main: url(../img/BabyShower1.jpg);
 
 	/* Calendar Booking */
-	--img-HomeVisit-main: url(../img/PTeacherConference1.jpg);
+	--img-HomeVisit-main: url(../img/ParentTeacherConference1.jpg);
 	--img-ClientsMeeting-main: url(../img/ClientsMeeting_1.jpg);
 	--img-Interview-main: url(../img/Interviews_1.jpg);
 	--img-MedicalAndPatient-main: url(../img/MedicalAndPatient_1.jpg);
@@ -884,13 +884,13 @@ hr {
 
 /* wedding */
 .WeddingInfoPage {
-	background: url(../img/WeddingInfoPage.jpg) center no-repeat;
+	background: url(../img/Wedding1.jpg) center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
 .WeddingResponsePage {
-	background: url(../img/WeddingResponsePage.jpg) no-repeat center 37%;
+	background: url(../img/Wedding2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
 }
 
@@ -969,13 +969,13 @@ hr {
 
 /* Parent-Teacher Conferences */
 .PTeacherConferenceInfoPage {
-	background: url(../img/PTeacherConferences1.jpg) top center no-repeat;
+	background: url(../img/ParentTeacherConference1.jpg) top center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
 .PTeacherConferenceResponsePage {
-	background: #787b70 url(../img/PTeacherConferences2.jpg) top center no-repeat;
+	background: #787b70 url(../img/ParentTeacherConference2.jpg) top center no-repeat;
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }

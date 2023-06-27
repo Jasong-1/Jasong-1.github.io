@@ -17,6 +17,11 @@
 
 	<link rel="stylesheet" href="../../../../style/EventTypeListStyle_list.css" id="EventTypeListStyle">
 
+	<!-- <link src=""> -->
+
+
+
+
 	<script type="text/javascript">
 		document.write("<link rel='stylesheet' type='text/css' href='../../../../style/styleV2.css?v=" + Math.random() +
 			"'>");
@@ -195,7 +200,7 @@
 								<button class="nav-link" id="DomainEventTab" data-bs-toggle="pill"
 									data-bs-target="#DomainEventList" type="button" role="tab"
 									aria-controls="DomainEventList" aria-selected="false">
-									Domain
+									K12
 								</button>
 							</li>
 						</ul>
@@ -251,13 +256,12 @@
 	<!-- <script src="/scripts/jquery-3.4.1.js"></script> -->
 	<script src="/product/solutionTemplate/data/eventTypeCard.json"></script>
 	<script src="../../../../scripts/js.js"></script>
-
 	<script>
 		// 声明事件类型
-		var currentCatygory = "Domain";
+		var currentCatygory = "Personal";
 
 		// 声明卡片ID
-		var currentCard = "D_GovernmentAgency";
+		var currentCard = "P_GovernmentAgency";
 
 		// 当前tab设置为active
 		document.getElementById(currentCatygory + "EventTab").classList.add("active");
@@ -268,6 +272,9 @@
 
 		// 将当前卡片设置为active
 		document.getElementById(currentCard).classList.add("active");
+
+		// 页面滚动至当前位置
+		document.getElementById(currentCard).scrollIntoView();
 	</script>
 </body>
 
