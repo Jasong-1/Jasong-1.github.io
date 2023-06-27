@@ -17,28 +17,15 @@
 
 	<link rel="stylesheet" href="../../../../style/EventTypeListStyle_list.css" id="EventTypeListStyle">
 
-	<script>
-		// document.getElementById('EventListL').addEventListener('click', function(){ document.getElementById('EventTypeListStyle').href = '../../../../style/EventTypeListStyle_list.css'; });
-		// document.getElementById('EventListG').addEventListener('click', function(){ document.getElementById('EventTypeListStyle').href = '../../../../style/EventTypeListStyle_grid.css'; });
+	<!-- <link src=""> -->
 
 
-		function listView() {
-			document.getElementById('EventTypeListStyle').href = '../../../../style/EventTypeListStyle_list.css';
-			document.getElementById("EventListL").classList.add("active");
-			document.getElementById("EventListG").classList.remove("active");
-		};
-		function gridView() {
-			document.getElementById('EventTypeListStyle').href = '../../../../style/EventTypeListStyle_grid.css';
-			document.getElementById("EventListG").classList.add("active");
-			document.getElementById("EventListL").classList.remove("active");
-		};
-	</script>
 
 
 	<script type="text/javascript">
-		document.write("<link rel='stylesheet' type='text/css' href='../../../../style/styleV2.css?v=" + Math.random() + "'>");
+		document.write("<link rel='stylesheet' type='text/css' href='../../../../style/styleV2.css?v=" + Math.random() +
+			"'>");
 	</script>
-
 
 
 </head>
@@ -196,9 +183,9 @@
 					<div>
 						<ul class="nav nav-pills" id="pills-tab" role="tablist">
 							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="PersonalEventTab" data-bs-toggle="pill"
+								<button class="nav-link" id="PersonalEventTab" data-bs-toggle="pill"
 									data-bs-target="#PersonalEventList" type="button" role="tab"
-									aria-controls="PersonalEventList" aria-selected="true">
+									aria-controls="PersonalEventList" aria-selected="false">
 									Personal
 								</button>
 							</li>
@@ -219,12 +206,10 @@
 						</ul>
 					</div>
 					<div class="btn-group" role="group" aria-label="Basic outlined">
-						<button type="button" class="btn btn-outline-primary active" id="EventListL"
-							onclick="javascript:listView()">
+						<button type="button" class="btn btn-outline-primary active" id="EventListL">
 							<i class="bi bi-list"></i>
 						</button>
-						<button type="button" class="btn btn-outline-primary" id="EventListG"
-							onclick="javascript:gridView()">
+						<button type="button" class="btn btn-outline-primary" id="EventListG">
 							<i class="bi bi-grid-fill"></i>
 						</button>
 					</div>
@@ -233,680 +218,30 @@
 			<div class="settingSection settingSection1">
 				<div class="settingRow">
 					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade show active" id="PersonalEventList" role="tabpanel"
+						<div class="tab-pane fade" id="PersonalEventList" role="tabpanel"
 							aria-labelledby="PersonalEventTab" tabindex="0">
-							<div class="eventTypeTabContent">
-								<div class="eventTypeCard" onclick="javascript:switchToPSocialEvent()">
-									<span class="eventTypeImg SocialEventCardImg"></span>
+							<div id="PersonalCardList" class="eventTypeTabContent">
+								<!-- <div id="${e.cardid}" class="eventTypeCard" onclick="window.location.href='${e.location}'">
+									<img class="eventTypeImg" src="${e.bg}" alt="">
 									<div class="TypeCard-body">
 										<h5 class="TypeCard-title">
-											Social Event
+											${e.title}
 										</h5>
 										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
+											${e.description}
 										</p>
 									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPBabyShower()">
-									<span class="eventTypeImg BabyShowerCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Baby Shower
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPFamilyReunion()">
-									<span class="eventTypeImg FamilyReunionCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Family Reunion
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPMeetingCoordination()">
-									<span class="eventTypeImg MeetingCoordinationCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Meeting Coordination
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPGroupStudySession()">
-									<span class="eventTypeImg GroupStudySessionCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Group Study Session
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPSportGames()">
-									<span class="eventTypeImg SportGameCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Sport Games
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPVacationPlanning()">
-									<span class="eventTypeImg VacationPlanningCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Vacation Planning
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPTripPlanning()">
-									<span class="eventTypeImg TripPlanningCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Trip Planning
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPRealEstate()">
-									<span class="eventTypeImg RealEstateCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Real Estate
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPWedding()">
-									<span class="eventTypeImg WeddingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Wedding
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPBabysitting()">
-									<span class="eventTypeImg BabySittingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Babysitting
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPMedicalAndPatient()">
-									<span class="eventTypeImg MedicalCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Medical and Patient
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPTeamBuildingEvent()">
-									<span class="eventTypeImg TeamBuildingEventCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Team-building Event
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPAcademicAdvisors()">
-									<span class="eventTypeImg AcademicAdvisorsCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Academic advisors
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPGroupProjectMeeting()">
-									<span class="eventTypeImg GroupProjectMeetingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Group Project Meeting
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPClientsMeeting()">
-									<span class="eventTypeImg ClientsMeetingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Clients Meeting
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPInterviews()">
-									<span class="eventTypeImg InterviewsCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Interviews
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchToPPerformanceReview()">
-									<span class="eventTypeImg PerformanceReviewCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Performance Review
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard active" onclick="javascript:switchToPGovernmentAgency()">
-									<span class="eventTypeImg GovernmentAgencyCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Government Agency
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-
+								</div> -->
 							</div>
 						</div>
 						<div class="tab-pane fade" id="SmallBusinessEventList" role="tabpanel"
 							aria-labelledby="SmallBusinessEventTab" tabindex="0">
-							<div class="eventTypeTabContent">
-								<div class="eventTypeCard" onclick="javascript:switchStoreAppointmentSetting()">
-									<span class="eventTypeImg StoreAppointmentCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Store Appointment
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchEventCoordinationSetting()">
-									<span class="eventTypeImg MeetingCoordinationCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Meeting Coordination
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchConferenceSetting()">
-									<span class="eventTypeImg ConferenceCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Conference
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchClientsMeetingSetting()">
-									<span class="eventTypeImg ClientsMeetingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Clients Meeting
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchPerformanceReviewSetting()">
-									<span class="eventTypeImg PerformanceReviewCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Performance Review
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchInterviewsSetting()">
-									<span class="eventTypeImg InterviewsCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Interviews
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchInterviewsSetting()">
-									<span class="eventTypeImg CompanyOutingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Company Outing
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchTripPlanningSetting()">
-									<span class="eventTypeImg TripPlanningCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Trip Planning
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchMedicalPSetting()">
-									<span class="eventTypeImg MedicalCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Medical and Patient
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchRealEstateSetting()">
-									<span class="eventTypeImg RealEstateCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Real Estate
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchTutoringSchedulingSetting()">
-									<span class="eventTypeImg TutoringSchedulingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Tutoring Schedulings
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchGovernmentAgency2Setting()">
-									<span class="eventTypeImg GovernmentAgencyCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Government Agency
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchPersonalTrainerSetting()">
-									<span class="eventTypeImg PersonalTrainerCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Personal Trainer
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-
-
-
+							<div id="SmallBusinessCardList" class="eventTypeTabContent">
 							</div>
 						</div>
 						<div class="tab-pane fade" id="DomainEventList" role="tabpanel" aria-labelledby="DomainEventTab"
 							tabindex="0">
-							<div class="eventTypeTabContent">
-
-								<div class="eventTypeCard" onclick="javascript:switchPTeacherConferenceSetting()">
-									<span class="eventTypeImg PTConferenceCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Parent-Teacher Conference
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchPerformanceReviewSetting()">
-									<span class="eventTypeImg PerformanceReviewCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Performance Review
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchInterviewsSetting()">
-									<span class="eventTypeImg InterviewsCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Interviews
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchConferenceSetting()">
-									<span class="eventTypeImg ConferenceCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Conference
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchEventCoordinationSetting()">
-									<span class="eventTypeImg MeetingCoordinationCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Meeting Coordination
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchAcademicAdvisorsSetting()">
-									<span class="eventTypeImg AcademicAdvisorsCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Academic advisors
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchGroupProjectMeetingSetting()">
-									<span class="eventTypeImg GroupProjectMeetingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Group Project Meeting
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchTripPlanningSetting()">
-									<span class="eventTypeImg TripPlanningCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Trip Planning
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchTutoringSchedulingSetting()">
-									<span class="eventTypeImg TutoringSchedulingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Tutoring Schedulings
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchGroupStudySessionSetting()">
-									<span class="eventTypeImg GroupStudySessionCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Group Study Session
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchSocialEventSetting()">
-									<span class="eventTypeImg SocialEventCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Social Event
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchSGamesSetting()">
-									<span class="eventTypeImg SportGameCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Sport Games
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchTeamBuildingEventSetting()">
-									<span class="eventTypeImg TeamBuildingEventCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Team-building Event
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchClientsMeetingSetting()">
-									<span class="eventTypeImg ClientsMeetingCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Clients Meeting
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchVacationPlanningSetting()">
-									<span class="eventTypeImg VacationPlanningCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Vacation Planning
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchMedicalPSetting()">
-									<span class="eventTypeImg MedicalCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Medical and Patient
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchStoreAppointmentSetting()">
-									<span class="eventTypeImg StoreAppointmentCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Store Appointment
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-								<div class="eventTypeCard" onclick="javascript:switchGovernmentAgency2Setting()">
-									<span class="eventTypeImg GovernmentAgencyCardImg"></span>
-									<div class="TypeCard-body">
-										<h5 class="TypeCard-title">
-											Government Agency
-										</h5>
-										<p class="TypeCard-text">
-											This is a wider card with supporting text
-											below as a natural lead-in to additional content. This
-											content is a little bit longer.
-										</p>
-									</div>
-								</div>
-
-
-
-
-
-
+							<div id="DomainCardList" class="eventTypeTabContent">
 							</div>
 						</div>
 					</div>
@@ -918,10 +253,28 @@
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="/scripts/jquery-3.4.1.js"></script> -->
+	<script src="/product/solutionTemplate/data/eventTypeCard.json"></script>
 	<script src="../../../../scripts/js.js"></script>
 	<script>
-		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-		const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+		// 声明事件类型
+		var currentCatygory = "Personal";
+
+		// 声明卡片ID
+		var currentCard = "P_GovernmentAgency";
+
+		// 当前tab设置为active
+		document.getElementById(currentCatygory + "EventTab").classList.add("active");
+		document.getElementById(currentCatygory + "EventTab").setAttribute("aria-selected", "ture");
+
+		// 显示tab内容区
+		document.getElementById(currentCatygory + "EventList").classList.add("show", "active");
+
+		// 将当前卡片设置为active
+		document.getElementById(currentCard).classList.add("active");
+
+		// 页面滚动至当前位置
+		document.getElementById(currentCard).scrollIntoView();
 	</script>
 </body>
 

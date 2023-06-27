@@ -1,283 +1,119 @@
-// Personal
+// 生成 event 卡片 -------------------------------------------------------------------------------------------------------------------------------------------
 
-function switchToPBabyShower() {
-	window.location.href = "../../../Personal/TemplateA/BabyShower/setting1.html";
-}
-function switchToPBabysitting() {
-	window.location.href = "../../../Personal/TemplateA/Babysitting/setting1.html";
-}
-function switchToPGovernmentAgency() {
-	window.location.href = "../../../Personal/TemplateA/GovernmentAgency/setting1.html";
-}
-function switchToPSportGames() {
-	window.location.href = "../../../Personal/TemplateA/SportGames/setting1.html";
-}
-function switchToPWedding() {
-	window.location.href = "../../../Personal/TemplateA/Wedding/setting1.html";
-}
-function switchToPClientsMeeting() {
-	window.location.href = "../../../Personal/TemplateB/ClientsMeeting/setting1.html";
-}
-function switchToPInterviews() {
-	window.location.href = "../../../Personal/TemplateB/Interviews/setting1.html";
-}
-function switchToPMedicalAndPatient() {
-	window.location.href = "../../../Personal/TemplateB/MedicalAndPatient/setting1.html";
-}
-function switchToPPerformanceReview() {
-	window.location.href = "../../../Personal/TemplateB/PerformanceReview/setting1.html";
-}
-function switchToPFamilyReunion() {
-	window.location.href = "../../../Personal/TemplateC/FamilyReunion/setting1.html";
-}
-function switchToPMeetingCoordination() {
-	window.location.href = "../../../Personal/TemplateC/MeetingCoordination/setting1.html";
-}
-function switchToPSocialEvent() {
-	window.location.href = "../../../Personal/TemplateC/SocialEvent/setting1.html";
-}
-function switchToPGroupStudySession() {
-	window.location.href = "../../../Personal/TemplateC/GroupStudySession/setting1.html";
-}
-function switchToPVacationPlanning() {
-	window.location.href = "../../../Personal/TemplateC/VacationPlanning/setting1.html";
-}
-function switchToPTripPlanning() {
-	window.location.href = "../../../Personal/TemplateC/TripPlanning/setting1.html";
-}
-function switchToPRealEstate() {
-	window.location.href = "../../../Personal/TemplateC/RealEstate/setting1.html";
-}
-function switchToPTeamBuildingEvent() {
-	window.location.href = "../../../Personal/TemplateC/TeamBuildingEvent/setting1.html";
-}
-function switchToPAcademicAdvisors() {
-	window.location.href = "../../../Personal/TemplateC/AcademicAdvisors/setting1.html";
-}
-function switchToPGroupProjectMeeting() {
-	window.location.href = "../../../Personal/TemplateC/GroupProjectMeeting/setting1.html";
-}
+// personal
+
+var personalCard = ''
+personalCardData.forEach(e => {
+	personalCard += `
+			<div id="${e.id}" class="eventTypeCard" onclick="window.location.href='${e.location}?eventType=${e.eventType}&cardID=${e.id}'">
+				<img class="eventTypeImg" src="${e.bg}" alt="${e.title}">
+				<div class="TypeCard-body">
+					<h5 class="TypeCard-title">
+						${e.title}
+					</h5>
+					<p class="TypeCard-text">
+						${e.description}
+					</p>
+				</div>
+			</div>`
+})
+//渲染到html
+document.getElementById('PersonalCardList').innerHTML = personalCard;
 
 
 // Small Business
 
-function switchToSBClientsMeeting() {
-	window.location.href = "../../../SmallBusiness/TemplateB/ClientsMeeting/setting1.html";
-}
-function switchToSBConference() {
-	window.location.href = "../../../SmallBusiness/TemplateB/ClientsMeeting/setting1.html";
-}
-function switchToSBGovernmentAgency() {
-	window.location.href = "../../../SmallBusiness/TemplateA/GovernmentAgency/setting1.html";
-}
-function switchToSBInterviews() {
-	window.location.href = "../../../SmallBusiness/TemplateB/Interviews/setting1.html";
-}
-function switchToSBMedicalAndPatient() {
-	window.location.href = "../../../SmallBusiness/TemplateB/MedicalAndPatient/setting1.html";
-}
-function switchToSBMeetingCoordination() {
-	window.location.href = "../../../SmallBusiness/TemplateC/MeetingCoordination/setting1.html";
-}
-function switchToSBPerformanceReview() {
-	window.location.href = "../../../SmallBusiness/TemplateB/PerformanceReview/setting1.html";
-}
-function switchToSBStoreAppointment() {
-	window.location.href = "../../../SmallBusiness/TemplateA/BabyShower/setting1.html";
-}
-function switchToSBCompanyOuting() {
-	window.location.href = "../../../SmallBusiness/TemplateA/Babysitting/setting1.html";
-}
-function switchToSBPersonalTrainer() {
-	window.location.href = "../../../SmallBusiness/TemplateA/SportGames/setting1.html";
-}
-function switchToSBRealEstate() {
-	window.location.href = "../../../SmallBusiness/TemplateA/Wedding/setting1.html";
-}
-function switchToSBTripPlanning() {
-	window.location.href = "../../../SmallBusiness/TemplateC/FamilyReunion/setting1.html";
-}
-function switchToSBTutoringScheduling() {
-	window.location.href = "../../../SmallBusiness/TemplateC/SocialEvent/setting1.html";
-}
+var SmallBusinessCard = ''
+SmallBusinessCardData.forEach(e => {
+	SmallBusinessCard += `
+	<div id="${e.id}" class="eventTypeCard" onclick="window.location.href='${e.location}?eventType=${e.eventType}&cardID=${e.id}'">
+		<img class="eventTypeImg" src="${e.bg}" alt="${e.title}">
+		<div class="TypeCard-body">
+			<h5 class="TypeCard-title">
+				${e.title}
+			</h5>
+			<p class="TypeCard-text">
+				${e.description}
+			</p>
+		</div>
+	</div>`
+})
+document.getElementById('SmallBusinessCardList').innerHTML = SmallBusinessCard;
 
 
 // Domain
 
-function switchToDClientsMeeting() {
-	window.location.href = "../../../Domain/TemplateB/ClientsMeeting/setting1.html";
-}
-function switchToDConference() {
-	window.location.href = "../../../Domain/TemplateB/ClientsMeeting/setting1.html";
-}
-function switchToDGovernmentAgency() {
-	window.location.href = "../../../Domain/TemplateA/GovernmentAgency/setting1.html";
-}
-function switchToDGroupStudySession() {
-	window.location.href = "../../../Personal/TemplateC/GroupStudySession/setting1.html";
-}
-function switchToDGroupProjectMeeting() {
-	window.location.href = "../../../Personal/TemplateC/VacationPlanning/setting1.html";
-}
-function switchToDInterviews() {
-	window.location.href = "../../../Domain/TemplateB/Interviews/setting1.html";
-}
-function switchToDMedicalAndPatient() {
-	window.location.href = "../../../Domain/TemplateB/MedicalAndPatient/setting1.html";
-}
-function switchToDMeetingCoordination() {
-	window.location.href = "../../../Domain/TemplateC/MeetingCoordination/setting1.html";
-}
-function switchToDPTConference() {
-	window.location.href = "../../../Domain/TemplateC/Parent-TeacherConference/setting1.html";
-}
-function switchToDPerformanceReview() {
-	window.location.href = "../../../Domain/TemplateB/PerformanceReview/setting1.html";
-}
-function switchToDSocialEvent() {
-	window.location.href = "../../../Personal/TemplateC/SocialEvent/setting1.html";
-}
-function switchToDSportGames() {
-	window.location.href = "../../../Personal/TemplateA/SportGames/setting1.html";
-}
-function switchToDStoreAppointment() {
-	window.location.href = "../../../Domain/TemplateA/BabyShower/setting1.html";
-}
-function switchToDTeamBuildingEvent() {
-	window.location.href = "../../../Personal/TemplateC/VacationPlanning/setting1.html";
-}
-function switchToDTripPlanning() {
-	window.location.href = "../../../Domain/TemplateC/FamilyReunion/setting1.html";
-}
-function switchToDTutoringScheduling() {
-	window.location.href = "../../../Domain/TemplateC/SocialEvent/setting1.html";
-}
-function switchToDTutoringScheduling() {
-	window.location.href = "../../../Domain/TemplateC/SocialEvent/setting1.html";
-}
-function switchToDVacationPlanning() {
-	window.location.href = "../../../Personal/TemplateC/VacationPlanning/setting1.html";
-}
+var DomainCard = ''
+DomainCardData.forEach(e => {
+	DomainCard += `
+	<div id="${e.id}" class="eventTypeCard" onclick="window.location.href='${e.location}?eventType=${e.eventType}&cardID=${e.id}'">
+		<img class="eventTypeImg" src="${e.bg}" alt="${e.title}">
+		<div class="TypeCard-body">
+			<h5 class="TypeCard-title">
+				${e.title}
+			</h5>
+			<p class="TypeCard-text">
+				${e.description}
+			</p>
+		</div>
+	</div>`
+})
+document.getElementById('DomainCardList').innerHTML = DomainCard;
 
 
 
 
+// event 卡片列表视图，网格视图切换 -------------------------------------------------------------------------------------------------------------------------------------------
+
+
+document.getElementById('EventListG').addEventListener('click', gridView);
+document.getElementById('EventListL').addEventListener('click', listView);
+
+
+function listView() {
+	document.getElementById('EventTypeListStyle').href = '../../../../style/EventTypeListStyle_list.css';
+	document.getElementById("EventListL").classList.add("active");
+	document.getElementById("EventListG").classList.remove("active");
+};
+
+function gridView() {
+	document.getElementById('EventTypeListStyle').href = '../../../../style/EventTypeListStyle_grid.css';
+	document.getElementById("EventListG").classList.add("active");
+	document.getElementById("EventListL").classList.remove("active");
+};
 
 
 
 
+// setting1页面状态设置 -------------------------------------------------------------------------------------------------------------------------------------------
 
+// 获取链接参数
 
+// function GetQueryString(name) {
+//     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+//     var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+//     var context = "";
+//     if (r != null)
+//         context = decodeURIComponent(r[2]);
+//     reg = null;
+//     r = null;
+//     return context == null || context == "" || context == "undefined" ? "" : context;
+// }
 
+// 声明事件类型
+// var currentCatygory = GetQueryString("eventType");
 
-// old version =======================================================================================================
+// 声明卡片ID
+// var currentCard = GetQueryString("cardID");
 
+// 当前tab设置为active
+// document.getElementById(currentCatygory + "EventTab").classList.add("active");
+// document.getElementById(currentCatygory + "EventTab").setAttribute("aria-selected", "ture");
 
+// 显示tab内容区
+// document.getElementById(currentCatygory + "EventList").classList.add("show", "active");
 
-function AppLevelBack() {
-	window.location.href = "../AppListNav.html";
-}
+// 将当前卡片设置为active
+// document.getElementById(currentCard).classList.add("active");
 
-function EventSubLevelBack() {
-	window.location.href = "../SolutionType/Event.html";
-}
-
-function TimeConfirmSubLevelBack() {
-	window.location.href = "../../../TimeConfirm.html";
-}
-
-function FormSolutionSubLevelBack() {
-	window.location.href = "../SolutionType/FormSolution.html";
-}
-
-
-
-// Event Planning
-
-function switchweddingSetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/Wedding/setting1.html";
-}
-function switchSGamesSetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/SportGames/setting1.html";
-}
-function switchConferenceSetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/Conference/setting1.html";
-}
-function switchBabySittingSetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/BabySitting/setting1.html";
-}
-function switchGovernmentAgencySetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/GovernmentAgency/setting1.html";
-}
-function switchBabyShowerSetting() {
-	window.location.href = "../../../../SolutionType/Event/general User/BabyShower/setting1.html";
-}
-
-
-
-
-// Calendar Booking
-
-function switchPTeacherConferenceSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/Parent-Teacher Conference/setting1.html";
-}
-function switchClientsMeetingSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/ClientsMeeting/setting1.html";
-}
-function switchInterviewsSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/Interviews/setting1.html";
-}
-function switchMedicalPSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/MedicalAndPatient/setting1.html";
-}
-function switchStoreAppointmentSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/StoreAppointment/setting1.html";
-}
-function switchPersonalTrainerSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/PersonalTrainer/setting1.html";
-}
-function switchRealEstateSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/RealEstate/setting1.html";
-}
-function switchTutoringSchedulingSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/TutoringScheduling/setting1.html";
-}
-function switchAcademicAdvisorsSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/AcademicAdvisors/setting1.html";
-}
-function switchPerformanceReviewSetting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/PerformanceReview/setting1.html";
-}
-function switchGovernmentAgency2Setting() {
-	window.location.href = "../../../../SolutionType/TimeConfirm/general User/GovernmentAgency/setting1.html";
-}
-
-
-
-
-// Schedule Coordination
-
-function switchEventCoordinationSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/MeetingCoordination/setting1.html";
-}
-function switchFamilyReunionSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/FamilyReunion/setting1.html";
-}
-function switchGroupStudySessionSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/GroupStudySession/setting1.html";
-}
-function switchTeamBuildingEventSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/TeamBuildingEvent/setting1.html";
-}
-function switchGroupProjectMeetingSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/GroupProjectMeeting/setting1.html";
-}
-function switchVacationPlanningSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/VacationPlanning/setting1.html";
-}
-function switchTripPlanningSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/TripPlanning/setting1.html";
-}
-function switchSocialEventSetting() {
-	window.location.href = "../../../../SolutionType/ScheduleCoordintion/general User/SocialEvent/setting1.html";
-}
+// document.getElementById(currentCard).scrollIntoView();
