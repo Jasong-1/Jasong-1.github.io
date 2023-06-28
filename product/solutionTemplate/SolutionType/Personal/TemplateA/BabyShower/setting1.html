@@ -39,7 +39,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" href="setting1.html">
+						<a class="nav-link" href="setting1.html">
 							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -254,6 +254,8 @@
 
 
 	<script>
+		document.querySelector("li.nav-item a[href='setting1.html']").classList.add("active");
+
 		// 声明事件类型
 		var currentCatygory = "Personal";
 
@@ -271,7 +273,8 @@
 		document.getElementById(currentCard).classList.add("active");
 
 		// 页面滚动至当前位置
-		document.getElementById(currentCard).scrollIntoView(false);
+		// document.getElementById(currentCard).scrollIntoView(false);
+		
 	</script>
 </body>
 
