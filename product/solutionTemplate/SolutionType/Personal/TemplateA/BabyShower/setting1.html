@@ -250,11 +250,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- <script src="/scripts/jquery-3.4.1.js"></script> -->
 	<script src="/product/solutionTemplate/data/eventTypeCard.json"></script>
+	
+	<script src="/product/solutionTemplate/scripts/AddEventCard.js"></script>
 	<script src="../../../../scripts/js.js"></script>
+	<script src="../../../../scripts/AddEventCard.js"></script>
 
 
 	<script>
-		document.querySelector("li.nav-item a[href='setting1.html']").classList.add("active");
 
 		// 声明事件类型
 		var currentCatygory = "Personal";
@@ -273,7 +275,7 @@
 		document.getElementById(currentCard).classList.add("active");
 
 		// 页面滚动至当前位置
-		// document.getElementById(currentCard).scrollIntoView(false);
+		document.getElementById(currentCard).scrollIntoView(false);
 		
 	</script>
 </body>
