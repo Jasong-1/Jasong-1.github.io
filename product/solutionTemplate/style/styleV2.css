@@ -1024,6 +1024,29 @@ hr {
 	border-radius: 0.5rem;
 }
 
+#selectEmailListArea>div {
+	display: flex;
+	align-items: center;
+	
+}
+
+#selectEmailListArea .btn-outline-primary {
+	height: 38px;
+	display: flex;
+	align-items: center;
+	margin-left: 0.6rem;
+	border: 0;
+	
+}
+
+#selectEmailListArea .btn-outline-primary:hover {
+	background: #1AC3DE30;
+	
+}
+
+#selectEmailListArea #createNewList {
+	margin-top: 0.8rem;
+}
 
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
 

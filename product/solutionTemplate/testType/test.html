@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .cont {
+            width: 600px;
+            margin: 3% auto;
+        }
+
+        .cont .item {
+            border-bottom: 1px #eee solid;
+            padding: 15px 10px;
+        }
+
+        .cont .title {
+            border-left: 5px #f00 solid;
+            padding-left: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .cont .source {
+            font-size: 14px;
+            color: #666;
+            overflow: hidden;
+        }
+
+        .cont .source .tag {
+            float: right;
+        }
+    </style>
+    <!-- <script src="data.js"></script> -->
+</head>
+
+<body>
+    <div class="cont" id="cont">
+        <!--   <div class="item">
+        <div class="title">
+            教你仅用四个元件做一个升压电路，电压轻松提升两倍多
+        </div>
+        <div class="cont">
+            今天教大家一个关于电源类的升压电路，关于电源我想我们大家并不陌生，我们每天在用的220V交流电就是一种电源，今天这个电源源头能源也是来自于220V交流电。",
+        </div>
+        <div class="source">来源：电子科技大亨<span class="tag">科技</span></div>
+    </div>-->
+    </div>
+    <script src="data.js"></script>
+
+    <!-- 准备模板, 采用占位方式 -->
+    <script type="text/template" id="tpl">
+        <div class="item">
+            <div class="title">@title</div>
+            <div class="cont">@abstract</div>
+            <div class="source">来源：@source<span class="tag">@chinese_tag</span></div>
+        </div>
+    </script>
+    <script>
+        /***
+         * 使用JS模板引擎渲染页面!!
+         *
+         * */
+        //TODO step1: 获取模板
+        var tpl = document.getElementById('tpl').innerHTML;
+        console.log(tpl);
+        console.log(data)
+        //TODO step2: 解析数据
+        var temp = '';//缓存字符串
+        for (var i = 0; i < data.data.length; i++) {
+            var obj = data.data[i];
+            //console.log(obj);
+            temp += tpl.replace('@title', obj.title)
+                .replace('@abstract', obj.abstract)
+                .replace('@source', obj.source)
+                .replace('@chinese_tag', obj.chinese_tag);
+        }
+        document.getElementById('cont').innerHTML = temp;
+    </script>
+</body>
+
+</html>
