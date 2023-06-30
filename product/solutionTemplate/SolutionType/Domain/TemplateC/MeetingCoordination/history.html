@@ -141,7 +141,7 @@
 		<div class="ContentAreaContainer tableContainer">
 			<div class="ContentArea">
 				<div style="display: flex; flex-flow: row nowrap; align-items: center; margin-bottom: 1.5rem;">
-					<label for="Select" style="margin-right: 1rem;">Select:</label>
+					<label for="Select" style="margin-right: 1rem;">Select Event:</label>
 					<select id="Select" class="form-select" aria-label="Default select example" style="width: 50%;">
 						<option selected>1st Event Coordintion</option>
 						<option>2nd Event Coordintion</option>
@@ -154,7 +154,10 @@
 							<td>Name</td>
 							<td>Email</td>
 							<td>Send Time</td>
-							<td style="text-align: right; border-top-right-radius: 0.5rem;">Responses</td>
+							<td>
+								Reply Time
+							</td>
+							<!-- <td style="text-align: right; border-top-right-radius: 0.5rem;">Responses</td> -->
 						</tr>
 					</thead>
 					<tbody>
@@ -176,15 +179,8 @@
 							<td>Gemma Beerbohm</td>
 							<td>GBeerbohm@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -204,15 +200,8 @@
 							<td>Jodie Aldington</td>
 							<td>JodieA@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -232,15 +221,8 @@
 							<td>Sampson Berkeley</td>
 							<td>SampsonB@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -255,7 +237,8 @@
 							<td>Jared Lawrence</td>
 							<td>JLawrence@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right"></td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -275,15 +258,8 @@
 							<td>Octavia Dorothy</td>
 							<td>ODorothy@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -298,36 +274,9 @@
 							<td>Archibald Hume</td>
 							<td>AHume@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right"></td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
-						<!-- <tr>
-							<td>
-								<svg width="29" height="28" viewBox="0 0 29 28" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.5 16.7813L19.5625 9.71875L20.5 10.6563L12.5 18.6563L8.78125 14.9375L9.71875 14L12.5 16.7813Z"
-										fill="#62EF60" />
-									<path
-										d="M12.5 16.7813L19.5625 9.71875L20.5 10.6563L12.5 18.6563L8.78125 14.9375L9.71875 14L12.5 16.7813Z"
-										fill="black" fill-opacity="0.1" />
-									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="#62EF60" />
-									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
-										stroke-opacity="0.1" />
-								</svg>
-							</td>
-							<td>Will Clemens</td>
-							<td>WClemens@gmail.com</td>
-							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
-						</tr> -->
 						<tr>
 							<td>
 								<svg width="29" height="28" viewBox="0 0 29 28" fill="none"
@@ -346,15 +295,8 @@
 							<td>Megan Amelia</td>
 							<td>MAmelia@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -374,15 +316,8 @@
 							<td>Lou Poe</td>
 							<td>LPoe@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -399,7 +334,8 @@
 							<td>Rock MacDonald</td>
 							<td>RMacDonald@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right"></td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td style="border-bottom-left-radius: 0.5rem;">
@@ -419,15 +355,8 @@
 							<td>Merle Fast</td>
 							<td>MFast@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right; border-bottom-right-radius: 0.5rem;">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 					</tbody>
 				</table>
@@ -451,7 +380,7 @@
 					</nav>
 				</div>
 			</div>
-
+		
 		</div>
 		<div id="recipientResponseDialog" class="modal" tabindex="-1">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -580,12 +509,12 @@
 													</td>
 													<th scope="row">
 														<p>
-															Meetting Paperation Docments
+															Meetting Preparation Docments
 														</p>
 													</th>
 													<td style="text-align: right;">
 														<button class="btn btn-light btn-sm"
-															onclick="window.location.href='https://newtestsite.astihosted.com/SubmitPublicForms.aspx?ActionId=10&ProcessId=170&packageName =Metting Paperation Docments&pId=159093624&category=181'">
+															onclick="window.location.href='https://newtestsite.astihosted.com/SubmitPublicForms.aspx?ActionId=10&ProcessId=170&packageName =Metting Preparation Docments&pId=159093624&category=181'">
 															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 																xmlns="http://www.w3.org/2000/svg">
 																<path

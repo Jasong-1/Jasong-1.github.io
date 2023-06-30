@@ -36,8 +36,11 @@
         .cont .source .tag {
             float: right;
         }
+
+        #6438464026837385473123 {
+            border: 10px solid #000;
+        }
     </style>
-    <!-- <script src="data.js"></script> -->
 </head>
 
 <body>
@@ -52,17 +55,18 @@
         <div class="source">来源：电子科技大亨<span class="tag">科技</span></div>
     </div>-->
     </div>
-    <script src="data.js"></script>
+    <script src="data.json"></script>
 
     <!-- 准备模板, 采用占位方式 -->
     <script type="text/template" id="tpl">
         <div class="item">
-            <div class="title">@title</div>
+            <div id="@group_id" class="title">@title</div>
             <div class="cont">@abstract</div>
             <div class="source">来源：@source<span class="tag">@chinese_tag</span></div>
         </div>
     </script>
     <script>
+
         /***
          * 使用JS模板引擎渲染页面!!
          *
@@ -79,7 +83,8 @@
             temp += tpl.replace('@title', obj.title)
                 .replace('@abstract', obj.abstract)
                 .replace('@source', obj.source)
-                .replace('@chinese_tag', obj.chinese_tag);
+                .replace('@chinese_tag', obj.chinese_tag)
+                .replace('@group_id', obj.group_id + '123');
         }
         document.getElementById('cont').innerHTML = temp;
     </script>

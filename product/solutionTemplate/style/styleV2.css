@@ -107,6 +107,8 @@ body {
 .navbar-brand {
 	color: white;
 	font-size: 1.5rem;
+	opacity: 0;
+	
 }
 
 .navbar-brand:hover {
@@ -139,6 +141,20 @@ body {
 .navbar .navlink .active {
 	border: 1px #fff solid;
 	background-color: #ffffff40;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: #fff;
+    background-color: transparent;
+    border: var(--bs-border-width) solid #fff;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+.navbar-toggler-icon {
+	background-image: url(../img/icon-menu-navbar.svg);
 }
 
 /* title bar ----------------------------------------------*/

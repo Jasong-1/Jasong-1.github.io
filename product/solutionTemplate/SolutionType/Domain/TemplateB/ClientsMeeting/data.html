@@ -34,16 +34,16 @@
 				// Everything is loaded. Assemble your dashboard...
 
 				var data = google.visualization.arrayToDataTable([
-					['Event', 'Status', 'Num of Person'],
-					['1st Parent-Teacher Conference', 'Determined', 64],
-					['1st Parent-Teacher Conference', 'Undetermined', 10],
+					['Event', 'Status', 'Num of People'],
+					['1st Parent-Teacher Conference', 'Attending', 64],
+					['1st Parent-Teacher Conference', 'Not Attending', 10],
 					['1st Parent-Teacher Conference', 'Pending', 7],
 					// ['Sophia and Jonathan Wedding', 'Parental Involvement', 3, 12],
 					// ['Sophia and Jonathan Wedding', 'Homeless', 2, 12],
 					// ['Sophia and Jonathan Wedding', 'Partial Adm. Salary', 6, 12],
 					// ['Sophia and Jonathan Wedding', 'Indirect Cost', 1, 12],
-					['2nd Parent-Teacher Conference', 'Determined', 108],
-					['2nd Parent-Teacher Conference', 'Undetermined', 12],
+					['2nd Parent-Teacher Conference', 'Attending', 108],
+					['2nd Parent-Teacher Conference', 'Not Attending', 12],
 					['2nd Parent-Teacher Conference', 'Pending', 4],
 					// ['Sophias birthday party', 'Parental Involvement', 10, 12],
 					// ['Sophias birthday party', 'Homeless', 8, 12],
@@ -136,7 +136,7 @@
 					'options': {
 						legend: {},
 						vAxis: {
-							title: 'Num of Person'
+							title: 'Num of People'
 						},
 						hAxis: {
 							title: 'Status'
@@ -265,11 +265,11 @@
 					<div id="YearFilter" style="margin: 1rem;"></div>
 					<!-- <button class="btn btn-primary btn-sm" style="height: 2rem; margin: 1rem; margin-left: auto;"
 						onclick="window.location.href='webcal://outlook.office.com/owa/calendar/your_email_address@your_domain.com/?path=/calendar/view/Month'">
-						My Booked Schedule
+						View Scheduled Meetings
 					</button> -->
 					<button class="btn btn-primary btn-sm" style="height: 2rem; margin: 1rem; margin-left: auto;"
 						onclick="window.location.href='https://calendly.com/app/scheduled_events/user/me'">
-						My Booked Schedule
+						View Scheduled Meetings
 					</button>
 					
 					
@@ -286,7 +286,7 @@
 					</div>
 					<div class="numBarItem">
 						<p class="numBarItemLabel">
-							Determined
+							Attending
 						</p>
 						<h1 style="color: #4ECB74;">
 							64
@@ -294,7 +294,7 @@
 					</div>
 					<div class="numBarItem">
 						<p class="numBarItemLabel">
-							Undetermined
+							Not Attending
 						</p>
 						<h1 style="color: #FBD437;">
 							10

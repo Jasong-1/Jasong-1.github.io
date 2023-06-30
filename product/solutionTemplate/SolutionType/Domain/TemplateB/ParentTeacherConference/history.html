@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Parent-Teacher Conference</title>
+		<title>title</title>
 
 		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
 		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
@@ -64,6 +64,7 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
+					<i class="bi bi-list"></i>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -139,7 +140,7 @@
 		<div class="ContentAreaContainer tableContainer">
 			<div class="ContentArea">
 				<div style="display: flex; flex-flow: row nowrap; align-items: center; margin-bottom: 1.5rem;">
-					<label for="Select" style="margin-right: 1rem;">Select:</label>
+					<label for="Select" style="margin-right: 1rem;">Select Event:</label>
 					<select id="Select" class="form-select" aria-label="Default select example" style="width: 50%;">
 						<option selected>1st Event Coordintion</option>
 						<option>2nd Event Coordintion</option>
@@ -149,10 +150,16 @@
 					<thead>
 						<tr>
 							<td style="border-top-left-radius: 0.5rem;">Status</td>
+							<td>
+								Student Name
+							</td>
 							<td>Name</td>
 							<td>Email</td>
 							<td>Send Time</td>
-							<td style="text-align: right; border-top-right-radius: 0.5rem;">Responses</td>
+							<td>
+								Reply Time
+							</td>
+							<!-- <td style="text-align: right; border-top-right-radius: 0.5rem;">Responses</td> -->
 						</tr>
 					</thead>
 					<tbody>
@@ -171,18 +178,14 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
+							<td>
+								Sheldon Janovich
+							</td>
 							<td>Gemma Beerbohm</td>
 							<td>GBeerbohm@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -198,19 +201,15 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
 										stroke-opacity="0.1" />
 								</svg>
+							</td>
+							<td>
+								Marshall Swopshire
 							</td>
 							<td>Jodie Aldington</td>
 							<td>JodieA@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -226,19 +225,15 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
 										stroke-opacity="0.1" />
 								</svg>
+							</td>
+							<td>
+								Fermin Toenges
 							</td>
 							<td>Sampson Berkeley</td>
 							<td>SampsonB@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -249,11 +244,15 @@
 										fill="#0093FE" />
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="#0093FE" />
 								</svg>
+							</td>
+							<td>
+								Rolando Mcniel
 							</td>
 							<td>Jared Lawrence</td>
 							<td>JLawrence@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right"></td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -270,18 +269,14 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
+							<td>
+								Weston Dejarme
+							</td>
 							<td>Octavia Dorothy</td>
 							<td>ODorothy@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -293,39 +288,16 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="#0093FE" />
 								</svg>
 							</td>
+							<td>
+								Nestor Posen
+							</td>
+							
 							<td>Archibald Hume</td>
 							<td>AHume@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right"></td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
-						<!-- <tr>
-							<td>
-								<svg width="29" height="28" viewBox="0 0 29 28" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M12.5 16.7813L19.5625 9.71875L20.5 10.6563L12.5 18.6563L8.78125 14.9375L9.71875 14L12.5 16.7813Z"
-										fill="#62EF60" />
-									<path
-										d="M12.5 16.7813L19.5625 9.71875L20.5 10.6563L12.5 18.6563L8.78125 14.9375L9.71875 14L12.5 16.7813Z"
-										fill="black" fill-opacity="0.1" />
-									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="#62EF60" />
-									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
-										stroke-opacity="0.1" />
-								</svg>
-							</td>
-							<td>Will Clemens</td>
-							<td>WClemens@gmail.com</td>
-							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
-						</tr> -->
 						<tr>
 							<td>
 								<svg width="29" height="28" viewBox="0 0 29 28" fill="none"
@@ -340,19 +312,15 @@
 									<rect x="1" y="0.5" width="27" height="27" rx="13.5" stroke="black"
 										stroke-opacity="0.1" />
 								</svg>
+							</td>
+							<td>
+								Justin Iversen
 							</td>
 							<td>Megan Amelia</td>
 							<td>MAmelia@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -369,18 +337,14 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
+							<td>
+								Rob Murchinson
+							</td>
 							<td>Lou Poe</td>
 							<td>LPoe@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td>
@@ -394,10 +358,14 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
+							<td>
+								Giovanni Daily
+							</td>
 							<td>Rock MacDonald</td>
 							<td>RMacDonald@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right"></td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 						<tr>
 							<td style="border-bottom-left-radius: 0.5rem;">
@@ -414,18 +382,14 @@
 										stroke-opacity="0.1" />
 								</svg>
 							</td>
+							<td>
+								Dale Mosbrucker
+							</td>
 							<td>Merle Fast</td>
 							<td>MFast@gmail.com</td>
 							<td>04/11/2023 04:49:18</td>
-							<td style="text-align: right; border-bottom-right-radius: 0.5rem;">
-								<button id="viewResponseDetail1"
-									style="padding: 0; background-color: #ffffff00; border: 0" data-bs-toggle="modal"
-									data-bs-target="#recipientResponseDialog">
-									<svg class="bi" width="24" height="24">
-										<use xlink:href="#preview" />
-									</svg>
-								</button>
-							</td>
+							<td>04/12/2023 14:49:18</td>
+							
 						</tr>
 					</tbody>
 				</table>
@@ -529,7 +493,7 @@
 													</td>
 													<th scope="row">
 														<p>
-															Meetting Paperation Docments
+															Meetting Preparation Docments
 														</p>
 													</th>
 													<td style="text-align: right;">
@@ -654,5 +618,6 @@
 		
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../../../../scripts/js.js"></script>
 	</body>
 </html>
