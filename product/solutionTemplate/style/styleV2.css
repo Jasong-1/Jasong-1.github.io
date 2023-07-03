@@ -278,6 +278,9 @@ body {
 
 
 /* 自定义弹窗 */
+.modal {
+	z-index: 20000;
+}
 .modal-body {
 	padding: 0;
 }

@@ -118,3 +118,54 @@ function gridView() {
 
 // document.getElementById(currentCard).scrollIntoView();
 
+
+
+
+// function getQuerySrting(name) {
+//     var search = location.search.substring(1).split('&');
+//     var value = false;
+//     for (var i = 0;i < search.length;i++) {
+//         var keyValue = search[i].split('=');
+//         if (keyValue[0] == name) {
+//             value = keyValue[1];
+//         }
+//     }
+// 	alert(value);
+//     return value;
+
+// }
+
+
+
+
+var pageUrlSplit = location.href.split('/');
+
+var currentCatygory = pageUrlSplit[pageUrlSplit.length - 4];
+
+var currentEventType = pageUrlSplit[pageUrlSplit.length - 2];
+
+// switch (currentCatygory) {
+// 	case Domain:
+// 		document.getElementById(currentCatygory).
+// }
+// 当前tab设置为active
+document.getElementById(currentCatygory + "EventTab").classList.add("active");
+document.getElementById(currentCatygory + "EventTab").setAttribute("aria-selected", "ture");
+
+// 显示tab内容区
+document.getElementById(currentCatygory + "EventList").classList.add("show", "active");
+
+// 将当前卡片设置为active
+if (currentCatygory === "Personal") {
+	document.getElementById("P_" + currentEventType).classList.add("active");
+}
+else if (currentCatygory === "SmallBusiness") {
+	document.getElementById("SB_" + currentEventType).classList.add("active");
+}
+else if (currentCatygory === "Domain") {
+	document.getElementById("D_" + currentEventType).classList.add("active");
+}
+
+
+
+

@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="test.css">
     <style>
         * {
             margin: 0;
@@ -44,6 +48,71 @@
 </head>
 
 <body>
+    <div class="stepsAndNav">
+        <button class="btn btn-outline-primary" disabled>
+            <i class="bi bi-arrow-left"></i>
+            <!-- Previous -->
+        </button>
+        <div class="steps">
+            <a class="stepItem" href="setting1.html">
+                <div>
+                    1
+                </div>
+                <p>
+                    Select
+                    <br>
+                    Event Type
+                </p>
+            </a>
+            <hr>
+            <a class="stepItem" href="setting2.html">
+                <div>
+                    2
+                </div>
+                <p>
+                    Theme
+                    <br>
+                    Setting
+                </p>
+            </a>
+
+            <hr>
+            <a class="stepItem" href="setting3.html">
+                <div>
+                    3
+                </div>
+                <p>
+                    Event
+                    <br>
+                    Information
+                </p>
+            </a>
+            <hr>
+            <a class="stepItem" href="setting4.html">
+                <div>
+                    4
+                </div>
+                <p>
+                    Recipients
+                    <br>
+                    Responses
+                </p>
+            </a>
+            <hr>
+            <a class="stepItem" href="setting5.html">
+                <div>
+                    5
+                </div>
+                <p>
+                    Recipients
+                </p>
+            </a>
+        </div>
+        <button class="btn btn-outline-primary" onclick="window.location.href='setting2.html'">
+            <!-- Next -->
+            <i class="bi bi-arrow-right"></i>
+        </button>
+    </div>
     <div class="cont" id="cont">
         <!--   <div class="item">
         <div class="title">
@@ -55,8 +124,8 @@
         <div class="source">来源：电子科技大亨<span class="tag">科技</span></div>
     </div>-->
     </div>
-    <script src="data.json"></script>
-
+    
+    
     <!-- 准备模板, 采用占位方式 -->
     <script type="text/template" id="tpl">
         <div class="item">
@@ -65,29 +134,9 @@
             <div class="source">来源：@source<span class="tag">@chinese_tag</span></div>
         </div>
     </script>
-    <script>
-
-        /***
-         * 使用JS模板引擎渲染页面!!
-         *
-         * */
-        //TODO step1: 获取模板
-        var tpl = document.getElementById('tpl').innerHTML;
-        console.log(tpl);
-        console.log(data)
-        //TODO step2: 解析数据
-        var temp = '';//缓存字符串
-        for (var i = 0; i < data.data.length; i++) {
-            var obj = data.data[i];
-            //console.log(obj);
-            temp += tpl.replace('@title', obj.title)
-                .replace('@abstract', obj.abstract)
-                .replace('@source', obj.source)
-                .replace('@chinese_tag', obj.chinese_tag)
-                .replace('@group_id', obj.group_id + '123');
-        }
-        document.getElementById('cont').innerHTML = temp;
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="data.json"></script>
+    <script src="testjs.js"></script>
 </body>
 
 </html>
