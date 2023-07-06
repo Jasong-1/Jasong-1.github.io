@@ -36,7 +36,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Group Study Session",
         description: "Studying with a group can be beneficial, but also challenging at the same time. Coordination to find a suitable location, arrange snacks and drinks, and let alone keep everyone on track. Use our solution to smooth this time-consuming task. Make your group study sessions more effective, reach your goals and ace the exams!",
-        bg: "../../../../img/GroupStudySession1.jpg",
+        bg: "../../../../img/GroupStudySession_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/GroupStudySession/setting1.html",
     },
     {
@@ -60,7 +60,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Trip Planning",
         description: "Are you planning a trip with your family, friends, or colleagues? Do you feel overwhelmed by the logistics of booking flights, hotels, transportation, and activities? Do you want to make sure everyone has a memorable and enjoyable time? If you answered yes to any of these questions, you will need our solution. It can help you coordinate every aspect of your trip, and make sure you have a relaxing, fun and safe trip.",
-        bg: "../../../../img/TripPlanning1.jpg",
+        bg: "../../../../img/TripPlanning_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/TripPlanning/setting1.html",
     },
     {
@@ -116,7 +116,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Group Project Meeting",
         description: "Planning a group project meeting can be a big task. You have to find a time and place that works for everyone, coordinate transportation and food options, and keep track of who is attending and who is not. That’s why you need our solution to avoid hours of back-and-forth communication. Save time and energy, and focus on the project itself, manage your group project meetings with ease.",
-        bg: "../../../../img/GroupProjectMeeting1.jpg",
+        bg: "../../../../img/GroupProjectMeeting_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/GroupProjectMeeting/setting1.html",
     },
     {
@@ -217,7 +217,7 @@ var SmallBusinessCardData = [
         eventType: "SmallBusiness",
         title: "Trip Planning",
         description: "Are you planning a trip with your family, friends, or colleagues? Do you feel overwhelmed by the logistics of booking flights, hotels, transportation, and activities? Do you want to make sure everyone has a memorable and enjoyable time? If you answered yes to any of these questions, you will need our solution. It can help you coordinate every aspect of your trip, and make sure you have a relaxing, fun and safe trip.",
-        bg: "../../../../img/TripPlanning1.jpg",
+        bg: "../../../../img/TripPlanning_1.jpg",
         location: "/product/solutionTemplate/SolutionType/SmallBusiness/TemplateC/TripPlanning/setting1.html",
     },
     {
@@ -318,7 +318,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Group Project Meeting",
         description: "Planning a group project meeting can be a big task. You have to find a time and place that works for everyone, coordinate transportation and food options, and keep track of who is attending and who is not. That’s why you need our solution to avoid hours of back-and-forth communication. Save time and energy, and focus on the project itself, manage your group project meetings with ease.",
-        bg: "../../../../img/GroupProjectMeeting1.jpg",
+        bg: "../../../../img/GroupProjectMeeting_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/GroupProjectMeeting/setting1.html",
     },
     {
@@ -326,8 +326,8 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Trip Planning",
         description: "Are you planning a trip with your family, friends, or colleagues? Do you feel overwhelmed by the logistics of booking flights, hotels, transportation, and activities? Do you want to make sure everyone has a memorable and enjoyable time? If you answered yes to any of these questions, you will need our solution. It can help you coordinate every aspect of your trip, and make sure you have a relaxing, fun and safe trip.",
-        bg: "../../../../img/TripPlanning1.jpg",
-        location: "/product/solutionTemplate/SolutionType/Domain/TemplateB/TripPlanning/setting1.html",
+        bg: "../../../../img/TripPlanning_1.jpg",
+        location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/TripPlanning/setting1.html",
     },
     {
         id: "D_TutoringScheduling",
@@ -342,7 +342,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Group Study Session",
         description: "Studying with a group can be beneficial, but also challenging at the same time. Coordination to find a suitable location, arrange snacks and drinks, and let alone keep everyone on track. Use our solution to smooth this time-consuming task. Make your group study sessions more effective, reach your goals and ace the exams!",
-        bg: "../../../../img/GroupStudySession1.jpg",
+        bg: "../../../../img/GroupStudySession_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/GroupStudySession/setting1.html",
     },
     {

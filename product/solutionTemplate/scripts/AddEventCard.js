@@ -158,12 +158,15 @@ document.getElementById(currentCatygory + "EventList").classList.add("show", "ac
 // 将当前卡片设置为active
 if (currentCatygory === "Personal") {
 	document.getElementById("P_" + currentEventType).classList.add("active");
+	document.getElementById("P_" + currentEventType).scrollIntoView({ block: "center" });
 }
 else if (currentCatygory === "SmallBusiness") {
 	document.getElementById("SB_" + currentEventType).classList.add("active");
+	document.getElementById("SB_" + currentEventType).scrollIntoView({ block: "center" });
 }
 else if (currentCatygory === "Domain") {
 	document.getElementById("D_" + currentEventType).classList.add("active");
+	document.getElementById("D_" + currentEventType).scrollIntoView({ block: "center" });
 }
 
 

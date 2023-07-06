@@ -594,8 +594,6 @@ hr {
 	border-radius: 1rem;
 }
 
-.tableContainer tr {}
-
 .tableContainer td {
 	padding: 1rem;
 	background: #fff;
@@ -685,7 +683,7 @@ hr {
 
 /* Event 类型列表 */
 
-.EventProtal {
+/* .EventProtal {
 	width: 8.5rem;
 	height: 8.5rem;
 	padding: 1rem;
@@ -716,7 +714,7 @@ hr {
 	color: white;
 	font-weight: 700;
 	border: var(--color-theme) .5rem solid;
-}
+} */
 
 .stepsAndNav {
 	max-width: 1000px;
@@ -753,9 +751,9 @@ hr {
 /* 步骤条 */
 .stepContainer {
 	background: #d6e9ec;
-	/* padding-top: 2rem; */
-	/* padding-bottom: 1rem; */
 	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .steps {
@@ -1070,174 +1068,217 @@ hr {
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-
+/* TemplateA: Event Planning ------------------------------------------------------------------------------------------------------- */
 
 /* wedding */
+
 .WeddingInfoPage {
 	background: url(../img/WeddingInfoPage.jpg) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .WeddingResponsePage {
 	background: url(../img/WeddingResponsePage.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 /* Sport Games */
+
 .SportGamesInfoPage {
 	background: var(--img-SportGame-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .SportGamesResponsePage {
 	background: url(../img/SportGames2.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 /* Conference */
+
 .ConferenceInfoPage {
 	background: var(--img-Conference-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .ConferenceResponsePage {
 	background: url(../img/Conference2.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 /* Baby Sitting */
+
 .BabySittingInfoPage {
 	background: var(--img-Babysitting-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .BabySittingResponsePage {
 	background: url(../img/Babysitting_2.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
+
+
+
+
+/* TemplateB: Calendar Booking ------------------------------------------------------------------------------------------------------- */
+
 
 /* Performance Review */
+
 .PerformanceReviewInfoPage {
 	background: var(--img-PerformanceReview-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .PerformanceReviewResponsePage {
 	background: url(../img/PerformanceReview_2.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 /* Government Agency */
+
 .GovernmentAgencyInfoPage {
 	background: var(--img-GovernmentAgency-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .GovernmentAgencyResponsePage {
 	background: url(../img/GovernmentAgency_2.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 /* Baby Shower */
+
 .BabyShowerInfoPage {
 	background: var(--img-BabyShower-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .BabyShowerResponsePage {
 	background: url(../img/BabyShower2.jpg) no-repeat center 37%;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 
 /* Parent-Teacher Conferences */
+
 .PTeacherConferenceInfoPage {
 	background: url(../img/ParentTeacherConference1.jpg) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .PTeacherConferenceResponsePage {
 	background: #787b70 url(../img/ParentTeacherConference2.jpg) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	/* background-position: 20% 50%; */
 }
 
 /* Clients Meeting */
+
 .ClientsMeetinginfoPage {
 	background: var(--img-ClientsMeeting-main) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .ClientsMeetingResponsePage {
 	background: #787b70 url(../img/ClientsMeeting_2.jpg) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	/* background-position: 20% 50%; */
 }
 
 /* Interviews */
+
 .InterviewsinfoPage {
 	background: var(--img-Interview-main) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .InterviewsResponsePage {
 	background: #787b70 url(../img/Interviews_2.jpg) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	/* background-position: 20% 50%; */
 }
 
 /* Store Appointment */
+
 .StoreAppointmentinfoPage {
 	background: var(--img-StoreAppointment-main) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
-
 .StoreAppointmentResponsePage {
 	background: #787b70 url(../img/StoreAppointment_2.jpg) top center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
+/* Academic Advisors */
+
+.AcademicAdvisorsInfoPage {
+	background: url(../img/AcademicAdvisors_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.AcademicAdvisorsResponsePage {
+	background: #181818 url(../img/AcademicAdvisors_2.jpg) no-repeat top center;
+	background-size: cover;
 	/* background-position: 20% 50%; */
 }
 
 
 
-/* Event coordination */
+/* TemplateC: Schedule Coordination ------------------------------------------------------------------------------------------------------- */
 
+/* Meeting Reunion */
 .MeetingCoordinationInfoPage {
 	background: url(../img/EventPlanningAndCoordination_1.jpg) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
 
 .MeetingCoordinationResponsePage {
 	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
-	background-size: 100% auto;
+	background-size: cover;
 	/* background-position: 20% 50%; */
 }
 
 /* Family Reunion */
 .FamilyReunionInfoPage {
 	background: var(--img-FamilyReunion-main) center no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	height: 100vh;
 }
 
 .FamilyReunionResponsePage {
 	background: #181818 url(../img/FamilyReunion2.jpg) no-repeat top center;
-	background-size: 100% auto;
+	background-size: cover;
 	/* background-position: 20% 50%; */
 }
+/* Group Project Meeting */
+.GroupProjectMeetingInfoPage {
+	background: url(../img/GroupProjectMeeting_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
 
+.GroupProjectMeetingResponsePage {
+	background: #181818 url(../img/GroupProjectMeeting_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+/* Trip Planning */
+.TripPlanningInfoPage {
+	background: url(../img/TripPlanning_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.TripPlanningResponsePage {
+	background: #181818 url(../img/TripPlanning_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
 
 /* 非图片页面背景颜色 */
 .dataPage,
@@ -1247,290 +1288,3 @@ hr {
 }
 
 
-/* Setting step1 类别背景 */
-
-/* .WeddingProtal {
-	background: var(--img-wedding-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.WeddingProtal:hover {
-	background: var(--img-wedding-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.SportGameProtal {
-	background: var(--img-SportGame-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.SportGameProtal:hover {
-	background: var(--img-SportGame-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.ConferenceProtal {
-	background: var(--img-Conference-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.ConferenceProtal:hover {
-	background: var(--img-Conference-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.StudentRegistrationProtal {
-	background: var(--img-StudentRegistration-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.StudentRegistrationProtal:hover {
-	background: var(--img-StudentRegistration-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.HomeVisitProtal {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.HomeVisitProtal:hover {
-	background: var(--img-HomeVisit-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.EventCoordinationProtal {
-	background: var(--img-EventCoordinationProtal-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.EventCoordinationProtal:hover {
-	background: var(--img-EventCoordinationProtal-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal06 {
-	background: var(--img-Babysitting-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal06:hover {
-	background: var(--img-Babysitting-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal07 {
-	background: var(--img-PerformanceReview-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal07:hover {
-	background: var(--img-PerformanceReview-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal08 {
-	background: var(--img-MeetingCoordination-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal08:hover {
-	background: var(--img-MeetingCoordination-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal09 {
-	background: var(--img-FamilyReunion-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal09:hover {
-	background: var(--img-FamilyReunion-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal10 {
-	background: var(--img-GroupStudySession-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal10:hover {
-	background: var(--img-GroupStudySession-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal11 {
-	background: var(--img-TeamBuildingEvent-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal11:hover {
-	background: var(--img-TeamBuildingEvent-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal12 {
-	background: var(--img-ClientsMeeting-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal12:hover {
-	background: var(--img-ClientsMeeting-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal13 {
-	background: var(--img-Interview-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal13:hover {
-	background: var(--img-Interview-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal14 {
-	background: var(--img-MedicalAndPatient-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal14:hover {
-	background: var(--img-MedicalAndPatient-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal15 {
-	background: var(--img-StoreAppointment-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal15:hover {
-	background: var(--img-StoreAppointment-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal16 {
-	background: var(--img-PersonalTrainer-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal16:hover {
-	background: var(--img-PersonalTrainer-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal17 {
-	background: var(--img-RealEstate-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal17:hover {
-	background: var(--img-RealEstate-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal18 {
-	background: var(--img-TutoringScheduling-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal18:hover {
-	background: var(--img-TutoringScheduling-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal19 {
-	background: var(--img-AcademicAdvisorsAndTutors-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal19:hover {
-	background: var(--img-AcademicAdvisorsAndTutors-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal20 {
-	background: var(--img-GovernmentAgency-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal20:hover {
-	background: var(--img-GovernmentAgency-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal21 {
-	background: var(--img-GroupProjectMeeting-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal21:hover {
-	background: var(--img-GroupProjectMeeting-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal22 {
-	background: var(--img-VacationPlanning-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal22:hover {
-	background: var(--img-VacationPlanning-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal23 {
-	background: var(--img-TripPlanning-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal23:hover {
-	background: var(--img-TripPlanning-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal24 {
-	background: var(--img-SocialEvent-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal24:hover {
-	background: var(--img-SocialEvent-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-}
-
-.Protal25 {
-	background: var(--img-BabyShower-main) var(--color-imgbg-light) center no-repeat;
-	background-size: auto 100%;
-	background-blend-mode: darken;
-}
-
-.Protal25:hover {
-	background: var(--img-BabyShower-main) var(--color-imgbg-dark) center no-repeat;
-	background-size: auto 100%;
-} */

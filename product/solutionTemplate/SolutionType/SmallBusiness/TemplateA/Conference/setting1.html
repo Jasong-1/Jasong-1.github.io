@@ -32,8 +32,8 @@
 				Solution View
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,7 +48,7 @@
 							</svg>
 						</a>
 					</li>
-
+	
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="history.html">
 							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -69,7 +69,7 @@
 							</svg>
 						</a>
 					</li>
-
+	
 				</ul>
 				<ul class="navbar-nav mb-2 mb-lg-0">
 					<li class="nav-item">
@@ -106,110 +106,110 @@
 			</div>
 		</div>
 	</nav>
+	<div class="sticky-top stepContainer">
+		<div class="stepsAndNav">
+			<button class="btn btn-outline-primary" disabled>
+				<i class="bi bi-arrow-left"></i>
+				<!-- Previous -->
+			</button>
+			<div class="steps">
+				<a class="stepItem active" href="setting1.html">
+					<div>
+						1
+					</div>
+					<p>
+						Select
+						<br>
+						Event Type
+					</p>
+				</a>
+				<hr>
+				<a class="stepItem" href="setting2.html">
+					<div>
+						2
+					</div>
+					<p>
+						Theme
+						<br>
+						Setting
+					</p>
+				</a>
+
+				<hr>
+				<a class="stepItem" href="setting3.html">
+					<div>
+						3
+					</div>
+					<p>
+						Event
+						<br>
+						Information
+					</p>
+				</a>
+				<hr>
+				<a class="stepItem" href="setting4.html">
+					<div>
+						4
+					</div>
+					<p>
+						Recipients
+						<br>
+						Responses
+					</p>
+				</a>
+				<hr>
+				<a class="stepItem" href="setting5.html">
+					<div>
+						5
+					</div>
+					<p>
+						Recipients
+					</p>
+				</a>
+			</div>
+			<button class="btn btn-outline-primary" onclick="window.location.href='setting2.html'">
+				<!-- Next -->
+				<i class="bi bi-arrow-right"></i>
+			</button>
+		</div>
+		<div class="EventTypeNavBar">
+			<div>
+				<ul class="nav nav-pills" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="PersonalEventTab" data-bs-toggle="pill"
+							data-bs-target="#PersonalEventList" type="button" role="tab"
+							aria-controls="PersonalEventList" aria-selected="false">
+							Personal
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="SmallBusinessEventTab" data-bs-toggle="pill"
+							data-bs-target="#SmallBusinessEventList" type="button" role="tab"
+							aria-controls="SmallBusinessEventList" aria-selected="false">
+							Small Business
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="DomainEventTab" data-bs-toggle="pill"
+							data-bs-target="#DomainEventList" type="button" role="tab"
+							aria-controls="DomainEventList" aria-selected="false">
+							K12
+						</button>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-group" role="group" aria-label="Basic outlined">
+				<button type="button" class="btn btn-outline-primary active" id="EventListL">
+					<i class="bi bi-list"></i>
+				</button>
+				<button type="button" class="btn btn-outline-primary" id="EventListG">
+					<i class="bi bi-grid-fill"></i>
+				</button>
+			</div>
+		</div>
+	</div>
 	<div class="ContentAreaContainer">
 		<div class="ContentArea" style="text-align: center; margin-top: 0;">
-			<div class="sticky-top stepContainer">
-				<div class="stepsAndNav">
-					<button class="btn btn-outline-primary" disabled>
-						<i class="bi bi-arrow-left"></i>
-						<!-- Previous -->
-					</button>
-					<div class="steps">
-						<a class="stepItem active" href="setting1.html">
-							<div>
-								1
-							</div>
-							<p>
-								Select
-								<br>
-								Event Type
-							</p>
-						</a>
-						<hr>
-						<a class="stepItem" href="setting2.html">
-							<div>
-								2
-							</div>
-							<p>
-								Theme
-								<br>
-								Setting
-							</p>
-						</a>
-
-						<hr>
-						<a class="stepItem" href="setting3.html">
-							<div>
-								3
-							</div>
-							<p>
-								Event
-								<br>
-								Information
-							</p>
-						</a>
-						<hr>
-						<a class="stepItem" href="setting4.html">
-							<div>
-								4
-							</div>
-							<p>
-								Recipients
-								<br>
-								Responses
-							</p>
-						</a>
-						<hr>
-						<a class="stepItem" href="setting5.html">
-							<div>
-								5
-							</div>
-							<p>
-								Recipients
-							</p>
-						</a>
-					</div>
-					<button class="btn btn-outline-primary" onclick="window.location.href='setting2.html'">
-						<!-- Next -->
-						<i class="bi bi-arrow-right"></i>
-					</button>
-				</div>
-				<div class="EventTypeNavBar">
-					<div>
-						<ul class="nav nav-pills" id="pills-tab" role="tablist">
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="PersonalEventTab" data-bs-toggle="pill"
-									data-bs-target="#PersonalEventList" type="button" role="tab"
-									aria-controls="PersonalEventList" aria-selected="false">
-									Personal
-								</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="SmallBusinessEventTab" data-bs-toggle="pill"
-									data-bs-target="#SmallBusinessEventList" type="button" role="tab"
-									aria-controls="SmallBusinessEventList" aria-selected="false">
-									Small Business
-								</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="DomainEventTab" data-bs-toggle="pill"
-									data-bs-target="#DomainEventList" type="button" role="tab"
-									aria-controls="DomainEventList" aria-selected="false">
-									K12
-								</button>
-							</li>
-						</ul>
-					</div>
-					<div class="btn-group" role="group" aria-label="Basic outlined">
-						<button type="button" class="btn btn-outline-primary active" id="EventListL">
-							<i class="bi bi-list"></i>
-						</button>
-						<button type="button" class="btn btn-outline-primary" id="EventListG">
-							<i class="bi bi-grid-fill"></i>
-						</button>
-					</div>
-				</div>
-			</div>
 			<div class="settingSection settingSection1">
 				<div class="settingRow">
 					<div class="tab-content" id="pills-tabContent">
