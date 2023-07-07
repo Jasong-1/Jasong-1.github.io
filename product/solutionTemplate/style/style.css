@@ -29,8 +29,8 @@
 
 :root {
 	/* Event Planning */
-	--img-wedding-main: url(../img/Wedding1.jpg);
-	--img-SportGame-main: url(../img/SportGames1.jpg);
+	--img-wedding-main: url(../img/Wedding_1.jpg);
+	--img-SportGame-main: url(../img/SportGames_1.jpg);
 	--img-Conference-main: url(../img/Conference1.jpg);
 	--img-Babysitting-main: url(../img/Babysitting_1.jpg);
 	--img-PerformanceReview-main: url(../img/PerformanceReview_1.jpg);
@@ -54,7 +54,7 @@
 	--img-GroupStudySession-main: url(../img/GroupStudySession1.jpg);
 	--img-TeamBuildingEvent-main: url(../img/TeamBuildingEvent1.jpg);
 	--img-GroupProjectMeeting-main: url(../img/GroupProjectMeeting1.jpg);
-	--img-VacationPlanning-main: url(../img/VacationPlanning1.jpg);
+	--img-VacationPlanning-main: url(../img/VacationPlanning_1.jpg);
 	--img-TripPlanning-main: url(../img/TripPlanning1.jpg);
 	--img-SocialEvent-main: url(../img/SocialEvent1.jpg);
 
@@ -909,13 +909,13 @@ hr {
 
 /* wedding */
 .WeddingInfoPage {
-	background: url(../img/Wedding1.jpg) center no-repeat;
+	background: url(../img/Wedding_1.jpg) center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
 .WeddingResponsePage {
-	background: url(../img/Wedding2.jpg) no-repeat center 37%;
+	background: url(../img/Wedding_2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
 }
 
@@ -927,7 +927,7 @@ hr {
 }
 
 .SportGamesResponsePage {
-	background: url(../img/SportGames2.jpg) no-repeat center 37%;
+	background: url(../img/SportGames_2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
 }
 
@@ -1049,13 +1049,13 @@ hr {
 /* Event coordination */
 
 .MeetingCoordinationInfoPage {
-	background: url(../img/EventPlanningAndCoordination_1.jpg) center no-repeat;
+	background: url(../img/MeetingCoordination_1.jpg) center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
 .MeetingCoordinationResponsePage {
-	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
+	background: #181818 url(../img/MeetingCoordination_2.jpg) no-repeat top center;
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }

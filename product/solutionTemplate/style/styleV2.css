@@ -29,16 +29,16 @@
 
 :root {
 	/* Event Planning */
-	--img-wedding-main: url(../img/WeddingInfoPage.jpg);
-	--img-SportGame-main: url(../img/SportGames1.jpg);
-	--img-Conference-main: url(../img/Conference1.jpg);
+	--img-wedding-main: url(../img/Wedding_1.jpg);
+	--img-SportGame-main: url(../img/SportGames_1.jpg);
+	--img-Conference-main: url(../img/Conference_1.jpg);
 	--img-Babysitting-main: url(../img/Babysitting_1.jpg);
 	--img-PerformanceReview-main: url(../img/PerformanceReview_1.jpg);
 	--img-GovernmentAgency-main: url(../img/GovernmentAgency_1.jpg);
-	--img-BabyShower-main: url(../img/BabyShower1.jpg);
+	--img-BabyShower-main: url(../img/BabyShower_1.jpg);
 
 	/* Calendar Booking */
-	--img-HomeVisit-main: url(../img/PTeacherConference1.jpg);
+	--img-HomeVisit-main: url(../img/PTeacherConference_1.jpg);
 	--img-ClientsMeeting-main: url(../img/ClientsMeeting_1.jpg);
 	--img-Interview-main: url(../img/Interviews_1.jpg);
 	--img-MedicalAndPatient-main: url(../img/MedicalAndPatient_1.jpg);
@@ -49,12 +49,12 @@
 	--img-AcademicAdvisorsAndTutors-main: url(../img/AcademicAdvisorsAndTutors_1.jpg);
 
 	/* Schedule Coordination */
-	--img-MeetingCoordination-main: url(../img/MeetingCoordination1.jpg);
+	--img-MeetingCoordination-main: url(../img/MeetingCoordination_1.jpg);
 	--img-FamilyReunion-main: url(../img/FamilyReunion1.jpg);
 	--img-GroupStudySession-main: url(../img/GroupStudySession1.jpg);
-	--img-TeamBuildingEvent-main: url(../img/TeamBuildingEvent1.jpg);
+	--img-TeamBuildingEvent-main: url(../img/TeamBuildingEvent_1.jpg);
 	--img-GroupProjectMeeting-main: url(../img/GroupProjectMeeting1.jpg);
-	--img-VacationPlanning-main: url(../img/VacationPlanning1.jpg);
+	--img-VacationPlanning-main: url(../img/VacationPlanning_1.jpg);
 	--img-TripPlanning-main: url(../img/TripPlanning1.jpg);
 	--img-SocialEvent-main: url(../img/SocialEvent1.jpg);
 
@@ -1073,12 +1073,12 @@ hr {
 /* wedding */
 
 .WeddingInfoPage {
-	background: url(../img/WeddingInfoPage.jpg) center no-repeat;
+	background: url(../img/Wedding_1.jpg) center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
 .WeddingResponsePage {
-	background: url(../img/WeddingResponsePage.jpg) no-repeat center 37%;
+	background: url(../img/Wedding_2.jpg) no-repeat center 37%;
 	background-size: cover;
 }
 
@@ -1090,7 +1090,7 @@ hr {
 	height: 100vh;
 }
 .SportGamesResponsePage {
-	background: url(../img/SportGames2.jpg) no-repeat center 37%;
+	background: url(../img/SportGames_2.jpg) no-repeat center 37%;
 	background-size: cover;
 }
 
@@ -1102,7 +1102,7 @@ hr {
 	height: 100vh;
 }
 .ConferenceResponsePage {
-	background: url(../img/Conference2.jpg) no-repeat center 37%;
+	background: url(../img/Conference_2.jpg) no-repeat center 37%;
 	background-size: cover;
 }
 
@@ -1156,7 +1156,7 @@ hr {
 	height: 100vh;
 }
 .BabyShowerResponsePage {
-	background: url(../img/BabyShower2.jpg) no-repeat center 37%;
+	background: url(../img/BabyShower_2.jpg) no-repeat center 37%;
 	background-size: cover;
 }
 
@@ -1164,12 +1164,12 @@ hr {
 /* Parent-Teacher Conferences */
 
 .PTeacherConferenceInfoPage {
-	background: url(../img/ParentTeacherConference1.jpg) top center no-repeat;
+	background: url(../img/ParentTeacherConference_1.jpg) top center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
 .PTeacherConferenceResponsePage {
-	background: #787b70 url(../img/ParentTeacherConference2.jpg) top center no-repeat;
+	background: #787b70 url(../img/ParentTeacherConference_2.jpg) top center no-repeat;
 	background-size: cover;
 	/* background-position: 20% 50%; */
 }
@@ -1214,7 +1214,6 @@ hr {
 }
 
 /* Academic Advisors */
-
 .AcademicAdvisorsInfoPage {
 	background: url(../img/AcademicAdvisors_1.jpg) center no-repeat;
 	background-size: cover;
@@ -1226,19 +1225,43 @@ hr {
 	/* background-position: 20% 50%; */
 }
 
+/* Medical And Patient */
+.MedicalAndPatientInfoPage {
+	background: url(../img/MedicalAndPatient_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.MedicalAndPatientResponsePage {
+	background: #181818 url(../img/MedicalAndPatient_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
+/* Tutoring Scheduling */
+.TutoringSchedulingInfoPage {
+	background: url(../img/TutoringScheduling_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.TutoringSchedulingResponsePage {
+	background: #181818 url(../img/TutoringScheduling_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
 
 
 /* TemplateC: Schedule Coordination ------------------------------------------------------------------------------------------------------- */
 
 /* Meeting Reunion */
 .MeetingCoordinationInfoPage {
-	background: url(../img/EventPlanningAndCoordination_1.jpg) center no-repeat;
+	background: url(../img/MeetingCoordination_1.jpg) center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
 
 .MeetingCoordinationResponsePage {
-	background: #181818 url(../img/EventPlanningAndCoordination_2.jpg) no-repeat top center;
+	background: #181818 url(../img/MeetingCoordination_2.jpg) no-repeat top center;
 	background-size: cover;
 	/* background-position: 20% 50%; */
 }
@@ -1255,6 +1278,7 @@ hr {
 	background-size: cover;
 	/* background-position: 20% 50%; */
 }
+
 /* Group Project Meeting */
 .GroupProjectMeetingInfoPage {
 	background: url(../img/GroupProjectMeeting_1.jpg) center no-repeat;
@@ -1267,19 +1291,42 @@ hr {
 	background-size: cover;
 	/* background-position: 20% 50%; */
 }
+
 /* Trip Planning */
 .TripPlanningInfoPage {
 	background: url(../img/TripPlanning_1.jpg) center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
-
 .TripPlanningResponsePage {
 	background: #181818 url(../img/TripPlanning_2.jpg) no-repeat top center;
 	background-size: cover;
 	/* background-position: 20% 50%; */
 }
 
+/* Group Study Session */
+.GroupStudySessionInfoPage {
+	background: url(../img/GroupStudySession_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.GroupStudySessionResponsePage {
+	background: #181818 url(../img/GroupStudySession_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
+/* Social Event */
+.SocialEventInfoPage {
+	background: url(../img/SocialEvent_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.SocialEventResponsePage {
+	background: #181818 url(../img/SocialEvent_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
 /* 非图片页面背景颜色 */
 .dataPage,
 .settingPage,

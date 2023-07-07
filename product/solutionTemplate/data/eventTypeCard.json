@@ -4,7 +4,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Social Event",
         description: "A social event can be fun, but sometimes the preparation process is daunting. That’s why you need our solution. Use it to simplify the tasks like designing invitations, collecting responses, venue and transportation coordination and so on. Let your guests, as well as yourself, enjoy a happy and memorable event. ",
-        bg: "../../../../img/SocialEvent1.jpg",
+        bg: "../../../../img/SocialEvent_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/SocialEvent/setting1.html",
     },
     {
@@ -12,7 +12,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Baby Shower",
         description: "Invite Friends and loved ones to celebrate a new baby's arrival, enjoy the moments and automate tedious scheduling and planning. You could configure the response template to coordinate food selection, location, transportation, attendance, etc. You can also customize your response template to suit your style and theme.",
-        bg: "../../../../img/BabyShower1.jpg",
+        bg: "../../../../img/BabyShower_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateA/BabyShower/setting1.html",
     },
     {
@@ -28,7 +28,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Meeting Coordination",
         description: "It takes a lot of work to arrange a successful meeting, because of all the details that need to be taken care of. Use our solution to collaborate with your attendees, confirm date, time, location, and agenda with ease. No more back-and-forth emails, missed calls, or forgotten tasks. Let your meetings become more productive, and an enjoyable way to communicate.",
-        bg: "../../../../img/MeetingCoordination1.jpg",
+        bg: "../../../../img/MeetingCoordination_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/MeetingCoordination/setting1.html",
     },
     {
@@ -44,7 +44,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Sport Games",
         description: "To hold a good sport game, you need to pay attention to plenty of time-consuming tasks. Find a right place, coordinate the players, beverages, and safety control. You may get tired even before the game begins!  This is where our solution could help. Use automated tool to collect details of each step, such as transportation, place booking or back-ups. Take the burden off and have fun!",
-        bg: "../../../../img/SportGames1.jpg",
+        bg: "../../../../img/SportGames_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateA/SportGames/setting1.html",
     },
     {
@@ -52,7 +52,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Vacation Planning",
         description: "Do you need a vacation from your busy and stressful life? Do you want to escape to a beautiful and relaxing destination? You deserve all of the above, without the burden during preparation. Use our solution to arrange everything you need for your vacation. Save time, money, and recharge your energy. Try it today and make your vacation a dream come true!",
-        bg: "../../../../img/VacationPlanning1.jpg",
+        bg: "../../../../img/VacationPlanning_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/VacationPlanning/setting1.html",
     },
     {
@@ -76,7 +76,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Wedding",
         description: "Wedding is sweet, but don’t let the long preparation process make it bitter. Use our solution to collect attending information, arrange guest food preference, coordinate with different service providers. Have a streamlined process, make your big-day-desires work like magic!",
-        bg: "../../../../img/Wedding1.jpg",
+        bg: "../../../../img/Wedding_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateA/Wedding/setting1.html",
     },
     {
@@ -100,7 +100,7 @@ var personalCardData = [
         eventType: "Personal",
         title: "Team-building Event",
         description: "Team-building events should be inspiring, but if you are the host, you may get stressed  before the event actually begins, due to the time-consuming coordination. That’s where our solution comes in. It helps make sure everything goes smoothly, such as finding a suitable place, arrange transportation and manage responses. You and everyone deserve to have a good time, have a try!",
-        bg: "../../../../img/TeamBuildingEvent1.jpg",
+        bg: "../../../../img/TeamBuildingEvent_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Personal/TemplateC/TeamBuildingEvent/setting1.html",
     },
     {
@@ -169,7 +169,7 @@ var SmallBusinessCardData = [
         eventType: "SmallBusiness",
         title: "Meeting Coordination",
         description: "It takes a lot of work to arrange a successful meeting, because of all the details that need to be taken care of. Use our solution to collaborate with your attendees, confirm date, time, location, and agenda with ease. No more back-and-forth emails, missed calls, or forgotten tasks. Let your meetings become more productive, and an enjoyable way to communicate.",
-        bg: "../../../../img/MeetingCoordination1.jpg",
+        bg: "../../../../img/MeetingCoordination_1.jpg",
         location: "/product/solutionTemplate/SolutionType/SmallBusiness/TemplateC/MeetingCoordination/setting1.html",
     },
     {
@@ -177,7 +177,7 @@ var SmallBusinessCardData = [
         eventType: "SmallBusiness",
         title: "Conference",
         description: "Can you make sure everything goes smoothly and efficiently when planning a conference, when you have to coordinate the attendance, transportation, food, and other details of all participants. Our solution is designed to help you with all aspects of conference organization. You can use it to create and manage your event, invite and communicate with your attendees, arrange and track the transportation and more. Avoid the daunting experience and make a high-quality and memorable conference.",
-        bg: "../../../../img/Conference1.jpg",
+        bg: "../../../../img/Conference_1.jpg",
         location: "/product/solutionTemplate/SolutionType/SmallBusiness/TemplateA/Conference/setting1.html",
     },
     {
@@ -270,7 +270,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Parent-Teacher Conference",
         description: "A conference between teacher and parents can be a valuable opportunity to communicate, but scheduling and attending a parent-teacher conference can be challenging. You have to coordinate with the availability of each part as well as prepare the contents for the meeting. How can you make the most of this important occasion? Our solution helps you request and confirm a meeting time, receive reminders and notifications easily. Let’s make the conference in a convenient and flexible way, without any delay.",
-        bg: "../../../../img/ParentTeacherConference1.jpg",
+        bg: "../../../../img/ParentTeacherConference_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateB/ParentTeacherConference/setting1.html",
     },
     {
@@ -294,7 +294,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Conference",
         description: "Can you make sure everything goes smoothly and efficiently when planning a conference, when you have to coordinate the attendance, transportation, food, and other details of all participants. Our solution is designed to help you with all aspects of conference organization. You can use it to create and manage your event, invite and communicate with your attendees, arrange and track the transportation and more. Avoid the daunting experience and make a high-quality and memorable conference.",
-        bg: "../../../../img/Conference1.jpg",
+        bg: "../../../../img/Conference_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateA/Conference/setting1.html",
     },
     {
@@ -302,7 +302,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Meeting Coordination",
         description: "It takes a lot of work to arrange a successful meeting, because of all the details that need to be taken care of. Use our solution to collaborate with your attendees, confirm date, time, location, and agenda with ease. No more back-and-forth emails, missed calls, or forgotten tasks. Let your meetings become more productive, and an enjoyable way to communicate.",
-        bg: "../../../../img/MeetingCoordination1.jpg",
+        bg: "../../../../img/MeetingCoordination_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/MeetingCoordination/setting1.html",
     },
     {
@@ -350,15 +350,15 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Social Event",
         description: "A social event can be fun, but sometimes the preparation process is daunting. That’s why you need our solution. Use it to simplify the tasks like designing invitations, collecting responses, venue and transportation coordination and so on. Let your guests, as well as yourself, enjoy a happy and memorable event. ",
-        bg: "../../../../img/SocialEvent1.jpg",
-        location: "/product/solutionTemplate/SolutionType/Domain/TemplateB/SocialEvent/setting1.html",
+        bg: "../../../../img/SocialEvent_1.jpg",
+        location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/SocialEvent/setting1.html",
     },
     {
         id: "D_SportGames",
         eventType: "Domain",
         title: "Sport Games",
         description: "To hold a good sport game, you need to pay attention to plenty of time-consuming tasks. Find a right place, coordinate the players, beverages, and safety control. You may get tired even before the game begins!  This is where our solution could help. Use automated tool to collect details of each step, such as transportation, place booking or back-ups. Take the burden off and have fun!",
-        bg: "../../../../img/SportGames1.jpg",
+        bg: "../../../../img/SportGames_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateA/SportGames/setting1.html",
     },
     {
@@ -366,7 +366,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Team-building Event",
         description: "Team-building events should be inspiring, but if you are the host, you may get stressed  before the event actually begins, due to the time-consuming coordination. That’s where our solution comes in. It helps make sure everything goes smoothly, such as finding a suitable place, arrange transportation and manage responses. You and everyone deserve to have a good time, have a try!",
-        bg: "../../../../img/TeamBuildingEvent1.jpg",
+        bg: "../../../../img/TeamBuildingEvent_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateB/TeamBuildingEvent/setting1.html",
     },
     {
@@ -382,7 +382,7 @@ var DomainCardData = [
         eventType: "Domain",
         title: "Vacation Planning",
         description: "Do you need a vacation from your busy and stressful life? Do you want to escape to a beautiful and relaxing destination? You deserve all of the above, without the burden during preparation. Use our solution to arrange everything you need for your vacation. Save time, money, and recharge your energy. Try it today and make your vacation a dream come true!",
-        bg: "../../../../img/VacationPlanning1.jpg",
+        bg: "../../../../img/VacationPlanning_1.jpg",
         location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/VacationPlanning/setting1.html",
     },
     {
