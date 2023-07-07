@@ -1037,7 +1037,7 @@ hr {
 .locationInputGroup {
 	/* background: white; */
 	width: 60%;
-	padding: 0rem 1.5rem 4rem 0;
+	padding: 0 1.5rem 4rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1076,6 +1076,7 @@ hr {
 #selectEmailListArea #createNewList {
 	margin-top: 0.8rem;
 }
+
 
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
 
