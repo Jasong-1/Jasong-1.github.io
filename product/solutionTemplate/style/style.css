@@ -29,7 +29,7 @@
 
 :root {
 	/* Event Planning */
-	--img-wedding-main: url(../img/WeddingInfoPage.jpg);
+	--img-wedding-main: url(../img/Wedding1.jpg);
 	--img-SportGame-main: url(../img/SportGames1.jpg);
 	--img-Conference-main: url(../img/Conference1.jpg);
 	--img-Babysitting-main: url(../img/Babysitting_1.jpg);
@@ -38,7 +38,7 @@
 	--img-BabyShower-main: url(../img/BabyShower1.jpg);
 
 	/* Calendar Booking */
-	--img-HomeVisit-main: url(../img/PTeacherConference1.jpg);
+	--img-HomeVisit-main: url(../img/ParentTeacherConference1.jpg);
 	--img-ClientsMeeting-main: url(../img/ClientsMeeting_1.jpg);
 	--img-Interview-main: url(../img/Interviews_1.jpg);
 	--img-MedicalAndPatient-main: url(../img/MedicalAndPatient_1.jpg);
@@ -487,6 +487,36 @@ hr {
 
 /* History page---------------------------------------- */
 
+.ToolBar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+}
+
+.ToolBar button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ToolBar button .bi-send-fill {
+	margin-right: 0.5rem;
+	color: #fff;
+	font-size: 18px;
+}
+
+.FilterBar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	width: 60rem;
+}
+
+.FilterBar select {
+	margin-left: 1rem;
+	width: 50%;
+}
 
 .tableContainer table {
 	width: 100%;
@@ -494,10 +524,19 @@ hr {
 	border-radius: 1rem;
 }
 
+.tableContainer tr {
+	
+}
+
 .tableContainer td {
 	padding: 1rem;
 	background: #fff;
 	text-align: left;
+	border-bottom: 1px solid #00000009;
+}
+
+.tableContainer tr:last-child td {
+	border-bottom: none;
 }
 
 .tableContainer thead td {
@@ -541,8 +580,8 @@ hr {
 .tableContainer table tr td:last-child {
 	display: flex;
 	justify-content: flex-end;
-	text-align: right;
-	height: 60px;
+	align-items: center;
+	height: 100%;
 }
 
 .tableContainer table thead tr td:first-child {
@@ -559,37 +598,6 @@ hr {
 
 .tableContainer table tbody tr:last-child td:last-child {
 	border-bottom-right-radius: 0.5rem;
-}
-
-.ToolBar {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	margin-bottom: 1.5rem;
-}
-
-.ToolBar button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.ToolBar button .bi-send-fill {
-	margin-right: 0.5rem;
-	color: #fff;
-	font-size: 18px;
-}
-
-.FilterBar {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	width: 60rem;
-}
-
-.FilterBar select {
-	margin-left: 1rem;
-	width: 50%;
 }
 
 
@@ -634,7 +642,7 @@ hr {
 /* 步骤条 */
 
 .steps {
-	max-width: 1000px;
+	/* max-width: 1000px; */
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -871,18 +879,43 @@ hr {
 	border-radius: 0.5rem;
 }
 
+#selectEmailListArea>div {
+	display: flex;
+	align-items: center;
+	
+}
+
+#selectEmailListArea .btn-outline-primary {
+	height: 38px;
+	display: flex;
+	align-items: center;
+	margin-left: 0.6rem;
+	border: 0;
+	
+}
+
+#selectEmailListArea .btn-outline-primary:hover {
+	background: #1AC3DE30;
+	
+}
+
+#selectEmailListArea #createNewList {
+	margin-top: 0.8rem;
+}
+
+
 
 /* 背景主图和颜色--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* wedding */
 .WeddingInfoPage {
-	background: url(../img/WeddingInfoPage.jpg) center no-repeat;
+	background: url(../img/Wedding1.jpg) center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
 .WeddingResponsePage {
-	background: url(../img/WeddingResponsePage.jpg) no-repeat center 37%;
+	background: url(../img/Wedding2.jpg) no-repeat center 37%;
 	background-size: 100% auto;
 }
 
@@ -961,13 +994,13 @@ hr {
 
 /* Parent-Teacher Conferences */
 .PTeacherConferenceInfoPage {
-	background: url(../img/PTeacherConferences1.jpg) top center no-repeat;
+	background: url(../img/ParentTeacherConference1.jpg) top center no-repeat;
 	background-size: 100% auto;
 	height: 100vh;
 }
 
 .PTeacherConferenceResponsePage {
-	background: #787b70 url(../img/PTeacherConferences2.jpg) top center no-repeat;
+	background: #787b70 url(../img/ParentTeacherConference2.jpg) top center no-repeat;
 	background-size: 100% auto;
 	/* background-position: 20% 50%; */
 }

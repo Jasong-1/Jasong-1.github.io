@@ -1,0 +1,148 @@
+.eventTypeCard {
+	display: flex;
+	flex-flow: row nowrap;
+	border: 1px solid #00000015;
+	width: 100%;
+	margin: 0.5rem;
+	border-radius: 0.3rem;
+}
+
+.eventTypeCard.active {
+	border: 3px solid #1AC3DE40;
+	background: #1AC3DE20;
+}
+
+/* .eventTypeCard.active .TypeCard-body {
+	
+} */
+
+.eventTypeCard:hover:not(.active) {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.eventTypeImg {
+	width: 32%;
+	height: 100%;
+	border-radius: 0.23rem 0 0 0.25rem;
+	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 1) 50%);
+	background: #fff;
+	object-fit: cover;
+}
+
+.TypeCard-body {
+	flex: 1;
+	padding: 1rem;
+}
+
+.TypeCard-text {
+	margin: 0;
+}
+
+
+
+/* V2 */
+/* 1 */
+.WeddingCardImg {
+	background: var(--img-wedding-main) center no-repeat;
+	background-size: 100% auto;
+}
+.SportGameCardImg {
+	background: var(--img-SportGame-main) center no-repeat;
+	background-size: 100% auto;
+}
+.ConferenceCardImg {
+	background: var(--img-Conference-main) center no-repeat;
+	background-size: 100% auto;
+}
+.BabySittingCardImg {
+	background: var(--img-Babysitting-main) center no-repeat;
+	background-size: 100% auto;
+}
+.GovernmentAgencyCardImg {
+	background: var(--img-GovernmentAgency-main) center no-repeat;
+	background-size: 100% auto;
+}
+.BabyShowerCardImg {
+	background: var(--img-BabyShower-main) center no-repeat;
+	background-size: 100% auto;
+}
+
+
+
+/* 2 */
+.PTConferenceCardImg {
+	background: var(--img-HomeVisit-main) center no-repeat;
+	background-size: 100% auto;
+}
+.ClientsMeetingCardImg {
+	background: var(--img-ClientsMeeting-main) center no-repeat;
+	background-size: 100% auto;
+}
+.InterviewsCardImg {
+	background: var(--img-Interview-main) center no-repeat;
+	background-size: 100% auto;
+}
+.MedicalCardImg {
+	background: var(--img-MedicalAndPatient-main) center no-repeat;
+	background-size: 100% auto;
+}
+.StoreAppointmentCardImg {
+	background: var(--img-StoreAppointment-main) center no-repeat;
+	background-size: 100% auto;
+}
+.PersonalTrainerCardImg {
+	background: var(--img-PersonalTrainer-main) center no-repeat;
+	background-size: 100% auto;
+}
+.RealEstateCardImg {
+	background: var(--img-RealEstate-main) center no-repeat;
+	background-size: 100% auto;
+}
+.TutoringSchedulingCardImg {
+	background: var(--img-TutoringScheduling-main) center no-repeat;
+	background-size: 100% auto;
+}
+.AcademicAdvisorsCardImg {
+	background: var(--img-AcademicAdvisorsAndTutors-main) center no-repeat;
+	background-size: 100% auto;
+}
+.PerformanceReviewCardImg {
+	background: var(--img-PerformanceReview-main) center no-repeat;
+	background-size: 100% auto;
+}
+
+
+
+/* 3 */
+.MeetingCoordinationCardImg {
+	background: var(--img-MeetingCoordination-main) center no-repeat;
+	background-size: 100% auto;
+}
+.FamilyReunionCardImg {
+	background: var(--img-FamilyReunion-main) center no-repeat;
+	background-size: 100% auto;
+}
+.GroupStudySessionCardImg {
+	background: var(--img-GroupStudySession-main) center no-repeat;
+	background-size: 100% auto;
+}
+.TeamBuildingEventCardImg {
+	background: var(--img-TeamBuildingEvent-main) center no-repeat;
+	background-size: 100% auto;
+}
+.GroupProjectMeetingCardImg {
+	background: var(--img-GroupProjectMeeting-main) center no-repeat;
+	background-size: 100% auto;
+}
+.VacationPlanningCardImg {
+	background: var(--img-VacationPlanning-main) center no-repeat;
+	background-size: 100% auto;
+}
+.TripPlanningCardImg {
+	background: var(--img-TripPlanning-main) center no-repeat;
+	background-size: 100% auto;
+}
+.SocialEventCardImg {
+	background: var(--img-SocialEvent-main) center no-repeat;
+	background-size: 100% auto;
+}
