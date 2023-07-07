@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Company Outing</title>
+
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+	<script type="text/javascript">
+		document.write("<link rel='stylesheet' type='text/css' href='../../../../style/styleV2.css?v=" + Math.random() +
+			"'>");
+	</script>
+
+	<!--Load the AJAX API-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		// Load the Visualization API and the controls package.
+		// Packages for all the other charts you need will be loaded
+		// automatically by the system.
+		google.charts.load('current', {
+			'packages': ['corechart', 'controls']
+		});
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.charts.setOnLoadCallback(drawDashboard);
+
+		function drawDashboard() {
+			// Everything is loaded. Assemble your dashboard...
+
+			var data = google.visualization.arrayToDataTable([
+				['Event', 'Status', 'Num of People'],
+				['Visit Beaches', 'Attending', 84],
+				['Visit Beaches', 'Not Attending', 6],
+				['Visit Beaches', 'Pending', 10],
+				// ['Sophia and Jonathan Wedding', 'Parental Involvement', 3, 12],
+				// ['Sophia and Jonathan Wedding', 'Homeless', 2, 12],
+				// ['Sophia and Jonathan Wedding', 'Partial Adm. Salary', 6, 12],
+				// ['Sophia and Jonathan Wedding', 'Indirect Cost', 1, 12],
+				['Amusement Park', 'Attending', 38],
+				['Amusement Park', 'Not Attending', 52],
+				['Amusement Park', 'Pending', 10],
+				// ['Sophias birthday party', 'Parental Involvement', 10, 12],
+				// ['Sophias birthday party', 'Homeless', 8, 12],
+				// ['Sophias birthday party', 'Partial Adm. Salary', 8, 12],
+				// ['Sophias birthday party', 'Indirect Cost', 6, 12]
+				['Mountain Climbing', 'Attending', 88],
+				['Mountain Climbing', 'Not Attending', 12],
+				['Mountain Climbing', 'Pending', 10],
+				['Barbecue', 'Attending', 70],
+				['Barbecue', 'Not Attending', 12],
+				['Barbecue', 'Pending', 18],
+				['Other Sports', 'Attending', 30],
+				['Other Sports', 'Not Attending', 52],
+				['Other Sports', 'Pending', 18],
+			]);
+
+			var dashboard = new google.visualization.Dashboard(
+				document.getElementById('dashboard1'));
+
+
+			// Create a filter control, passing some options
+			var dashboardYearFilter = new google.visualization.ControlWrapper({
+				'controlType': 'CategoryFilter',
+				'containerId': 'YearFilter',
+				'state': {
+					'selectedValues': ['Visit Beaches'],
+				},
+
+
+				'options': {
+					'filterColumnLabel': 'Event',
+
+					// 'ui':
+					ui: {
+						allowMultiple: false,
+					}
+				},
+
+
+			});
+
+
+			// Create a pie chart, passing some options
+			var DonutChart1 = new google.visualization.ChartWrapper({
+				chartType: 'PieChart',
+				'containerId': 'DonutChart1',
+				'options': {
+					'pieSliceText': 'value',
+					pieHole: 0.4,
+					legend: {
+						position: 'right',
+						alignment: 'center'
+					},
+					slices: {
+						0: {
+							color: '#00A7EF'
+						},
+						1: {
+							color: '#1cc7d0'
+						},
+						2: {
+							color: '#2dde98'
+						},
+						3: {
+							color: '#63D62A'
+						},
+						4: {
+							color: '#FCC437'
+						},
+						5: {
+							color: '#fd7564'
+						},
+						6: {
+							color: '#ff4f81'
+						},
+						7: {
+							color: '#b84592'
+						},
+						8: {
+							color: '#8e43e7'
+						},
+					},
+					animation: {
+						duration: 1000,
+						easing: 'inAndOut',
+						startup: 'ture',
+					}
+				},
+				'view': {
+					'columns': [1, 2],
+				},
+
+			});
+
+			// Create a column chart, passing some options
+			var ColumnChart1 = new google.visualization.ChartWrapper({
+				chartType: 'ColumnChart',
+				'containerId': 'ColumnChart1',
+				'options': {
+					legend: {},
+					vAxis: {
+						title: 'Num of People'
+					},
+					hAxis: {
+						title: 'Status'
+					},
+					series: {
+						0: {
+							color: '#00A7EF',
+							type: 'bar'
+						},
+						// 1: { color: '#1cc7d0', type: 'bar' },
+						// 1: { color: '#2dde98', type: 'bar' } ,
+						1: {
+							color: '#63D62A',
+							type: 'bar'
+						},
+						2: {
+							color: '#FCC437',
+							type: 'line'
+						},
+						// 5: { color: '#fd7564', type: 'line' },
+						// 6: { color: '#ff4f81', type: 'line' },
+						// 7: { color: '#b84592', type: 'line' },
+						// 8: { color: '#8e43e7', type: 'line' }
+					},
+					animation: {
+						duration: 1000,
+						easing: 'inAndOut',
+						startup: 'ture',
+					},
+				},
+				'view': {
+					'columns': [1, 2]
+				},
+
+			});
+
+			// Create a line chart, passing some options
+			// var LineChart1 = new google.visualization.ChartWrapper({
+			//     chartType: 'LineChart',
+			//     'containerId': 'LineChart1',
+
+			//     'options': {
+			//         vAxis: { title: 'Amount ($)' },
+			//         hAxis: { title: 'Project' },
+			//         series: {
+			//             0: { color: '#00A7EF', type: 'bar' },
+			//             1: { color: '#1cc7d0', type: 'bar' },
+			//             1: { color: '#2dde98', type: 'bar' } ,
+			//             1: { color: '#63D62A', type: 'bar' },
+			//             2: { color: '#FCC437', type: 'line' },
+			//             5: { color: '#fd7564', type: 'line' },
+			//             6: { color: '#ff4f81', type: 'line' },
+			//             7: { color: '#b84592', type: 'line' },
+			//             8: { color: '#8e43e7', type: 'line' }
+			//         },
+			//         animation: {
+			//             duration: 1000,
+			//             easing: 'inAndOut',
+			//             startup: 'ture',
+			//         }
+			//     },
+			//     'view': {
+			//         'columns': [2, 3, 4]
+			//     },
+			// });
+
+			// var DataTable1 = new google.visualization.ChartWrapper({
+			//     'chartType': 'Table',
+			//     'containerId': 'DataTable1',
+			//     'view': {
+			//         'columns': [2, 3, 4]
+			//     }
+			// });
+
+			// dashboard.bind(dashboardYearFilter, [DonutChart1, ColumnChart1, LineChart1]);
+			dashboard.bind(dashboardYearFilter, [DonutChart1, ColumnChart1]);
+
+			dashboard.draw(data);
+		}
+	</script>
+
+</head>
+
+<body class="dataPage">
+	<nav class="navbar navbar-expand-lg navbarOnColor">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				Solution View
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="setting1.html">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.6868 19.3125C13.6035 20.2292 14.7077 20.6875 15.9993 20.6875C17.291 20.6875 18.3952 20.2292 19.3118 19.3125C20.2285 18.3958 20.6868 17.2917 20.6868 16C20.6868 14.7083 20.2285 13.6042 19.3118 12.6875C18.3952 11.7708 17.291 11.3125 15.9993 11.3125C14.7077 11.3125 13.6035 11.7708 12.6868 12.6875C11.7702 13.6042 11.3118 14.7083 11.3118 16C11.3118 17.2917 11.7702 18.3958 12.6868 19.3125ZM25.9368 17.3125L28.7493 19.5C29.041 19.7083 29.0827 20 28.8743 20.375L26.1868 25C26.0202 25.2917 25.7493 25.375 25.3743 25.25L22.0618 23.9375C21.1868 24.5625 20.4368 25 19.8118 25.25L19.3118 28.75C19.2285 29.125 19.0202 29.3125 18.6868 29.3125H13.3118C12.9785 29.3125 12.7702 29.125 12.6868 28.75L12.1868 25.25C11.3952 24.9167 10.6452 24.4792 9.93685 23.9375L6.62435 25.25C6.24935 25.375 5.97852 25.2917 5.81185 25L3.12435 20.375C2.91602 20 2.95768 19.7083 3.24935 19.5L6.06185 17.3125C6.02018 17.0208 5.99935 16.5833 5.99935 16C5.99935 15.4167 6.02018 14.9792 6.06185 14.6875L3.24935 12.5C2.95768 12.2917 2.91602 12 3.12435 11.625L5.81185 7C5.97852 6.70833 6.24935 6.625 6.62435 6.75L9.93685 8.0625C10.8118 7.4375 11.5618 7 12.1868 6.75L12.6868 3.25C12.7702 2.875 12.9785 2.6875 13.3118 2.6875H18.6868C19.0202 2.6875 19.2285 2.875 19.3118 3.25L19.8118 6.75C20.6035 7.08333 21.3535 7.52083 22.0618 8.0625L25.3743 6.75C25.7493 6.625 26.0202 6.70833 26.1868 7L28.8743 11.625C29.0827 12 29.041 12.2917 28.7493 12.5L25.9368 14.6875C25.9785 14.9792 25.9993 15.4167 25.9993 16C25.9993 16.5833 25.9785 17.0208 25.9368 17.3125Z"
+									fill="white" />
+							</svg>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="history.html">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16 10.6875H18V16.3125L22.6875 19.125L21.6875 20.75L16 17.3125V10.6875ZM8.8125 7.5C11.1875 5.16667 14.0208 4 17.3125 4C20.6042 4 23.4167 5.16667 25.75 7.5C28.125 9.83333 29.3125 12.6667 29.3125 16C29.3125 19.3333 28.125 22.1667 25.75 24.5C23.4167 26.8333 20.6042 28 17.3125 28C14.0208 28 11.2083 26.8333 8.875 24.5L10.75 22.5625C12.5833 24.3958 14.7708 25.3125 17.3125 25.3125C19.8958 25.3125 22.1042 24.4167 23.9375 22.625C25.7708 20.7917 26.6875 18.5833 26.6875 16C26.6875 13.4167 25.7708 11.2292 23.9375 9.4375C22.1042 7.60417 19.8958 6.6875 17.3125 6.6875C14.7292 6.6875 12.5208 7.60417 10.6875 9.4375C8.89583 11.2292 8 13.4167 8 16H12L6.625 21.375L6.5 21.1875L1.3125 16H5.3125C5.3125 12.6667 6.47917 9.83333 8.8125 7.5Z"
+									fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="data.html">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.3125 12H26.6875V26.6875H21.3125V12ZM5.3125 26.6875V16H10.6875V26.6875H5.3125ZM13.3125 26.6875V5.3125H18.6875V26.6875H13.3125Z"
+									fill="white" />
+							</svg>
+						</a>
+					</li>
+
+				</ul>
+				<ul class="navbar-nav mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="Information.html">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.3125 12V9.3125H14.6875V12H17.3125ZM17.3125 22.6875V14.6875H14.6875V22.6875H17.3125ZM6.5625 6.625C9.1875 4 12.3333 2.6875 16 2.6875C19.6667 2.6875 22.7917 4 25.375 6.625C28 9.20833 29.3125 12.3333 29.3125 16C29.3125 19.6667 28 22.8125 25.375 25.4375C22.7917 28.0208 19.6667 29.3125 16 29.3125C12.3333 29.3125 9.1875 28.0208 6.5625 25.4375C3.97917 22.8125 2.6875 19.6667 2.6875 16C2.6875 12.3333 3.97917 9.20833 6.5625 6.625Z"
+									fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="response.html">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M13.3125 12C17.6458 12.625 20.9792 14.2917 23.3125 17C25.6875 19.6667 27.25 22.8958 28 26.6875C24.7917 22.1458 19.8958 19.875 13.3125 19.875V25.3125L4 16L13.3125 6.6875V12Z"
+									fill="white" />
+							</svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="data.html">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.3125 12H26.6875V26.6875H21.3125V12ZM5.3125 26.6875V16H10.6875V26.6875H5.3125ZM13.3125 26.6875V5.3125H18.6875V26.6875H13.3125Z"
+									fill="white" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="ContentAreaContainer">
+		<div class="ContentArea">
+			<div style="display: flex;">
+				<div id="YearFilter" style="margin: 1rem;"></div>
+				<!-- <button class="btn btn-primary btn-sm" style="height: 2rem; margin: 1rem; margin-left: auto;"
+						onclick="window.location.href='webcal://outlook.office.com/owa/calendar/your_email_address@your_domain.com/?path=/calendar/view/Month'">
+						View Scheduled Meetings
+					</button> -->
+				<button class="btn btn-primary btn-sm" style="height: 2rem; margin: 1rem; margin-left: auto;"
+					onclick="window.location.href='https://calendly.com/app/scheduled_events/user/me'">
+					View All Appointments
+				</button>
+
+
+
+			</div>
+			<div class="numBar">
+				<div class="numBarItem" style="background-color: #fff;">
+					<p class="numBarItemLabel">
+						Total
+					</p>
+					<h1>
+						81
+					</h1>
+				</div>
+				<div class="numBarItem">
+					<p class="numBarItemLabel">
+						Attending
+					</p>
+					<h1 style="color: #4ECB74;">
+						64
+					</h1>
+				</div>
+				<div class="numBarItem">
+					<p class="numBarItemLabel">
+						Not Attending
+					</p>
+					<h1 style="color: #FBD437;">
+						10
+					</h1>
+				</div>
+				<div class="numBarItem">
+					<p class="numBarItemLabel">
+						Pending
+					</p>
+					<h1 style="color: #0093FE;">
+						7
+					</h1>
+				</div>
+			</div>
+
+			<div id="dashboard1">
+				<!--Divs that will hold each control and chart-->
+
+				<div class="chartContainer">
+					<div id="DonutChart1" style="margin-right: 1rem; height: 400px;"></div>
+					<div id="ColumnChart1"></div>
+				</div>
+				<!-- <div id="DateTable1"></div> -->
+				<!-- <div id="LineChart1" style="margin: 1rem;"></div> -->
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../../../../scripts/js.js"></script>
+</body>
+
+</html>
