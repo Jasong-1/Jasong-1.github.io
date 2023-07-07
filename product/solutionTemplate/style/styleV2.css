@@ -1269,6 +1269,10 @@ hr {
 }
 .TutoringSchedulingResponsePage {
 	background: #181818 url(../img/TutoringScheduling_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
 /* Company Outing */
 
 .CompanyOutingInfoPage {
