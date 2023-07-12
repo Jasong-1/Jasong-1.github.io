@@ -1366,6 +1366,33 @@ hr {
 	background-size: cover;
 	/* background-position: 20% 50%; */
 }
+
+/* Team-Building Event */
+.TeamBuildingEventInfoPage {
+	background: url(../img/TeamBuildingEvent_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.TeamBuildingEventResponsePage {
+	background: #181818 url(../img/TeamBuildingEvent_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
+
+/* Vacation Planning */
+.VacationPlanningInfoPage {
+	background: url(../img/VacationPlanning_1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.VacationPlanningResponsePage {
+	background: #181818 url(../img/VacationPlanning_2.jpg) no-repeat top center;
+	background-size: cover;
+	/* background-position: 20% 50%; */
+}
+
+
 /* 非图片页面背景颜色 */
 .dataPage,
 .settingPage,

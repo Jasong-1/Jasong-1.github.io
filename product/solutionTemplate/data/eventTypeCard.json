@@ -367,7 +367,7 @@ var DomainCardData = [
         title: "Team-building Event",
         description: "Team-building events should be inspiring, but if you are the host, you may get stressed  before the event actually begins, due to the time-consuming coordination. That’s where our solution comes in. It helps make sure everything goes smoothly, such as finding a suitable place, arrange transportation and manage responses. You and everyone deserve to have a good time, have a try!",
         bg: "../../../../img/TeamBuildingEvent_1.jpg",
-        location: "/product/solutionTemplate/SolutionType/Domain/TemplateB/TeamBuildingEvent/setting1.html",
+        location: "/product/solutionTemplate/SolutionType/Domain/TemplateC/TeamBuildingEvent/setting1.html",
     },
     {
         id: "D_ClientsMeeting",
