@@ -36,12 +36,12 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Event', 'Status', 'Num of People', 'Data Selected', 'Num of People'],
-                ['1st Event Coordintion', 'Attending', 47, '06/14/2023 09:00 AM', 24],
-                ['1st Event Coordintion', 'Not Attending', 8, '06/14/2023 10:00 AM', 12],
-                ['1st Event Coordintion', 'Pending', 16, '06/14/2023 02:00 PM', 18],
-                ['2nd Event Coordintion', 'Attending', 108, '06/14/2023 09:00 AM', 20],
-                ['2nd Event Coordintion', 'Not Attending', 14, '06/14/2023 10:00 AM', 14],
-                ['2nd Event Coordintion', 'Pending', 0, '06/14/2023 02:00 PM', 12],
+                ['1st Event Coordination', 'Attending', 47, '06/14/2023 09:00 AM', 24],
+                ['1st Event Coordination', 'Not Attending', 8, '06/14/2023 10:00 AM', 12],
+                ['1st Event Coordination', 'Pending', 16, '06/14/2023 02:00 PM', 18],
+                ['2nd Event Coordination', 'Attending', 108, '06/14/2023 09:00 AM', 20],
+                ['2nd Event Coordination', 'Not Attending', 14, '06/14/2023 10:00 AM', 14],
+                ['2nd Event Coordination', 'Pending', 0, '06/14/2023 02:00 PM', 12],
             ]);
 
             var dashboard = new google.visualization.Dashboard(
@@ -53,7 +53,7 @@
                 'controlType': 'CategoryFilter',
                 'containerId': 'YearFilter',
                 'state': {
-                    'selectedValues': ['1st Event Coordintion'],
+                    'selectedValues': ['1st Event Coordination'],
                 },
 
                 'options': {
