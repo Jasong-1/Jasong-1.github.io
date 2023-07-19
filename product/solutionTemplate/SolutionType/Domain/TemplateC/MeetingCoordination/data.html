@@ -220,14 +220,14 @@
             dataTable.addColumn({ type: 'date', id: 'Start Time' });
             dataTable.addColumn({ type: 'date', id: 'End Time' });
             dataTable.addRows([
-                ['Board of Education Meeting', 'Rudy Tamimi', new Date(2023, 6, 9, 9, 0, 0), new Date(2023, 6, 9, 12, 0, 0)],
-                ['Board of Education Meeting', 'Robbie Rupp', new Date(2023, 6, 9, 14, 0, 0), new Date(2023, 6, 9, 16, 0, 0)],
-                ['Board of Education Meeting', 'Jimmie Blecker', new Date(2023, 6, 9, 16, 0, 0), new Date(2023, 6, 9, 18, 0, 0)],
-                ['Board of Education Meeting', 'Weston Ganze', new Date(2023, 6, 10, 10, 0, 0), new Date(2023, 6, 10, 12, 0, 0)],
-                ['Board of Education Meeting', 'Nicholas Rolen', new Date(2023, 6, 10, 11, 0, 0), new Date(2023, 6, 10, 14, 0, 0)],
-                ['Board of Education Meeting', 'Ricardo Zampieri', new Date(2023, 6, 11, 10, 0, 0), new Date(2023, 6, 11, 12, 0, 0)],
-                ['Board of Education Meeting', 'Chance Aymond', new Date(2023, 6, 11, 14, 0, 0), new Date(2023, 6, 11, 16, 0, 0)],
-                ['Board of Education Meeting', 'Abram Gushiken', new Date(2023, 6, 11, 21, 0, 0), new Date(2023, 6, 11, 23, 0, 0)]
+                ['Suggested Best Time', 'Rudy Tamimi', new Date(2023, 6, 10, 8, 0, 0), new Date(2023, 6, 10, 12, 0, 0)],
+                ['Suggested Best Time', 'Robbie Rupp', new Date(2023, 6, 10, 10, 0, 0), new Date(2023, 6, 10, 16, 0, 0)],
+                ['Suggested Best Time', 'Jimmie Blecker', new Date(2023, 6, 10, 9, 0, 0), new Date(2023, 6, 10, 15, 0, 0)],
+                ['Suggested Best Time', 'Weston Ganze', new Date(2023, 6, 10, 10, 0, 0), new Date(2023, 6, 10, 13, 0, 0)],
+                ['Suggested Best Time', 'Nicholas Rolen', new Date(2023, 6, 10, 9, 0, 0), new Date(2023, 6, 10, 17, 30, 0)],
+                ['Suggested Best Time', 'Ricardo Zampieri', new Date(2023, 6, 10, 8, 30, 0), new Date(2023, 6, 10, 11, 30, 0)],
+                ['Suggested Best Time', 'Chance Aymond', new Date(2023, 6, 10, 10, 30, 0), new Date(2023, 6, 10, 13, 0, 0)],
+                ['Suggested Best Time', 'Abram Gushiken', new Date(2023, 6, 10, 9, 0, 0), new Date(2023, 6, 10, 15, 0, 0)]
             ]);
 
             var dataTableGroup = google.visualization.data.group(dataTable, [0]);
@@ -245,8 +245,10 @@
                 
                 alternatingRowStyle: false,
                 hAxis: {
-                    format: 'hh:mm dd,MMM',
-
+                    format: 'hh:mm aa - dd,MMM',
+                    
+                    minValue: new Date("2023-07-10T06:00:00"),
+                    maxValue: new Date("2023-07-10T18:00:00"),
 
                     // viewWindow: {
                     //     min: new Date(2023, 6, 9, 7),
@@ -291,14 +293,7 @@
                     // }
 
 
-
-
-
-                    // maxValue: new Date(2023, 6, 9, 0, 0, 0),
-                    // minValue: new Date(2023, 6, 11, 23, 59, 59),
-                    // minValue: new Date("2023-07-09T00:00:00"),
-                    // maxValue: new Date("2023-07-11T23:59:59"),
-                    // format: 'hh:mm  dd,MMM',
+                    
                 },
 
                 colors: ['#00a7ef', '#1cc7d0', '#63D62A', '#FCC437'],
@@ -471,6 +466,18 @@
         // for (var i = 0; i < labels.length; i++) {
         //     labels[i].setAttribute("y", -15)
         // }
+
+        
+        var legendText = document.querySelectorAll("#timeline > div > div:nth-child(1) > div > svg > g:nth-child(1) > text");
+
+        for (let i = 0; i < legendText.length; i++) {
+            legendText[i].style.width = "10px";
+            
+        }
+
+        console.log(legendText);
+
+
     </script>
 </body>
 
